@@ -14,8 +14,8 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
     ushort item_space = App::getScreenHeight() * 0.05;
 
     Rect whereSpriteRect;
-    whereSpriteRect.x = ( App::getScreenWidth()*0.6 ) - Property::getSetting("MENU_SPRITE_SIZE");
-    whereSpriteRect.y = ( App::getScreenHeight()*0.75 ) - Property::getSetting("MENU_SPRITE_SIZE");
+    whereSpriteRect.x = ( App::getScreenWidth()*0.5 ) - Property::getSetting("MENU_SPRITE_SIZE");
+    whereSpriteRect.y = ( App::getScreenHeight()*0.80 );
 
     
     /** Wpis w menu:  -- Return -- */
@@ -27,6 +27,8 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
          resumeGameItem.setDescription ( title );
          Rect rectName( pos_x, pos_y);
          resumeGameItem.setRectName ( rectName );
+         whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+         resumeGameItem.setRectDesc( whereSpriteRect );
          pos_y += item_space;
     }
 
@@ -39,6 +41,10 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
         playGameItem.setSelected ( true );
         Rect rectName( pos_x, pos_y);
         playGameItem.setRectName ( rectName );
+
+        cout<<pWriterPtr->getTextWidth( title ) <<endl;
+        whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+        playGameItem.setRectDesc( whereSpriteRect );
         pos_y += item_space;
     }
    
@@ -51,6 +57,8 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
         highGameItem.setDescription (title );
         Rect rectName( pos_x, pos_y);
         highGameItem.setRectName ( rectName );
+        whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+        highGameItem.setRectDesc( whereSpriteRect );
         pos_y += item_space;
     }
   
@@ -62,6 +70,8 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
        AboutGameItem.setDescription ( title );
        Rect rectName( pos_x, pos_y);
        AboutGameItem.setRectName ( rectName );
+       whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+       AboutGameItem.setRectDesc( whereSpriteRect );
        pos_y += item_space;
     }
       
@@ -72,6 +82,8 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
     	string title =  Property::get ( "EXIT_GAME_DESC" );
         exitItem.setDescription ( title);
         Rect rectName( pos_x, pos_y);
+        whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+        exitItem.setRectDesc( whereSpriteRect );
         exitItem.setRectName ( rectName );
     }
     

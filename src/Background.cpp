@@ -29,11 +29,11 @@ void Background::draw() {
 float factor_y = 0.04;
 
 	if( (pFirst.w + pFirst.x) <= pScreenWidth ) {
-		pRendererPtr->draw( pBackgroungImg,  pFirst.x, pFirst.y+ (pPLayerY*factor_y) , pFirst.w, pFirst.h );
-		pRendererPtr->draw( pBackgroungImg,  pSecond.x, pFirst.y+ (pPLayerY*factor_y) , pFirst.w, pFirst.h );
+		pRendererPtr->draw( pBackgroungImg,  pFirst.x,  (pPLayerY*factor_y) , pFirst.w, pScreenHeight );
+		pRendererPtr->draw( pBackgroungImg,  pSecond.x,  (pPLayerY*factor_y) , pFirst.w, pScreenHeight );
 	}
 	else
-	    pRendererPtr->draw( pBackgroungImg, pFirst.x, pFirst.y+ (pPLayerY*factor_y) , pFirst.w, pFirst.h );
+	    pRendererPtr->draw( pBackgroungImg, pFirst.x, (pPLayerY*factor_y) , pFirst.w, pScreenHeight );
 }
 
 void Background::init() {

@@ -3,7 +3,7 @@
 
 // Zmienne wlaczajaca tryb debugu
 
-#define FULL_SCREEN_FLAG
+//#define FULL_SCREEN_FLAG
 
 #define RENDER_GL
 #define LIGHT_GL
@@ -17,8 +17,8 @@
   const bool SHOW_FPS( true  );
 #endif
 
-const unsigned short WIDHT( 1300 );
-const unsigned short HEIGHT( 800 );
+const unsigned short WIDHT( 1400 );
+const unsigned short HEIGHT( 1000 );
 
 const float SPLASH_TIME( 1 );
 

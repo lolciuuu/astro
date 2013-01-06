@@ -27,7 +27,7 @@ TILES_SIZE=SCREEN_H/TILES_VERTICAL;
 
 cxx_addSetting("PLAYER_OFFSET_X", 180 );
 cxx_addSetting("PLAYER_OFFSET_Y", (SCREEN_H/TILES_VERTICAL)*3 );
-cxx_addSetting("PLAYER_SLEEP_TIME", 1  );
+cxx_addSetting("PLAYER_SLEEP_TIME", 1.2  );
 cxx_addSetting("PLAYER_SPEED", 200 );
 cxx_addSetting("PLAYER_Y_ACCELERATION", -300.0 );
 cxx_addSetting("PLAYER_Y_VELOCITY", 260 );

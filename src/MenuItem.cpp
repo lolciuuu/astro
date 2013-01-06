@@ -28,19 +28,15 @@ void MenuItem::draw() {
 
 			pWriterPtr->draw(pRectName, pItemName, pColorActive);
 
-				if (pItems.size() > 0) {
+				if (pItems.size() > 0) { // specjalny rodzaj itemsa w mnue- aktualnie nie wykorzystywane
 					Rect rect( { 300, 300, 100, 100 });
 					pWriterPtr->draw( rect, pItems[pCurrentItem] );
 				}
 				else { // pokazanie opisu zaraz pod obrazkiem
-					Rect rect;
-					rect.x = pImage.getX();
-					rect.y = pImage.getY() + (pImage.getRect()).h + 50;
-					rect.w = 300;
-					rect.h = 100;
-					pWriterPtr->draw(rect, pDesciption );
+					pWriterPtr->draw(pRectDesc, pDesciption );
 				}
 
+				// Wyswietlanie sprajta dla kazdego itemsa w menu
 				//pImage.draw();
 		}
 		else { // Rysowanie domyslnego itema
