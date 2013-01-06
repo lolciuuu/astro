@@ -4,15 +4,15 @@
 -- Sciezki do plikow
 print("[ Lua ] Load files path");
 cxx_addProperty("ATLAS_PATH" , "data/atlas.png");
-cxx_addProperty("FONT_BOLD_PATH" , "data/ubuntu_bold.ttf");
+cxx_addProperty("FONT_BOLD_PATH" , "data/base_font.ttf");
 cxx_addProperty("FONT_REGULAR_PATH" , "data/ubuntu_regular.ttf");
 cxx_addProperty("FONT_MEDIUM_PATH" , "data/ubuntu_medium.ttf");
 
 -- Czcionki
 print( "[ Lua ] Loads font name" );
-cxx_addSetting("SMALL_FONT", 0.3 );
-cxx_addSetting("NORMAL_FONT", 18 );
-cxx_addSetting("BIG_FONT", 22 );
+cxx_addSetting("SMALL_FONT", 24 );
+cxx_addSetting("NORMAL_FONT", 54 );
+cxx_addSetting("BIG_FONT", 30 );
 
 -- Ustawienia aplikacji
 print( "[ Lua ] Loading application settings" );

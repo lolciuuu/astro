@@ -19,7 +19,7 @@ cxx_addProperty("TTF_NOT_FOUND" , "Font not found");
 
 --Game text
 cxx_addProperty("NEW_GAME","New");
-cxx_addProperty("NEW_GAME_DESC", "Start new game");
+cxx_addProperty("NEW_GAME_DESC", "Start new run");
 
 cxx_addProperty("RESUME_GAME","Resume");
 cxx_addProperty("RESUME_GAME_DESC","Continuing current game");
@@ -29,7 +29,7 @@ cxx_addProperty("HIGH_GAME_DESC","best score");
 cxx_addProperty("HIGH_GAME_DIST","Distance: ");
 
 cxx_addProperty("ABOUT_GAME","About");
-cxx_addProperty("ABOUT_GAME_DESC","Version: 0.0.0 devel");
+cxx_addProperty("ABOUT_GAME_DESC","This game is not stable!");
 
 cxx_addProperty("EXIT_GAME","Exit");
 cxx_addProperty("EXIT_GAME_DESC","Exit game");

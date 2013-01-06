@@ -49,6 +49,8 @@ protected:
     SDL_TimerID timerFPS;
 
     Logger logger;
+
+    ushort pSplashRectWidth;
 	
 };
 

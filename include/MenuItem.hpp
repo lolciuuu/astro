@@ -85,7 +85,7 @@ private:
     int pCurrentItem;
 
     SDL_Color pColorActive;
-    Uint32 pColorDisable;
+    SDL_Color pColorDisable;
 };
 
 #endif // MENUITEM_HPP

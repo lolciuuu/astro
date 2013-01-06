@@ -59,7 +59,7 @@ private:
 
 	 vector<Enemy> pEnemyList;
 	 ushort pLastEnemy;
-	 uint pCurrentX;	 // aktualna kolumna od kroej zaczyna sie rysowanie mapy na ekranie
+	 ushort pCurrentX;	 // aktualna kolumna od kroej zaczyna sie rysowanie mapy na ekranie
 	 float pOffsetX;
 
 	 float pTilesSize;

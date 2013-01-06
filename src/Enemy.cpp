@@ -14,11 +14,11 @@ void Enemy::draw() {
 //@TODO usunac liczbe magiczna i sie zastanowic dlaczego tutaj jesdt
 	switch( pState ) {
 		case( EnemyState::Right ):{
-			pSprManager->getSprite( "MAP_40" ).draw( pRect.x + pOffset, pRect.y+15 );
+			pSprManager->getSprite( "MAP_40" ).draw( pRect.x + pOffset, pRect.y+13 );
 			break;
 		}
 		case( EnemyState::Left ): {
-			pSprManager->getSprite( "MAP_40" ).draw( pRect.x + pOffset, pRect.y+15 );
+			pSprManager->getSprite( "MAP_40" ).draw( pRect.x + pOffset, pRect.y+13 );
 			break;
 		}
 	}

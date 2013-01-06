@@ -14,8 +14,8 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
     ushort item_space = App::getScreenHeight() * 0.05;
 
     Rect whereSpriteRect;
-    whereSpriteRect.x = ( App::getScreenWidth()/2 ) - Property::getSetting("MENU_SPRITE_SIZE");
-    whereSpriteRect.y = ( App::getScreenHeight()/2 ) - Property::getSetting("MENU_SPRITE_SIZE");
+    whereSpriteRect.x = ( App::getScreenWidth()*0.6 ) - Property::getSetting("MENU_SPRITE_SIZE");
+    whereSpriteRect.y = ( App::getScreenHeight()*0.75 ) - Property::getSetting("MENU_SPRITE_SIZE");
 
     
     /** Wpis w menu:  -- Return -- */

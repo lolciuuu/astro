@@ -32,6 +32,7 @@ private:
   static vector<HighscoreItem> pList;
 
   ushort ITEM_AMOUNT;
+  GLuint pBackground;
 
 };
 

@@ -4,21 +4,19 @@
 #include "Renderer.hpp"
 #include "Logger.hpp"
 
-class Writer
-{
+/** Klasa obslugujaca wypisywanie tekstu na ekranie.
+ * Jest to facade do wywolanie renderera  w przypadku tworzenia napisow
+ */
+class Writer {
 public:
  
   void draw( Rect WhereRect, string Text );
 
   void draw( Rect WhereRect, string Text , SDL_Color Color );
 
-  void draw( Rect WhereRect, string Text , float size );
-  
-  float getHeight_GL( int size_px ) const { return size_px/pScreen->h; }
-  float getWidth_GL( int size_px ) const { return size_px/pScreen->w; }
-  float getStringSize_GL ( int charAmount ) {
-	  return (float)(charAmount * 10)/ (float)pScreen->w;
-  }
+  int getTextWidth( const string& str );
+
+  int getTextHeight( const string& str );
 
   static Writer* getInstance(){
 		if( pInstance == NULL ){
@@ -27,19 +25,15 @@ public:
 			return pInstance;
 		}
 		return pInstance;
-	}
+   }
 	
    ~Writer();
 	
 	void init();
-	
-	void setFont(string fontName, SDL_Color fontColor); 
-	
+
 	void setFont( string FontName );
 	
-	void setScreenPtr(SDL_Surface* Screen){ pScreen = Screen; };
-	
-	void setFontSize( float S ) {  pFontSize = S;}
+	void setScreenPtr( SDL_Surface* Screen ){ pScreen = Screen; };
 
 private:
    Writer();
@@ -48,11 +42,15 @@ private:
    
 private:  
   static Writer* pInstance;
+
   Renderer* pRendererPtr;
+
   SDL_Surface* pScreen;
+
   TTF_Font* pFont;
+
   Logger logger;
-  float pFontSize;
+
 };
 
 #endif // WRITER_HPP

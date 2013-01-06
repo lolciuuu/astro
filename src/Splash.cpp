@@ -4,7 +4,7 @@
 bool Splash::pInitIsDone( false );
  int Splash::pframeRating;
 
-Splash::Splash():  pSplashIsDone( false ), pCurrentLoop( 0 ), logger("Splash")
+Splash::Splash():  pSplashIsDone( false ), pCurrentLoop( 0 ), logger("Splash"), pSplashRectWidth( 0 )
 {
 	pSplashGL=0;
 	pSplashLoadLong=0;
@@ -59,13 +59,16 @@ void Splash::startSplash( ushort W, ushort H, SDL_Surface* Screen ) {
     	pRectSplash.w = splashWidth;
     	pRectSplash.h = splashHeight;
 
-    	pRectLoad.x = pRectSplash.x + 59;
-    	pRectLoad.y = pRectSplash.y + 430.0;
+    	pRectLoad.x = pRectSplash.x + 52;
+    	pRectLoad.y = pRectSplash.y + 427;
     	pRectLoad.w = 1;
-    	pRectLoad.h = 5;
+    	pRectLoad.h = 6;
+
     	pRectLoad.r = 0.0f;
     	pRectLoad.g = 0.46f;
     	pRectLoad.b = 0.98f;
+
+    	pSplashRectWidth = 245U;
     }
 
     // Kolor paska ladowania
@@ -116,7 +119,7 @@ void Splash::endSplash() {
 /** */
 void Splash::drawSplash() {
 
-	pRectLoad.w = 208 * ( pCurrentLoop / static_cast<float>(100 * SPLASH_TIME)) ;
+	pRectLoad.w = pSplashRectWidth * ( pCurrentLoop / static_cast<float>( 100 * SPLASH_TIME )) ;
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
@@ -128,7 +131,7 @@ void Splash::drawSplash() {
   		         glTexCoord2f(0,0);//1
   		         glVertex2f( pRectSplash.x, pRectSplash.y );
 
-  		         glTexCoord2f( 1, 0 );//2
+  		         glTexCoord2f( 1, 0 );//2pSplashRectWidth( 208U )
   		         glVertex2f( pRectSplash.x + pRectSplash.w, pRectSplash.y );
 
   	             glTexCoord2f(1, 1);//3
@@ -151,7 +154,7 @@ void Splash::drawSplash() {
   	    glVertex2f( pRectLoad.x + pRectLoad.w, pRectLoad.y );
   	glEnd();
 
-  	glColor3f(1, 1, 1);
+  	glColor3f( 1.0f, 1.0f, 1.0f );
 
     glEnable( GL_TEXTURE_2D );
 
@@ -174,7 +177,7 @@ int Splash::initThread( void* ) {
     Resource::load();
     SpriteManager::loadConfig();
     
-    SDL_Delay( 10 );
+    SDL_Delay( 100 );
     pInitIsDone = true;
 
     info("Loading resource is finish");

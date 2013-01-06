@@ -30,6 +30,7 @@ void Resource::load() {
 	loadImage( "atlas.png", "ATLAS" );
 	loadImage( "background.jpg", "BACKGROUND" );
 	loadImage( "menu_background.jpg", "MENU_BACKGROUND" );
+	loadImage( "menu_background_empty.jpg", "MENU_BACKGROUND_EMPTY" );
 	loadImage( "level_background.png", "LEVEL_BACKGROUND" );
 	loadImage( "fill.png", "FILL" );
 

@@ -39,7 +39,7 @@ void LiveBar::draw() {
     ss << pDistNum;
 
     //@TODO znalsc wszystkie okreslenia czcionki poprzez liczbe magiczna i zastaoic stala
-    pWriterPtr->draw( pDistanceRect, pDistStr + string(ss.str()) + " m" , FONT_SMALLER );
+    pWriterPtr->draw( pDistanceRect, pDistStr + string(ss.str()) + " m" );
 
     //@TODO optymalizacja
     for( int i=0; i<pBonusAmount; ++i ) {

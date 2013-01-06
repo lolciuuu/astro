@@ -5,7 +5,7 @@
 vector<HighscoreItem> Highscore::pList;
 
 /** */
-Highscore::Highscore(): ITEM_AMOUNT(15)
+Highscore::Highscore(): ITEM_AMOUNT(15), pBackground( 0 )
 {
   logger.setClassName( "Highscore" );
   load();
@@ -52,10 +52,15 @@ void Highscore::draw() {
 /** */
 void Highscore::show(){
 
+	//@TODO optymalizacja
+	Rect tmp( 0,0, pScreenWidth, pScreenHeight );
+	pRendererPtr->draw(pBackground, tmp );
+
 	SDL_Color color( {240,240,250} );
     Property::get("HIGH_GAME_DIST");
     pWriterPtr->setFont("bold_big");
-    Rect where({40,40,200,200});
+
+    Rect where({400,400,200,200});
     pWriterPtr->draw(where ,"HIGHSCORE" );
     
 	for( uint i=0; i<pList.size(); ++i ) {
@@ -77,6 +82,8 @@ void Highscore::load() {
 
 	pList.clear();
 
+	//@TODO zapisywanie sumy kontrolnej pliki
+
 	logger.info("Load highscore file");
 
 	fstream highFile;
@@ -97,6 +104,8 @@ void Highscore::load() {
 
 		  highFile.close();
 	  }
+
+	  pBackground = RendererGL::getSurfaceInGLFormat( Resource::getSurf("MENU_BACKGROUND_EMPTY")  );
 }
 
 /** */
