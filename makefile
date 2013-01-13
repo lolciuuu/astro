@@ -1,6 +1,6 @@
 # compiler flag
 CXX = g++
-CFLAGS = -Wall -ansi -pedantic -g -std=c++0x -c -Wall -I ./include 
+CFLAGS = -Wall -ansi -pedantic -g -std=c++0x -Wall -I ./include -O0 -c 
 
 # linker flags
 LIBS = -lGL -lGLU -lSDL -lSDL_ttf -lSDL_image -lluabind -llua5.1 
@@ -27,7 +27,7 @@ all: $(SOURCES) $(EXECUTABLE)
 # linking application
 $(EXECUTABLE): $(OBJECTS) 
 	 @echo "\n ---- Linkowanie ---- "
-	$(CC)  $(OBJECTS)  -o $(EXECUTABLE) $(LIBS)
+	$(CC) $(OBJECTS) -o $(EXECUTABLE) $(LIBS) 
 
 # compile cpp files
 .cpp.o:

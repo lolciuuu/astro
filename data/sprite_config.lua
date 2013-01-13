@@ -9,18 +9,42 @@ TIME_FACTOR = 2
 
 --		NAME            		 width   	height  	X     		 Y    	  level  	frame time      count     loop
 cxx_addSprite( "NEW_GAME",        215,  	 220,   	1220,  	  	10,     	1,         1000 ,    	  1,     false );
+
 cxx_addSprite( "PLAYER_RUN",      50,   	 98,    	1,     		120,    	1,         40 ,    	      10,    true  );
+
 cxx_addSprite( "PLAYER_STAND",    50,   	 98,     	551,   		120,    	1,         100 ,    	  1,     false );
+
 cxx_addSprite( "PLAYER_FLY",      52,   	 100,   	600,    	122,    	1,         60 ,     	  1,     true  );
-cxx_addSprite( "COUNTING",        75,   	 160,    	0,      	340,      	1,         400,    	      4,     false );
-cxx_addSprite( "LIVE_BAR",        100,  	 64,   	    848,    	39,     	1,         620 ,    	  1,     false );
+
+cxx_addSprite( "COUNTING",        75,   	 140,    	2,      	340,      	1,         400,    	      4,     false );
+
+cxx_addSprite( "LIVE_BAR",        100,  	 64,   	    858,    	39,     	1,         620 ,    	  1,     false );
+
 cxx_addSprite( "LIVE_BAR_BACK",   200,  	 27,   	    1000,    	54,       	1,         620 ,    	  1,     false );
+
 cxx_addSprite( "LIVE_BAR_FILL",   200,  	 33,   	    1000,    	20,       	1,         620 ,    	  1,     false );
+
+
+-- Zestaw icon: "hand drawn web icon set"
+cxx_addSprite( "DIALOG",   		  80,  	  	 80,   	    411,    	385,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "STAR_HALF",   	  80,  	  	 80,   	    411,    	280,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "STAR_MULTI",   	  80,  	  	 80,   	    572,    	280,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "ADD",   	      80,  	  	 80,   	    500,    	280,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "DIALOG_DRAW",     80,  	  	 80,   	    660,    	290,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "INFO",            80,  	  	 80,   	    738,    	290,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "EMPTY",           80,  	  	 80,   	    815,    	290,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "HEARTH_WARRING",  80,  	  	 80,   	    229,    	381,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "HEARTH_ADD",      80,  	  	 80,   	    333,    	381,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "WARNING",        80,  	  	 80,   	    492,    	381,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "HEARTH_MULTI",    80,  	  	 80,   	    565,    	381,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "PENCIL",          80,  	  	 80,   	    652,    	381,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "CLOSE",           80,  	  	 80,   	    740,    	381,       	1,         0 ,    	      1,     false );
+cxx_addSprite( "STAR",            80,  	  	 80,   	    815,    	381,       	1,         0 ,    	      1,     false );
 
 
 -- Konfiguracja fragmentow mapy
 map_ground_y = 60; 
-map_size_1 = 49;
+map_size_1 = 50;
 map_meteo_y = 237;
 
 
@@ -72,9 +96,14 @@ cxx_addSprite( "MAP_36",  map_size_1,     map_size_1,    0,                 map_
 cxx_addSprite( "MAP_37",  map_size_1,     map_size_1,    5+(5 * map_size_1),    (map_meteo_y + map_size_1),  1, 1000, 1, false );
 cxx_addSprite( "MAP_38",  map_size_1,     map_size_1,    -2+(6 * map_size_1),     map_meteo_y + map_size_1,  1, 1000, 1, false );
 
-cxx_addSprite( "MAP_39",  map_size_1,     map_size_1,    20,                 540,                    1, 1000, 1, false );
+-- platformy
+cxx_addSprite( "MAP_39",  map_size_1,     map_size_1,    0,                 0,                    1, 1000, 1, false );
+
+--enemy
 cxx_addSprite( "MAP_40",  map_size_1,     map_size_1,    1200,               560,                    1, 1000, 1, false );
-cxx_addSprite( "MAP_41",  map_size_1,     map_size_1,    809,               65,                    1, 1000, 1, false );
+
+--aditional bonus
+cxx_addSprite( "MAP_41",  map_size_1,  	  	 map_size_1, 585,    	395,       	1,         0 ,    	      1,     false );
 
 print( "[ Lua ] End of script:sprite_config.lua" );
 

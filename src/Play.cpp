@@ -26,9 +26,12 @@ void Play::pressedShift() {
 }
 
 /** zapisanie highscore */
-void Play::goToMenu() {
-	if( ! LiveBar::isALive() )
+bool Play::goToMenu() {
+	if( ! LiveBar::isALive() ) {
 		pHighScore.save();
+		return true;
+	}
+	else return false;
 }
 
 /** Wpisywanie swojego imienia w przypadku kiedy bohater umarl */
@@ -47,7 +50,10 @@ void Play::pressedBackspace() {
 /** Aktualizacja gry */
 void Play::update(const float& dt ){
 
-	if( !LiveBar::isALive() ) return;
+	if( !LiveBar::isALive() ) {
+	    pHighScore.update( dt );
+		return;
+	}
 
   /** @note Przez pierwsze kilka sekund po wybraniu 
       z menu glownego nowej gry zablokowana jest mozliwosc 
@@ -163,10 +169,10 @@ void Play::resetGame(){
 
 /**  */
 void Play::SpaceDown() {
- if( !LiveBar::isALive() )
+/* if( !LiveBar::isALive() )
 	 pHighScore.pressedChar( ' ' );
  else
-	 pPlayer.SpaceDown();
+*/	 pPlayer.SpaceDown();
 }
 
 /**  */

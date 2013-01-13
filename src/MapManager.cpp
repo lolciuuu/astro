@@ -19,9 +19,7 @@ MapManager::MapManager(): pIsRunMap( false ), pEnemyManager( EnemyManager::getIn
 
     // dynamicznie stworzenie nazw spritow o konkretnych numerach
     for(uint i = 0; i <= LEVEL_VARIANTS; ++i) {
-        std::ostringstream ss;
-        ss << i;
-        string ID(ss.str());
+        string ID( toString(i) );
         Sprite spriteTmp = SpriteManager::getInstance()->getSprite("MAP_" + ID);
         pMap_rects.push_back(spriteTmp.getRect());
     }

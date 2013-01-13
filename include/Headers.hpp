@@ -49,7 +49,11 @@ using std::vector;
 typedef vector<string>::iterator vStrIt;
 
 
-const float FONT_SMALLER( 0.035f );
+enum FontSize{
+	  SMALL,
+	  NORMALL,
+	  BIG
+};
 
 enum GameState {
     MENU,

@@ -31,7 +31,7 @@ public:
     void pressedShift();
     void pressedChar(char Char);
 
-    void goToMenu();
+    bool goToMenu();
 
     void useBonus();
 

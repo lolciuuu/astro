@@ -87,6 +87,11 @@ void Game::pressedReturn() {
     if ( pGameState == Gamespace::MENU ) {
         pMenu.pressedReturn();
     }
+    else if( pGameState == Gamespace::PLAY ) {
+    	if(  pPlay.goToMenu() ) {
+    		pGameState = Gamespace::MENU;
+    	}
+    }
 }
 
 

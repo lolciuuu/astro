@@ -9,8 +9,8 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
 {
   logger.info("Constructor class: MENU");
    
-    ushort pos_y = 350;
-    ushort pos_x = ( App::getScreenWidth() / 2 ) + 150;
+    ushort pos_y = pScreenHeight * 0.4;
+    ushort pos_x = ( pScreenWidth * 0.5 ) + 150;
     ushort item_space = App::getScreenHeight() * 0.05;
 
     Rect whereSpriteRect;
@@ -41,8 +41,6 @@ Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 
         playGameItem.setSelected ( true );
         Rect rectName( pos_x, pos_y);
         playGameItem.setRectName ( rectName );
-
-        cout<<pWriterPtr->getTextWidth( title ) <<endl;
         whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
         playGameItem.setRectDesc( whereSpriteRect );
         pos_y += item_space;
@@ -143,9 +141,8 @@ void Menu::draw() {
 void Menu::drawMainMenu() {
 
 	  pRendererPtr->drawBackground( true );
-      pWriterPtr->setFont ( "bold_big" );
 
-      for ( register uint i = 0; i < pMainMenuItem.size(); ++i ) {
+	  for ( register uint i = 0; i < pMainMenuItem.size(); ++i ) {
         pMainMenuItem[i].draw();
      }
 

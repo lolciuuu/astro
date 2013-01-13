@@ -8,11 +8,10 @@ bool LiveBar::isImmortal( false );
 
 /** */
 LiveBar::LiveBar() :pDistStr( Property::get("HIGH_GAME_DIST") ), pBonusAmount( 0 ), timer(),
-pImmortalTexture( 0 ), pImmortalOpacity( 0.0f )
+pImmortalTexture( 0 ), pImmortalOpacity( 0.0f ), pBonusIcon( SpriteManager::getInstance()->getSprite("HEARTH_ADD") )
 {
   pDistanceRect.y = Property::getSetting( "HIGH_OFFSET_Y" );
   pDistanceRect.x = (App::getScreenWidth() / 2) -100;
-
   
 }
 
@@ -22,30 +21,39 @@ void LiveBar::draw() {
 
 	//@TODO optymalizacja
 
+	// kiedy wlaczona niesmiertelnosc pokazuje sie obwodka dookola ektanu */
 	if( pImmortalTexture == 0 ) {
+		logger.warring("Get surface in GL fomrat");
 		pImmortalTexture = Renderer::getSurfaceInGLFormat( Resource::getSurf("FILL") );
 	}
 
     Rect tmp(0,0,pScreenWidth,pScreenHeight);
+
     tmp.a= pImmortalOpacity;
+
     pRendererPtr->draw( pImmortalTexture , tmp);
 
 	pRendererPtr->draw( "LIVE_BAR_BACK", pScreenWidth*0.053, pScreenHeight*0.043, -1, -1 );
-	pRendererPtr->draw( "LIVE_BAR_FILL", pScreenWidth*0.053, pScreenHeight*0.044, 200*pLiveAmount, -1 );
-	pRendererPtr->draw( "LIVE_BAR",      pScreenWidth*0.011,  pScreenHeight*0.025, -1, -1 );
+
+	if( pLiveAmount > 0.0f )
+		pRendererPtr->draw( "LIVE_BAR_FILL", pScreenWidth*0.053, pScreenHeight*0.044, 200*pLiveAmount, -1 );
+
+	pRendererPtr->draw( "LIVE_BAR",      pScreenWidth*0.016,  pScreenHeight*0.025, -1, -1 );
 
 	// Wypisywanie informacji i przebytej drodze
-	std::ostringstream ss;
-    ss << pDistNum;
 
     //@TODO znalsc wszystkie okreslenia czcionki poprzez liczbe magiczna i zastaoic stala
-    pWriterPtr->draw( pDistanceRect, pDistStr + string(ss.str()) + " m" );
+    pWriterPtr->draw( pDistanceRect, pDistStr + toString( pDistNum ) + " m" );
+
+
+    Rect textRect( pScreenWidth - 140, 45 );
+    pWriterPtr->draw( textRect, "x" , FontSize::SMALL );
+    textRect.x += 30;
+    textRect.y -= 10;
+    pWriterPtr->draw( textRect, toString( pBonusAmount ), FontSize::BIG );
 
     //@TODO optymalizacja
-    for( int i=0; i<pBonusAmount; ++i ) {
-    	Sprite bonus = SpriteManager::getInstance()->getSprite("MAP_40");
-    	bonus.draw( pScreenWidth - ( pScreenWidth*0.1 ) - (i*pScreenWidth*0.05), pScreenHeight*0.03 );
-    }
+    pBonusIcon.draw( pScreenWidth - 200, 30 );
 
 }
 
@@ -55,13 +63,13 @@ void LiveBar::update(const float& dt ) {
 	if( isImmortal ) return;
 
 	float nextLiveAmount = 0.0f;
+
 //@TODO jakos dziwnie dziala- przetestowac
   if( Player::isFly() )
 	  nextLiveAmount = pLiveAmount - (dt*0.1);
   else
 	  nextLiveAmount = pLiveAmount - (dt*0.25);
 
-  if( nextLiveAmount >= 0 )
   pLiveAmount = nextLiveAmount;
 
   if( pImmortalOpacity > 0 )
@@ -74,12 +82,10 @@ void LiveBar::colision( short type ) {
 //@TODO usunac liczby magiczne
 
 	if( type == COLISION_WITH_ENEMY ) {
-		  if( pLiveAmount >= 0.01 )
 		    pLiveAmount -= 0.01;
 	}
 	else {
-		  if( pLiveAmount >= 0.03 )
-				    pLiveAmount -= 0.03;
+		   pLiveAmount -= 0.03;
 	}
   
 }

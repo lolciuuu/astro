@@ -4,10 +4,19 @@
 
 Writer* Writer::pInstance;
 
+
 /** */
-Writer::Writer(): pRendererPtr( NULL ), pScreen( NULL ), logger("Writer")
+Writer::Writer(): pRendererPtr( NULL ), pScreen( NULL ), logger("Writer"), pScreenWidth(0.0f),
+		pScreenHeight(0.0f)
 {
-  pFont = Resource::getFont("bold_small");
+	pFont = Resource::getFont("font_normal");
+	pFontBig = Resource::getFont("font_big");
+	pFontSmall = Resource::getFont("font_small");
+}
+
+
+float Writer::getCenterX(const string& str) {
+	return ( (pScreenWidth*0.5) - ( getTextWidth(str) * 0.5) );
 }
 
 /** */
@@ -45,20 +54,35 @@ int Writer::getTextHeight(const string& str) {
 }
 
 
-/** */
-void Writer::setFont( string FontName ){
-    pFont = Resource::getFont(FontName);
-}
-
-
 /** Wypisuje text o podanym kolorze */
-void Writer::draw( Rect WhereRect, string Text, SDL_Color Color ){
+void Writer::draw( Rect WhereRect, string Text, SDL_Color Color, FontSize Size  ){
 
-  SDL_Surface* tmp_surf = TTF_RenderUTF8_Blended( pFont, Text.c_str(), Color );
+	int w(0),h(0);
 
-  int w(0),h(0);
+	TTF_Font* fontTmp = NULL;
 
-    if( TTF_SizeText( pFont, Text.c_str(), &w ,&h ) == 0 ) {
+	switch( Size ) {
+	case (FontSize::NORMALL): {
+			fontTmp = pFont;
+	};
+	break;
+	case (FontSize::SMALL): {
+			fontTmp = pFontSmall;
+	};
+	break;
+	case (FontSize::BIG): {
+			fontTmp = pFontBig;
+	};
+	break;
+	default : {
+			fontTmp = pFont;
+	};
+	break;
+	}
+
+	SDL_Surface* tmp_surf = TTF_RenderUTF8_Blended( fontTmp, Text.c_str(), Color );
+
+    if( TTF_SizeText( fontTmp, Text.c_str(), &w ,&h ) == 0 ) {
   	  WhereRect.w = w;
   	  WhereRect.h = h;
     }
@@ -66,7 +90,7 @@ void Writer::draw( Rect WhereRect, string Text, SDL_Color Color ){
     	logger.warring("Invalid font size [Writer::draw( Rect WhereRect, string Text, SDL_Color Color )]");
     }
 
-  pRendererPtr->draw(tmp_surf,WhereRect);
+  pRendererPtr->draw( tmp_surf, WhereRect );
   SDL_FreeSurface( tmp_surf );
   
 }
@@ -74,22 +98,9 @@ void Writer::draw( Rect WhereRect, string Text, SDL_Color Color ){
 /** Wypisuje przekazany text pod wspolrzednymi w WhereRect
  *  ( wysokosc i szerokosc w whereRect sa ignorowane)
  */
-void Writer::draw( Rect WhereRect, string Text ){
+void Writer::draw( Rect WhereRect, string Text, FontSize Size  ){
 
-  SDL_Surface* tmp_surf = TTF_RenderUTF8_Blended( pFont, Text.c_str(), SDL_Color{ 250,250,250 } );
-
-  int w(0),h(0);
-
-    if( TTF_SizeText( pFont, Text.c_str(), &w ,&h ) == 0 ) {
-  	  WhereRect.w = w;
-  	  WhereRect.h = h;
-    }
-    else {
-    	logger.warring("Invalid font size [Writer::draw( Rect WhereRect, string Text, SDL_Color Color )]");
-    }
-
-  pRendererPtr->draw(tmp_surf,WhereRect);
-  SDL_FreeSurface( tmp_surf );
+	draw( WhereRect, Text, SDL_Color{ 250,250,250 }, Size );
   
 }
 
@@ -99,6 +110,8 @@ void Writer::init() {
 	logger.methodStart( methodName );
 
 	pRendererPtr = Renderer::getInstance();
+	pScreenWidth = pRendererPtr->getScreenWidth();
+	pScreenHeight = pRendererPtr->getScreenHeight();
 
 	logger.methodEnd( methodName );
 }

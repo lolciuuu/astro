@@ -74,7 +74,7 @@ void Splash::startSplash( ushort W, ushort H, SDL_Surface* Screen ) {
     // Kolor paska ladowania
     pColor =  SDL_MapRGB( pScreen->format, 0,166, 252 );
 
-    GLenum format;
+    GLenum format=0;
     GLint  colors_amount = pSplash->format->BytesPerPixel;
 
         if (colors_amount == 4) {

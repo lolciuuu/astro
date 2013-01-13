@@ -61,34 +61,34 @@ void Resource::loadFonts() {
     //bold small
     {
         TTF_Font* font = TTF_OpenFont(
-                             Property::get("FONT_BOLD_PATH").c_str(),
+                             Property::get("FONT_PATH").c_str(),
                              Property::getSetting("SMALL_FONT")
                          );
 
         if ( font == NULL )  Resource().fontError();
-        pFonts.insert( std::pair<string,TTF_Font*>( "bold_small",font ));
+        pFonts.insert( std::pair<string,TTF_Font*>( "font_small",font ));
     }
 
     //bold normal
     {
         TTF_Font* font = TTF_OpenFont(
-                             Property::get("FONT_BOLD_PATH").c_str(),
+                             Property::get("FONT_PATH").c_str(),
                              Property::getSetting("NORMAL_FONT")
                          );
 
         if ( font == NULL )  Resource().fontError();
-        pFonts.insert( std::pair<string,TTF_Font*>( "bold",font ));
+        pFonts.insert( std::pair<string,TTF_Font*>( "font_normal",font ));
     }
 
     //bold big
     {
         TTF_Font* font = TTF_OpenFont(
-                             Property::get("FONT_BOLD_PATH").c_str(),
+                             Property::get("FONT_PATH").c_str(),
                              Property::getSetting("BIG_FONT")
                          );
 
         if ( font == NULL )  Resource().fontError();
-        pFonts.insert( std::pair<string,TTF_Font*>( "bold_big",font ));
+        pFonts.insert( std::pair<string,TTF_Font*>( "font_big",font ));
     }
 
     ///@TODO dodac reszte czcionek

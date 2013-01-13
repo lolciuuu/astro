@@ -9,14 +9,16 @@
  */
 class Writer {
 public:
- 
-  void draw( Rect WhereRect, string Text );
 
-  void draw( Rect WhereRect, string Text , SDL_Color Color );
+  void draw( Rect WhereRect, string Text, FontSize Size = FontSize::SMALL );
+
+  void draw( Rect WhereRect, string Text , SDL_Color Color,  FontSize Size = FontSize::SMALL );
 
   int getTextWidth( const string& str );
 
   int getTextHeight( const string& str );
+
+  float getCenterX( const string& str );
 
   static Writer* getInstance(){
 		if( pInstance == NULL ){
@@ -31,8 +33,6 @@ public:
 	
 	void init();
 
-	void setFont( string FontName );
-	
 	void setScreenPtr( SDL_Surface* Screen ){ pScreen = Screen; };
 
 private:
@@ -48,8 +48,13 @@ private:
   SDL_Surface* pScreen;
 
   TTF_Font* pFont;
+  TTF_Font* pFontBig;
+  TTF_Font* pFontSmall;
 
   Logger logger;
+
+  float pScreenWidth;
+  float pScreenHeight;
 
 };
 

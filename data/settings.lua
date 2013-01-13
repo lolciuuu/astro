@@ -4,15 +4,13 @@
 -- Sciezki do plikow
 print("[ Lua ] Load files path");
 cxx_addProperty("ATLAS_PATH" , "data/atlas.png");
-cxx_addProperty("FONT_BOLD_PATH" , "data/base_font.ttf");
-cxx_addProperty("FONT_REGULAR_PATH" , "data/ubuntu_regular.ttf");
-cxx_addProperty("FONT_MEDIUM_PATH" , "data/ubuntu_medium.ttf");
+cxx_addProperty("FONT_PATH" , "data/base_font.ttf");
 
 -- Czcionki
 print( "[ Lua ] Loads font name" );
-cxx_addSetting("SMALL_FONT", 24 );
-cxx_addSetting("NORMAL_FONT", 54 );
-cxx_addSetting("BIG_FONT", 30 );
+cxx_addSetting("SMALL_FONT", 25 );
+cxx_addSetting("NORMAL_FONT", 30 );
+cxx_addSetting("BIG_FONT", 45 );
 
 -- Ustawienia aplikacji
 print( "[ Lua ] Loading application settings" );
@@ -44,7 +42,7 @@ cxx_addSetting("PLAYER_H", ( (SCREEN_H/TILES_VERTICAL)*2) );
 --Ustawienia mapy
 print( "[ Lua ] Loading map settings" );
 cxx_addSetting("MAP_LEVEL_1_SIZE", SCREEN_H/TILES_VERTICAL );
-cxx_addSetting("MAP_LEVEL_1_SPEED", 500 ); -- bylo 1200
+cxx_addSetting("MAP_LEVEL_1_SPEED", 600 ); -- bylo 600
 
 cxx_addSetting("LEVEL_VARIANTS", 41 ); -- zwiekszyc w przypadku dodania nowe sprita na mapie
 

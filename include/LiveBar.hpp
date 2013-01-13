@@ -5,6 +5,7 @@
 #include "Writer.hpp"
 #include "StandardReferences.hpp"
 #include "Const.hpp"
+#include "Sprite.hpp"
 
 class LiveBar: public StandardReferences {
 public:
@@ -33,6 +34,7 @@ public:
 	  	  		  info("Player is dead");
 	  	  		  return( isLive );
 	  	  	  }
+	  	  	  else return true;
 		#else
 	  	  	  return true;
 		#endif
@@ -42,6 +44,7 @@ public:
   static void increaseLive();
   
   static string getResult() { return( toString<ulong>(pDistNum) ); }
+  static ulong getResultNum() { return pDistNum; }
   
   static float getLiveAmount() { return pLiveAmount; }
   static float getMapSpeed() { return pMapSpeed; }
@@ -65,6 +68,9 @@ private:
 
   GLuint pImmortalTexture;
   float pImmortalOpacity;
+
+  /** ikona w prawym gornym rogu dla zebranych bonusow */
+  Sprite pBonusIcon;
 
 };
 #endif

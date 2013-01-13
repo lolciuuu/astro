@@ -348,15 +348,7 @@ Uint32 App::FPS_callbackTimer(Uint32 interval, void *param) {
  * @return void
  */
 void App::FPS_show() {
-
-    std::ostringstream ss;
-    ss << pframeRating;
-    string strFPS("Debug [");
-    strFPS += ss.str();
-    strFPS += " fps]";
-
-    SDL_WM_SetCaption( strFPS.data(),NULL );
-    
+    SDL_WM_SetCaption( string( "Debug [" + toString(pframeRating) + " fps]" ).c_str() ,NULL );
     pframeRating = 0;
 }
 

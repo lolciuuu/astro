@@ -23,7 +23,7 @@ void RendererGL::init() {
 /** Zamienia SDL_Surface na format openGL-a */
 void RendererGL::create_gl(SDL_Surface * surf, GLuint * tex )
 {
-	GLenum format;
+	GLenum format=0;
 	GLint  colors_amount = surf->format->BytesPerPixel;
 
     if (colors_amount == 4) {
@@ -151,7 +151,7 @@ void RendererGL::draw(GLuint texture, const float& x, const float& y,
 /** */
 GLuint RendererGL::get_gl(SDL_Surface * surf ) {
 
-	GLenum format;
+	GLenum format=0;
 	GLint  colors_amount = surf->format->BytesPerPixel;
 	GLuint tex( 0 );
 
@@ -209,7 +209,7 @@ void RendererGL::draw( Rect& Src, float x, float y, float w, float h ){
 
  	   glBindTexture(GL_TEXTURE_2D, pAtlas_GL);
 
-	   const double texture_w = pAtlas->w;    // szerokość atlasu
+ 	   const double texture_w = pAtlas->w;    // szerokość atlasu
 	   const double texture_h = pAtlas->h;    // wysokość atlasu
 
 	   const double left = Src.x / texture_w;
@@ -236,6 +236,8 @@ void RendererGL::draw( Rect& Src, float x, float y, float w, float h ){
 	     glEnd();
 	   }
 	   glPopMatrix();
+
+
 }
 
 /** Wyswietlanei fragmetnu textury na ekranie. Polozenie na ekranie pochodzi z Dest, a w atlasie z Src */

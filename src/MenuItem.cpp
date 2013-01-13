@@ -22,11 +22,11 @@ void MenuItem::draw() {
 	//@TODO optymalizacja
 
 		if (!pIsActive && !pIsSelected) { // Rysowanie wyszarzonego itema
-			pWriterPtr->draw(pRectName, pItemName, pColorDisable);
+			pWriterPtr->draw(pRectName, pItemName, pColorDisable, FontSize::NORMALL );
 		}
 		else if (pIsSelected) { // Rysowanie aktywnego itema
 
-			pWriterPtr->draw(pRectName, pItemName, pColorActive);
+			pWriterPtr->draw(pRectName, pItemName, pColorActive, FontSize::NORMALL );
 
 				if (pItems.size() > 0) { // specjalny rodzaj itemsa w mnue- aktualnie nie wykorzystywane
 					Rect rect( { 300, 300, 100, 100 });
@@ -40,7 +40,7 @@ void MenuItem::draw() {
 				//pImage.draw();
 		}
 		else { // Rysowanie domyslnego itema
-			pWriterPtr->draw(pRectName, pItemName);
+			pWriterPtr->draw(pRectName, pItemName, FontSize::NORMALL );
 		}
 }
 
