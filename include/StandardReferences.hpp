@@ -6,12 +6,14 @@
 #include "Resource.hpp"
 #include "Property.hpp"
 #include "Logger.hpp"
+#include "SoundManager.hpp"
 
 class StandardReferences {
 public:  
   StandardReferences() :
       	  pRendererPtr( Renderer::getInstance() ),
       	  pWriterPtr( Writer::getInstance() ),
+      	  pSoundManagerPtr( SoundManager::getInstance() ),
       	  logger("StandardReferences")
       {
 	  	 pScreenHeight = pRendererPtr->getScreenHeight();
@@ -21,6 +23,7 @@ public:
 protected:
   Renderer* pRendererPtr;
   Writer* pWriterPtr;  
+  SoundManager* pSoundManagerPtr;
 
   short pScreenWidth;
   short pScreenHeight;

@@ -44,6 +44,9 @@ void Highscore::draw() {
 	// jezeli nie pobito rekordu to rysujemy tylko liste z najlepszymi wynikami
 	if( LiveBar::getResultNum() < pList[pList.size()-1].points && pList.size() >= ITEM_AMOUNT) {
 		show();
+		Rect where( pWriterPtr->getCenterX(pGameOverText), pScreenHeight*0.75f, 300, 300);
+		pWriterPtr->draw( where, pGameOverText, WHITE_FONT_COLOR, FontSize::BIG );
+		pWarringIco.draw( where.x - 125 , where.y ,110 ,110 );
 		return;
 	}
 

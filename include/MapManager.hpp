@@ -30,7 +30,7 @@ public:
 	else {
 	    critical("Not found map ID: " + toString<ushort>(ID) );
 		#ifndef DEBUG
-	    	throw("MapManager::getRectByID");
+	    	throw std::runtime_error("MapManager::getRectByID");
 		#else // przypadek kiedy uztkownik wpisze glupoty
 	    	critical( "MapManager::getRectByID" );
 	    	return( Rect({0,0,0,0}) );

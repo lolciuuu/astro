@@ -20,7 +20,7 @@ private:
 
     void fontError();
 
-    static void loadFonts();
+    static void loadFont( const string& path, const string& name, double size );
 	
     static void loadImage( const string& name,const string& resourceName );
 

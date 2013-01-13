@@ -13,6 +13,8 @@ ushort App::pScreen_h;
 ushort App::pScreen_w;
 //END
 
+
+
 /** Zainicjowanie bibliotek, utworzenie okna */
 App::App(): logger("App"), pIsDone( false ), pEvent(), pIcon( NULL )
 {
@@ -25,11 +27,13 @@ App::App(): logger("App"), pIsDone( false ), pEvent(), pIcon( NULL )
     /** -- Inicjowanie SDL-a i wtyczek -- */
     if ( SDL_Init( SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER ) != 0 ) {
         logger.critical( "Failed to init SDL" );
+        logger.error( string(SDL_GetError() ) );
         throw std::runtime_error("App::App()");
     }
 
     if ( TTF_Init() == -1 ) {
         logger.critical( "Failed to init SDL ttf modules" );
+        logger.error( string(SDL_GetError() ) );
         throw std::runtime_error("App::App()");
     }
 
@@ -109,6 +113,7 @@ void App::initVideoGL() {
 
 		    if ( pScreen == NULL ) {
 		        logger.critical( "Main surface is null, check SDL" );
+		        logger.error( string(SDL_GetError() ) );
 		        throw std::runtime_error("App::App()");
 		    }
 
@@ -139,6 +144,7 @@ void App::initVideoGL() {
    if( error != GL_NO_ERROR )
    {
 	   cout<<"\nOpenGL critical: "<<error;
+       logger.error( string(SDL_GetError() ) );
        throw std::runtime_error("App::initVideoGL()");
    }
 

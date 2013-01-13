@@ -16,7 +16,7 @@ cxx_addSprite( "PLAYER_STAND",    50,   	 98,     	551,   		120,    	1,         
 
 cxx_addSprite( "PLAYER_FLY",      52,   	 100,   	600,    	122,    	1,         60 ,     	  1,     true  );
 
-cxx_addSprite( "COUNTING",        75,   	 140,    	2,      	340,      	1,         400,    	      4,     false );
+cxx_addSprite( "COUNTING",        75,   	 140,    	2,      	340,      	1,         400,    	      3,     false );
 
 cxx_addSprite( "LIVE_BAR",        100,  	 64,   	    858,    	39,     	1,         620 ,    	  1,     false );
 

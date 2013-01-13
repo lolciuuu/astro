@@ -12,6 +12,7 @@ Writer::Writer(): pRendererPtr( NULL ), pScreen( NULL ), logger("Writer"), pScre
 	pFont = Resource::getFont("font_normal");
 	pFontBig = Resource::getFont("font_big");
 	pFontSmall = Resource::getFont("font_small");
+
 }
 
 

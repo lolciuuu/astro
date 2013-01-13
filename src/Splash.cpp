@@ -1,10 +1,11 @@
 #include "../include/Splash.hpp"
+#include "../include/MapManager.hpp"
 #include "Headers.hpp"
 
 bool Splash::pInitIsDone( false );
  int Splash::pframeRating;
 
-Splash::Splash():  pSplashIsDone( false ), pCurrentLoop( 0 ), logger("Splash"), pSplashRectWidth( 0 )
+Splash::Splash():  pSplashIsDone( false ), pCurrentLoop( 0 ), logger("Splash"), pSplashRectWidth( 0U )
 {
 	pSplashGL=0;
 	pSplashLoadLong=0;
@@ -17,15 +18,18 @@ Splash::Splash():  pSplashIsDone( false ), pCurrentLoop( 0 ), logger("Splash"), 
 	pScreenW=0;
 }
 
+/** */
 Splash::~Splash()
 {
 
 }
 
+/** */
 bool Splash::isInitDone() const {
         return( Splash::pInitIsDone );
 }
-    
+
+/** */
 bool Splash::isSplashDone() const {
         return( pSplashIsDone );
 }
@@ -46,6 +50,7 @@ void Splash::startSplash( ushort W, ushort H, SDL_Surface* Screen ) {
 
     if ( pSplash == NULL ) {
         logger.critical("Splash file not found");
+        logger.error( string(SDL_GetError() ) );
         throw std::runtime_error("Splash::Spalsh");
     }
 
@@ -175,7 +180,9 @@ int Splash::initThread( void* ) {
 
     Property::init( loadLanguages() );
     Resource::load();
+    MapManager::load();
     SpriteManager::loadConfig();
+    SoundManager::loadMusic();
     
     SDL_Delay( 100 );
     pInitIsDone = true;

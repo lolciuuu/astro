@@ -151,6 +151,8 @@ void RendererGL::draw(GLuint texture, const float& x, const float& y,
 /** */
 GLuint RendererGL::get_gl(SDL_Surface * surf ) {
 
+	warring("Using: get_gl");
+
 	GLenum format=0;
 	GLint  colors_amount = surf->format->BytesPerPixel;
 	GLuint tex( 0 );

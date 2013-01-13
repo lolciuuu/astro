@@ -4,15 +4,12 @@
 #include "MapManager.hpp"
 #include <App.hpp>
 
-/// Inicjowanie zmiennych statycznych
+
 map< string,SDL_Surface* >  Resource::pSurfaces;
 map< string,TTF_Font* >  Resource::pFonts;
-/// END
 
 
-/** W razie niepowodzenia wczytania czcionki wyswietlanie informacji
- * i rzucenie wyjatku
- */
+/** Logowanie bledow w przypadku bledu podczas wczytywania czcionki  */
 void Resource::fontError() {
 
     critical("Brak czcionki");
@@ -22,7 +19,7 @@ void Resource::fontError() {
 }
 
 
-/** */
+/** Wczytuje czcionki i obrazki z plikow */
 void Resource::load() {
 
     atexit( clearResource );
@@ -34,13 +31,13 @@ void Resource::load() {
 	loadImage( "level_background.png", "LEVEL_BACKGROUND" );
 	loadImage( "fill.png", "FILL" );
 
-    loadFonts();
+    loadFont( Property::get("FONT_PATH").c_str(), "font_small", Property::getSetting("SMALL_FONT") );
+    loadFont( Property::get("FONT_PATH").c_str(), "font_normal", Property::getSetting("NORMAL_FONT") );
+    loadFont( Property::get("FONT_PATH").c_str(), "font_big", Property::getSetting("BIG_FONT") );
 
-    // wczytanie map
-    MapManager::load();
 }
 
-/**@TODO komentarz */
+/** Metoda wczytuje obrazek z podanej sciezki i wrzuco do mapy pod podana nazwa */
 void Resource::loadImage( const string& name, const string& resourceName ) {
 
 	info("Load image:" + name );
@@ -55,50 +52,36 @@ void Resource::loadImage( const string& name, const string& resourceName ) {
 }
 
 
-//@TODO wyalic nie uzywana metode
-void Resource::loadFonts() {
+/** Metoda wczytuje z podanej sciezki czcionke o podanych rozmiarach i zapisuej pod przekazana nazwa */
+void Resource::loadFont( const string& path, const string& name, double size ) {
 
-    //bold small
-    {
-        TTF_Font* font = TTF_OpenFont(
-                             Property::get("FONT_PATH").c_str(),
-                             Property::getSetting("SMALL_FONT")
-                         );
+	TTF_Font* font = TTF_OpenFont( path.c_str(), size );
 
-        if ( font == NULL )  Resource().fontError();
-        pFonts.insert( std::pair<string,TTF_Font*>( "font_small",font ));
-    }
-
-    //bold normal
-    {
-        TTF_Font* font = TTF_OpenFont(
-                             Property::get("FONT_PATH").c_str(),
-                             Property::getSetting("NORMAL_FONT")
-                         );
-
-        if ( font == NULL )  Resource().fontError();
-        pFonts.insert( std::pair<string,TTF_Font*>( "font_normal",font ));
-    }
-
-    //bold big
-    {
-        TTF_Font* font = TTF_OpenFont(
-                             Property::get("FONT_PATH").c_str(),
-                             Property::getSetting("BIG_FONT")
-                         );
-
-        if ( font == NULL )  Resource().fontError();
-        pFonts.insert( std::pair<string,TTF_Font*>( "font_big",font ));
-    }
-
-    ///@TODO dodac reszte czcionek
+	 if ( font == NULL ) {
+		 Resource().fontError();
+		 throw std::runtime_error("Font not load:" + path );
+	 }
+	 else
+	        pFonts.insert( std::pair<string,TTF_Font*>(name, font) );
 
 }
 
 
 /** statyczny deskrtuktor- wylacza zaladowane w load moduly i czysci pamiec  */
 void Resource::clearResource() {
-    /// @TODO Zwlanianie z pamieci wszystkich fontow
+
+	// zamykanie czcionek
+	map< string, TTF_Font* >::iterator it( pFonts.begin() );
+	while( it != pFonts.end() ) {
+		TTF_CloseFont( it->second );
+		++it;
+	}
+
+	map< string, SDL_Surface* >::iterator itSurf( pSurfaces.begin() );
+	while( itSurf != pSurfaces.end() ) {
+		SDL_FreeSurface( itSurf->second );
+		++it;
+	}
 }
 
 
