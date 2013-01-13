@@ -157,13 +157,15 @@ void Menu::pressedReturn() {
 
 
     if ( currentItem ==  Property::get ( "RESUME_GAME" ) ) {
-      
+    	pSoundManagerPtr->playGameMusic();
         Game::setGameState ( Gamespace::PLAY );
 	
     }
     else if ( currentItem == Property::get ( "NEW_GAME" ) ) {
 
         // stworzenie nowej gry
+        pSoundManagerPtr->stopMenuMusic();
+    	pSoundManagerPtr->playGameMusic();
         Game::setGameState ( Gamespace::PLAY );
         pMainMenuItem[0].setActive ( true );
         pMainMenuItem[ pCurrentItem ].setSelected ( false );

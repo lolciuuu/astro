@@ -90,6 +90,7 @@ void Game::pressedReturn() {
     else if( pGameState == Gamespace::PLAY ) {
     	if(  pPlay.goToMenu() ) {
     		pGameState = Gamespace::MENU;
+        	pSoundManagerPtr->playMenuMusic();
     	}
     }
 }
@@ -107,6 +108,7 @@ void Game::pressedEsc() {
     case( Gamespace::PLAY ): {
     	if( pPlay.isCanStop() ) { // Wyjsc do menu mozna wtedy gdy play pozwala na to
     		pPlay.goToMenu();
+        	pSoundManagerPtr->playMenuMusic();
     		pGameState = Gamespace::MENU;
     	}
 		break;

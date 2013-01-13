@@ -13,6 +13,8 @@ pCount( SpriteManager::getInstance()->getSprite("COUNTING") )
 
     pBackground.init();
     pCount.centered();
+
+    pSoundManagerPtr->playMenuMusic();
 }
 
 

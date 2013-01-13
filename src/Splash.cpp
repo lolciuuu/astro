@@ -178,13 +178,17 @@ void Splash::drawSplash() {
  */
 int Splash::initThread( void* ) {
 
+
     Property::init( loadLanguages() );
     Resource::load();
-    MapManager::load();
     SpriteManager::loadConfig();
     SoundManager::loadMusic();
-    
-    SDL_Delay( 100 );
+    SoundManager::playSplashIntro();
+
+    MapManager::load();
+
+
+    SDL_Delay( 300 );
     pInitIsDone = true;
 
     info("Loading resource is finish");

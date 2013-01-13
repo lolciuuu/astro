@@ -9,6 +9,14 @@ public:
 
 	static void loadMusic();
 
+	static void playSplashIntro();
+
+	void playMenuMusic();
+	void stopMenuMusic();
+
+	void playGameMusic();
+	void stopGameMusic();
+
 private:
 	SoundManager();
 

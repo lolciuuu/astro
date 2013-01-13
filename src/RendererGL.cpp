@@ -151,8 +151,6 @@ void RendererGL::draw(GLuint texture, const float& x, const float& y,
 /** */
 GLuint RendererGL::get_gl(SDL_Surface * surf ) {
 
-	warring("Using: get_gl");
-
 	GLenum format=0;
 	GLint  colors_amount = surf->format->BytesPerPixel;
 	GLuint tex( 0 );
@@ -278,7 +276,9 @@ void RendererGL::draw( Rect& Src, Rect& Dest ){
 
 /** */
 void RendererGL::draw( SDL_Surface* surf, Rect& Dest ) {
-	draw( get_gl(surf), Dest );
+	GLuint tmpText = get_gl(surf);
+	draw( tmpText, Dest );
+	glDeleteTextures(1, &tmpText);
 }
 
 /** */

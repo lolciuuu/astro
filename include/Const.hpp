@@ -3,7 +3,7 @@
 
 // Zmienne wlaczajaca tryb debugu
 
-#define FULL_SCREEN_FLAG
+//#define FULL_SCREEN_FLAG
 
 #define RENDER_GL
 #define LIGHT_GL
@@ -22,7 +22,7 @@
 const unsigned short WIDHT( 800 );
 const unsigned short HEIGHT( 600 );
 
-const float SPLASH_TIME( 1 );
+const float SPLASH_TIME( 1.7 );
 
 // Ustawienia wymiarow levelu musza byc zgodnie z AstroDesignerem
 const unsigned int LEVEL_WIDHT( 30000 );
