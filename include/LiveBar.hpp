@@ -31,7 +31,6 @@ public:
 		#ifndef IMMORTAL
 	  	  	  if( pLiveAmount <= 0.0 ) {
 	  	  		  isLive = false;
-	  	  		  info("Player is dead");
 	  	  		  return( isLive );
 	  	  	  }
 	  	  	  else return true;
