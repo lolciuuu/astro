@@ -16,7 +16,7 @@ ushort App::pScreen_w;
 
 
 /** Zainicjowanie bibliotek, utworzenie okna */
-App::App(): logger("App"), pIsDone( false ), pEvent(), pIcon( NULL )
+App::App(): logger("App"), pIsDone( false ), pEvent( new SDL_Event ), pIcon( NULL )
 {
 	logger.methodStart( "App()" );
 
@@ -156,12 +156,11 @@ void App::initVideoGL() {
 App::~App()
 {
     delete pGame;
-
     SDL_FreeSurface( pIcon );
     SDL_FreeSurface( pScreen );
-
-    TTF_Quit();
     SDL_Quit();
+
+    delete pEvent;
 }
 
 /**
@@ -273,55 +272,55 @@ void App::run() {
 void App::processEvent() {
 
 
-    while ( SDL_PollEvent( &pEvent ) )
+    while ( SDL_PollEvent( pEvent ) )
     {
-        if ( pEvent.type == SDL_QUIT )
+        if ( pEvent->type == SDL_QUIT )
         {
             pIsDone = true;
         }
 		#ifdef DEBUG
         /** @TODO Po nacisnieciu F1 wyjscie z aplikacji! */
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_F1 ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_F1 ) {
             error("Pressed F1 key. App is terminated.");
             throw std::runtime_error("App::processEvent");
         }
 	#endif
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_ESCAPE ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_ESCAPE ) {
             info("ESC pressed");
             pGame->pressedEsc();
         }
-	    else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_SPACE ) {
+	    else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_SPACE ) {
             pGame->SpaceDown();
         }
-        else if (pEvent.type == SDL_KEYUP && pEvent.key.keysym.sym == SDLK_SPACE ) {
+        else if (pEvent->type == SDL_KEYUP && pEvent->key.keysym.sym == SDLK_SPACE ) {
             pGame->SpaceUp();
         }
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_LSHIFT ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_LSHIFT ) {
             pGame->pressedShift();
         }
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_RCTRL ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_RCTRL ) {
                    pGame->pressedCtrl();
         }
-        else if ( pEvent.type == SDL_KEYDOWN &&  ( pEvent.key.keysym.sym >= 97 && (int)pEvent.key.keysym.sym <= 122 ) )
+        else if ( pEvent->type == SDL_KEYDOWN &&  ( pEvent->key.keysym.sym >= 97 && (int)pEvent->key.keysym.sym <= 122 ) )
         {
-            pGame->pressedChar( (char) pEvent.key.keysym.sym );
+            pGame->pressedChar( (char) pEvent->key.keysym.sym );
         }
-        else if(  pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_BACKSPACE ) {
+        else if(  pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_BACKSPACE ) {
         	pGame->pressedBackspace();
         }
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_RETURN ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_RETURN ) {
             pGame->pressedReturn();
         }
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_LEFT ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_LEFT ) {
             pGame->pressedLeft();
         }
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_RIGHT ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_RIGHT ) {
             pGame->pressedRight();
         }
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_UP ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_UP ) {
             pGame->pressedUp();
         }
-        else if (pEvent.type == SDL_KEYDOWN && pEvent.key.keysym.sym == SDLK_DOWN ) {
+        else if (pEvent->type == SDL_KEYDOWN && pEvent->key.keysym.sym == SDLK_DOWN ) {
             pGame->pressedDown();
         }
     }

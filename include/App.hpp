@@ -49,7 +49,7 @@ private:
     bool pIsDone;
     Game* pGame;
     Renderer* pRenderer;
-    SDL_Event pEvent;
+    SDL_Event* pEvent;
 
     SDL_Surface* pIcon;
 

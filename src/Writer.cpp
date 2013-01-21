@@ -22,6 +22,7 @@ float Writer::getCenterX(const string& str) {
 
 /** */
 Writer::~Writer() {
+	TTF_Quit();
 	TTF_CloseFont( pFont );
 	delete pInstance;
 }

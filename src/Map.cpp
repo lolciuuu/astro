@@ -62,7 +62,7 @@ short Map::checkColision(const short& Player_x, const short& Player_y,ColisionSi
 		short current_px = -1 * pOffset_X;
 		short next_px = current_px + pSize;
 
-		int index_x = pos_X;
+		ushort index_x = pos_X;
 
 		// szukanie kolumny w ktorej jest kolizja
 		while (!(current_px <= X && next_px > X)) {
@@ -71,8 +71,8 @@ short Map::checkColision(const short& Player_x, const short& Player_y,ColisionSi
 			next_px += pSize;
 		}
 
-		short current_py = App::getScreenHeight();
-		short next_py = current_py - pSize;
+		ushort current_py = App::getScreenHeight();
+		ushort next_py = current_py - pSize;
 
 		int index_y = pAmountEntityVertical - 1;
 
