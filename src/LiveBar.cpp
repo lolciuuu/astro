@@ -107,7 +107,7 @@ bool LiveBar::useBonus() {
 	  }
 }
 
-/** */
+/** Metoda statyczna wywolywana przez timer wtedy kiedy mija czas w ktorym gracz nie traci zycia */
 Uint32 LiveBar::disableImmortal_callbackTimer(Uint32 interval, void* param) {
 	isImmortal = false;
 	return( 0 );

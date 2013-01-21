@@ -160,9 +160,17 @@ void Map::draw() {
 			//@TODO czemu tujest ta 10?
 			float des_y = ( 10+ App::getScreenHeight() - (y * pSize) );
 
-			Rect src(MapManager::getRectByID(ID));
-			src.h = pSize;
-			src.w = pSize;
+			Rect src( MapManager::getRectByID(ID) );
+			// 50 to rozmiar kafla w atlasie
+			src.h = 50;
+			src.w = 50;
+
+			Rect des;
+			des.w = pSize;
+			des.h = pSize;
+			des.x = des_x;
+			des.y= des_y;
+
 
 			pRendererPtr->draw(src, des_x, des_y, pSize, pSize);
 

@@ -93,7 +93,7 @@ cxx_addSprite( "MAP_35",  map_size_1,     map_size_1,    1 * map_size_1,    map_
 cxx_addSprite( "MAP_36",  map_size_1,     map_size_1,    0,                 map_ground_y,     1, 1000, 1, false );
 
 -- babelki
-cxx_addSprite( "MAP_37",  map_size_1,     map_size_1,    5+(5 * map_size_1),    (map_meteo_y + map_size_1),  1, 1000, 1, false );
+cxx_addSprite( "MAP_37",  map_size_1,     map_size_1,    -2+(5 * map_size_1),    (map_meteo_y + map_size_1),  1, 1000, 1, false );
 cxx_addSprite( "MAP_38",  map_size_1,     map_size_1,    -2+(6 * map_size_1),     map_meteo_y + map_size_1,  1, 1000, 1, false );
 
 -- platformy
