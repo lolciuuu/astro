@@ -28,7 +28,7 @@ cxx_addProperty("HIGH_GAME","Highscore");
 cxx_addProperty("HIGH_GAME_DESC","best score");
 cxx_addProperty("HIGH_GAME_DIST","Distance: ");
 
-cxx_addProperty("ABOUT_GAME","About");
+cxx_addProperty("ABOUT_GAME","How play");
 cxx_addProperty("ABOUT_GAME_DESC","This game is not stable!");
 
 cxx_addProperty("EXIT_GAME","Exit");

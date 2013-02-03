@@ -5,10 +5,15 @@
 /** Tutaj odbywa sie tworzenie wszystckich elementow glownego menu
  * pCurrentItem : domyslnie 1, bo 0 to resume game i przy starcie jest nie aktywne
  */
-Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 1 ), logger("Menu")
+Menu::Menu() : pIsDone ( false ),pMenuState ( Gamespace::MAIN ), pCurrentItem ( 1 ), logger("Menu"),
+pAboutImg( 0U ), pExitIco(SpriteManager::getInstance()->getSprite("CLOSE") )
 {
   logger.info("Constructor class: MENU");
    
+	exit_x = pScreenWidth - pScreenWidth * 0.2f;
+	exit_y = pScreenHeight - pScreenHeight * 0.2f;
+
+
     ushort pos_y = pScreenHeight * 0.4;
     ushort pos_x = ( pScreenWidth * 0.5 ) + 150;
     ushort item_space = App::getScreenHeight() * 0.05;
@@ -104,9 +109,12 @@ bool Menu::update (const float& dt ) {
     		pMainMenuItem[ pCurrentItem ].update ( dt );
     		break;
     	}
-    	case ( HIGHSCORE ) : {
+    	case ( HIGHSCORE  ) : {
         	pHighScore.show();
         	break;
+    	}
+    	case ( ABOUT ) : {
+    		break;
     	}
     	default: {
     		warring ( "Unknown value of MenuState [Method: Menu::update() ]" );
@@ -129,6 +137,10 @@ void Menu::draw() {
     		pHighScore.show();
     		break;
     	}
+    	case (ABOUT ) : {
+    		drawAbout();
+    		break;
+    	}
     	default: {
     		warring ( "Unknown value of MenuState [Method: Menu::draw()]" );
     		break;
@@ -137,7 +149,7 @@ void Menu::draw() {
 }
 
 
-/** */
+/** Rysowanie wszystkiech elementow glownego menu */
 void Menu::drawMainMenu() {
 
 	  pRendererPtr->drawBackground( true );
@@ -151,7 +163,6 @@ void Menu::drawMainMenu() {
 
 /** Obsluga nacicniecia entera w menu glownym */
 void Menu::pressedReturn() {
-
 
     string currentItem = pMainMenuItem[pCurrentItem].getItemName();
 
@@ -173,21 +184,27 @@ void Menu::pressedReturn() {
         pCurrentItem = 0;
         pMainMenuItem[0].setSelected ( true );
 	  
-	// zresetowanie gry
-	Game::resetGame();
+        // zresetowanie gry
+        Game::resetGame();
 
-    } else if ( currentItem ==  Property::get ( "HIGH_GAME" ) ) {
-      // przejscie z menu do highscore
+    }
+    else if ( currentItem ==  Property::get ( "HIGH_GAME" ) ) {
+       // przejscie z menu do highscore
         pMenuState = Gamespace::HIGHSCORE;
 
-    } else if ( currentItem ==  Property::get ( "EXIT_GAME" ) ) {
+    }
+    else if ( currentItem ==  Property::get ( "EXIT_GAME" ) ) {
         // normalne wyjscie z gry poprzez wybranie exit w menu
         pIsDone = true;
+    }
+    else if( currentItem == Property::get("ABOUT_GAME") ) {
+    	//wlaczenie widoku highscore
+    	pMenuState = Gamespace::ABOUT;
     }
 
 }
 
-/** */
+/** 0blsuga nacisniecia ESC */
 void Menu::pressedEsc() {
 
     switch ( pMenuState ) {
@@ -201,6 +218,11 @@ void Menu::pressedEsc() {
         pMenuState = Gamespace::MAIN;
         break;
     }
+    case ( ABOUT ): {
+    	//powrot z about do menu
+    	pMenuState = Gamespace::MAIN;
+    	break;
+    }
     default: {
         logger.warring ( "Error in Menu::pressedEsc" );
         break;
@@ -210,7 +232,7 @@ void Menu::pressedEsc() {
 
 }
 
-/** */
+/** Przewijanie menu poziomego dla danego itemsa */
 void Menu::pressedRight() {
 
     switch ( pMenuState ) {
@@ -232,7 +254,7 @@ void Menu::pressedRight() {
 }
 
 
-/** */
+/** Przewijanie menu poziomego */
 void Menu::pressedLeft() {
 
     switch ( pMenuState ) {
@@ -253,28 +275,24 @@ void Menu::pressedLeft() {
 }
 
 
-/** */
+/** Obsluga nacisniecia strzalki w dol */
 void Menu::pressedDown() {
-    ///@TODO ustawienie elelemntu menu ponizej
 
     if ( pCurrentItem < ushort ( pMainMenuItem.size() - 1 ) ) {
         pMainMenuItem[pCurrentItem].setSelected ( false );
         pMainMenuItem[ ++pCurrentItem ].setSelected ( true );
-
     }
-
-
 }
 
 
-/** Przechodzenie do elementu menu znajdujacego sie powyzej
- */
+/** Przechodzenie do elementu menu znajdujacego sie powyzej */
 void Menu::pressedUp() {
 
     if ( pCurrentItem > 1 ) {
         pMainMenuItem[pCurrentItem].setSelected ( false );
         pMainMenuItem[ --pCurrentItem ].setSelected ( true );
-    } else if ( pCurrentItem == 1 ) {
+    }
+    else if ( pCurrentItem == 1 ) {
         if ( pMainMenuItem[0].isActive() ) {
             pMainMenuItem[pCurrentItem].setSelected ( false );
             pMainMenuItem[ --pCurrentItem ].setSelected ( true );
@@ -285,7 +303,28 @@ void Menu::pressedUp() {
 }
 
 
+/** */
 void Menu::resetMenu() {
+	logger.debug("Reset menu");
 	pressedDown();
 }
 
+
+/** */
+void Menu::drawAbout() {
+
+	if( pAboutImg == 0 ) {
+		logger.warring("Get surface in GL fomrat");
+		pAboutImg = Renderer::getSurfaceInGLFormat( Resource::getSurf("ABOUT") );
+	}
+
+	 Rect tmp(0,0,pScreenWidth,pScreenHeight);
+     pRendererPtr->draw( pAboutImg , tmp);
+
+ 	// rysowanie przycisku exit
+ 	pExitIco.draw(exit_x, exit_y, 50, 50);
+ 	Rect where(exit_x+60, exit_y+10,200,200);
+
+ 	pWriterPtr->draw(where, "Esc");
+
+}

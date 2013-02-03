@@ -19,7 +19,7 @@
   const bool SHOW_FPS( true  );
 #endif
 
-const unsigned short WIDHT( 1200 );
+const unsigned short WIDHT( 1400 );
 const unsigned short HEIGHT( 900 );
 
 const float SPLASH_TIME( 1.7 );

@@ -44,6 +44,7 @@ void Game::draw() {
     };
 }
 
+/** Shift odpowiada za zatrzymanie rychu gracza. tzn. na ulamek sekundy przestaje spadac badz wznosic sie do gory */
 void Game::pressedShift() {
 
     switch ( pGameState ) {
@@ -57,7 +58,7 @@ void Game::pressedShift() {
     };
 }
 
-/** */
+/** aktualizacja gry */
 void Game::update(const float& dt ) {
   
     switch ( pGameState ) {
@@ -81,7 +82,7 @@ void Game::update(const float& dt ) {
     };
 }
 
-/** */
+/** Obsluga nacisniecia entera */
 void Game::pressedReturn() {
 
     if ( pGameState == Gamespace::MENU ) {
@@ -96,7 +97,7 @@ void Game::pressedReturn() {
 }
 
 
-/** */
+/** nacisniecie escape */
 void Game::pressedEsc() {
 
     switch ( pGameState ) {
@@ -116,19 +117,20 @@ void Game::pressedEsc() {
     };
 }
 
+/** uklaiwsz backscpace - na potrzeby usuwania znaczkow podczas ich wpisywania do highscore  */
 void Game::pressedBackspace() {
 	if( pGameState == Gamespace::PLAY )
 		pPlay.pressedBackspace();
 }
 
-/**  */
+/** obsluga nacisniecia jakielkowiek literki */
 void Game::pressedChar(char Char) {
 	if( pGameState == Gamespace::PLAY )
 		pPlay.pressedChar( Char );
 
 }
 
-/** */
+/** strzalka w lewo */
 void Game::pressedLeft() {
 
     if ( pGameState == Gamespace::MENU ) {
@@ -138,7 +140,7 @@ void Game::pressedLeft() {
 }
 
 
-/** */
+/** strzalka w prawo */
 void Game::pressedRight() {
 
     if ( pGameState == Gamespace::MENU ) {
@@ -147,7 +149,7 @@ void Game::pressedRight() {
 
 }
 
-/** */
+/** strzalka do gory */
 void Game::pressedUp() {
     if ( pGameState == Gamespace::MENU ) {
         pMenu.pressedUp();
@@ -155,7 +157,7 @@ void Game::pressedUp() {
 }
 
 
-/** */
+/** strzalka w dol */
 void Game::pressedDown() {
 
     if ( pGameState == Gamespace::MENU ) {
@@ -165,7 +167,7 @@ void Game::pressedDown() {
 }
 
 
-/**  */
+/**  wcisniecie spacji */
 void Game::SpaceDown() {
  
   switch ( pGameState ) {
@@ -180,7 +182,8 @@ void Game::SpaceDown() {
 
 }
 
-/**  */
+
+/** puszczenie klaiwasza spacja */
 void Game::SpaceUp() {
  
   switch ( pGameState ) {
@@ -195,12 +198,15 @@ void Game::SpaceUp() {
 
 }
 
+
+/** uzycie prawego kontrola (doladowanie zycia gracza) */
 void Game::pressedCtrl() {
 
 	  if( Gamespace::PLAY ) {
 		pPlay.useBonus();
 	  }
 }
+
 
 /** Resetowanie gry */
 void Game::reset(){

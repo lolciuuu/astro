@@ -7,7 +7,10 @@
 #include "StandardReferences.hpp"
 #include "Logger.hpp"
 
-/** Klasa jest singletonem, konstruktor zawiera zabezpieczenie przed wielokrotnym utworzeniem obiektu */
+/** Klasa jest singletonem, konstruktor zawiera zabezpieczenie przed wielokrotnym utworzeniem obiektu
+ *  Dodatkowo Game jest fasada, ktora decyduje o tym ktora klasa ma byc narywana (menu czy play),
+ *  oraz gdzie przekazac informacje o wykrytym zdarzeniu np. nacisnieciu klawisza.
+ * */
 class Game : StandardReferences 
 {
 public:  
@@ -20,6 +23,7 @@ public:
   static void setGameState( GameState newState ){ pGameState = newState; }
   static void resetGame();
   
+  /** Metody obslugujace zdarzenia zwiazane z klawiatura */
   void pressedRight();
   void pressedLeft();
   void pressedDown();
@@ -28,7 +32,6 @@ public:
   void pressedReturn();
   void pressedBackspace();
   void pressedCtrl();
-
   void pressedShift();
 
   void SpaceUp();

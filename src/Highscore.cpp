@@ -112,6 +112,8 @@ void Highscore::show() {
 
 	// rysowanie tebelki w wynikami
 	for (uint i = 0; i < ITEM_AMOUNT; ++i) {
+		if( i >= pList.size() ) break;
+
 		if (pList[i].name.size() < 1)
 			continue;
 		where.y += 35;
@@ -160,6 +162,7 @@ void Highscore::load() {
 
 		int index = 0;
 		while (!highFile.eof()) {
+
 			if ( index > ITEM_AMOUNT)
 				break;
 
@@ -175,6 +178,13 @@ void Highscore::load() {
 		}
 
 		highFile.close();
+	}
+
+	if( pList.size() == 0 ) {
+		HighscoreItem item;
+		item.name="Bob";
+		item.points=100;
+		pList.push_back( item );
 	}
 
 	pBackground = RendererGL::getSurfaceInGLFormat( Resource::getSurf("MENU_BACKGROUND_EMPTY") );

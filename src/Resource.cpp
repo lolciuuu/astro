@@ -30,6 +30,7 @@ void Resource::load() {
 	loadImage( "menu_background_empty.jpg", "MENU_BACKGROUND_EMPTY" );
 	loadImage( "level_background.png", "LEVEL_BACKGROUND" );
 	loadImage( "fill.png", "FILL" );
+	loadImage( "key.png", "ABOUT" );
 
     loadFont( Property::get("FONT_PATH").c_str(), "font_small", Property::getSetting("SMALL_FONT") );
     loadFont( Property::get("FONT_PATH").c_str(), "font_normal", Property::getSetting("NORMAL_FONT") );

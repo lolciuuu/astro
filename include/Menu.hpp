@@ -31,6 +31,7 @@ public:
 
 private:
     void drawMainMenu();
+    void drawAbout();
     
 
 private:
@@ -40,6 +41,15 @@ private:
     int pCurrentItem;
     Highscore pHighScore;
     Logger logger;
+
+    GLuint pAboutImg;
+
+    /** ikona w lewym dolnym rogu dla about */
+    Sprite pExitIco;
+
+    /** polozenie przycisko exit w wejsciu z menu */
+     int exit_x;
+     int exit_y;
 
 };
 

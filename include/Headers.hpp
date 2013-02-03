@@ -64,7 +64,8 @@ enum GameState {
 
 enum MenuState {
     MAIN,
-    HIGHSCORE
+    HIGHSCORE,
+    ABOUT
 };
 
 enum PlayerState {

@@ -26,8 +26,7 @@ public:
             return( property.find( key )->second );
         }
         else {
-            error(key + "-Not found property" );
-            return( "xxxxxxxxx" );
+            return( "???" + key + "???" );
         }
     }
     
