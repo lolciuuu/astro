@@ -40,33 +40,52 @@ Opisana w poprzednim podrozdziale macierz kafelków w grze Astro Rush ma wymiary
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth,natwidth=800,natheight=142]{./Pictures/designer.png}
+    \includegraphics[width=0.8\textwidth,natwidth=800,natheight=160]{./Pictures/designer.png}
     \caption{Edytor mapy podczas pracy}
 \end{figure}
 
-Edytor mapy wyświetla całą planszę w postaci siatki na której naniesione są kafelki. Poprzez kliknięci w daną komórkę możemy zmienić rodzaj kafelka który w danym miejscu ma się wyświetlić, bądź też wyczyścić daną komórkę. Do pliku zapisywane są tylko numery odpowiadającym poszczególnym kafelkom, na bazie których gra rozpoznaje jaką grafikę w danym miejscu wstawić. Numeracja kafelków rozpoczyna się od 0, natomiast wartość -1 oznacza że w danym miejscu nie ma kafelka i taki fragment nie jest rysowany.
+Edytor mapy wyświetla całą planszę w postaci siatki na której naniesione są kafelki. Poprzez kliknięci w daną komórkę możemy zmienić rodzaj kafelka który w danym miejscu ma się wyświetlić, bądź też wyczyścić daną komórkę. Do pliku zapisywane są tylko numery odpowiadającym poszczególnym kafelkom, na bazie których gra rozpoznaje jaką grafikę w danym miejscu wstawić. Numeracja kafelków rozpoczyna się od 0, natomiast wartość -1 oznacza że w danym miejscu nie ma kafelka i taki fragment nie jest rysowany. Edytor jest aplikacją bardzo prostą, wszelkie jego modyfikacje np. dodanie nowego rodzaju kafelka wymaga ręcznych zmian w kodzie programu, jednak na potrzeby pracy takie rozwiązanie okazało się wystarczające.
 
 %============================================================================================================================
-%							 						Uruchamianie aplikacji
+%							 				Uruchamianie aplikacji
 %============================================================================================================================
 \section{Uruchamianie aplikacji}
 \lhead{Rozdział 2. \emph{Uruchamianie aplikacji}}
-sdfd
+Aplikacje takie jak gry wymagają do pracy zewnętrznych zasobów które są przechowywane na dysku. Mogą to być grafiki, dźwięki, czcionki. Wraz ze wzrostem ilości materiałów jakie muszą być załadowane do aplikacji przy jej starcie rośnie też czas oczekiwania gracza na to aż aplikacja będzie gotowa do pracy. Dlatego też wczytywanie zasobów, oraz inne czynności które trwają długo są wykonywane podczas uruchamiania, a użytkownikowi prezentowany jest w tym czasie ekran powitalny (ang. Splash screnn). W grze Astro Rush taki ekran również jest prezentowany. Pokazuje się na nim również pasek postępu obrazujący ile czasu pozostało jeszcze do uruchomienia właściwej części aplikacji. Żeby samo rysowanie ekranu powitalnego odbywało się płynnie wczytywanie danych z dysku odbywa się w osobnym wątku.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=800,natheight=152]{./Pictures/splash.png}
+    \caption{Schemat uruchamiania gry}
+\end{figure}
+
+Wielowątkowość w projekcie jest możliwa dzięki wykorzystaniu specjalnej funkcji z biblioteki SDL. Funkcja SDL\_CreateThread przyjmująca jako argument wskaźnik do funkcji tworzy nowy wątek w którym zostaje uruchomiona ta funkcja. W funkcji takiej zostało umieszczone wczytywanie wszystkich zasobów z dysku. W momencie kiedy funkcja wczyta wszystkie dane, wtedy ustawi flagę oznaczającą zakończenie ładowania na wartość True. Zmiana wartości tej flagi spowoduje zakończenie wyświetlania ekranu powitalnego i uruchomi główną pętle gry. Cała funkcjonalność związana z ekranem powitalnym została umieszczona w osobnej klasie Splash która jest dziedziczona prze główną klasę aplikacji - App. Dzięki takiej implementacji klasa App zajmuję się jedynie inicjowaniem bibliotek, oraz obsługą głównej pętli. 
+
+Należy wspomnieć ile miejsca zajmują omawiane zasoby na dysku. W przypadku  dźwięków jest to około 10 mb, grafika to 3 mb, a sam plik z mapą to 1.3 mb. Na wczytanie takich ilości danych w zależności od sprzętu może być potrzebne nawet do kilku sekund.
 
 
 
 %============================================================================================================================
-%							 						Warstwy aplikacji
+%							 		Przyjęte konwencje, logowanie i obsługa błedów
 %============================================================================================================================
-\section{Warstwy aplikacji}
-\lhead{Rozdział 2. \emph{Warstwy aplikacji}}
-
+\section{Przyjęte konwencje, logowanie i obsługa błedów}
+\lhead{Rozdział 2. \emph{Przyjęte konwencje, logowanie i obsługa błedów}}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu massa ante. Maecenas pretium metus a libero commodo convallis. Mauris a dignissim lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eleifend magna ut magna commodo dapibus. In adipiscing enim eget sapien elementum et adipiscing ligula sagittis. Curabitur ullamcorper cursus vulputate. Donec dignissim, tortor eget adipiscing rhoncus, risus mauris varius nisi, ac vehicula elit orci sit amet nunc. Fusce massa nisi, imperdiet vitae volutpat non, euismod ullamcorper lectus. Mauris iaculis sagittis tortor, quis convallis elit luctus eu. Sed sodales viverra velit, quis porttitor ipsum vulputate nec.
 
 
 
+%============================================================================================================================
+%							 					Warstwy aplikacji
+%============================================================================================================================
+\section{Warstwy aplikacji}
+\lhead{Rozdział 2. \emph{Warstwy aplikacji}}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=430px,height=560px]{./Pictures/warstwy.png}
+    \caption{Schemat przepływu danych w aplikacji}
+\end{figure}
 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu massa ante. Maecenas pretium metus a libero commodo convallis. Mauris a dignissim lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eleifend magna ut magna commodo dapibus. In adipiscing enim eget sapien elementum et adipiscing ligula sagittis. Curabitur ullamcorper cursus vulputate. Donec dignissim, tortor eget adipiscing rhoncus, risus mauris varius nisi, ac vehicula elit orci sit amet nunc. Fusce massa nisi, imperdiet vitae volutpat non, euismod ullamcorper lectus. Mauris iaculis sagittis tortor, quis convallis elit luctus eu. Sed sodales viverra velit, quis porttitor ipsum vulputate nec.
 
 

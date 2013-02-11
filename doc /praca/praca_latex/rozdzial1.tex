@@ -227,9 +227,12 @@ void RendererGL::create_gl(SDL_Surface * surf, GLuint * tex )
 
     /** ...tutaj ustawienia parametrów tekstury */
 
-    glTexImage2D( GL_TEXTURE_2D, 0, colors_amount, surf->w, surf->h, 0, format, GL_UNSIGNED_BYTE, surf->pixels );
+    glTexImage2D( GL_TEXTURE_2D, 0, colors_amount,
+    			  	surf->w, surf->h, 0, format, 
+    			 	 GL_UNSIGNED_BYTE, surf->pixels );
 }
 \end{verbatim}
+\endgroup
 
 Warto wspomnieć że biblioteka SDL\_ttf pozwala renderować napisy z polskimi znakami, o ile takie występują w wczytanej czcionce. Ponadto SDL\_ttf dostępny jest podobnie jak SDL na darmowej licencji zlib, i jest wieloplatformowy jak wszystkie wtyczki do SDL-a. W niektórych dystrybucjach zainstalowanie tej biblioteki, oraz innych wspomnianych bibliotek rozszerzających SDL-a sprowadza się do wykonania jednego polecenia- zainstalowania pakietu z repozytorium. Dla dystrybucji Debian oraz jego pochodnych będzie to polecenie:
 \begin{verbatim}

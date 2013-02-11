@@ -18,13 +18,14 @@
 \contentsline {section}{\numberline {2.2}Mapa w grze}{14}{section.23}
 \contentsline {subsection}{Mapa kafelkowa}{14}{section*.24}
 \contentsline {subsection}{Edytor mapy}{15}{section*.25}
-\contentsline {section}{\numberline {2.3}Uruchamianie aplikacji}{15}{section.27}
-\contentsline {section}{\numberline {2.4}Warstwy aplikacji}{16}{section.28}
-\contentsline {chapter}{\numberline {3}Dokumentacja u\IeC {\.z}ytkownika}{17}{chapter.29}
-\contentsline {section}{\numberline {3.1}Sterowanie w grze}{17}{section.30}
-\contentsline {section}{\numberline {3.2}Menu}{17}{section.31}
-\contentsline {section}{\numberline {3.3}Instalacja}{18}{section.32}
-\contentsline {chapter}{Zako\IeC {\'n}czenie}{19}{chapter*.33}
-\contentsline {chapter}{Spis ilustracji}{20}{dummy.34}
+\contentsline {section}{\numberline {2.3}Uruchamianie aplikacji}{16}{section.27}
+\contentsline {section}{\numberline {2.4}Przyj\IeC {\k e}te konwencje, logowanie i obs\IeC {\l }uga b\IeC {\l }ed\IeC {\'o}w}{17}{section.29}
+\contentsline {section}{\numberline {2.5}Warstwy aplikacji}{18}{section.30}
+\contentsline {chapter}{\numberline {3}Dokumentacja u\IeC {\.z}ytkownika}{20}{chapter.32}
+\contentsline {section}{\numberline {3.1}Sterowanie w grze}{20}{section.33}
+\contentsline {section}{\numberline {3.2}Menu}{20}{section.34}
+\contentsline {section}{\numberline {3.3}Instalacja}{21}{section.35}
+\contentsline {chapter}{Zako\IeC {\'n}czenie}{22}{chapter*.36}
+\contentsline {chapter}{Spis ilustracji}{23}{dummy.37}
 \vspace {2em}
-\contentsline {chapter}{Bibliografia}{22}{dummy.36}
+\contentsline {chapter}{Bibliografia}{25}{dummy.39}
