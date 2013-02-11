@@ -1,0 +1,142 @@
+%----------------------------------------------------------------------------------------
+%							ustawienia dokumentu
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, a4paper, oneside]{Thesis} % rozmiar czcionki,papieru, czy jednostronnie
+\graphicspath{{./Pictures/}} % katalog z obrazkami
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} 
+\hypersetup{urlcolor=blue, colorlinks=true} % kolory hiperlinków
+\title{\ttitle} % Defines the thesis title - don't touch this
+
+% włączenie polskich znaków
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\selectlanguage{polish}
+
+
+%==============================================================================================================
+\begin{document}
+
+\setstretch{1.5} % odstęp pionowy 
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle=Kamil Lolo- praca inżynierska}
+\hypersetup{pdfsubject=Praca inżynierska}
+\hypersetup{pdfauthor=Kamil Lolo}
+\hypersetup{pdfkeywords=Praca inżynierska}
+
+
+
+%----------------------------------------------------------------------------------------
+%								Strona tytułowa
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+%logo uniwersytetu
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{./Pictures/logo.jpg}
+\end{figure}
+
+\textsc{\Large Inżynierska praca dyplomowa \newline }\\[0.5cm] 
+
+
+{\huge \bfseries Platformowa gra zręcznościowa z wykorzystaniem biblioteki SDL }\\[0.4cm] % tytuł pracy
+
+\addvspace{110pt}
+ 
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Autor:}\\
+Kamil Lolo 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Promotor:} \\
+dr.Krzysztof Podlaski
+\end{flushright}
+\end{minipage}\\[3cm]
+
+
+\vfill
+\addvspace{20pt}
+ 
+{\large \today}\\[4cm] % Date
+
+
+\end{center}
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%								Spis treści
+%----------------------------------------------------------------------------------------
+
+% The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+\pagestyle{fancy}
+
+% Set the left side page header to "Contents"
+
+\lhead{\emph{Contents}} 
+
+% Write out the Table of Contents
+\tableofcontents 
+
+
+%----------------------------------------------------------------------------------------
+%									Rozdziały pracy
+%----------------------------------------------------------------------------------------
+
+% Rozpoczecie numerowania stron (1,2,3..)
+\mainmatter 
+
+% Return the page headers back to the "fancy" style
+\pagestyle{fancy} 
+
+% dołączanie poszczegolnych rozdzaiałów
+\input{./wstep}
+\input{./rozdzial1}
+\input{./rozdzial2}
+\input{./rozdzial3}
+\input{./zakonczenie}
+
+\lhead{\emph{Spis ilustracji}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%									Bibliografia
+%----------------------------------------------------------------------------------------
+\begin{thebibliography}{1}
+
+\bibitem{sop}Janusz Ganczarski. 
+\emph{OpenGL w praktyce}. Wydawnictwo BTC, 2008.
+
+
+
+\end{thebibliography}
+\end{document}
+
+
+\end{document}  

@@ -1,5 +1,8 @@
 [Dolphin]
+AdditionalInfo=Details_Size,Details_Date,Details_Type,CustomizedDetails
 AdditionalInfoV2=Details_Size,Details_Date,CustomizedDetails
+PreviewsShown=true
 ShowPreview=true
-Timestamp=2012,5,5,19,14,4
+Timestamp=2013,2,11,20,53,59
 Version=2
+ViewMode=1
