@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.2.8)  12 FEB 2013 00:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.2.8)  1 MAR 2013 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -770,23 +770,23 @@ Package natbib Warning: Citation `sop' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 26.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -827,7 +827,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -837,54 +837,54 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 
-<./Pictures/logo.jpg, id=116, 501.875pt x 302.12875pt>
+<./Pictures/logo.jpg, id=120, 501.875pt x 302.12875pt>
 File: ./Pictures/logo.jpg Graphic file (type jpg)
 
 <use ./Pictures/logo.jpg>
-Package pdftex.def Info: ./Pictures/logo.jpg used on input line 55.
+Package pdftex.def Info: ./Pictures/logo.jpg used on input line 57.
 (pdftex.def)             Requested size: 455.8843pt x 274.45813pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 70.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 72.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 70.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 72.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 70.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 72.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 70.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 72.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 70.
+(Font)              <12> on input line 72.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 70.
+(Font)              <8> on input line 72.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 70.
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+(Font)              <6> on input line 72.
+LaTeX Font Info:    Try loading font information for U+msa on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -914,7 +914,7 @@ Rozdzia\IeC {\l } 1.
 ------------------------------------------------------------------------------
  1 Wprowadzenie
 ------------------------------------------------------------------------------
-<./Pictures/astro.jpg, id=169, 326.21875pt x 446.66875pt>
+<./Pictures/astro.jpg, id=174, 326.21875pt x 446.66875pt>
 File: ./Pictures/astro.jpg Graphic file (type jpg)
 
 <use ./Pictures/astro.jpg>
@@ -923,14 +923,14 @@ Package pdftex.def Info: ./Pictures/astro.jpg used on input line 15.
  [3
 
  <./Pictures/astro.jpg>]
-<./Pictures/astroRun.jpg, id=176, 556.0775pt x 115.43124pt>
+<./Pictures/astroRun.jpg, id=181, 556.0775pt x 115.43124pt>
 File: ./Pictures/astroRun.jpg Graphic file (type jpg)
 
 <use ./Pictures/astroRun.jpg>
 Package pdftex.def Info: ./Pictures/astroRun.jpg used on input line 37.
 (pdftex.def)             Requested size: 364.70882pt x 75.70752pt.
 
-<./Pictures/sprite_algorytm.png, id=177, 930.47626pt x 859.21pt>
+<./Pictures/sprite_algorytm.png, id=182, 930.47626pt x 859.21pt>
 File: ./Pictures/sprite_algorytm.png Graphic file (type png)
 
 <use ./Pictures/sprite_algorytm.png>
@@ -941,30 +941,36 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 90.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [6] [7]
-[8] [9] <./Pictures/lua_skrypty.png, id=206, 1136.245pt x 799.98875pt>
+[8] [9] <./Pictures/lua_skrypty.png, id=211, 1136.245pt x 799.98875pt>
 File: ./Pictures/lua_skrypty.png Graphic file (type png)
 
 <use ./Pictures/lua_skrypty.png>
-Package pdftex.def Info: ./Pictures/lua_skrypty.png used on input line 198.
+Package pdftex.def Info: ./Pictures/lua_skrypty.png used on input line 196.
 (pdftex.def)             Requested size: 364.70882pt x 256.78287pt.
 
-Overfull \hbox (15.19142pt too wide) in paragraph at lines 202--203
+Overfull \hbox (15.19142pt too wide) in paragraph at lines 200--201
 []\T1/lmr/m/n/12 Powy»szy ry-sunek pokazuje przykªad-owy przepªyw danych mi¦dzy
  ap-likacj¡ C++ a skryptem
  []
 
+[10 <./Pictures/lua_skrypty.png>]
+Overfull \hbox (0.35419pt too wide) in paragraph at lines 219--220
+[]\T1/lmr/m/n/12 SDL dostar-cza równie» ob-sªug¦ wielow¡tkowo±ci oraz timerów. 
+Dz-i¦ki czemu nie potrzebna
+ []
 
-Overfull \hbox (3.92271pt too wide) in paragraph at lines 210--211
+
+Overfull \hbox (3.92271pt too wide) in paragraph at lines 226--227
 \T1/lmr/m/n/12 funkcji z bib-lioteki SDL_ttf np. TTF_RenderUTF_Blended zostaje 
 ut-wor-zona powierzch-
  []
 
-[10 <./Pictures/lua_skrypty.png>] [11]) (./rozdzial2.tex [12]
+[11] [12]) (./rozdzial2.tex [13]
 Rozdzia\IeC {\l } 2.
 ------------------------------------------------------------------------------
  2 Budowa aplikacji
 ------------------------------------------------------------------------------
-<./Pictures/main_loop.png, id=222, 814.04124pt x 593.21625pt>
+<./Pictures/main_loop.png, id=231, 814.04124pt x 593.21625pt>
 File: ./Pictures/main_loop.png Graphic file (type png)
 
 <use ./Pictures/main_loop.png>
@@ -974,10 +980,10 @@ Package pdftex.def Info: ./Pictures/main_loop.png used on input line 13.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13
+[14
 
-] [14 <./Pictures/main_loop.png>]
-<./Pictures/designer.png, id=232, 1019.81pt x 626.34pt>
+] [15 <./Pictures/main_loop.png>]
+<./Pictures/designer.png, id=241, 1019.81pt x 626.34pt>
 File: ./Pictures/designer.png Graphic file (type png)
 
 <use ./Pictures/designer.png>
@@ -987,7 +993,7 @@ Package pdftex.def Info: ./Pictures/designer.png used on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] <./Pictures/splash.png, id=237, 648.4225pt x 704.6325pt>
+[16] <./Pictures/splash.png, id=246, 648.4225pt x 704.6325pt>
 File: ./Pictures/splash.png Graphic file (type png)
 
 <use ./Pictures/splash.png>
@@ -997,14 +1003,14 @@ Package pdftex.def Info: ./Pictures/splash.png used on input line 58.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <./Pictures/designer.png (PNG copy)>]
+[17 <./Pictures/designer.png (PNG copy)>]
 Overfull \hbox (0.55043pt too wide) in paragraph at lines 64--65
 []\T1/lmr/m/n/12 Nale»y wspom-nie¢ ile miejsca za-j-muj¡ omaw-iane za-soby na d
 ysku. W przy-padku d¹wi¦ków
  []
 
-[17 <./Pictures/splash.png>]
-<./Pictures/warstwy.png, id=249, 1048.91875pt x 1144.275pt>
+[18 <./Pictures/splash.png>]
+<./Pictures/warstwy.png, id=258, 1048.91875pt x 1144.275pt>
 File: ./Pictures/warstwy.png Graphic file (type png)
 
 <use ./Pictures/warstwy.png>
@@ -1014,28 +1020,28 @@ Package pdftex.def Info: ./Pictures/warstwy.png used on input line 85.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./rozdzial3.tex [18] [19 <./Pictures/warstwy.png>]
+) (./rozdzial3.tex [19] [20 <./Pictures/warstwy.png>]
 Rozdzia\IeC {\l } 3.
 ------------------------------------------------------------------------------
  3 Dokumentacja u\IeC {\.z}ytkownika
 ------------------------------------------------------------------------------
-[20
+[21
 
-]) (./zakonczenie.tex [21]
+]) (./zakonczenie.tex [22]
 ------------------------------------------------------------------------------
  3 Zako\IeC {\'n}czenie
 ------------------------------------------------------------------------------
-[22
+[23
 
 ])
 ------------------------------------------------------------------------------
  Spis ilustracji
 ------------------------------------------------------------------------------
-[23] (./main.lof)
+[24] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [24
+ [25
 
 ]
 ------------------------------------------------------------------------------
@@ -1044,8 +1050,8 @@ Rozdzia\IeC {\l } 3.
 
 Package natbib Warning: There were multiply defined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-[25
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+[26
 
 
 
@@ -1054,39 +1060,39 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.140 \end{document}
+l.142 \end{document}
                     ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (./main.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4F96AAAEF089FB097B11EDB6BC161B27;4147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
+(rerunfilecheck)             Checksum: A91C510366B67BE02E71A773392D0E0A;4383.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 11628 strings out of 495059
- 162393 string characters out of 3182031
- 246298 words of memory out of 3000000
- 14500 multiletter control sequences out of 15000+200000
- 64508 words of font info for 49 fonts, out of 3000000 for 9000
+ 11898 strings out of 495059
+ 164466 string characters out of 3182031
+ 247298 words of memory out of 3000000
+ 14762 multiletter control sequences out of 15000+200000
+ 67821 words of font info for 51 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,11n,45p,1290b,510s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,45p,1290b,1045s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mtt12.pfb>
-Output written on main.pdf (27 pages, 779793 bytes).
+mtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
+Output written on main.pdf (28 pages, 802960 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 358 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 

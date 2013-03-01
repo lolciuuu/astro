@@ -12,20 +12,21 @@
 \contentsline {subsection}{Czym jest OpenGL}{8}{section*.15}
 \contentsline {subsection}{Wykorzystanie OpenGL do renderowania grafiki w grze}{9}{section*.16}
 \contentsline {section}{\numberline {1.5}Skrypty w j\IeC {\k e}zyku Lua}{9}{section.17}
-\contentsline {section}{\numberline {1.6}Obs\IeC {\l }uga czcionek w SDL}{11}{section.19}
-\contentsline {chapter}{\numberline {2}Budowa aplikacji}{13}{chapter.20}
-\contentsline {section}{\numberline {2.1}G\IeC {\l }\IeC {\'o}wna p\IeC {\k e}tla}{13}{section.21}
-\contentsline {section}{\numberline {2.2}Mapa w grze}{14}{section.23}
-\contentsline {subsection}{Mapa kafelkowa}{14}{section*.24}
-\contentsline {subsection}{Edytor mapy}{15}{section*.25}
-\contentsline {section}{\numberline {2.3}Uruchamianie aplikacji}{16}{section.27}
-\contentsline {section}{\numberline {2.4}Przyj\IeC {\k e}te konwencje, logowanie i obs\IeC {\l }uga b\IeC {\l }ed\IeC {\'o}w}{17}{section.29}
-\contentsline {section}{\numberline {2.5}Warstwy aplikacji}{18}{section.30}
-\contentsline {chapter}{\numberline {3}Dokumentacja u\IeC {\.z}ytkownika}{20}{chapter.32}
-\contentsline {section}{\numberline {3.1}Sterowanie w grze}{20}{section.33}
-\contentsline {section}{\numberline {3.2}Menu}{20}{section.34}
-\contentsline {section}{\numberline {3.3}Instalacja}{21}{section.35}
-\contentsline {chapter}{Zako\IeC {\'n}czenie}{22}{chapter*.36}
-\contentsline {chapter}{Spis ilustracji}{23}{dummy.37}
+\contentsline {section}{\numberline {1.6}Wprowadzenie do biblioteki SDL}{11}{section.19}
+\contentsline {section}{\numberline {1.7}Obs\IeC {\l }uga czcionek w SDL}{11}{section.20}
+\contentsline {chapter}{\numberline {2}Budowa aplikacji}{14}{chapter.21}
+\contentsline {section}{\numberline {2.1}G\IeC {\l }\IeC {\'o}wna p\IeC {\k e}tla}{14}{section.22}
+\contentsline {section}{\numberline {2.2}Mapa w grze}{15}{section.24}
+\contentsline {subsection}{Mapa kafelkowa}{15}{section*.25}
+\contentsline {subsection}{Edytor mapy}{16}{section*.26}
+\contentsline {section}{\numberline {2.3}Uruchamianie aplikacji}{17}{section.28}
+\contentsline {section}{\numberline {2.4}Przyj\IeC {\k e}te konwencje, logowanie i obs\IeC {\l }uga b\IeC {\l }ed\IeC {\'o}w}{18}{section.30}
+\contentsline {section}{\numberline {2.5}Warstwy aplikacji}{19}{section.31}
+\contentsline {chapter}{\numberline {3}Dokumentacja u\IeC {\.z}ytkownika}{21}{chapter.33}
+\contentsline {section}{\numberline {3.1}Sterowanie w grze}{21}{section.34}
+\contentsline {section}{\numberline {3.2}Menu}{21}{section.35}
+\contentsline {section}{\numberline {3.3}Instalacja}{22}{section.36}
+\contentsline {chapter}{Zako\IeC {\'n}czenie}{23}{chapter*.41}
+\contentsline {chapter}{Spis ilustracji}{24}{dummy.42}
 \vspace {2em}
-\contentsline {chapter}{Bibliografia}{25}{dummy.39}
+\contentsline {chapter}{Bibliografia}{26}{dummy.44}
