@@ -55,41 +55,88 @@ kolekcji „Hand drawn icon set” które autor opublikował w internecie  na da
     \caption{Schemat wyświetlania animacji opartej o sprite}
 \end{figure}
 
-
 %============================================================================================================================
-%							 						Eclipse
+%							 						G++
 %============================================================================================================================
 \section{Użyte narzędzia}
 
 \lhead{Rozdział 1. \emph{Użyte narzędzia}}
+\subsection{Kompilator}
+Do zbudowania aplikacji został wykorzystany kompilator g++ dostępny w ramach GNU GCC - zestawu kompilatorów dla popularnych języków. GCC dostępny na licencji GPL pozwala na kompilacje aplikacji napisanej w min. w Java, C/C++, Ada. Dostępny jest na wiele platform i architektur. Ponadto w systemach Linuks jest często zainstalowany domyślnie np. w Gentoo gdzie każda aplikacja jest kompilowana ze źródeł. G++ posiada kompatybilność z językiem C, dzięki czemu nie ma problemu z kompilacją programu korzystającego z biblioteki SDL, która jest napisana właśnie w C. Kompilator ten jest aplikacją konsolową, a skompilowanie zwykłego pliku źródłowego (main.cpp) do pliku wynikowego (main.bin) można wykonać za pomocą polecenia:
+\begin{verbatim}
+	g++ -c ./main.cpp -o main.bin
+\end{verbatim}
+
+W przypadku aplikacji składającej się z jednego pliku i nie korzystającego z żadnych bibliotek taka kompilacja wydaję się łatwa.
+Kiedy natomiast mamy kilka plików do skompilowania, wtedy należy wszystkie je wpisać jako parametr, a dodatkowo trzeba ustawić 
+flagi linkera, który łączy skompilowane pośrednie pliki w plik wykonywalny: (@TODO sprawdzic czy dziala)
+\begin{verbatim}
+	g++ -c ./main.cpp plikA.cpp plikB.cpp plikC.cpp -o main.bin -lSDL -lGL
+\end{verbatim}
+Projekt Astro Rush składa się z około 20 klas, wpisywanie takiego polecenia za każdym razem byłoby bardzo nie wygodne, dlatego też zostało użyte narzędzie make usprawniające budowanie gry. Zostanie ono opisane w jednym z kolejnych rozdziałów. Warto wspomnieć że g++ posiada bardzo wiele przydatnych parametrów, przy kompilacji projektu zostały wykorzystane opcje:
+
+-Wall - włącza wszystkie ostrzeżenia przy budowaniu. 
+
+-pedantic wlącza wszystkie ostrzeżenia związane ze standardem ISO języka C/C++
+
+-g kompilacja z wlączonym debugiem. Do skompilowanej aplikacji dołączane są dane potrzebne do debuggowania poprzez gdb. 
+
+-std=c++0x flaga wymusza użycie najnowszego standardu języka C++.
+
+
+-O0 Określa poziom optymalizacji. Poziom 0 ustawiony domyślnie wyłącza optymalizacje, pzryśpieszając tym samym czas kompilacji. Przed udostępnieniem aplikacji użytkownikowi należy włączyć optymalizacje np. za pomocą -O3, gdzie poziom 3 jest najwyższym poziomem optymalizacji.  
+
+
+
+%============================================================================================================================
+%							 						Eclipse
+%============================================================================================================================
+
+\lhead{Rozdział 1. \emph{Użyte narzędzia}}
 \subsection{Eclipse}
-Środowiskiem w którym będzie powstawać aplikacja będzie Eclipse IDE. Znane jest ono przede wszystkim jako bardzo dobre narzędzie do pisania aplikacji
-w Javie, ale dzięki doinstalowaniu wtyczki CDT (C/C++ Development tooling) można w nim rozwijać projekt w języku C++. Eclipse posiada integracje z
-wieloma przydatnymi narzędziami, które czasami bardzo upraszczają życie programiście. Przy tworzeniu Astro Rush były wykorzystane:
--Integracja Eclipse z debuggerem. W tym przypadku znany konsolowy gdb.
-Najbardziej przydatna okazała się tutaj możliwość zatrzymania programu na breakpoincie oraz sprawdzenie stosu wywołań.
--Integracja z make, co zostanie omówione w kolejnym podrozdziale
--Możliwość doinstalowania kolejnych wtyczek. Przy tworzeniu przydatna
-okazała się wtyczka aplikacji Valgrind jako narzędzie do wykrywania wycieków pamięci, oraz integracja z aplikacją Perf. Jest to profiler który
-pokazuje statystyki odnośnie tego które wywołania metod trwają najdłużej. Profilowanie okazało się pomocne podczas refactoringu w ramach którego
-została przeprowadzona optymalizacja wydajności.
+Środowiskiem w którym będzie powstawać aplikacja będzie Eclipse IDE (ang. Integrated Development Environment). Aplikacja została stworzona przez firmę IBM, jednak obecnie stanowi ona darmowe oprogramowanie, dostępne na licencji Eclipse Public License (EPL). Licencja ta bardzo dobrze nadaje się do wykorzystania w celach komercyjnych, dzięki czemu Eclipse jest często platforma wykorzystywaną do tworzenia oprogramowania w korporacjach. Warto wspomnieć o tym że funkcjonalność aplikacji można rozszerzać za pomocą wtyczek. Eclipse posiada nawet market ( http://marketplace.eclipse.org/ ) w którym niezależni Twórcy mogą sprzedawać stworzone przez siebie plugin-y.
+Dostępne są tam zarówno płatne rozszerzenia, jak i darmowe, a samą instalacje można przeprowadzić z poziomu uruchomionej aplikacji wybierając w górnym menu Help a następnie Eclipse Marketplace.
 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=480,natheight=142]{./Pictures/eclipse.png}
+    \caption{Eclipse podczas instalacji wtyczki z Marketplace}
+\end{figure}
+
+Domyślnie w wersji klasycznej Eclipse możliwe jest jedynie tworzenie aplikacji w Javie, jednak instalacja wtyczki CDT, bądź też pobranie przygotowanej już odpowiedniej wersji programu pozwala na wygodne pisanie w języku C++.
+Konfiguracja tego środowiska do tworzenia gry Astro Rush polegała na pobraniu z oficjalnej strony spakowanej platformy dostosowanej do języka C++, wypakowaniu jej (program wymaga do pracy zainstalowanego JRE, ponieważ napisana jest w Javie), a następnie po uruchomieniu doinstalowaniu kilku dodatkowych wtyczek które okazały się przydatne podczas tworzenia projektu np. wtyczki zapewniającej wsparcie dla repozytorium Git-a. Środowisko te posiada wbudowaną integracje z wieloma przydatnymi narzędziami, które bardzo upraszczają życie programiście np. autouzupełnienie, formatowanie kodu. Natomiast wtyczka CDT dostarczyła przy tworzeniu gry Astro Rush taki przydatnych narzędzi jak:
+-Integracja Eclipse z GNU Debuggerem (w skrócie gdb). Debugger ten stworzony przez Richarda Stallmana i dostępny na licencji GPL jest aplikacją konsolową która umożliwia debuggowanie aplikacji C++ w Eclipse. Najbardziej przydatna okazała się tutaj możliwość zatrzymania programu na ustawionym breakpoincie oraz sprawdzenie stosu wywołań. Można również wykonywać kod programu krok po kroku, szukając przyczyny ewentualnych błędów. Używanie gdb z poziomu konsoli byłoby bardziej uciążliwe. 
+-Integracja z Make (samo narzędzie zostanie omówione w kolejnym podrozdziale) dzięki czemu nie ma potrzeby wpisywania polecenia make w konsoli za każdym razem przy budowaniu, ale wystarczy w oknie Eclipsa wybrać cel budowania i dwa razy kliknąć w niego.
+
+Trzeba również wspomnieć o tym że przy tworzeniu projektu został wykorzystany plugin integrujący Eclipse z programem Valgrind. 
+Ta aplikacja konsolowa jest narzędziem do debugowania pamięci oraz do wykrywania wycieków pamięci. Plugin ten okazał się pomocny wielokrotnie do wyszukania miejsc w aplikacji gdzie dynamicznie przydzielana pamięć nie była zwalniania. Valgrind pozwala nawet znaleźć zmienne które nie są inicjalizowane, co pozwala uniknąć niektórych błędów związanych z tym że zmienne automatyczne zawierają po utworzeniu przypadkowe wartości z pamięci. 
+
+W ostatniej fazie tworzenia projektu zostało wykonane profilowanie, czyli dynamiczna analiza aplikacji pozwalająca znaleźć miejsca aplikacji których wywołanie trwa najdłużej w celu ich optymalizacji. Do tego celu został wykorzystany plugin łączący Eclipse z profilerem Perf. Pozwolił on na zebranie i wyświetlenie statystyk odnośnie czasu procesora jaki jest wykorzystywany przez poszczególne funkcje, klasy w programie.
 
 %============================================================================================================================
-%							 							Make
+%					    Make jako narzędzie do automatyzacji budowania projektu
 %============================================================================================================================
-\subsection{Make}
-Eclipse jako platforma programistyczna dedykowany jest językowi Java, a kolejne wtyczki pozwalające pisać w innych językach to tylko rozszerzenie tego
-środowiska Javy. Eclipse z wtyczką do języka C++ może używać programu Make, który automatyzuje budowanie projektu składającego się z wielu plików.  
-Zostało to wykorzystane w projekcie. Ogromnym plusem takiego rozwiązania jest to żeby zbudować aplikacje nie potrzeba ściągać Eclipse-a, ale wystarczy
-make, który zajmuje niewiele miejsca na dysku i jest wieloplatformowy. Dodatkowo bardzo łatwo się go instaluje w większości dystrybucji Linuksa. Make
-korzysta z pliku reguł domyślnie o nazwie „makefile”. Taki plik dla omawianej gry wygląda następująco:
+\subsection{Make jako narzędzie do automatyzacji budowania projektu}
 
+Eclipse jako platforma programistyczna dedykowany jest językowi Java, a kolejne wtyczki pozwalające pisać w innych językach to tylko rozszerzenie tego środowiska Javy. Eclipse z wtyczką do języka C++ może używać programu Make, który automatyzuje budowanie projektu składającego się z wielu plików. Zostało to wykorzystane w projekcie. Ogromnym plusem takiego rozwiązania jest to żeby zbudować aplikacje u klienta nie potrzeba ściągać Eclipse-a i konfigurować projektu, ale wystarczy aplikacja make, która zajmuje niewiele miejsca na dysku i  wystarczy wykonać jedno polecenie żeby zbudować projekt. Rozwiązanie takie jest nie zależne od systemu, ponieważ make działa zarówno w systemie Windows jak i Linux. Dodatkowo bardzo łatwo się go instaluje w większości dystrybucji Linuksa. Dla dystrybucji Debian będzie to polecenie:
+
+\begin{verbatim}
+	aptitude install make
+\end{verbatim}
+
+Po uruchomienia programu make, szuka on domyślnie, o ile nie podaliśmy w parametrach innej nazwy - pliku Makefile. Plik ten opisuje zależności miedzy plikami źródłowymi, i umożliwia skompilowanie tylko tych plików które uległy zmianie od ostatniego budowania. Zdecydowanie przyśpiesza to prace nad projektem w przypadku kiedy jest potrzebne testowania poprawek na bieżąco. 
+
+Domyślne wywołanie make bez żadnych parametrów spowoduje zawsze uruchomienie domyślnego celu budowania: all. Możliwe jest definiowania dowolnej ilości celów budowania w jednym Makefile-u. Dzięki zastosowaniu takiego podejścia nie ma potrzeby edycji Makefilu kiedy chce skompilować aplikacje np. z innymi flagami kompilatora. Wystarczy wtedy dopisać odpowiedni cel budowania i go uruchomić. W projekcie Astro Rush został dodany również cel budowania służący do czyszczenia gry z wszystkich skompilowanych źródeł oraz z linkowanej aplikacji, co okazuje się przydatne kiedy występuje potrzeba przebudowania całego projektu. Tutaj należy wspomnieć o tym że Makefile sprawdza które pliki wymagają ponownej kompilacji, i kompiluje tylko te które uległy zmianie od ostatniego budowanie. Takie podejście znacząco skraca czas który programista musi poświecić na budowaniu aplikacji. Dodatkowo make wspiera kompilacje wielowątkowa, dzięki czemu na maszynach z procesorem wielordzeniowym można wykorzystać wszystkie rdzenie, skracając jeszcze bardziej czas budowy programu. 
+
+Napisany na potrzeby gry plik „Makefile” pokazuje również że w pliku reguł programu make można definiować swoje zmienne. Taką zmienną może być na przykład ścieżka do kompilatora, która może się zmienić w zależności od platformy. Takimi zmiennymi mogą być również flagi linkera, kompilatora, oraz lista plików źródłowych z katalogu src. Tak napisany Makefile okazał się bardzo uniwersalny i dodanie kolejnych nowych plików źródłowych wymaga jedynie dopisanie ich na listę w zmiennej Makefile-a. 
+
+Budowanie aplikacji poprzez make bądź też podobne narzędzie o nazwie cmake jest wyjątkowo popularne w systemie Linuks i projektach napisanych w języku C/C++. Make jest nawet wykorzystywany do budowania jądra Linuksa, które składa się z milionów linii kodu ( wersja 3.2 to w przybliżeniu 15 mln ) oraz setek plików, gdzie oszczędność czasu w przypadku rekompilacji jest bardzo znacząca kiedy kompilowane są tylko te moduły które zostały zmienione. Plik Makefile w grze Astro Rush wygląda następująco:
 \begingroup
 \fontsize{10pt}{12pt}\selectfont
 \begin{verbatim}  
 CXX = g++
-CFLAGS = -Wall -ansi -pedantic -g -std=c++0x -Wall -I ./include -O0 -c
+CFLAGS = -Wall -pedantic -g -std=c++0x -I ./include -O0 -c
 
 # flagi linkera
 LIBS = -lGL -lGLU -lSDL -lSDL_mixer -lSDL_ttf -lSDL_image -lluabind -llua5.1
@@ -109,7 +156,7 @@ all: $(SOURCES) $(EXECUTABLE)
 # linkowanie aplikacji
 $(EXECUTABLE): $(OBJECTS)
 	 @echo "\n ---- Linkowanie ---- "
-	$(CC) $(OBJECTS) -o $(EXECUTABLE) $(LIBS)
+	 $(CC) $(OBJECTS) -o $(EXECUTABLE) $(LIBS)
 
 #kompilowanie plikow cpp
 .cpp.o:
@@ -119,34 +166,34 @@ $(EXECUTABLE): $(OBJECTS)
 clean:
 	rm -rf ./src/*.o
 	rm ./AstroRush.bin 
-    \end{verbatim}  
+
+\end{verbatim}  
 \endgroup
-
-Domyślne wywołanie make bez żadnych parametrów spowoduje zawsze uruchomienie domyślnego celu budowania: all. Możliwe jest definiowania dowolnej ilości
-celów budowania w jednym makefile-u. W grze został dodany również cel do czyszczenia gry z wszystkich skompilowanych źródeł oraz zlinkowanej
-aplikacji, co okazuje się przydatne kiedy występuje potrzeba przebudowania projektu, bowiem make sprawdza czasy ostatniej modyfikacji  plików tzw.
-timestampy i kompiluje tylko te źródła które uległy zmianie od ostatniej kompilacji.
-	W napisanym na potrzeby gry pliku „makefile” widać że w plikach makefile można definiować swoje własne zmienne, tutaj na przykład zmienną są
-flagi linkera, kompilatora, oraz lista plików źródłowych z katalogu src. Tak napisany makefile jest bardzo uniwersalny i kolejne nowe pliki wymagają
-jedynie dopisania ich na listę źródeł. Ewentualnie podczas kompilacji w systemie w którym w zmiennej środowiskowej nie ma kompilatora g++ można tutaj
-podać ścieżkę gdzie ten kompilator się znajduje.
-	Budowanie aplikacji poprzez make bądź też podobne narzędzie o nazwie cmake jest wyjątkowo popularne w systemie Linuks i projektach napisanych
-w języku C/C++. Make jest nawet wykorzystywany do budowania jądra Linuksa, które składa się z milionów linii kodu ( wersja 3.2 to w przybliżeniu 15
-mln ) oraz setek plików, gdzie nie wszystkie muszą być skompilowane, a przy rekompilacji kompilowane są tylko te które uległy zmianie, dzięki czemu
-oszczędność czasu przy kompilacji jest znacząca.
-
 
 %============================================================================================================================
 %														Git
 %============================================================================================================================
-\subsection{Git}
-Projekt Astro Rush nie wydaje się zbyt duży biorąc pod uwagę fakt że nie przekroczył 10 tysięcy linii kodu. Jednak zawsze warto mieć jakąś kopie na
-repozytorium oraz ewentualnie możliwość poprzez historie  zmian przywrócenie jakiś fragmentów kodu. Narzędziem które okazało się tutaj pomocne jest
-rozproszony system kontroli wersji – git. Darmowe oprogramowanie stworzone przez Linusa Torvaldsa do zarządzania kodem jądra Linuksa. Git jest również narzędziem wieloplatformowym, chodź pod systemem Windows jest on wolniejszy niż na Linuksie. Przy tworzeniu aplikacji został wykorzystany serwis
-hostujący gita: https://github.com/. Hosting dla aplikacji open source jest darmowy, jednak w takim przypadku repozytorium z kodem jest publiczne.
-Warto wspomnieć o tym że serwis github mimo tego że powstał dość nie dawno bo w 2008, ma już 2 miliony repozytoriów.
-	
-Git w środowisku Linuks jest narzędziem konsolowym, jednak w ramach ułatwienia podczas tworzenia aplikacji została wykorzystana wtyczka do eclipse która pozwala w łatwy sposób synchronizować projekt który znajduje się na dysku lokalnie z tym co jest na repozytorium, oraz wysyłanie zmian na serwer. 
+
+\subsection{Git - system kontroli wersji}
+
+Projekt Astro Rush nie wydaje się zbyt duży biorąc pod uwagę fakt że nie przekroczył 10 tysięcy linii kodu. Jednak zawsze warto mieć jakąś kopie na repozytorium oraz ewentualnie możliwość poprzez historie  zmian przywrócenie jakiś fragmentów kodu. Narzędziem które okazało się tutaj pomocne jest rozproszony system kontroli wersji – git. Darmowe oprogramowanie stworzone przez Linusa Torvaldsa do zarządzania kodem jądra Linuksa. Git w założeniu ma być pomocny w pracy zespołowej nad dużymi projektami, jednak w przypadku tak małego projektu jak Astro Rush również okazał się pomocny. Git jest również narzędziem wieloplatformowym, chodź pod systemem Windows jego klient jest on wolniejszy niż na Linuksie.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=490,natheight=142]{./Pictures/git.png}
+    \caption{Portal github.com. Podgląd pliku źródłowego. }
+\end{figure}
+
+Przy tworzeniu aplikacji został wykorzystany serwis hostujący gita: https://github.com. Portal posiada wiele funkcji wspomagających pracę zespołową nad projektem. Pozwala między innymi na edycję plików źródłowych bezpośrednio na serwerze, przeglądanie i porównywanie zmian w plikach. Dzięki czemu łatwo można sprawdzić co było w poprzedniej wersji pliku, oraz kto wysłał zmiany (ang.commit) na serwer. Github dostarcza statystyk na temat projektu np. wykres jak zmieniała się ilość kodu wraz z kolejnymi wysłanymi wersjami na serwer. Ponadto można tworzyć na serwerze dokumentacje do aplikacji (tzw. Wiki) którą następnie użytkownik może przeglądać przez przeglądarkę, bez potrzeby ściągania na dysk. Hosting dla aplikacji open source jest darmowy, jednak w takim przypadku repozytorium z kodem jest publiczne. Oznacza to że każdy może sobie ściągnąć projekt jednym poleceniem:
+
+\begin{verbatim}
+	git clone git://github.com/lolciuuu/astro.git
+\end{verbatim}
+
+Analogicznie z poziomu konsoli można później wysyłać zmiany na serwer (o ile dany użytkownik został dodany na listę osób które mogą zmieniać pliki na serwerze ), bądź też pobierać zmiany wysłanych przez innych użytkowników. Warto wspomnieć o tym że serwis github mimo tego że powstał dość nie dawno bo w 2008, ma już 2 miliony repozytoriów. 
+
+Git w środowisku Linuks jest narzędziem konsolowym (W systemie Debian wystarczy zainstalować pakiet o takie samej nazwie), jednak w ramach ułatwienia podczas tworzenia aplikacji została wykorzystana wtyczka do Eclipse która pozwala w łatwy sposób synchronizować projekt który znajduje się na dysku lokalnie z tym co jest na repozytorium, oraz wysyłanie zmian na serwer. Dzięki wtyczce do tej podczas tworzenia projektu nie było potrzeby wydawać poleceń z poziomu konsoli, wszystko można wykonać z poziomu GUI.
+
 
 \section{OpenGL jako silnik grafiki}
 \lhead{Rozdział 1. \emph{OpenGL jako silnik grafiki}}
