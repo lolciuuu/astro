@@ -6,12 +6,13 @@
 #include "Menu.hpp"
 #include "StandardReferences.hpp"
 #include "Logger.hpp"
+#include "GameItem.hpp"
 
 /** Klasa jest singletonem, konstruktor zawiera zabezpieczenie przed wielokrotnym utworzeniem obiektu
  *  Dodatkowo Game jest fasada, ktora decyduje o tym ktora klasa ma byc narywana (menu czy play),
  *  oraz gdzie przekazac informacje o wykrytym zdarzeniu np. nacisnieciu klawisza.
  * */
-class Game : StandardReferences 
+class Game : StandardReferences, public GameItem
 {
 public:  
   Game();

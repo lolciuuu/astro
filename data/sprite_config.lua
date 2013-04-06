@@ -16,7 +16,7 @@ cxx_addSprite( "PLAYER_STAND",    50,   	 98,     	551,   		120,    	1,         
 
 cxx_addSprite( "PLAYER_FLY",      52,   	 100,   	600,    	122,    	1,         60 ,     	  1,     true  );
 
-cxx_addSprite( "COUNTING",        75,   	 140,    	2,      	340,      	1,         400,    	      3,     false );
+cxx_addSprite( "COUNTING",        75,   	 100,    	2,      	340,      	1,         400,    	      3,     false );
 
 cxx_addSprite( "LIVE_BAR",        100,  	 64,   	    858,    	39,     	1,         620 ,    	  1,     false );
 
@@ -99,8 +99,8 @@ cxx_addSprite( "MAP_38",  map_size_1,     map_size_1,    -2+(6 * map_size_1),   
 -- platformy
 cxx_addSprite( "MAP_39",  map_size_1,     map_size_1,    0,                 0,                    1, 1000, 1, false );
 
---enemy
-cxx_addSprite( "MAP_40",  map_size_1,     map_size_1,    1200,               560,                    1, 1000, 1, false );
+--enemy (nie wykorzystywany)
+cxx_addSprite( "MAP_40",  map_size_1,     map_size_1,    0,               460,                    1, 1000, 1, false );
 
 --aditional bonus
 cxx_addSprite( "MAP_41",  map_size_1,  	  	 map_size_1, 585,    	395,       	1,         0 ,    	      1,     false );
@@ -108,10 +108,12 @@ cxx_addSprite( "MAP_41",  map_size_1,  	  	 map_size_1, 585,    	395,       	1, 
 print( "[ Lua ] End of script:sprite_config.lua" );
 
 
-
-
-
-
+-- monster 1 left,right,stand
+monster1_y = 458;
+monster_size = 50;
+cxx_addSprite( "M1_L",  monster_size,     monster_size,    200,               monster1_y,                    1, 1000, 1, false );
+cxx_addSprite( "M1_R",  monster_size,     monster_size,    100,               monster1_y,                    1, 1000, 1, false );
+cxx_addSprite( "M1_S",  monster_size,     monster_size,    0,                 monster1_y,                    1, 1000, 1, false );
 
 
 

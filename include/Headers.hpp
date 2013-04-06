@@ -20,11 +20,11 @@
 #define DEBUG
 
 // LUA
-#include <lua5.1/lua.hpp>
+#include <lua.hpp>
 
 extern "C" {
   
-  #include <lua5.1/lualib.h>
+  #include <lualib.h>
 
   // Moduly SDL-a
   #include <SDL/SDL.h>
@@ -76,7 +76,8 @@ enum PlayerState {
 
 enum EnemyState {
 	Left,
-	Right
+	Right,
+	Stop
 };
 
 struct ColisionSide {

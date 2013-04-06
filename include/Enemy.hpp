@@ -12,7 +12,22 @@ public:
 
 	void update( const float& dt );
 
-	bool isColidate( Rect rct ) { return pRect.isColidate(rct); }
+	/** losowo wybierane jest czy ma isc w prawo czy w lewo */
+	void reset() {
+			pState = EnemyState::Stop;
+			if( rand()%10 < 5 ) {
+				pOffset = -1.0f;
+			}
+			else {
+				pOffset = 101.0f;
+			}
+	} ;
+
+	bool isColidate( Rect rct ) {
+		Rect rTmp = pRect;
+		rTmp.x = pRect.x + pOffset;
+		return rct.isColidate(rTmp);
+	}
 
 	float getPosX() const {
 		return pRect.x;
@@ -20,6 +35,10 @@ public:
 
 	void setPosX(float posX) {
 		pRect.x = posX;
+	}
+
+	float getAbsoluteX() const {
+		return pRect.x + pOffset;
 	}
 
 	float getPosY() const {

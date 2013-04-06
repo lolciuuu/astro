@@ -27,6 +27,22 @@ Map::Map(short **M, ushort EntitySize, uint R, uint C) :
 	pPlayer_sx = Property::getSetting("PLAYER_W");
 	pPlayer_sy = Property::getSetting("PLAYER_H");
 
+	logger.debug("Entity size:" + toString(pSize) );
+	logger.debug("Player height:" + toString(pPlayer_sy) );
+	logger.debug("Player width:" + toString(pPlayer_sx) );
+}
+
+
+/** */
+Map::~Map() {
+
+	logger.debug("Clearing map");
+
+	for( uint i=0; i<rows; ++i )
+		delete pMap[i];
+
+	delete pMap;
+
 }
 
 /** Sciaga ze stosu ostatni element na ktorym wykryto kolizje */
@@ -49,9 +65,9 @@ short Map::checkColision(const short& Player_x, const short& Player_y,ColisionSi
 		if (!itWasReturn[X][Y]) {
 			itWasReturn[X][Y] = true;
 			result = pMap[X][Y];
-
 			if ( isBonus( result ) || isAdditionalBonus( result ) ) {
 				drawID->at(X)[Y] = false;
+				return result;
 			}
 		}
 	}
@@ -177,10 +193,10 @@ void Map::draw() {
 			/// wykrywania kolizji
 			if (pCheckColision) {
 
-				if (!(pPlayer_x >= (des_x + pSize)
-						|| pPlayer_x + pPlayer_sx <= des_x
-						|| pPlayer_y + pPlayer_sy <= des_y
-						|| pPlayer_y >= des_y + pSize)) {
+				if (!(pPlayer_x > (des_x + pSize)
+						|| pPlayer_x + pPlayer_sx < des_x
+						|| pPlayer_y + pPlayer_sy < des_y
+						|| pPlayer_y > des_y + pSize)) {
 					short xTmp = x + pos_X;
 					short yTmp = rows - y;
 

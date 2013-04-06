@@ -40,6 +40,10 @@ public:
 
     short checkColision(const short& Player_x,const short& Player_y,ColisionSide& cSide);
     
+    ~MapManager() {
+    	delete pMapMain;
+    }
+
 private:
    static Map* loadMapFromFile(string fileName,short levelNo);
    

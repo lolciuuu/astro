@@ -58,6 +58,7 @@ private:
 	 static EnemyManager* pInstance;
 
 	 vector<Enemy> pEnemyList;
+
 	 ushort pLastEnemy;
 	 ushort pCurrentX;	 // aktualna kolumna od kroej zaczyna sie rysowanie mapy na ekranie
 	 float pOffsetX;

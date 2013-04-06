@@ -20,6 +20,8 @@ public:
 	  	 pScreenWidth = pRendererPtr->getScreenWidth();
       }
   
+  virtual ~StandardReferences(){  };
+
 protected:
   Renderer* pRendererPtr;
   Writer* pWriterPtr;  

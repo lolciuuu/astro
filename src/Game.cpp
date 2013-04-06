@@ -100,6 +100,8 @@ void Game::pressedReturn() {
 /** nacisniecie escape */
 void Game::pressedEsc() {
 
+	logger.info("ESC pressed");
+
     switch ( pGameState ) {
 
     case( Gamespace::MENU ): {

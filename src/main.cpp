@@ -35,24 +35,28 @@ int main( int argc, char* argv[] ) {
 
     }
     catch( char const* Error ){
+       error("Catch exception (char const*)");
        delete app;
        critical( Error );
        critical("Aplication terminated");
        return( EXIT_FAILURE );
     }
     catch( std::exception& e ) {
+    	 error("Catch exception (std::exception)");
     	 delete app;
     	 critical( e.what() );
     	 critical("Aplication terminated");
     	 return( EXIT_FAILURE );
     }
     catch ( ... ) {
+        error("Catch unknown exception");
         delete app;
         critical("Unexcepted error");
         critical("Aplication terminated");
         return( EXIT_FAILURE );
     }
 
+    info("Exiting normally");
     delete app;
     info(  Property::get("GAME_END_INFO") );
     return( EXIT_SUCCESS );

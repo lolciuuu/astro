@@ -82,10 +82,11 @@ void LiveBar::colision( short type ) {
 //@TODO usunac liczby magiczne
 
 	if( type == COLISION_WITH_ENEMY ) {
-		    pLiveAmount -= 0.01;
+		debug("Enemy colision");
+		pLiveAmount -= 0.3;
 	}
 	else {
-		   pLiveAmount -= 0.03;
+		 pLiveAmount -= 0.01;
 	}
   
 }

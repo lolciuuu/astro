@@ -94,9 +94,10 @@ void Play::update(const float& dt ){
     	  else if( isAdditionalBonus( type ) ) {
     		  pLiveBar.addBonus();
     	  }
-    	  else if( !isPlatform( type ) ){
+    	 /* usuniete przy dodawaniu kolizji z przeciwnikiem
+    	  * else if( !isPlatform( type ) ){
     		  pLiveBar.colision( type );
-    	  }
+    	  }*/
 
       }//END type != -1
 
@@ -104,7 +105,7 @@ void Play::update(const float& dt ){
      pPlayer.update( dt, cSide );
 
      // sprawdzanie kolizji z przeciwnikami
-     if( pEnemyManager->isColidate( Rect( pPlayer.getPosX(), pPlayer.getPosY(), pPlayer.getSize_X(), pPlayer.getSize_Y() ) ) ) {
+     if( pEnemyManager->isColidate( Rect( pPlayer.getPosX(), pPlayer.getPosY(), pPlayer.getSize_X()-5, pPlayer.getSize_Y()-5 ) ) ) {
 
     	 if( pPlayer.isColisionWithEnemy() ) {
  	     	 pLiveBar.colision( COLISION_WITH_ENEMY ); //@TODO zastapic stala

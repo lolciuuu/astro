@@ -1,9 +1,9 @@
 # compiler flag
 CXX = g++
-CFLAGS = -Wall -pedantic -g -std=c++0x -Wall -I ./include -O3 -c 
+CFLAGS = -Wall -pedantic -g  -std=gnu++11 -Wall -I ./include -O3 -c 
 
 # linker flags
-LIBS = -lGL -lGLU -lSDL -lSDL_mixer -lSDL_ttf -lSDL_image -lluabind -llua5.1 
+LIBS = -lGL -lGLU -lSDL -lSDL_mixer -lSDL_ttf -lSDL_image -lluabind -llua -lstdc++ -lX11
 
 # list of cpp sources
 SOURCES = src/main.cpp src/App.cpp src/Property.cpp src/Resource.cpp \
@@ -22,11 +22,12 @@ EXECUTABLE = AstroRush.bin
 
 # build all game
 all: $(SOURCES) $(EXECUTABLE)
-	 @echo "\n ---- Udało się ---- "
+	 @echo " ---- Udało się ---- "
 
 # linking application
+
 $(EXECUTABLE): $(OBJECTS) 
-	 @echo "\n ---- Linkowanie ---- "
+	 @echo " ---- Linkowanie ---- "
 	$(CC) $(OBJECTS) -o $(EXECUTABLE) $(LIBS) 
 
 # compile cpp files

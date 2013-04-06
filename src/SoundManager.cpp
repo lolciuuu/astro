@@ -36,9 +36,11 @@ void SoundManager::loadMusic() {
 
 	 info("SoundManager::loadMusic | init audio: success");
 
-	 pInstance->loadSound( "data/sound/menu.wav", "MENU" );
-	 pInstance->loadSound( "data/sound/play.mp3", "PLAY" );
-	 pInstance->loadSound( "data/sound/splash.mp3", "SPLASH" );
+	 pInstance->loadSound( "./data/sound/menu.wav", "MENU" );
+	 pInstance->loadSound( "./data/sound/menu.wav", "PLAY" );
+	 pInstance->loadSound( "./data/sound/menu.wav", "SPLASH" );
+	// pInstance->loadSound( "./data/sound/play.mp3", "PLAY" );
+	// pInstance->loadSound( "./data/sound/splash.mp3", "SPLASH" );
 
 	 info("Load sound finish");
 

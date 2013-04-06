@@ -26,7 +26,6 @@ void EnemyManager::addEnemy(ushort R, ushort C,ushort ID) {
 /** */
 void EnemyManager::update( const float& dt ) {
 	for( uint i = pLastEnemy; i<pEnemyList.size(); ++i ) {
-
 		//@TODO optymalizacja
 		if( pEnemyList[i].getRow() < pCurrentX+(App::getScreenWidth()/pTilesSize) ) {
 			pEnemyList[i].update( dt );
@@ -38,7 +37,7 @@ void EnemyManager::update( const float& dt ) {
 /** */
 void EnemyManager::draw() {
 
-	while(  pEnemyList[pLastEnemy].getColumn() < pCurrentX  ) {
+	while(  pEnemyList[pLastEnemy].getColumn() < pCurrentX-2  ) {
 			++pLastEnemy;
 	}
 
@@ -73,4 +72,8 @@ bool EnemyManager::isColidate( Rect rect ) {
 void EnemyManager::reset() {
 	pCurrentX = 0;
 	pLastEnemy = 0;
+
+	for( uint i = pLastEnemy; i<pEnemyList.size(); ++i ) {
+		pEnemyList[i].reset();
+	}
 }

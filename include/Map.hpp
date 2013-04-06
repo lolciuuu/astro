@@ -45,6 +45,8 @@ public:
 		    else return( false );
 	}
   
+  ~Map();
+
 private:  
   short** pMap; // macierz zaczytana z pliku
   
@@ -67,7 +69,6 @@ private:
   short pR;
   short pC;
 
- 
   /// @TODO comment
   short pPlayer_x;
   short pPlayer_y;

@@ -9,9 +9,10 @@
 #include "EnemyManager.hpp"
 #include "StandardReferences.hpp"
 #include "Background.hpp"
+#include "GameItem.hpp"
 
 /** Obsluga taki jednostek jak: mapa, gracz, pasek zycia, highscore...stan gry*/
-class Play: StandardReferences {
+class Play: StandardReferences, public GameItem {
 public:
     Play();
     ~Play();
