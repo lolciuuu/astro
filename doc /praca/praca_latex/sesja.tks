@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="9">
-    <document hasfocus="false" master="false" line="6" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/bibliografia.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/zakonczenie.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/wstep.tex" bookmark3="0"/>
-    <document hasfocus="true" master="true" line="130" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/main.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="25" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/rozdzial1.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="6" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/rozdzial3.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="50" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/rozdzial2.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="377" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/Thesis.cls" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/lolcio/Develoment/AstroRush/doc /praca/praca_latex/Bibliography.bib" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="10" bookmark1="0" bookmark2="0" file="/home/lolcio/AstroRush/doc /praca/praca_latex/zakonczenie.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/lolcio/AstroRush/doc /praca/praca_latex/wstep.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/lolcio/AstroRush/doc /praca/praca_latex/rozdzial1.tex" bookmark3="0"/>
+    <document hasfocus="true" master="false" line="97" bookmark1="0" bookmark2="0" file="/home/lolcio/AstroRush/doc /praca/praca_latex/rozdzial2.tex" bookmark3="0"/>
+    <document hasfocus="false" master="true" line="0" bookmark1="0" bookmark2="0" file="/home/lolcio/AstroRush/doc /praca/praca_latex/main.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="48" bookmark1="0" bookmark2="0" file="/home/lolcio/AstroRush/doc /praca/praca_latex/rozdzial3.tex" bookmark3="0"/>
 </TexmakerSession>

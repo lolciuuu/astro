@@ -40,7 +40,7 @@
   \space \number\year}
 \usepackage{setspace}
 \onehalfspacing
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{1cm}
 \setlength{\parskip}{2.0ex plus0.5ex minus0.2ex}
 \usepackage{vmargin}
 %----------------------------------------------------------------------------------------

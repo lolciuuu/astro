@@ -13,13 +13,20 @@
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
+
+%dodatkowe pakiety
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
 
+%definicja koloru czcionki
+\definecolor{TEXT_COLOR}{HTML}{3B3B3B}
 %==============================================================================================================
 \begin{document}
 
+\color{TEXT_COLOR}
 \setstretch{1.5} % odstęp pionowy 
 
 % Define the page headers using the FancyHdr package and set up for one-sided printing
@@ -37,7 +44,7 @@
 \hypersetup{pdfauthor=Kamil Lolo}
 \hypersetup{pdfkeywords=Praca inżynierska}
 
-
+\setcounter{secnumdepth}{3}
 
 %----------------------------------------------------------------------------------------
 %								Strona tytułowa
@@ -49,13 +56,16 @@
 %logo uniwersytetu
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{./Pictures/logo.jpg}
+    \includegraphics[width=300px]{./Pictures/logo.jpg}
 \end{figure}
 
-\textsc{\Large Inżynierska praca dyplomowa \newline }\\[0.5cm] 
+\begin{center}
+\Large Inżynierska praca dyplomowa \\*
+\end{center}
 
+\addvspace{40pt}
 
-{\huge \bfseries Platformowa gra zręcznościowa z wykorzystaniem biblioteki SDL }\\[0.4cm] % tytuł pracy
+{\huge \bfseries Platformowa gra zręcznościowa \\* z wykorzystaniem biblioteki SDL }\\[0.4cm] % tytuł pracy
 
 \addvspace{110pt}
  
@@ -74,7 +84,7 @@ dr.Krzysztof Podlaski
 
 
 \vfill
-\addvspace{20pt}
+\addvspace{50pt}
 \begin{center}
 Wydział Fizyki i informatyki stosowanej
 \end{center}
@@ -92,7 +102,6 @@ Wydział Fizyki i informatyki stosowanej
 \pagestyle{fancy}
 
 % Set the left side page header to "Contents"
-
 \lhead{\emph{Contents}} 
 
 % Write out the Table of Contents
@@ -102,39 +111,20 @@ Wydział Fizyki i informatyki stosowanej
 %----------------------------------------------------------------------------------------
 %									Rozdziały pracy
 %----------------------------------------------------------------------------------------
-
 % Rozpoczecie numerowania stron (1,2,3..)
 \mainmatter 
-
 % Return the page headers back to the "fancy" style
 \pagestyle{fancy} 
-
 % dołączanie poszczegolnych rozdzaiałów
 \input{./wstep}
 \input{./rozdzial1}
 \input{./rozdzial2}
 \input{./rozdzial3}
 \input{./zakonczenie}
-
 \lhead{\emph{Spis ilustracji}} % Set the left side page header to "List of Figures"
 \listoffigures % Write out the List of Figures
-
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 \backmatter
-
 %----------------------------------------------------------------------------------------
 %									Bibliografia
 %----------------------------------------------------------------------------------------
-\begin{thebibliography}{1}
-
-\bibitem{sop}Janusz Ganczarski. 
-\emph{OpenGL w praktyce}. Wydawnictwo BTC, 2008.
-
-\bibitem{sop}Ernest Pazera. 
-\emph{Focus o SDL}. Premier Press, 2003
-
-\end{thebibliography}
-\end{document}
-
-
-\end{document}  
+ \input{./bibliografia}

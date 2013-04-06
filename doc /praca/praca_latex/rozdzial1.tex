@@ -1,15 +1,38 @@
-\setcounter{secnumdepth}{1}
+\setcounter{secnumdepth}{3}
 \renewcommand{\chaptername}{Rozdział}
-%============================================================================================================================
-%							 						Fabuła
-%============================================================================================================================
 \chapter{Wprowadzenie} 
 
+%============================================================================================================================
+% Czy jest gra komputerowa?
+%============================================================================================================================
+\section{Czym jest gra komputerowa?}
+\lhead{Rozdział 1. \emph{Czym jest gra komputerowa?}}
+\hspace{1cm} Gra komputerowa jest specyficznym rodzajem programu komputerowego łączącego w sobie elementy grafiki i dźwięku. Program ten ma za zadanie dostarczać użytkownikowi, bądź też kilku użytkownikom interaktywnej rozrywki przy komputerze, bądź też innym urządzeniem multimedialnym np.konsoli, tablecie. Gry można sklasyfikować na bardzo wiele gatunków i podgatunków np. gry zręcznościowe, gry z grafiką 3D, strategiczne, FPS-y (ang. first person shooter) itd. Można je podzielić również na to do kogo są kierowane tzn. czy gra jest edukacyjną aplikacją dla dzieci, czy też jest brutalną grą wojenną dla dorosłych.
+
+W czasach kiedy powstawały pierwsze gry (lata 70), oraz w czasach kiedy komputery klasy PC dopiero stawały się popularne, gry były tworzone przez jedną bądź kilka osób. Dziś w produkcji gier bierze udział niejednokrotnie kilkanaście osób, a w tym nie tylko programiści ale także projektanci, reżyserowie, dźwiękowcy, graficy. 
+Proces ten nabiera często ogromnego rozmachu i przynosi duże pieniądze ze sprzedaży gotowego produktu. Produkcja gry komputerowej jest tak bardzo złożonym procesem że powstają filmy dokumentalne o tym jak się odbywa ten proces. Przykładem może być tutaj film z serii \href{http://natgeotv.com/uk/megafactories/videos/ea-sports}{megafabryki} pokazujący proces Tworzenia gry Fifa- realistycznego symulatora piłki nożnej. 
+
+W dzisiejszych czasach coraz częściej można spotkać się z organizowaniem turniejów w różnych grach komputerowych, a nawet mistrzostwa świata. Współzawodnictwo takie nazywane jest e-sportem, i dla wielu graczy stanowi źródło dochodów. Przykładem może gra League of Legends, w którą grają  \href{http://gamezilla.komputerswiat.pl/newsy/2012/41/league-of-legends-w-liczbach-przerazajaco-wysokich-liczbach}{miliony ludzi na świecie} i regularnie odbywają się zawody w tą grę, oraz istnieją ligi w ramach których gracze zmagają się między sobą.
+
+Gry komputerowe w dzisiejszych czasach to nie tylko rozrywka, ale także duże pieniądze. Przykładem może być tutaj gra Call of Duty Modern Warfare 2 która wygenerowała \href{http://www.cdaction.pl/news-10119/wiedziales-call-of-duty-wygenerowalo-3-miliardy--dolarow-przychodu.html}{setki milionów dochodu}.
+ 
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=240px]{./Pictures/cryengine.jpg}
+    \caption{Silnik Cry Engine}
+\end{figure}
+  
+Omawiając gry komputerowe nie można pominąć zagadnienia silników gier. Silnik gry jest oprogramowaniem które dostarcza twórcy gry gotowych rozwiązań w kwestii np. wykrywania kolizji, oświetlenia, obsługi dźwięku oraz wielu innych elementów. Dzięki zastosowaniu gotowego silnika developer nie traci czasu na pisanie np. modułu do wyświetlania animacji, tylko korzysta z gotowego rozwiązania skupiając się na fabule, bądź też jakości wyświetlanej grafiki. Takie podejście znacząco przyśpiesza Tworzenie gry, oraz zwiększa jej jakość. Osobny zespół pracuje nad silnikiem, a inny nad stworzeniem na jakiego podstawie gry. Duże studia tworzą własne silniki, na bazie którego Tworzą kolejne gry, przykładem może być tutaj Cry Engine dający fotorealistyczną grafikę. Został on wykorzystany do stworzenia polskiej produkcji "Sniper Ghost Warrior 2" korzystająca z  3 wersji tego silnika. Silnik ten dostępny jest do kupienia bądź też do ściągnięcia za darmo ze strony twórców. Silnik posiada środowisko graficzne w którym w sposób wizualny można tworzyć świat dostępny w grze. Co ciekawe taki edytor znajduje zastosowanie nie tylko jako narzędzie do tworzenia gier ale także jako aplikacja do tworzenia realistycznych wizualizacji budynków przez architektów. Minusem większości komercyjnych silników jest jednak brak wsparcia dla systemu Linuks. Ewentualne dostępne dla tego systemu silniki nie dorównują możliwością tym płatnym. Stało się to też przyczyną wybrania grafiki 2D jako podstawy do napisania omawianego projektu, oraz do stworzenia gry od podstaw, bez użycia gotowych rozwiązań. 
+
+%============================================================================================================================
+% Fabuła
+%============================================================================================================================
 \section{Fabuła}
 \lhead{Rozdział 1. \emph{Fabuła}}
 
-Celem gracza będzie przebiec jak największy dystans. Będzie to bieg astronauty przez obcą planetę na której musi zbierać bańki z tlenem oraz omijać przeszkody żeby nie zginąć. Przeszkodami takimi będą meteoryty zmniejszające poziom życia. Astronauta podczas gry będzie cały czas biec do przodu,zwalniając jedynie w przypadku niskiego poziomu życia.
+\hspace{1cm} Omawiany projekt będzie grą zręcznościową, celem gracza będzie przebiec bohaterem jak największy dystans. Bohaterem tym będzie astronauta który wylądował na obcej planecie, i musi on zbierać bańki z tlenem żeby się nie udusić. Bańki te uzupełniają poziom życia wskazywany przez pasek życia w lewym górnym rogu. Dodatkowym utrudnieniem będą przeszkody w postaci meteorytów które należy omijać żeby nie pomniejszyć ilości życia.
 
+ 
 \begin{wrapfigure}{left}{0.5\textwidth}
 \begin{center}
 \includegraphics[width=120px]{./Pictures/astro.jpg}
@@ -18,19 +41,25 @@ Celem gracza będzie przebiec jak największy dystans. Będzie to bieg astronaut
 \label{Etykieta}
 \end{wrapfigure}
 
-Poziom życia będzie ciągle spadał, i bańki z tlenem będą go zwiększać. 
-Gracz będzie miał możliwość podskakiwania astronautą oraz wznoszenia się nim do góry Sporadycznie na mapie będą się pokazywać bonusy który astronauta będzie mógł zebrać (maksymalnie 3 naraz) i wykorzystać później do uzupełnienia ilości życia. Taki bonus będzie dawał także nieśmiertelność przez kilka sekund, wtedy to na brzegach ekranu pojawi się charakterystyczna obwódka. Kiedy gracz zakończy grę, wtedy jego wynik, czyli ilość przebytych metrów zapisywany będzie na liście 10 najlepszych wyników. Wyniki te będą zapisywane w osobnym pliku na dysku, tak żeby dane nie zostały stracone po wyłączeniu aplikacji. Listę najlepszych wyników będzie można obejrzeć wybierając z głównego menu pozycje „highscore”. Ze względu na fabułę z biegnącym
-astronautą, oraz osadzenie zdarzeń na obcej planecie, gra została nazwa „Astro Rush”.
 
+Astronauta podczas gry będzie cały czas biec do przodu,zwalniając nieznacznie w przypadku niskiego poziomu życia. Zwolnienie te będzie odbywać się poprzez zmianę położenia bohatera względem lewego brzegu ekranu. Prędkość przesuwania mapy nie ulega w tym przypadku zmianom. Poziom życia będzie ciągle spadał w regularnych odstępach czasu, natomiast bańki z tlenem będą go zwiększać. Ilość życia które doda jedna zebrana bańka jest większe niż ilość życia zmniejszona w jednym przy upływie jednego odstępu czasu. Gracz będzie miał możliwość podskakiwania astronautą oraz wznoszenia się nim do góry Sporadycznie na mapie będą się pokazywać bonusy które astronauta będzie mógł zebrać (maksymalnie 3 naraz) i wykorzystać później do uzupełnienia ilości życia. Taki bonus 
+będzie dawał także nieśmiertelność przez kilka sekund, wtedy to na brzegach ekranu pojawi się charakterystyczna niebieska obwódka. Kiedy gracz zakończy grę, wtedy jego wynik, czyli ilość przebytych metrów zapisywany będzie na liście 10 najlepszych wyników, o ile ilość punktów będzie większa od najniższego wyniku na liście. Kiedy zostanie spełniony ten warunek, gracz zostanie poproszony o podanie swojego imienia. Wyniki te będą zapisywane w osobnym pliku na dysku, tak żeby dane nie zostały stracone po wyłączeniu aplikacji. Listę najlepszych wyników będzie można obejrzeć wybierając z głównego menu pozycje highscore. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=42px]{./Pictures/livebar.png}
+    \caption{Pasek życia wyświetlany w lewym górnym rogu}
+\end{figure}
+
+Ze względu na fabułę z biegnącym astronautą, oraz osadzenie zdarzeń na obcej planecie, gra została nazwa ,,Astro Rush`` Tytuł ten nawiązuje również do gry Dino Rush dostępnej dla urządzeń z systemem iOS, która byłą inspiracją do stworzenia Astro Rush.
 
 %============================================================================================================================
-%							 						 Grafika
+% Grafika
 %============================================================================================================================
 \section{Grafika}
 \lhead{Rozdział 1. \emph{Grafika}}
 
-Grafika w grze będzie się opierać o tzw. sprite. Technika ta polega na tworzeniu animacji, bądź też rysowania dużych obrazów z serii małych obrazków
-które zazwyczaj są fragmentami jednej grafiki. Poszczególne klatki animacji biegu astronauty przedstawia na rysunek 2.
+\hspace{1cm} Grafika w grze będzie się opierać o technikę tworzenia animacji, gdzie pojedynczy animowany element nazywany jest sprite. Technika ta polega na rysowaniu animacji za pomocą serii klatek które są przechowywane bezpośrednio obok siebie w jednym pliku graficznym. Korzystając z tej techniki można renderować duże obrazki za pomocą serii mniejszych grafik, co pozwala na oszczędzenie miejsca  pamięci, na dysku oraz na zwiększenie wydajności aplikacji. W przypadku gry Astro Rush animowany jest bieg astronauty, poszczególne klatki tej animacji narysowanej w programie Inkscape przedstawia poniższy rysunek.
 
 \begin{figure}[h]
     \centering
@@ -48,53 +77,58 @@ Narysowanie części obrazków jako grafiki wektorowej pozwoliło zachować peł
 wektorowe były składane i poprawiane w Adobe Photoshop – bardzo rozbudowanej aplikacji do obróbki grafiki rastrowej. Photoshop jest aplikacją płatną,
 jednak istnieje możliwość użycia 30 dniowej wersji Trial, co też zostało zrobione podczas tworzenia gry. W atlasie grafiki znalazły się także ikony z
 kolekcji „Hand drawn icon set” które autor opublikował w internecie  na darmowej licencji.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=510,natheight=142]{./Pictures/screen1.png}
+    \caption{Przepływ danych między aplikacją C++ a skryptem Lua}
+\end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth,natwidth=410,natheight=142]{./Pictures/sprite_algorytm.png}
-    \caption{Schemat wyświetlania animacji opartej o sprite}
+    \includegraphics[width=0.8\textwidth,natwidth=410,natheight=142]{./Pictures/screen1.png}
+    \caption{Przepływ danych między aplikacją C++ a skryptem Lua}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=510,natheight=142]{./Pictures/sprite_algorytm.png}
+    \caption{Screen z gry - astronauta podczas lotu}
 \end{figure}
 
 %============================================================================================================================
-%							 						G++
+% g++
 %============================================================================================================================
 \section{Użyte narzędzia}
-
 \lhead{Rozdział 1. \emph{Użyte narzędzia}}
 \subsection{Kompilator}
-Do zbudowania aplikacji został wykorzystany kompilator g++ dostępny w ramach GNU GCC - zestawu kompilatorów dla popularnych języków. GCC dostępny na licencji GPL pozwala na kompilacje aplikacji napisanej w min. w Java, C/C++, Ada. Dostępny jest na wiele platform i architektur. Ponadto w systemach Linuks jest często zainstalowany domyślnie np. w Gentoo gdzie każda aplikacja jest kompilowana ze źródeł. G++ posiada kompatybilność z językiem C, dzięki czemu nie ma problemu z kompilacją programu korzystającego z biblioteki SDL, która jest napisana właśnie w C. Kompilator ten jest aplikacją konsolową, a skompilowanie zwykłego pliku źródłowego (main.cpp) do pliku wynikowego (main.bin) można wykonać za pomocą polecenia:
+\hspace{1cm} Do zbudowania aplikacji został wykorzystany kompilator g++ dostępny w ramach GNU GCC - zestawu kompilatorów dla popularnych języków. GCC dostępny na licencji GPL pozwala na kompilacje aplikacji napisanej w min. w Java, C/C++, Ada. Dostępny jest na wiele platform i architektur. Ponadto w systemach Linuks jest często zainstalowany domyślnie np. w Gentoo gdzie każda aplikacja jest kompilowana ze źródeł. G++ posiada kompatybilność z językiem C, dzięki czemu nie ma problemu z kompilacją programu korzystającego z biblioteki SDL, która jest napisana właśnie w C. Kompilator ten jest aplikacją konsolową, a skompilowanie zwykłego pliku źródłowego (main.cpp) do pliku wynikowego (main.bin) można wykonać za pomocą polecenia:
 \begin{verbatim}
 	g++ -c ./main.cpp -o main.bin
 \end{verbatim}
 
 W przypadku aplikacji składającej się z jednego pliku i nie korzystającego z żadnych bibliotek taka kompilacja wydaję się łatwa.
 Kiedy natomiast mamy kilka plików do skompilowania, wtedy należy wszystkie je wpisać jako parametr, a dodatkowo trzeba ustawić 
-flagi linkera, który łączy skompilowane pośrednie pliki w plik wykonywalny: (@TODO sprawdzic czy dziala)
-\begin{verbatim}
-	g++ -c ./main.cpp plikA.cpp plikB.cpp plikC.cpp -o main.bin -lSDL -lGL
-\end{verbatim}
-Projekt Astro Rush składa się z około 20 klas, wpisywanie takiego polecenia za każdym razem byłoby bardzo nie wygodne, dlatego też zostało użyte narzędzie make usprawniające budowanie gry. Zostanie ono opisane w jednym z kolejnych rozdziałów. Warto wspomnieć że g++ posiada bardzo wiele przydatnych parametrów, przy kompilacji projektu zostały wykorzystane opcje:
+flagi linkera, który łączy skompilowane pośrednie pliki w plik wykonywalny.
+Projekt Astro Rush składa się z około 20 klas, wpisywanie takiego polecenia za każdym razem byłoby bardzo nie wygodne, dlatego też zostało użyte narzędzie make usprawniające budowanie gry. Zostanie ono opisane w jednym z kolejnych rozdziałów. 
 
--Wall - włącza wszystkie ostrzeżenia przy budowaniu. 
+Warto wspomnieć że g++ posiada bardzo wiele przydatnych parametrów, przy kompilacji projektu zostały wykorzystane opcje: \\*
+-\textbf{Wall} - włącza wszystkie ostrzeżenia przy budowaniu. \\*
+-\textbf{pedantic} włącza wszystkie ostrzeżenia związane ze standardem ISO języka C/C++ \\*
+-\textbf{g} kompilacja z włączonym debuggowaniem. Do skompilowanej aplikacji dołączane są dane potrzebne do debuggowania poprzez gdb. \\*
+-\textbf{std=c++0x} flaga wymusza użycie najnowszego standardu języka C++. \\*
+-\textbf{O0} Określa poziom optymalizacji. Poziom 0 ustawiony domyślnie wyłącza optymalizacje, przyśpieszając tym samym czas kompilacji. Przed udostępnieniem aplikacji użytkownikowi należy włączyć optymalizacje np. za pomocą -O3, gdzie poziom 3 jest najwyższym poziomem optymalizacji.  
 
--pedantic wlącza wszystkie ostrzeżenia związane ze standardem ISO języka C/C++
-
--g kompilacja z wlączonym debugiem. Do skompilowanej aplikacji dołączane są dane potrzebne do debuggowania poprzez gdb. 
-
--std=c++0x flaga wymusza użycie najnowszego standardu języka C++.
-
-
--O0 Określa poziom optymalizacji. Poziom 0 ustawiony domyślnie wyłącza optymalizacje, pzryśpieszając tym samym czas kompilacji. Przed udostępnieniem aplikacji użytkownikowi należy włączyć optymalizacje np. za pomocą -O3, gdzie poziom 3 jest najwyższym poziomem optymalizacji.  
-
+Dodatkowo potrzebne okazały się następujące flagi linkera:
+\-GL \-lGLU \-lSDL 
 
 
 %============================================================================================================================
-%							 						Eclipse
+% Eclipse
 %============================================================================================================================
 
 \lhead{Rozdział 1. \emph{Użyte narzędzia}}
-\subsection{Eclipse}
-Środowiskiem w którym będzie powstawać aplikacja będzie Eclipse IDE (ang. Integrated Development Environment). Aplikacja została stworzona przez firmę IBM, jednak obecnie stanowi ona darmowe oprogramowanie, dostępne na licencji Eclipse Public License (EPL). Licencja ta bardzo dobrze nadaje się do wykorzystania w celach komercyjnych, dzięki czemu Eclipse jest często platforma wykorzystywaną do tworzenia oprogramowania w korporacjach. Warto wspomnieć o tym że funkcjonalność aplikacji można rozszerzać za pomocą wtyczek. Eclipse posiada nawet market ( http://marketplace.eclipse.org/ ) w którym niezależni Twórcy mogą sprzedawać stworzone przez siebie plugin-y.
+\subsection{Dlaczego aplikacja powstawała w Eclipse?}
+\hspace{1cm} Środowiskiem w którym będzie powstawać aplikacja będzie Eclipse IDE (ang. Integrated Development Environment). Aplikacja została stworzona przez firmę IBM, jednak obecnie stanowi ona darmowe oprogramowanie, dostępne na licencji Eclipse Public License (EPL). Licencja ta bardzo dobrze nadaje się do wykorzystania w celach komercyjnych, dzięki czemu Eclipse jest często platforma wykorzystywaną do tworzenia oprogramowania w korporacjach. Warto wspomnieć o tym że funkcjonalność aplikacji można rozszerzać za pomocą wtyczek. Eclipse posiada nawet market ( http://marketplace.eclipse.org/ ) w którym niezależni Twórcy mogą sprzedawać stworzone przez siebie plugin-y.
 Dostępne są tam zarówno płatne rozszerzenia, jak i darmowe, a samą instalacje można przeprowadzić z poziomu uruchomionej aplikacji wybierając w górnym menu Help a następnie Eclipse Marketplace.
 
 
@@ -105,7 +139,7 @@ Dostępne są tam zarówno płatne rozszerzenia, jak i darmowe, a samą instalac
 \end{figure}
 
 Domyślnie w wersji klasycznej Eclipse możliwe jest jedynie tworzenie aplikacji w Javie, jednak instalacja wtyczki CDT, bądź też pobranie przygotowanej już odpowiedniej wersji programu pozwala na wygodne pisanie w języku C++.
-Konfiguracja tego środowiska do tworzenia gry Astro Rush polegała na pobraniu z oficjalnej strony spakowanej platformy dostosowanej do języka C++, wypakowaniu jej (program wymaga do pracy zainstalowanego JRE, ponieważ napisana jest w Javie), a następnie po uruchomieniu doinstalowaniu kilku dodatkowych wtyczek które okazały się przydatne podczas tworzenia projektu np. wtyczki zapewniającej wsparcie dla repozytorium Git-a. Środowisko te posiada wbudowaną integracje z wieloma przydatnymi narzędziami, które bardzo upraszczają życie programiście np. autouzupełnienie, formatowanie kodu. Natomiast wtyczka CDT dostarczyła przy tworzeniu gry Astro Rush taki przydatnych narzędzi jak:
+Konfiguracja tego środowiska do tworzenia gry Astro Rush polegała na pobraniu z oficjalnej strony spakowanej platformy dostosowanej do języka C++, wypakowaniu jej (program wymaga do pracy zainstalowanego JRE, ponieważ napisana jest w Javie), a następnie po uruchomieniu doinstalowaniu kilku dodatkowych wtyczek które okazały się przydatne podczas tworzenia projektu np. wtyczki zapewniającej wsparcie dla repozytorium Git-a. Środowisko te posiada wbudowaną integracje z wieloma przydatnymi narzędziami, które bardzo upraszczają życie programiście np. auto uzupełnienie, formatowanie kodu. Natomiast wtyczka CDT dostarczyła przy tworzeniu gry Astro Rush taki przydatnych narzędzi jak:
 -Integracja Eclipse z GNU Debuggerem (w skrócie gdb). Debugger ten stworzony przez Richarda Stallmana i dostępny na licencji GPL jest aplikacją konsolową która umożliwia debuggowanie aplikacji C++ w Eclipse. Najbardziej przydatna okazała się tutaj możliwość zatrzymania programu na ustawionym breakpoincie oraz sprawdzenie stosu wywołań. Można również wykonywać kod programu krok po kroku, szukając przyczyny ewentualnych błędów. Używanie gdb z poziomu konsoli byłoby bardziej uciążliwe. 
 -Integracja z Make (samo narzędzie zostanie omówione w kolejnym podrozdziale) dzięki czemu nie ma potrzeby wpisywania polecenia make w konsoli za każdym razem przy budowaniu, ale wystarczy w oknie Eclipsa wybrać cel budowania i dwa razy kliknąć w niego.
 
@@ -115,15 +149,16 @@ Ta aplikacja konsolowa jest narzędziem do debugowania pamięci oraz do wykrywan
 W ostatniej fazie tworzenia projektu zostało wykonane profilowanie, czyli dynamiczna analiza aplikacji pozwalająca znaleźć miejsca aplikacji których wywołanie trwa najdłużej w celu ich optymalizacji. Do tego celu został wykorzystany plugin łączący Eclipse z profilerem Perf. Pozwolił on na zebranie i wyświetlenie statystyk odnośnie czasu procesora jaki jest wykorzystywany przez poszczególne funkcje, klasy w programie.
 
 %============================================================================================================================
-%					    Make jako narzędzie do automatyzacji budowania projektu
+% Make jako narzędzie do automatyzacji budowania projektu
 %============================================================================================================================
 \subsection{Make jako narzędzie do automatyzacji budowania projektu}
+\hspace{1cm} Eclipse jako platforma programistyczna dedykowany jest językowi Java, a kolejne wtyczki pozwalające pisać w innych językach to tylko rozszerzenie tego środowiska Javy. Eclipse z wtyczką do języka C++ może używać programu Make, który automatyzuje budowanie projektu składającego się z wielu plików. Zostało to wykorzystane w projekcie. Ogromnym plusem takiego rozwiązania jest to żeby zbudować aplikacje u klienta nie potrzeba ściągać Eclipse-a i konfigurować projektu, ale wystarczy aplikacja make, która zajmuje niewiele miejsca na dysku i  wystarczy wykonać jedno polecenie żeby zbudować projekt. Rozwiązanie takie jest nie zależne od systemu, ponieważ make działa zarówno w systemie Windows jak i Linux. Dodatkowo bardzo łatwo się go instaluje w większości dystrybucji Linuksa. Dla dystrybucji Debian będzie to polecenie:
 
-Eclipse jako platforma programistyczna dedykowany jest językowi Java, a kolejne wtyczki pozwalające pisać w innych językach to tylko rozszerzenie tego środowiska Javy. Eclipse z wtyczką do języka C++ może używać programu Make, który automatyzuje budowanie projektu składającego się z wielu plików. Zostało to wykorzystane w projekcie. Ogromnym plusem takiego rozwiązania jest to żeby zbudować aplikacje u klienta nie potrzeba ściągać Eclipse-a i konfigurować projektu, ale wystarczy aplikacja make, która zajmuje niewiele miejsca na dysku i  wystarczy wykonać jedno polecenie żeby zbudować projekt. Rozwiązanie takie jest nie zależne od systemu, ponieważ make działa zarówno w systemie Windows jak i Linux. Dodatkowo bardzo łatwo się go instaluje w większości dystrybucji Linuksa. Dla dystrybucji Debian będzie to polecenie:
-
+\begin{center}
 \begin{verbatim}
 	aptitude install make
 \end{verbatim}
+\end{center}
 
 Po uruchomienia programu make, szuka on domyślnie, o ile nie podaliśmy w parametrach innej nazwy - pliku Makefile. Plik ten opisuje zależności miedzy plikami źródłowymi, i umożliwia skompilowanie tylko tych plików które uległy zmianie od ostatniego budowania. Zdecydowanie przyśpiesza to prace nad projektem w przypadku kiedy jest potrzebne testowania poprawek na bieżąco. 
 
@@ -131,7 +166,7 @@ Domyślne wywołanie make bez żadnych parametrów spowoduje zawsze uruchomienie
 
 Napisany na potrzeby gry plik „Makefile” pokazuje również że w pliku reguł programu make można definiować swoje zmienne. Taką zmienną może być na przykład ścieżka do kompilatora, która może się zmienić w zależności od platformy. Takimi zmiennymi mogą być również flagi linkera, kompilatora, oraz lista plików źródłowych z katalogu src. Tak napisany Makefile okazał się bardzo uniwersalny i dodanie kolejnych nowych plików źródłowych wymaga jedynie dopisanie ich na listę w zmiennej Makefile-a. 
 
-Budowanie aplikacji poprzez make bądź też podobne narzędzie o nazwie cmake jest wyjątkowo popularne w systemie Linuks i projektach napisanych w języku C/C++. Make jest nawet wykorzystywany do budowania jądra Linuksa, które składa się z milionów linii kodu ( wersja 3.2 to w przybliżeniu 15 mln ) oraz setek plików, gdzie oszczędność czasu w przypadku rekompilacji jest bardzo znacząca kiedy kompilowane są tylko te moduły które zostały zmienione. Plik Makefile w grze Astro Rush wygląda następująco:
+Budowanie aplikacji poprzez make bądź też podobne narzędzie o nazwie CMake jest wyjątkowo popularne w systemie Linuks i projektach napisanych w języku C/C++. Make jest nawet wykorzystywany do budowania jądra Linuksa, które składa się z milionów linii kodu ( wersja 3.2 to w przybliżeniu 15 mln ) oraz setek plików, gdzie oszczędność czasu w przypadku rekompilacji jest bardzo znacząca kiedy kompilowane są tylko te moduły które zostały zmienione. Plik Makefile w grze Astro Rush wygląda następująco:
 \begingroup
 \fontsize{10pt}{12pt}\selectfont
 \begin{verbatim}  
@@ -171,7 +206,7 @@ clean:
 \endgroup
 
 %============================================================================================================================
-%														Git
+% Git
 %============================================================================================================================
 
 \subsection{Git - system kontroli wersji}
@@ -199,15 +234,14 @@ Git w środowisku Linuks jest narzędziem konsolowym (W systemie Debian wystarcz
 \lhead{Rozdział 1. \emph{OpenGL jako silnik grafiki}}
 
 %============================================================================================================================
-%											 Czym jest OpenGL
+% Czym jest OpenGL
 %============================================================================================================================
 \subsection{Czym jest OpenGL}
 Open Graphics Library (w skrócie OpenGL) jest niskopoziomową biblioteką  graficzną 3D. Kompatybilny jest on z większością liczących się systemów
-operacyjnych, został on także zaimplemtowany na urządzeniach mobilnych, przykładem może być tutaj JOGL, czyli Java-owa wersja OpenGL-a której można
-używać na urządzeniach z systemem Android. OpenGL jest często wykorzystywany jako podstawowe API przy tworzeniu silników do gier 3D przykładem może
-być tutaj choćby nawet silnik ID tech znany min. z serii gier Quake . Mimo że OpenGL jest przystosowany do pracy z grafiką trójwymiarową to doskonale
+operacyjnych, można z niego korzystać również na urządzeniach mobilnych np. z Androidem. OpenGL jest często wykorzystywany jako podstawowe API przy tworzeniu silników do gier 3D przykładem może
+być tutaj choćby nawet silnik ID tech znany min. z serii gier Quake. Mimo że OpenGL jest przystosowany do pracy z grafiką trójwymiarową to doskonale
 można go wykorzystać do grafiki 2D, tak jak to miało miejsce w grze Astro Rush. OpenGL posłużył do wyświetlania tekstur na ekranie, co odbywało się
-zdecydowanie szybciej niż poprzez funkcje do rysowania z biblioteki SDL.  Różnica w szybkości renderowania wynosiła około 20 fps-ów na sekundę na
+zdecydowanie szybciej niż poprzez funkcje do rysowania z biblioteki SDL.  Różnica w szybkości renderowania wynosiła około 20 fps-ów (ang. frame per second ) na
 laptopie hp550 z procesorem dual core 1.4 ghz. OpenGL dostarcza także takich zaawansowanych elementów jak obsługa cieni oraz oświetlenia, jednak z
 racji wykorzystania grafiki 2D nie znalazło to zastosowania w projekcie.
 	W bardzo łatwy sposób można połączyć SDL-a i OpenGL-a.
@@ -218,7 +252,7 @@ pamiętać żeby po każdym rysowaniu wywołać funkcję: SDL\_GL\_SwapBuffers()
 
 
 %============================================================================================================================
-%							 Wykorzystanie OpenGL do renderowania grafiki w grze
+% Wykorzystanie OpenGL do renderowania grafiki w grze
 %============================================================================================================================
 \subsection{Wykorzystanie OpenGL do renderowania grafiki w grze}
 SDL posiada rozszerzenie SDL\_image które umożliwia obsługę różnych formatów grafiki (w grze zostały wykorzystane pliki graficzne o rozszerzeniach png oraz jpeg). Pozwala one w łatwy sposób wczytać plik z dysku poprzez funkcje SDL\_Surface *IMG\_Load(const char *file) , która zwraca surface z
@@ -230,12 +264,12 @@ jak prostokąty wypełnione kolorem są rysowane również za pomocą API OpenGL
 
 
 %============================================================================================================================
-%											Skrypty w języku Lua
+% Skrypty w języku Lua
 %============================================================================================================================
 \section{Skrypty w języku Lua}
 \lhead{Rozdział 1. \emph{Skrypty w języku Lua}}
-Lua jest lekkim językiem skryptowym zaprojektowanym do rozszerzania możliwości innych aplikacji. Został on zaimplementowany w języku C zgodnie ze standardem ANSI, zapewnia mu to przenośność na wiele platform. Najważniejszym cechami tego języka jest to że jest dynamicznie typowany, oraz obiektowy. Jest on wykorzystywany zarówno do tworzenia rozszerzeń do różnych aplikacji, co często nazywane jest skryptowaniem (ang.scripting) oraz jako samodzielny język, w którym skrypty będą wykonywane poprzez maszynę wirtualną Lua. Samo skryptowanie wiąże się z ideą programowania sterowanego danymi (ang. data driven development).
-Podejście te zakłada że wszelkie stałe kontrolujące zachowanie programu oraz wybrane elementy logiki powinny być zdefiniowane poza program. W aplikacji skrypty Lua są wykorzystywane do przechowywanie wszystkich ustawień, oraz obliczania pewnych wartości 
+\hspace{1cm} Lua jest lekkim językiem skryptowym zaprojektowanym do rozszerzania możliwości innych aplikacji. Został on zaimplementowany w języku C zgodnie ze standardem ANSI, zapewnia mu to przenośność na wiele platform. Najważniejszym cechami tego języka jest to że jest dynamicznie typowany, oraz obiektowy. Jest on wykorzystywany zarówno do tworzenia rozszerzeń do różnych aplikacji, co często nazywane jest skryptowaniem (ang.scripting) oraz jako samodzielny język, w którym skrypty będą wykonywane poprzez maszynę wirtualną Lua. Samo skryptowanie wiąże się z ideą programowania sterowanego danymi (ang. data driven development).
+Podejście te zakłada że wszelkie stałe kontrolujące zachowanie programu oraz wybrane elementy logiki powinny być zdefiniowane poza programem. W aplikacji skrypty Lua są wykorzystywane do przechowywanie wszystkich ustawień, oraz obliczania pewnych wartości 
 już w czasie działania aplikacji.Przykładowo rozmiar gracza jest obliczany na poziomie skryptu przy wykorzystaniu ustawionych podczas działania gry zmiennych z rozmiarami ekranu. 
 
 \begin{figure}[h]
@@ -248,25 +282,48 @@ Powyższy rysunek pokazuje przykładowy przepływ danych między aplikacją C++ 
 
 
 %============================================================================================================================
-%											SDL
+% Wprowadzenie do biblioteki SDL
 %============================================================================================================================
 \section{Wprowadzenie do biblioteki SDL}
 \lhead{Rozdział 1. \emph{Wprowadzenie do biblioteki SDL}}
-Rozdział ten będzie zawierał wprowadzenie do tworzenia aplikacji z wykorzystaniem biblioteki SDL, nie będzie tu poruszony temat instalacji tej biblioteki. Zagadnienie te będzie znajdować się w rozdziale dotyczącym kompilacji projektu w systemie linuks. 
+Rozdział ten będzie zawierał wprowadzenie do tworzenia aplikacji z wykorzystaniem biblioteki SDL, nie będzie tu poruszony temat instalacji tej biblioteki. Zagadnienie te będzie znajdować się w rozdziale dotyczącym kompilacji projektu w systemie Linuks. 
 
-Simple Direct Media Layer jest biblioteką ułatwiającą tworzenie gier komputerowych, oraz różnych aplikacji multimedialnych. Umożliwia ona stworzenie okna, oraz zarządzanie nim. Dodatkowo zapewnia obsługę zdarzeń związanych z klawiaturą, myszą oraz joystickiem. Możliwa jest nawet obsługa CD-ROM-u za pomocą tego API. Największą zaletą obok dużej funkjonalności jest prostota aplikacji pisanej z wykorzystaniem tej biblioteki. Najprostszy program może wyglądać następująo:
+Simple Direct Media Layer jest biblioteką ułatwiającą tworzenie gier komputerowych, oraz różnych aplikacji multimedialnych. Umożliwia ona stworzenie okna, oraz zarządzanie nim. Dodatkowo zapewnia obsługę zdarzeń związanych z klawiaturą, myszą oraz joystickiem. Możliwa jest nawet obsługa CD-ROM-u za pomocą tego API. Największą zaletą obok dużej funkcjonalności jest prostota aplikacji pisanej z wykorzystaniem tej biblioteki. Utworzenie kontekstu graficznego wymaga jedynie kilku linijek, a najprostszy program typu "Hello Word" może wyglądać następująco:
 
-Tak napisany program można skompilować za pomocą kompilatora gcc z poziomu linuksowej konsoli za pomocą polecenia:
+\begingroup
+\fontsize{10pt}{12pt}\selectfont
+\begin{verbatim} 
+#include <SDL/SDL.h>
 
-Aplikacja po uruchomieniu utrzowy okno które zostanie natychmiast zamknięte. Takie działanie aplikacji jest mało przydatnego, dlatego też konieczna jest pętla w której będzie odbywać się praca całego programu. Program wykorzystujący taką pętle może wyglądać nastepująco:
-kod kod kod 
+int main(void)
+{
+    SDL_Init( SDL_INIT_VIDEO );
+    SDL_Surface * screen = SDL_SetVideoMode( 800, 600, 32, SDL_SWSURFACE );
+    SDL_Flip( screen );
+    SDL_Quit();
+    return 0;
+}
+\end{verbatim}
+\endgroup
+Tak napisany kod można skompilować przy pomocy kompilatora g++ z poziomu linuksowej konsoli za pomocą polecenia:
+\begin{verbatim} 
+	g++ ./sdl_simple.cpp -o sdl_simple -lSDL
+\end{verbatim}
 
-(Opis oblugi zdarzen)
+Aplikacja po uruchomieniu utworzy okno które zostanie natychmiast zamknięte. Tak działająca aplikacja jest mało przydatna, dlatego też konieczna jest pętla w której będzie odbywać się praca całego programu. Bardzo ważnym elementem takiej pętli jest obsługa zdarzeń, którą można zrealizować poprzez użycie funkcji SDL\_PollEvent, przyjmującej jako parametr adres do struktury SDL\_Event, którą to wypełnia informacjami o zdarzeniach które miały miejsce. Następnie za pomocą warunków logicznych należy sprawdzić jakie zdarzenia miały miejsce. np. warunek if(pEvent.type == SDL\_KEYDOWN \&\& pEvent.key.keysym.sym == SDLK\_ESCAPE)  
+udzieli informacji czy miało miejsce naciśniecie klawisza escape. Analogicznie ze struktury SDL\_Event możemy wyciągnąć informacje o dowolnym klawiszu, naciśnięciu klawisza myszy, itp. 
 
-SDL dostarcza również obsługę wielowątkowości oraz timerów. Dzięki czemu nie potrzebna była w projekcie żadna dodatkowa biblioteka która umożliwiała by utworzenie timera. (opis timerow)
+SDL dostarcza również obsługę wielowątkowości oraz timerów. Dzięki czemu nie potrzebna była w projekcie żadna dodatkowa biblioteka która umożliwiała by utworzenie timera. Zadaniem timera jest uruchamianie pewnego zadania co stały określony czas, w przypadku biblioteki SDL jest wywoływana funkcja do której wskaźnik przekazujemy do funkcji  SDL\_AddTimer, drugim ważnymi parametrem tej funkcji jest czas milisekundach co ile mas się wykonać ta funkcja.Funkcja która rejestrujemy do wykonywania przez timer powinna (@TODO typ) oraz funkcja SDL\_AddTimer zwróci nad dane utworzonego timera w postaci struktury SDL\_TimerID. W taki właśnie sposób zostały wykorzystane timery w Astro Rush do np wyłączania nieśmiertelności bohatera który zebrał i wykorzystał bonus. Żeby cały mechanizm timerów działał potrzebne jest zainicjowanie go przy tworzeniu okna poprzez użycie flagi SDL\_INIT\_TIMER.
+\begin{verbatim} 
+SDL_INIT_TIMER SDL_TimerID
+onWithEnemy = false;
+timer = SDL_AddTimer( DISABLE_COLLISION_WITH_ENEMY_TIME,
+ enableEnemyDetect_callbackTimer, this );
+static Uint32 enableEnemyDetect_callbackTimer(Uint32 interval, void *param);
+\end{verbatim}
 
 %============================================================================================================================
-%											Obsługa czcionek
+% Obsługa czcionek
 %============================================================================================================================
 \section{Obsługa czcionek w SDL}
 \lhead{Rozdział 1. \emph{Obsługa czcionek w SDL}}
@@ -301,3 +358,7 @@ Warto wspomnieć że biblioteka SDL\_ttf pozwala renderować napisy z polskimi z
 \begin{verbatim}
 apt-get install libsdl-ttf2.0-dev 
 \end{verbatim}
+
+W przypadku innych dystrubucji kod źródłowy biblioteki można pobrać ze strony
+\href{http://www.libsdl.org/projects/SDL_ttf/}{www.libsdl.org}.
+Na stronie tej dostępne są również prekompilowane pakiety dla dystrybucji opartych na pakietach rpm.
