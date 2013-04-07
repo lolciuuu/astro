@@ -214,6 +214,7 @@ void Game::pressedCtrl() {
 void Game::reset(){
   logger.info("Restaring game");
   pPlay.resetGame();
+  pMenu.resetMenu();
 
 }
 

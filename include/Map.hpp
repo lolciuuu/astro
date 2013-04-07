@@ -28,7 +28,9 @@ public:
   
   void setRows( uint R ) { rows = R; }
   void setColumns( uint C ) { columns = C; }  
+
   void setSpeed( float S) { pSpeed = S; }
+  float getSpeed() const { return pSpeed; }
 
   bool isAnyPlatformAbove( float X, float Y );
   bool isAnyPlatformBelow( float X, float Y );

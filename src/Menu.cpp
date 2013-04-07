@@ -32,7 +32,7 @@ pAboutImg( 0U ), pExitIco(SpriteManager::getInstance()->getSprite("CLOSE") )
          resumeGameItem.setDescription ( title );
          Rect rectName( pos_x, pos_y);
          resumeGameItem.setRectName ( rectName );
-         whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+         whereSpriteRect.x  =(pScreenWidth*0.5) - ((pWriterPtr->getTextWidth( title ) *0.5));
          resumeGameItem.setRectDesc( whereSpriteRect );
          pos_y += item_space;
     }
@@ -46,7 +46,7 @@ pAboutImg( 0U ), pExitIco(SpriteManager::getInstance()->getSprite("CLOSE") )
         playGameItem.setSelected ( true );
         Rect rectName( pos_x, pos_y);
         playGameItem.setRectName ( rectName );
-        whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+        whereSpriteRect.x  =(pScreenWidth*0.5) - ((pWriterPtr->getTextWidth( title ) *0.5 ));
         playGameItem.setRectDesc( whereSpriteRect );
         pos_y += item_space;
     }
@@ -60,20 +60,20 @@ pAboutImg( 0U ), pExitIco(SpriteManager::getInstance()->getSprite("CLOSE") )
         highGameItem.setDescription (title );
         Rect rectName( pos_x, pos_y);
         highGameItem.setRectName ( rectName );
-        whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+        whereSpriteRect.x  =(pScreenWidth*0.5) - ( (pWriterPtr->getTextWidth( title ) *0.5 ));
         highGameItem.setRectDesc( whereSpriteRect );
         pos_y += item_space;
     }
   
     /** Wpis w menu:  -- About -- */
-    MenuItem AboutGameItem ( Sprite(SpriteManager::getInstance()->getSprite("NEW_GAME") ),
+    MenuItem AboutGameItem ( Sprite(SpriteManager::getInstance()->getSprite("NEW_GAME")  ),
     		 Property::get ( "ABOUT_GAME" ),whereSpriteRect );
     {
        string title =  Property::get ( "ABOUT_GAME_DESC" );
        AboutGameItem.setDescription ( title );
        Rect rectName( pos_x, pos_y);
        AboutGameItem.setRectName ( rectName );
-       whereSpriteRect.x  =(pScreenWidth*0.5) - (pWriterPtr->getTextWidth( title ) *0.5);
+       whereSpriteRect.x  =(pScreenWidth*0.5) - ( (pWriterPtr->getTextWidth( title ) *0.5) );
        AboutGameItem.setRectDesc( whereSpriteRect );
        pos_y += item_space;
     }

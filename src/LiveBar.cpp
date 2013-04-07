@@ -86,7 +86,7 @@ void LiveBar::colision( short type ) {
 		pLiveAmount -= 0.3;
 	}
 	else {
-		 pLiveAmount -= 0.01;
+		 pLiveAmount -= 0.1;
 	}
   
 }

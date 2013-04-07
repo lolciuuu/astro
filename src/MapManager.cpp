@@ -28,13 +28,30 @@ MapManager::MapManager(): pIsRunMap( false ), pEnemyManager( EnemyManager::getIn
     pEnemyManager->setTilesSize( pMapMain->getSize() );
 
     pMapMain->enableCheckColision();
+
+    pOrginalSpeed = pMapMain->getSpeed();
   
 }
 
 /** */
-void MapManager::update(const float& dt) {
-  if( pIsRunMap == false ) return;
+void MapManager::update(const float& dt, const ulong& meter) {
+
+	if( pIsRunMap == false ) return;
+
     pMapMain->update( dt );
+
+    int fasterFactory = 10;
+
+    //przyspieszanie wraz z przebyta odblegloscia
+    if( meter > 0 ) {
+
+    	float newSpeed =  pOrginalSpeed + (fasterFactory * (meter / 100 ));
+
+    	if( newSpeed < pOrginalSpeed * 2.5 )
+    		pMapMain->setSpeed( newSpeed );
+    	}
+
+
 
     if( pMapMain->nextMeter() ) LiveBar::nextMeter();
 

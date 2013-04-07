@@ -26,7 +26,7 @@ void Background::update( const float& dt,const float& player_y )
 
 void Background::draw() {
 //@TODO usunac liczbe magiczna
-float factor_y = 0.03;
+float factor_y = 0.1; // liczna okresla poziom opuszczenia gor w przypadku skoku
 
 	if( (pFirst.w + pFirst.x) <= pScreenWidth ) {
 		pRendererPtr->draw( pBackgroungImg,  pFirst.x,  (pPLayerY*factor_y) , pFirst.w, pScreenHeight );

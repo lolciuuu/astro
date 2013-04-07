@@ -13,7 +13,7 @@ public:
 
     static void load(); // wolane przed konstruktorem!
     
-    void update( const float& dt );
+    void update( const float& dt, const ulong& meter );
     void draw();
     void runMap() { pIsRunMap = true; }
     void stopMap() { pIsRunMap = false; }
@@ -55,6 +55,8 @@ private:
     static uint LEVEL_VARIANTS;
   
     bool pIsRunMap;
+
+    float pOrginalSpeed; // wczytana z pliku predkosc przesuwania mapy
 
     EnemyManager* pEnemyManager;
 };

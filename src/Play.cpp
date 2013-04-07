@@ -76,7 +76,7 @@ void Play::update(const float& dt ){
   }
   else { /// Gracz biegnie
 
-      pMap.update( dt );
+      pMap.update( dt, pLiveBar.getResultNum() );
       pLiveBar.update( dt );
       pEnemyManager->update( dt );
       pBackground.update( dt, pPlayer.getPosY() );
@@ -94,10 +94,9 @@ void Play::update(const float& dt ){
     	  else if( isAdditionalBonus( type ) ) {
     		  pLiveBar.addBonus();
     	  }
-    	 /* usuniete przy dodawaniu kolizji z przeciwnikiem
-    	  * else if( !isPlatform( type ) ){
+      	  else if( !isPlatform( type ) ){
     		  pLiveBar.colision( type );
-    	  }*/
+    	  }
 
       }//END type != -1
 

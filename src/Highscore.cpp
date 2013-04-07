@@ -44,7 +44,7 @@ void Highscore::draw() {
 	// jezeli nie pobito rekordu to rysujemy tylko liste z najlepszymi wynikami
 	if( LiveBar::getResultNum() < pList[pList.size()-1].points && pList.size() >= ITEM_AMOUNT) {
 		show();
-		Rect where( pWriterPtr->getCenterX(pGameOverText), pScreenHeight*0.8f, 300, 300);
+		Rect where( pWriterPtr->getCenterX(pGameOverText), pScreenHeight*0.81f, 300, 300);
 		pWriterPtr->draw( where, pGameOverText, WHITE_FONT_COLOR, FontSize::NORMALL );
 		pWarringIco.draw( where.x - 125 , where.y ,80 ,80 );
 		return;
@@ -72,7 +72,7 @@ void Highscore::draw() {
 	where.y += 60;
 	where.x = pWriterPtr->getCenterX( pCurrentName );
 	if (pCurrentName.size() > 0) {
-		pWriterPtr->draw(where, pCurrentName, WHITE_FONT_COLOR,  FontSize::NORMALL );
+		pWriterPtr->draw(where, pCurrentName, WHITE_FONT_COLOR,  FontSize::SMALL );
 	}
 
 	if( pShowCursor ) {
@@ -95,10 +95,9 @@ void Highscore::show() {
 	Rect tmp(0, 0, pScreenWidth, pScreenHeight);
 	pRendererPtr->draw(pBackground, tmp);
 
-
 	// naglowek
 	tmpXText = pWriterPtr->getCenterX(pInfoText);
-	pWriterPtr->draw(Rect(tmpXText, tmpY), pInfoText, FontSize::BIG);
+	pWriterPtr->draw(Rect(tmpXText, tmpY), pInfoText, FontSize::NORMALL);
 	pInfoIco.draw(tmpXText - 60, tmpY, 50, 50);
 
 	// naglowek tabelki
@@ -148,7 +147,7 @@ void Highscore::load() {
 
 	pList.clear();
 
-	tmpY = pScreenHeight * 0.25;
+	tmpY = pScreenHeight * 0.21;
 	rank_x = pScreenWidth * 0.3;
 	name_x = pScreenWidth * 0.40;
 	score_x = pScreenWidth * 0.65;
