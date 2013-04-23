@@ -95,28 +95,28 @@ zestaw funkcji wypisującyhc na ekranie komunikat z odpowiednim priorytetem (DEB
 Warto wspomnieć także o tym że duża część klas miała w założeniu używać tych samych elementów, pozwalających wypisywać tekst na ekranie, rysować grafikę, oraz mieć dostęp do takich danych jak np. wymiary ekranu. Dlatego też żeby ograniczyć powtarzanie się tych samych elementów kodu wspólne elementy zostały przeniesione do klasy StandardReference. Podejście takie przy projektowaniu systemów informatycznych nazywane jest często nazywane jako DRY (ang. Don't Repeat Yourself). Zamiast w każdej klasie implementować te same metody i wpisywać te same pola, umieszcza się je w jednym miejscu. Pozwala to zmniejszyć ilość kodu, a co za tym idzie jego złożoność. Dodatkowo ewentualne poprawki wymagają zmiany w jednym miejscu, a nie w każdej klasie. Klasa StandardReference, zawiera wskaźniki do takich klas jak Renderer, Writer,SoundManager, dzięki czemu każda inna klasa dziedzicząca po niej ma możliwość używania zestawu funkcji dostępnych w tych klasach, pozwalającego rysować na ekranie, obsługiwać dźwięki oraz wypisywać tekst na ekranie.
 
 %============================================================================================================================
-%Warstwy aplikacji
+%Jak zbudowana jest aplikacja?
 %============================================================================================================================
 \section{Jak zbudowana jest aplikacja?}
 \lhead{Rozdział 2. \emph{Jak zbudowana jest aplikacja?}}
 
-Logika aplikacji została rozbita na 3 warstwy. Pierwszą z nich stanowi uruchamiana z poziomu funkcji main klasa App, której głównym zadaniem jest utworzenie okna aplikacji, uruchomienie głównej pętli i sterowanie jej przebiegiem. Klasa App oddziela pozostałe moduły aplikacji od zarządzania oknem, oraz zdarzeniami. Zdarzenia pobierane w metodzie processEvent są przekazywane dalej do klasy Game, będącej fasadą ujednolicającą dostęp do modułów odpowiedzialnych za rysowanie, odświeżanie menu, gry bądź też highscore. Klasa ta zarządza przepływem informacji decydując gdzie przekazać dane na podstawie stanu w jakim znajduje się aplikacja. Stan ten opisuje zmienna typu enum z polami: MENU oraz PLAY. Klasa Game jest więc warstwą pośrednią między warstwą okna aplikacji a poszczególnymi modułami gry. Najważniejszymi modułami są tutaj klasy Menu oraz Play, które 
+Logika aplikacji została rozbita na 3 główne warstwy. Dzięki czemu aplikacja mimo zwiększonej złożoności stała się bardziej elastyczna na przyszłe modyfikacje.  Pierwszą z nich stanowi uruchamiana z poziomu funkcji main klasa App, której głównym zadaniem jest utworzenie okna aplikacji, uruchomienie głównej pętli i sterowanie jej przebiegiem.
 
+Klasa App oddziela pozostałe moduły aplikacji od zarządzania oknem, oraz zdarzeniami. Zdarzenia są pobierane w metodzie App::processEvent, a następnie w zależności od rodzaju zdarzenia wywoływana jest odpowiednia metoda klasy Game, będącej fasadą ujednolicającą dostęp do modułów odpowiedzialnych za rysowanie, odświeżanie menu, gry bądź też highscore. Klasa ta zarządza przepływem informacji decydując gdzie przekazać dane na podstawie stanu w jakim znajduje się aplikacja. Stan ten opisuje zmienna typu enum z polami: MENU oraz PLAY, to właśnie na jej podstawie wywoływane są metody np. draw, update w kolejnej warstwie. Klasa Game jest więc warstwą pośrednią między warstwą okna aplikacji a poszczególnymi modułami gry, stanowi też implementacje części logiki gry, ponieważ rozdziela menu od gry. Najważniejszymi modułami poniżej warstwy pośredniej jaką jest Game, są klasy Play oraz Menu. Są one najważniejszą warstwą aplikacji, zarządzającej pozostałymi modułami, takimi jak np. dźwięk, pasek życia.
 
-Klasa Menu odpowiada jak sama nazwa wskazuje za wyświetlanie menu głównego aplikacji, oraz za wyświetlanie Highscore. \\*
+Klasa Play odpowiada jak sama nazwa wskazuje ze wszystko co się dzieje po przejściu z menu do gry. Jest do zarządzanie mapą, paskiem życia gracza, samym graczem. Na poziomie tej właśnie klasy odbywa się przepływ informacji między klasa Player a klasami odpowiadającymi za ilość życia kosmonauty i klasą Highscore przechowującą ilość zdobytych punktów. Podczas rysowania, aktualizacji wołane są metody w modułach powiązanych z tą klasą. Przykładem może być tutaj klasa MapManager, która to zarządza mapami (w przypadku Astro Rush wykorzystana jest tylko jedna mapa, choć istnieje możliwość rozbudowania o gry kolejne mapy nakładające się na siebie, i przewijające jednocześnie z różną szybkością ).
 
- \hfill
+Klasa Menu odpowiada jak sama nazwa wskazuje za wyświetlanie menu głównego aplikacji, oraz za wyświetlanie Highscore. Jest ona dużo prostsza niż klasa Play, bowiem oprócz klasy Highscore nie zawiera już pod modułów którymi zarządza. Samo rysowanie menu odbywa się bezpośrednio w metodzie draw, przy pomocy vector-a obiektów MenuItem. Klasa Menu posiada flagę typu enum, która określa czy gracz aktualnie znajduję się w menu głównym, czy też w menu z listą najlepszych wyników, które stanowi osobny moduł. Klasa Highscore, bo właśnie o niej mowa posiada swoje metody typowe dla większości modułów gry tj. update, draw. W klasie Menu następuje wybór metod, np. czy rysowanie ma odbyć się za pomocą draw z klasy Menu, czy z klasy Highscore. Analogicznie jak to ma miejsce w klasie Game.
+
+Tak zbudowana aplikacja traci na wydajności, bowiem przy wywołaniu z głównej pętli funkcji rysującej, tak naprawdę zostaje wywołane kilka innych metod, aż do tej właściwej. Wiąże się to z narzutem czasowym odkładania parametrów podczas wywołań metod, przez co konieczne było przekazywanie bardziej złożonych danych nie przez wartość, tylko przez referencje. Przykład skompilowania takich wywołań został przedstawiony na diagramie wywołań funkcji draw. Przykładowo wywołanie draw może wykorzystywać klasy: Game,Play, MapManager, Map, zanim nastąpi właściwe rysowanie. Plusem takiego podejścia jest jednak bardziej przejrzystszy i łatwy w utrzymaniu kod.
 \begin{figure}[h]
     \centering
     \includegraphics[width=450px,height=630px]{./Pictures/warstwy.png}
     \caption{Schemat przepływu danych w aplikacji}
 \end{figure}
 
- \hfill
 \begin{figure}[h]
     \centering
     \includegraphics[width=460px,height=550px]{./Pictures/doxygen1.png}
     \caption{Schemat przepływu danych w przypadku wywołania funkcji Game::draw wygenerowany za pomocą programu Doxygen.}
 \end{figure}
-
-

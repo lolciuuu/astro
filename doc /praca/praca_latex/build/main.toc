@@ -9,12 +9,12 @@
 \contentsline {subsection}{\numberline {1.4.2}Dlaczego aplikacja powstawa\IeC {\l }a w Eclipse?}{10}{subsection.17}
 \contentsline {subsection}{\numberline {1.4.3}Make jako narz\IeC {\k e}dzie do automatyzacji budowania projektu}{11}{subsection.19}
 \contentsline {subsection}{\numberline {1.4.4}Git - system kontroli wersji}{14}{subsection.20}
-\contentsline {section}{\numberline {1.5}OpenGL jako silnik grafiki}{15}{section.22}
-\contentsline {subsection}{\numberline {1.5.1}Czym jest OpenGL}{15}{subsection.23}
+\contentsline {section}{\numberline {1.5}OpenGL jako silnik grafiki}{16}{section.22}
+\contentsline {subsection}{\numberline {1.5.1}Czym jest OpenGL}{16}{subsection.23}
 \contentsline {subsection}{\numberline {1.5.2}Wykorzystanie OpenGL do renderowania grafiki w grze}{16}{subsection.24}
 \contentsline {section}{\numberline {1.6}Skrypty w j\IeC {\k e}zyku Lua}{17}{section.25}
 \contentsline {section}{\numberline {1.7}Wprowadzenie do biblioteki SDL}{18}{section.27}
-\contentsline {section}{\numberline {1.8}Obs\IeC {\l }uga czcionek w SDL}{19}{section.28}
+\contentsline {section}{\numberline {1.8}Obs\IeC {\l }uga czcionek w SDL}{20}{section.28}
 \contentsline {chapter}{\numberline {2}Budowa aplikacji}{22}{chapter.29}
 \contentsline {section}{\numberline {2.1}G\IeC {\l }\IeC {\'o}wna p\IeC {\k e}tla}{22}{section.30}
 \contentsline {section}{\numberline {2.2}Mapa w grze}{23}{section.32}
@@ -27,6 +27,6 @@
 \contentsline {section}{\numberline {3.1}Sterowanie w grze}{33}{section.44}
 \contentsline {section}{\numberline {3.2}Menu}{34}{section.46}
 \contentsline {section}{\numberline {3.3}Instalacja}{36}{section.50}
-\contentsline {chapter}{Zako\IeC {\'n}czenie}{37}{chapter*.51}
-\contentsline {chapter}{Spis ilustracji}{38}{dummy.52}
-\contentsline {chapter}{Bibliografia}{40}{dummy.54}
+\contentsline {chapter}{Zako\IeC {\'n}czenie}{38}{chapter*.51}
+\contentsline {chapter}{Spis ilustracji}{39}{dummy.52}
+\contentsline {chapter}{Bibliografia}{41}{dummy.54}

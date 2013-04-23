@@ -52,13 +52,29 @@ Główne menu zostało zaprojektowane w programie do tworzenia grafiki rastrowej
 %============================================================================================================================
 \section{Instalacja}
 \lhead{Rozdział 1. \emph{Fabuła}}
-W tym rozdziale zostanie przedstawiona instalacja potrzebnych bibliotek oraz kompilacja aplikacji na przykładzie dystrybucji Linuksa Debian. W przypadku innych wersji systemu Linuks nie bazujących na Debianie instalacja ta może wyglądać inaczej np. w systemie Fedora gdzie nazwy pakietów są inne, oraz ścieżka do biblioteki SDL jest inna. Dla Fedory kompilacja aplikacja wymaga zmian ścieżek do bibliotek. Dlatego też w przypadku wersji aplikacji który miała by być dostarczona szerszemu gronu odbiorców konieczne jest przygotowanie rozwiązania unifikującego proces kompilacji pod różnymi dystrybucjami Linuksa. Innym rozwiązanie może przygotowanie prekompilowanych pakietów dla najpopularniejszych platform np. deb i rpm. Dodatkowym problemem może okazać się brak niektórych pakietów w repozytorium i konieczność ręcznego ich ściągania, jednak taka sytuacja nie powinna mieć miejsca z racji tego że wykorzystane biblioteki są dość popularne wśród twórców gier. 
+W tym rozdziale zostanie przedstawiona instalacja potrzebnych bibliotek oraz kompilacja aplikacji na przykładzie systemu Debian. W przypadku innych wersji systemu Linuks nie bazujących na Debianie instalacja ta może wyglądać inaczej np. w systemie Fedora gdzie nazwy pakietów są inne, oraz ścieżka do biblioteki SDL jest inna. Dla Fedory kompilacja aplikacji wymaga zmian ścieżek do bibliotek w pliku Headers.hpp. Dlatego też w przypadku wersji aplikacji który miała by być dostarczona szerszemu gronu odbiorców konieczne jest przygotowanie rozwiązania unifikującego proces kompilacji pod różnymi dystrybucjami Linuksa. Innym rozwiązanie może przygotowanie prekompilowanych pakietów dla najpopularniejszych platform np. deb i rpm. Dodatkowym problemem może okazać się brak niektórych pakietów w repozytorium i konieczność ręcznego ich ściągania, jednak taka sytuacja nie powinna mieć miejsca z racji tego że wykorzystane biblioteki są popularne wśród twórców gier dla Linuksa. 
 
-W systemie Debian żeby zainstalować wymagane pakiety należy wykonać następujące poleceniem:
+W systemie Debian żeby zainstalować wymagane pakiety należy najpierw odświeżyć listę pakietów poleceniem: 
+
 \begin{verbatim}
-	aptitude install libsdl-dev ######### DOPISAC RESZTE #######
+	aptitude update
+\end{verbatim}
+
+W przypadku braku aplikacji aptitude można użyć analogicznie apt-get. Następnym krokiem jest zainstalowanie wymaganych bibliotek w wersji developerskiej w przypadku samodzielnej kompilacji:
+\begin{verbatim}
+	aptitude install libsdl-1.2-dev lisdl-ttf2.0-dev libsdl-sound1.2-dev 
+					 libsdl-mixer1.2-dev libsdl-image1.2-dev libluabind-dev 
+					 liblua5.1-0-dev
 \end{verbatim}
 
 Jeżeli instalacja przebiegła bez problemów to wtedy można przystąpić do kompilowania gry.
 W katalogu z rozpakowanym kodem należy wykonać polecenie make i poczekać aż pojawi się informacja o udanym zbudowaniu programu. W przypadku komputerów z wielordzeniowym procesorem można zoptymalizować proces budowania podając parametr -j<tutaj\_liczb\_rdzeni>.
 
+W przypadku kiedy budowanie się nie powiedzie i pojawią się błędy, należy doinstalować brakujące biblioteki bądź też zmienić ścieżki do bibliotek. Ewentualnie oczyszczenie projektu z już skompilowanych plików można wykonać za pomocą polecenia "make clean". 
+
+Po zakończeniu budowania zostanie utworzony plik AstroRush.bin (nazwa ta jest zdefiniowana w pliku makefile). Należy nadać mu prawo wykonywania:
+\begin{verbatim}
+chmod +x ./AstroRush.bin
+\end{verbatim}
+
+A następnie można uruchomić aplikacje. W przypadku Linuksa należy pamiętać żeby program był uruchamiany na partycji zamontowanej z prawem do wykonywania aplikacji. Często domyślnie urządzenia przenośne nie mają ustawionego takiego prawa. 

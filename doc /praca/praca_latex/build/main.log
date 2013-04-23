@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2013/dev) (format=pdflatex 2013.3.29)  1 APR 2013 15:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2013/dev) (format=pdflatex 2013.4.7)  23 APR 2013 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -48,7 +48,7 @@ Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 \f@ncyO@orf=\skip51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
@@ -68,20 +68,20 @@ Package: amsbsy 1999/11/29 v1.2d
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen107
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -102,8 +102,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip53
 \multlinetaggap=\skip54
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -116,7 +116,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
-Package: amscd 1999/11/29 v1.2d
+Package: amscd 1999/11/29 v2.0
 \athelp@=\toks19
 \minaw@=\dimen114
 \bigaw@=\dimen115
@@ -808,6 +808,15 @@ LaTeX Warning: Label `Etykieta' multiply defined.
 
 Package natbib Warning: Citation `sop' multiply defined.
 
+
+Package natbib Warning: Citation `sop' multiply defined.
+
+
+Package natbib Warning: Citation `sop' multiply defined.
+
+
+Package natbib Warning: Citation `sop' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -962,8 +971,8 @@ File: ./Pictures/astro.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./Pictures/astro.jpg used on input line 38.
 (pdftex.def)             Requested size: 120.45044pt x 164.92406pt.
 
-Underfull \hbox (badness 7116) in paragraph at lines 45--47
-\T1/lmr/m/n/12 czas biec do przodu,zwalniaj¡c niez-
+Underfull \hbox (badness 2142) in paragraph at lines 45--47
+\T1/lmr/m/n/12 czas biec do przodu, zwal-ni-a-j¡c niez-
  []
 
 
@@ -986,104 +995,106 @@ File: ./Pictures/astroRun.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./Pictures/astroRun.jpg used on input line 66.
 (pdftex.def)             Requested size: 364.70882pt x 75.70752pt.
 
+<./Pictures/gra2.png, id=209, 822.07124pt x 523.9575pt>
+File: ./Pictures/gra2.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use ./Pictures/gra2.png>
+Package pdftex.def Info: ./Pictures/gra2.png used on input line 82.
+(pdftex.def)             Requested size: 410.29308pt x 261.50641pt.
+ [6 <./Pictures/livebar.png> <./Pictures/astroRun.jpg>] <./Pictures/gra1.png, i
+d=217, 809.27344pt x 523.9575pt>
+File: ./Pictures/gra1.png Graphic file (type png)
 
-<./Pictures/screen1.png, id=209, 1284.8pt x 803.0pt>
-File: ./Pictures/screen1.png Graphic file (type png)
-
-<use ./Pictures/screen1.png>
-Package pdftex.def Info: ./Pictures/screen1.png used on input line 82.
-(pdftex.def)             Requested size: 364.70882pt x 227.93842pt.
- [6 <./Pictures/livebar.png>]
-File: ./Pictures/screen1.png Graphic file (type png)
-
-<use ./Pictures/screen1.png>
-Package pdftex.def Info: ./Pictures/screen1.png used on input line 88.
-(pdftex.def)             Requested size: 364.70882pt x 227.93842pt.
+<use ./Pictures/gra1.png>
+Package pdftex.def Info: ./Pictures/gra1.png used on input line 88.
+(pdftex.def)             Requested size: 410.29308pt x 265.64778pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Pictures/sprite_algorytm.png, id=216, 930.47626pt x 859.21pt>
+<./Pictures/sprite_algorytm.png, id=218, 930.47626pt x 859.21pt>
 File: ./Pictures/sprite_algorytm.png Graphic file (type png)
 
 <use ./Pictures/sprite_algorytm.png>
-Package pdftex.def Info: ./Pictures/sprite_algorytm.png used on input line 94.
+Package pdftex.def Info: ./Pictures/sprite_algorytm.png used on input line 95.
 (pdftex.def)             Requested size: 364.70882pt x 336.76869pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./Pictures/astroRun.jpg> <./Pictures/screen1.png>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 105.
+[7 <./Pictures/gra2.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 106.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [8] [9 <./Pictures/sprite_algorytm.png>] <./Pictures/eclipse.png, id=234, 192
-7.2pt x 1084.05pt>
+) [8 <./Pictures/gra1.png (PNG copy)>] [9 <./Pictures/sprite_algorytm.png>]
+<./Pictures/eclipse.png, id=235, 1927.2pt x 1084.05pt>
 File: ./Pictures/eclipse.png Graphic file (type png)
 
 <use ./Pictures/eclipse.png>
-Package pdftex.def Info: ./Pictures/eclipse.png used on input line 137.
+Package pdftex.def Info: ./Pictures/eclipse.png used on input line 138.
 (pdftex.def)             Requested size: 364.70882pt x 205.14458pt.
 
-Overfull \hbox (5.88377pt too wide) in paragraph at lines 141--145
+Overfull \hbox (5.88377pt too wide) in paragraph at lines 142--146
 \T1/lmr/m/n/12 ±rodowiska do tworzenia gry As-tro Rush pole-gaªa na po-bra-niu 
 z ofic-jal-nej strony spakowanej
  []
 
 [10 <./Pictures/eclipse.png>] [11] [12] [13]
-<./Pictures/git.png, id=254, 1056.94875pt x 985.6825pt>
+<./Pictures/git.png, id=255, 1056.94875pt x 985.6825pt>
 File: ./Pictures/git.png Graphic file (type png)
 
 <use ./Pictures/git.png>
-Package pdftex.def Info: ./Pictures/git.png used on input line 218.
+Package pdftex.def Info: ./Pictures/git.png used on input line 219.
 (pdftex.def)             Requested size: 364.70882pt x 340.10594pt.
 
-Overfull \hbox (16.7161pt too wide) in paragraph at lines 222--223
+Overfull \hbox (16.7161pt too wide) in paragraph at lines 223--224
 []\T1/lmr/m/n/12 Przy tworze-niu ap-likacji zostaª wyko-rzys-tany ser-wis hos-t
 u-j¡cy gita: https://github.com.
  []
 
 [14 <./Pictures/git.png>] [15] [16]
-<./Pictures/lua_skrypty.png, id=268, 1136.245pt x 799.98875pt>
+<./Pictures/lua_skrypty.png, id=269, 1136.245pt x 799.98875pt>
 File: ./Pictures/lua_skrypty.png Graphic file (type png)
 
 <use ./Pictures/lua_skrypty.png>
-Package pdftex.def Info: ./Pictures/lua_skrypty.png used on input line 277.
+Package pdftex.def Info: ./Pictures/lua_skrypty.png used on input line 278.
 (pdftex.def)             Requested size: 364.70882pt x 256.78287pt.
- [17 <./Pictures/lua_skrypty.png>]
-Overfull \hbox (1.5322pt too wide) in paragraph at lines 291--292
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+Overfull \hbox (1.5322pt too wide) in paragraph at lines 292--293
 []\T1/lmr/m/n/12 Simple Di-rect Me-dia Layer jest bib-liotek¡ uªatwia-j¡c¡ twor
 ze-nie gier kom-put-erowych,
  []
 
-
-Overfull \hbox (18.95395pt too wide) in paragraph at lines 313--315
+[18 <./Pictures/lua_skrypty.png>]
+Overfull \hbox (18.95395pt too wide) in paragraph at lines 314--316
 \T1/lmr/m/n/12 pEvent.key.keysym.sym == SDLK_ESCAPE) udzieli in-for-ma-cji czy 
 mi-aªo miejsce naci±niecie
  []
 
-[18]
-Overfull \hbox (13.41594pt too wide) in paragraph at lines 323--323
+[19]
+Overfull \hbox (13.41594pt too wide) in paragraph at lines 324--324
 []\T1/lmtt/m/n/12 static Uint32 enableEnemyDetect_callbackTimer(Uint32 interval
 , void *param);[] 
  []
 
 
-Overfull \hbox (3.92271pt too wide) in paragraph at lines 330--331
+Overfull \hbox (3.92271pt too wide) in paragraph at lines 331--332
 \T1/lmr/m/n/12 funkcji z bib-lioteki SDL_ttf np. TTF_RenderUTF_Blended zostaje 
 ut-wor-zona powierzch-
  []
 
-[19] [20]) (./rozdzial2.tex [21]
+[20]) (./rozdzial2.tex [21]
 Rozdzia\IeC {\l } 2.
 ------------------------------------------------------------------------------
  2 Budowa aplikacji
 ------------------------------------------------------------------------------
-<./Pictures/main_loop.png, id=292, 814.04124pt x 593.21625pt>
+<./Pictures/main_loop.png, id=293, 814.04124pt x 593.21625pt>
 File: ./Pictures/main_loop.png Graphic file (type png)
 
 <use ./Pictures/main_loop.png>
@@ -1096,21 +1107,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [22
 
 ] [23 <./Pictures/main_loop.png>]
-<./Pictures/back.png, id=304, 563.15659pt x 172.01105pt>
+<./Pictures/back.png, id=305, 563.15659pt x 172.01105pt>
 File: ./Pictures/back.png Graphic file (type png)
 
 <use ./Pictures/back.png>
 Package pdftex.def Info: ./Pictures/back.png used on input line 34.
 (pdftex.def)             Requested size: 364.70882pt x 111.40164pt.
  [24 <./Pictures/back.png>]
-<./Pictures/designer.png, id=311, 1019.81pt x 626.34pt>
+<./Pictures/designer.png, id=312, 1019.81pt x 626.34pt>
 File: ./Pictures/designer.png Graphic file (type png)
 
 <use ./Pictures/designer.png>
 Package pdftex.def Info: ./Pictures/designer.png used on input line 53.
 (pdftex.def)             Requested size: 364.70882pt x 223.9913pt.
  [25 <./Pictures/designer.png (PNG copy)>]
-<./Pictures/splash.png, id=317, 648.4225pt x 704.6325pt>
+<./Pictures/splash.png, id=318, 648.4225pt x 704.6325pt>
 File: ./Pictures/splash.png Graphic file (type png)
 
 <use ./Pictures/splash.png>
@@ -1132,29 +1143,29 @@ Overfull \hbox (6.30118pt too wide) in paragraph at lines 88--89
 owych zostaªa rozwi¡zana
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-[29] <./Pictures/warstwy.png, id=336, 1048.91875pt x 1144.275pt>
+[28] [29] <./Pictures/warstwy.png, id=337, 1048.91875pt x 1144.275pt>
 File: ./Pictures/warstwy.png Graphic file (type png)
 
 <use ./Pictures/warstwy.png>
-Package pdftex.def Info: ./Pictures/warstwy.png used on input line 111.
+Package pdftex.def Info: ./Pictures/warstwy.png used on input line 114.
 (pdftex.def)             Requested size: 451.68248pt x 632.37381pt.
+
+Overfull \hbox (2.75468pt too wide) in paragraph at lines 111--117
+\T1/lmr/m/n/12 metod, przez co konieczne byªo przekazy-wanie bardziej zªo»onych
+ danych nie przez warto±¢,
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Pictures/doxygen1.png, id=337, 1281.78876pt x 1007.765pt>
+<./Pictures/doxygen1.png, id=338, 1281.78876pt x 1007.765pt>
 File: ./Pictures/doxygen1.png Graphic file (type png)
 
 <use ./Pictures/doxygen1.png>
-Package pdftex.def Info: ./Pictures/doxygen1.png used on input line 118.
+Package pdftex.def Info: ./Pictures/doxygen1.png used on input line 120.
 (pdftex.def)             Requested size: 461.71742pt x 552.05815pt.
 
-Overfull \hbox (5.83313pt too wide) in paragraph at lines 118--119
+Overfull \hbox (5.83313pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
@@ -1167,7 +1178,7 @@ Rozdzia\IeC {\l } 3.
 ------------------------------------------------------------------------------
  3 Dokumentacja u\IeC {\.z}ytkownika
 ------------------------------------------------------------------------------
-<./Pictures/ilosczycia.png, id=353, 185.69376pt x 104.39pt>
+<./Pictures/ilosczycia.png, id=354, 185.69376pt x 104.39pt>
 File: ./Pictures/ilosczycia.png Graphic file (type png)
 
 <use ./Pictures/ilosczycia.png>
@@ -1176,28 +1187,28 @@ Package pdftex.def Info: ./Pictures/ilosczycia.png used on input line 12.
  [33
 
  <./Pictures/ilosczycia.png (PNG copy)>]
-<./Pictures/menu1.png, id=359, 1392.20125pt x 889.3225pt>
+<./Pictures/menu1.png, id=360, 1392.20125pt x 889.3225pt>
 File: ./Pictures/menu1.png Graphic file (type png)
 
 <use ./Pictures/menu1.png>
 Package pdftex.def Info: ./Pictures/menu1.png used on input line 30.
 (pdftex.def)             Requested size: 430.61032pt x 275.0629pt.
  [34 <./Pictures/menu1.png>]
-<./Pictures/menu2.png, id=365, 1386.17876pt x 885.3075pt>
+<./Pictures/menu2.png, id=366, 1386.17876pt x 885.3075pt>
 File: ./Pictures/menu2.png Graphic file (type png)
 
 <use ./Pictures/menu2.png>
 Package pdftex.def Info: ./Pictures/menu2.png used on input line 38.
 (pdftex.def)             Requested size: 430.61032pt x 275.00984pt.
 
-<./Pictures/menu3.png, id=366, 1392.20125pt x 892.33376pt>
+<./Pictures/menu3.png, id=367, 1392.20125pt x 892.33376pt>
 File: ./Pictures/menu3.png Graphic file (type png)
 
 <use ./Pictures/menu3.png>
 Package pdftex.def Info: ./Pictures/menu3.png used on input line 45.
 (pdftex.def)             Requested size: 430.61032pt x 275.99428pt.
- [35 <./Pictures/menu2.png (PNG copy)> <./Pictures/menu3.png (PNG copy)>]) (./z
-akonczenie.tex [36]
+ [35 <./Pictures/menu2.png (PNG copy)> <./Pictures/menu3.png (PNG copy)>] [36])
+ (./zakonczenie.tex [37]
 ------------------------------------------------------------------------------
  3 Zako\IeC {\'n}czenie
 ------------------------------------------------------------------------------
@@ -1207,17 +1218,17 @@ Overfull \hbox (19.62541pt too wide) in paragraph at lines 9--11
 ectX, której ogrom-nym ogranicze-
  []
 
-[37
+[38
 
 ])
 ------------------------------------------------------------------------------
  Spis ilustracji
 ------------------------------------------------------------------------------
-[38] (build/main.lof)
+[39] (build/main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [39
+ [40
 
 ]
 ------------------------------------------------------------------------------
@@ -1227,8 +1238,8 @@ ectX, której ogrom-nym ogranicze-
 
 Package natbib Warning: There were multiply defined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
-[40
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+[41
 
 
 
@@ -1237,33 +1248,51 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.10 \end{document}
+l.22 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.sop}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.22 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.sop}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.22 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.sop}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.22 \end{document}
                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 10.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (build/main.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 10.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) ) 
 Here is how much of TeX's memory you used:
- 14371 strings out of 495063
- 200520 string characters out of 3182194
- 274328 words of memory out of 3000000
- 17187 multiletter control sequences out of 15000+200000
+ 14381 strings out of 495063
+ 200676 string characters out of 3182195
+ 274327 words of memory out of 3000000
+ 17195 multiletter control sequences out of 15000+200000
  58918 words of font info for 47 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,11n,45p,1717b,512s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,45p,1730b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/tex
 live/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -1272,10 +1301,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/lm/lmtt12.pfb>
-Output written on build/main.pdf (42 pages, 5640024 bytes).
+Output written on build/main.pdf (43 pages, 5907243 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 393 compressed objects within 4 object streams
- 99 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 478 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 354 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,13 +4,13 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Silnik Cry Engine\relax }}{4}{figure.caption.6}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Posta\IeC {\'c} astronauty \relax }}{5}{figure.caption.8}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Pasek \IeC {\.z}ycia wy\IeC {\'s}wietlany w lewym g\IeC {\'o}rnym rogu\relax }}{6}{figure.caption.9}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Animacja biegu astronauty\relax }}{7}{figure.caption.11}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Przep\IeC {\l }yw danych mi\IeC {\k e}dzy aplikacj\IeC {\k a} C++ a skryptem Lua\relax }}{7}{figure.caption.12}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Przep\IeC {\l }yw danych mi\IeC {\k e}dzy aplikacj\IeC {\k a} C++ a skryptem Lua\relax }}{8}{figure.caption.13}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Screen z gry - astronauta podczas lotu\relax }}{9}{figure.caption.14}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Animacja biegu astronauty\relax }}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Przyk\IeC {\l }adowy screen z gry\relax }}{7}{figure.caption.12}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Przyk\IeC {\l }adowy screen z gry\relax }}{8}{figure.caption.13}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Algorytm wy\IeC {\'s}wietlania animacji w oparciu o tzw. ,,sprite``\relax }}{9}{figure.caption.14}
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Eclipse podczas instalacji wtyczki z Marketplace\relax }}{10}{figure.caption.18}
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Portal github.com. Podgl\IeC {\k a}d pliku \IeC {\'z}r\IeC {\'o}d\IeC {\l }owego. \relax }}{14}{figure.caption.21}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Przep\IeC {\l }yw danych mi\IeC {\k e}dzy aplikacj\IeC {\k a} C++ a skryptem Lua\relax }}{17}{figure.caption.26}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Przep\IeC {\l }yw danych mi\IeC {\k e}dzy aplikacj\IeC {\k a} C++ a skryptem Lua\relax }}{18}{figure.caption.26}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schemat dzia\IeC {\l }ania g\IeC {\l }\IeC {\'o}wnej p\IeC {\k e}tli\relax }}{23}{figure.caption.31}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Przewijane t\IeC {\l }o wy\IeC {\'s}wietlane w grze\relax }}{24}{figure.caption.34}
