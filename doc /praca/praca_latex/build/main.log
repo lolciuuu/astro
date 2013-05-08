@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2013/dev) (format=pdflatex 2013.4.7)  8 MAY 2013 21:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2013/dev) (format=pdflatex 2013.4.7)  8 MAY 2013 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,38 +896,38 @@ File: ./Pictures/logo.jpg Graphic file (type jpg)
 <use ./Pictures/logo.jpg>
 Package pdftex.def Info: ./Pictures/logo.jpg used on input line 59.
 (pdftex.def)             Requested size: 301.1261pt x 130.19846pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 86.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 87.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 86.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 87.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 86.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 87.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 86.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 87.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 86.
+(Font)              <12> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 86.
+(Font)              <8> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 86.
-LaTeX Font Info:    Try loading font information for U+msa on input line 86.
+(Font)              <6> on input line 87.
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 86.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1311,7 +1311,7 @@ ublic/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on build/main.pdf (43 pages, 5863852 bytes).
+Output written on build/main.pdf (43 pages, 5863234 bytes).
 PDF statistics:
  474 PDF objects out of 1000 (max. 8388607)
  394 compressed objects within 4 object streams
