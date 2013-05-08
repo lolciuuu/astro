@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2013/dev) (format=pdflatex 2013.4.7)  23 APR 2013 21:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2013/dev) (format=pdflatex 2013.4.7)  8 MAY 2013 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,6 +817,9 @@ Package natbib Warning: Citation `sop' multiply defined.
 
 Package natbib Warning: Citation `sop' multiply defined.
 
+
+Package natbib Warning: Citation `sop' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -887,44 +890,44 @@ LaTeX Info: Redefining \nameref on input line 27.
 \openout3 = `main.out'.
 
 
-<./Pictures/logo.jpg, id=128, 501.875pt x 302.12875pt>
+<./Pictures/logo.jpg, id=128, 452.69125pt x 195.73125pt>
 File: ./Pictures/logo.jpg Graphic file (type jpg)
 
 <use ./Pictures/logo.jpg>
 Package pdftex.def Info: ./Pictures/logo.jpg used on input line 59.
-(pdftex.def)             Requested size: 301.1261pt x 181.28786pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 77.
+(pdftex.def)             Requested size: 301.1261pt x 130.19846pt.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 86.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 77.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 86.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 77.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 86.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 77.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 86.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 77.
+(Font)              <12> on input line 86.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 77.
+(Font)              <8> on input line 86.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 77.
-LaTeX Font Info:    Try loading font information for U+msa on input line 77.
+(Font)              <6> on input line 86.
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 77.
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -957,14 +960,14 @@ Rozdzia\IeC {\l } 1.
 ------------------------------------------------------------------------------
 [3
 
-] <./Pictures/cryengine.jpg, id=191, 622.325pt x 350.30875pt>
+] <./Pictures/cryengine.jpg, id=190, 622.325pt x 350.30875pt>
 File: ./Pictures/cryengine.jpg Graphic file (type jpg)
 
 <use ./Pictures/cryengine.jpg>
 Package pdftex.def Info: ./Pictures/cryengine.jpg used on input line 21.
 (pdftex.def)             Requested size: 427.97083pt x 240.90088pt.
  [4 <./Pictures/cryengine.jpg>]
-<./Pictures/astro.jpg, id=199, 326.21875pt x 446.66875pt>
+<./Pictures/astro.jpg, id=198, 326.21875pt x 446.66875pt>
 File: ./Pictures/astro.jpg Graphic file (type jpg)
 
 <use ./Pictures/astro.jpg>
@@ -981,110 +984,112 @@ Underfull \hbox (badness 1360) in paragraph at lines 45--47
  []
 
 [5 <./Pictures/astro.jpg>]
-<./Pictures/livebar.png, id=206, 280.04625pt x 93.34875pt>
+<./Pictures/livebar.png, id=205, 280.04625pt x 93.34875pt>
 File: ./Pictures/livebar.png Graphic file (type png)
 
 <use ./Pictures/livebar.png>
 Package pdftex.def Info: ./Pictures/livebar.png used on input line 50.
 (pdftex.def)             Requested size: 126.4726pt x 42.15765pt.
 
-<./Pictures/astroRun.jpg, id=208, 556.0775pt x 115.43124pt>
+<./Pictures/astroRun.jpg, id=207, 556.0775pt x 115.43124pt>
 File: ./Pictures/astroRun.jpg Graphic file (type jpg)
 
 <use ./Pictures/astroRun.jpg>
 Package pdftex.def Info: ./Pictures/astroRun.jpg used on input line 66.
 (pdftex.def)             Requested size: 364.70882pt x 75.70752pt.
-
-<./Pictures/gra2.png, id=209, 822.07124pt x 523.9575pt>
-File: ./Pictures/gra2.png Graphic file (type png)
-
-<use ./Pictures/gra2.png>
-Package pdftex.def Info: ./Pictures/gra2.png used on input line 82.
-(pdftex.def)             Requested size: 410.29308pt x 261.50641pt.
- [6 <./Pictures/livebar.png> <./Pictures/astroRun.jpg>] <./Pictures/gra1.png, i
-d=217, 809.27344pt x 523.9575pt>
-File: ./Pictures/gra1.png Graphic file (type png)
-
-<use ./Pictures/gra1.png>
-Package pdftex.def Info: ./Pictures/gra1.png used on input line 88.
-(pdftex.def)             Requested size: 410.29308pt x 265.64778pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Pictures/sprite_algorytm.png, id=218, 930.47626pt x 859.21pt>
+ [6 <./Pictures/livebar.png> <./Pictures/astroRun.jpg>] <./Pictures/sprite_algo
+rytm.png, id=215, 930.47626pt x 859.21pt>
 File: ./Pictures/sprite_algorytm.png Graphic file (type png)
 
 <use ./Pictures/sprite_algorytm.png>
-Package pdftex.def Info: ./Pictures/sprite_algorytm.png used on input line 95.
+Package pdftex.def Info: ./Pictures/sprite_algorytm.png used on input line 78.
 (pdftex.def)             Requested size: 364.70882pt x 336.76869pt.
 
+<./Pictures/gra2.png, id=216, 822.07124pt x 523.9575pt>
+File: ./Pictures/gra2.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use ./Pictures/gra2.png>
+Package pdftex.def Info: ./Pictures/gra2.png used on input line 88.
+(pdftex.def)             Requested size: 410.29308pt x 261.50641pt.
 
-[7 <./Pictures/gra2.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 106.
+Overfull \hbox (18.99577pt too wide) in paragraph at lines 82--91
+[]\T1/lmr/m/n/12 Narysowanie cz¦±ci obrazków jako grafiki wek-torowej poz-woliª
+o za-chowa¢ peªn¡ skalowal-
+ []
 
+[7 <./Pictures/sprite_algorytm.png>]
+<./Pictures/gra1.png, id=222, 809.27344pt x 523.9575pt>
+File: ./Pictures/gra1.png Graphic file (type png)
 
-(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
+<use ./Pictures/gra1.png>
+Package pdftex.def Info: ./Pictures/gra1.png used on input line 94.
+(pdftex.def)             Requested size: 410.29308pt x 265.64778pt.
+ [8 <./Pictures/gra2.png (PNG copy)> <./Pictures/gra1.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 105.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [8 <./Pictures/gra1.png (PNG copy)>] [9 <./Pictures/sprite_algorytm.png>]
-<./Pictures/eclipse.png, id=235, 1927.2pt x 1084.05pt>
+)
+[9] <./Pictures/eclipse.png, id=234, 1927.2pt x 1084.05pt>
 File: ./Pictures/eclipse.png Graphic file (type png)
 
 <use ./Pictures/eclipse.png>
-Package pdftex.def Info: ./Pictures/eclipse.png used on input line 138.
+Package pdftex.def Info: ./Pictures/eclipse.png used on input line 137.
 (pdftex.def)             Requested size: 364.70882pt x 205.14458pt.
 
-Overfull \hbox (5.88377pt too wide) in paragraph at lines 142--146
+Overfull \hbox (5.88377pt too wide) in paragraph at lines 141--145
 \T1/lmr/m/n/12 ±rodowiska do tworzenia gry As-tro Rush pole-gaªa na po-bra-niu 
 z ofic-jal-nej strony spakowanej
  []
 
 [10 <./Pictures/eclipse.png>] [11] [12] [13]
-<./Pictures/git.png, id=255, 1056.94875pt x 985.6825pt>
+<./Pictures/git.png, id=254, 1056.94875pt x 985.6825pt>
 File: ./Pictures/git.png Graphic file (type png)
 
 <use ./Pictures/git.png>
-Package pdftex.def Info: ./Pictures/git.png used on input line 219.
+Package pdftex.def Info: ./Pictures/git.png used on input line 218.
 (pdftex.def)             Requested size: 364.70882pt x 340.10594pt.
 
-Overfull \hbox (16.7161pt too wide) in paragraph at lines 223--224
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (16.7161pt too wide) in paragraph at lines 222--223
 []\T1/lmr/m/n/12 Przy tworze-niu ap-likacji zostaª wyko-rzys-tany ser-wis hos-t
 u-j¡cy gita: https://github.com.
  []
 
-[14 <./Pictures/git.png>] [15] [16]
-<./Pictures/lua_skrypty.png, id=269, 1136.245pt x 799.98875pt>
+[14] [15 <./Pictures/git.png>] [16]
+<./Pictures/lua_skrypty.png, id=268, 1136.245pt x 799.98875pt>
 File: ./Pictures/lua_skrypty.png Graphic file (type png)
 
 <use ./Pictures/lua_skrypty.png>
-Package pdftex.def Info: ./Pictures/lua_skrypty.png used on input line 278.
+Package pdftex.def Info: ./Pictures/lua_skrypty.png used on input line 277.
 (pdftex.def)             Requested size: 364.70882pt x 256.78287pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17]
-Overfull \hbox (1.5322pt too wide) in paragraph at lines 292--293
+Overfull \hbox (1.5322pt too wide) in paragraph at lines 291--292
 []\T1/lmr/m/n/12 Simple Di-rect Me-dia Layer jest bib-liotek¡ uªatwia-j¡c¡ twor
 ze-nie gier kom-put-erowych,
  []
 
 [18 <./Pictures/lua_skrypty.png>]
-Overfull \hbox (18.95395pt too wide) in paragraph at lines 314--316
+Overfull \hbox (18.95395pt too wide) in paragraph at lines 313--315
 \T1/lmr/m/n/12 pEvent.key.keysym.sym == SDLK_ESCAPE) udzieli in-for-ma-cji czy 
 mi-aªo miejsce naci±niecie
  []
 
 [19]
-Overfull \hbox (13.41594pt too wide) in paragraph at lines 324--324
+Overfull \hbox (13.41594pt too wide) in paragraph at lines 331--331
 []\T1/lmtt/m/n/12 static Uint32 enableEnemyDetect_callbackTimer(Uint32 interval
 , void *param);[] 
  []
 
 
-Overfull \hbox (3.92271pt too wide) in paragraph at lines 331--332
+Overfull \hbox (3.92271pt too wide) in paragraph at lines 338--339
 \T1/lmr/m/n/12 funkcji z bib-lioteki SDL_ttf np. TTF_RenderUTF_Blended zostaje 
 ut-wor-zona powierzch-
  []
@@ -1094,7 +1099,7 @@ Rozdzia\IeC {\l } 2.
 ------------------------------------------------------------------------------
  2 Budowa aplikacji
 ------------------------------------------------------------------------------
-<./Pictures/main_loop.png, id=293, 814.04124pt x 593.21625pt>
+<./Pictures/main_loop.png, id=292, 814.04124pt x 593.21625pt>
 File: ./Pictures/main_loop.png Graphic file (type png)
 
 <use ./Pictures/main_loop.png>
@@ -1107,21 +1112,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [22
 
 ] [23 <./Pictures/main_loop.png>]
-<./Pictures/back.png, id=305, 563.15659pt x 172.01105pt>
+<./Pictures/back.png, id=304, 563.15659pt x 172.01105pt>
 File: ./Pictures/back.png Graphic file (type png)
 
 <use ./Pictures/back.png>
 Package pdftex.def Info: ./Pictures/back.png used on input line 34.
 (pdftex.def)             Requested size: 364.70882pt x 111.40164pt.
  [24 <./Pictures/back.png>]
-<./Pictures/designer.png, id=312, 1019.81pt x 626.34pt>
+<./Pictures/designer.png, id=311, 1019.81pt x 626.34pt>
 File: ./Pictures/designer.png Graphic file (type png)
 
 <use ./Pictures/designer.png>
 Package pdftex.def Info: ./Pictures/designer.png used on input line 53.
 (pdftex.def)             Requested size: 364.70882pt x 223.9913pt.
  [25 <./Pictures/designer.png (PNG copy)>]
-<./Pictures/splash.png, id=318, 648.4225pt x 704.6325pt>
+<./Pictures/splash.png, id=317, 648.4225pt x 704.6325pt>
 File: ./Pictures/splash.png Graphic file (type png)
 
 <use ./Pictures/splash.png>
@@ -1143,7 +1148,7 @@ Overfull \hbox (6.30118pt too wide) in paragraph at lines 88--89
 owych zostaªa rozwi¡zana
  []
 
-[28] [29] <./Pictures/warstwy.png, id=337, 1048.91875pt x 1144.275pt>
+[28] [29] <./Pictures/warstwy.png, id=336, 1048.91875pt x 1144.275pt>
 File: ./Pictures/warstwy.png Graphic file (type png)
 
 <use ./Pictures/warstwy.png>
@@ -1158,7 +1163,7 @@ Overfull \hbox (2.75468pt too wide) in paragraph at lines 111--117
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Pictures/doxygen1.png, id=338, 1281.78876pt x 1007.765pt>
+<./Pictures/doxygen1.png, id=337, 1281.78876pt x 1007.765pt>
 File: ./Pictures/doxygen1.png Graphic file (type png)
 
 <use ./Pictures/doxygen1.png>
@@ -1178,7 +1183,7 @@ Rozdzia\IeC {\l } 3.
 ------------------------------------------------------------------------------
  3 Dokumentacja u\IeC {\.z}ytkownika
 ------------------------------------------------------------------------------
-<./Pictures/ilosczycia.png, id=354, 185.69376pt x 104.39pt>
+<./Pictures/ilosczycia.png, id=353, 185.69376pt x 104.39pt>
 File: ./Pictures/ilosczycia.png Graphic file (type png)
 
 <use ./Pictures/ilosczycia.png>
@@ -1187,21 +1192,21 @@ Package pdftex.def Info: ./Pictures/ilosczycia.png used on input line 12.
  [33
 
  <./Pictures/ilosczycia.png (PNG copy)>]
-<./Pictures/menu1.png, id=360, 1392.20125pt x 889.3225pt>
+<./Pictures/menu1.png, id=359, 1392.20125pt x 889.3225pt>
 File: ./Pictures/menu1.png Graphic file (type png)
 
 <use ./Pictures/menu1.png>
 Package pdftex.def Info: ./Pictures/menu1.png used on input line 30.
 (pdftex.def)             Requested size: 430.61032pt x 275.0629pt.
  [34 <./Pictures/menu1.png>]
-<./Pictures/menu2.png, id=366, 1386.17876pt x 885.3075pt>
+<./Pictures/menu2.png, id=365, 1386.17876pt x 885.3075pt>
 File: ./Pictures/menu2.png Graphic file (type png)
 
 <use ./Pictures/menu2.png>
 Package pdftex.def Info: ./Pictures/menu2.png used on input line 38.
 (pdftex.def)             Requested size: 430.61032pt x 275.00984pt.
 
-<./Pictures/menu3.png, id=367, 1392.20125pt x 892.33376pt>
+<./Pictures/menu3.png, id=366, 1392.20125pt x 892.33376pt>
 File: ./Pictures/menu3.png Graphic file (type png)
 
 <use ./Pictures/menu3.png>
@@ -1238,7 +1243,7 @@ ectX, której ogrom-nym ogranicze-
 
 Package natbib Warning: There were multiply defined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
 [41
 
 
@@ -1248,63 +1253,68 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.22 \end{document}
+l.24 \end{document}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{cite.sop}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.22 \end{document}
+l.24 \end{document}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{cite.sop}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.22 \end{document}
+l.24 \end{document}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{cite.sop}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.22 \end{document}
+l.24 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.sop}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \end{document}
                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (build/main.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) ) 
 Here is how much of TeX's memory you used:
- 14381 strings out of 495063
- 200676 string characters out of 3182195
+ 14377 strings out of 495063
+ 200620 string characters out of 3182195
  274327 words of memory out of 3000000
- 17195 multiletter control sequences out of 15000+200000
+ 17191 multiletter control sequences out of 15000+200000
  58918 words of font info for 47 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,11n,45p,1730b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,12n,45p,1730b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/tex
 live/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/lm/lmtt12.pfb>
-Output written on build/main.pdf (43 pages, 5907243 bytes).
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on build/main.pdf (43 pages, 5863852 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
+ 474 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
  100 named destinations out of 1000 (max. 500000)
  354 words of extra memory for PDF output out of 10000 (max. 10000000)
 

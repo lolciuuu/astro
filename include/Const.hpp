@@ -3,7 +3,7 @@
 
 // Zmienne wlaczajaca tryb debugu
 
-#define FULL_SCREEN_FLAG
+//#define FULL_SCREEN_FLAG
 
 #define RENDER_GL
 #define LIGHT_GL

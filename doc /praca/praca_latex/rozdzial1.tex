@@ -7,7 +7,7 @@
 %============================================================================================================================
 \section{Czym jest gra komputerowa?}
 \lhead{Rozdział 1. \emph{Czym jest gra komputerowa?}}
-\hspace{1cm} Gra komputerowa jest specyficznym rodzajem programu komputerowego łączącego w sobie elementy grafiki i dźwięku. Program ten ma za zadanie dostarczać użytkownikowi, bądź też kilku użytkownikom interaktywnej rozrywki przy komputerze, bądź też innym urządzeniem multimedialnym np. konsoli, tablecie. Gry można sklasyfikować na bardzo wiele gatunków i podgatunków np. gry zręcznościowe, gry z grafiką 3D, strategiczne, FPS-y (ang. first person shooter) itd. Można je podzielić również na to do kogo są kierowane tzn. czy gra jest edukacyjną aplikacją dla dzieci, czy też jest brutalną grą wojenną dla dorosłych.
+\hspace{1cm} Gra komputerowa jest specyficznym rodzajem programu komputerowego łączącego w sobie elementy grafiki i dźwięku. Program ten ma za zadanie dostarczać użytkownikowi, bądź też kilku użytkownikom interaktywnej rozrywki przy komputerze, bądź też innym urządzeniem multimedialnym np. konsoli, tablecie. Gry można sklasyfikować na bardzo wiele gatunków i podgatunków np. gry zręcznościowe, gry z grafiką 3D, strategiczne, FPS (ang. first person shooter) itd. Można je podzielić również na to do kogo są kierowane tzn. czy gra jest edukacyjną aplikacją dla dzieci, czy też jest brutalną grą wojenną dla dorosłych.
 
 W czasach kiedy powstawały pierwsze gry (lata 70), oraz w czasach kiedy komputery klasy PC dopiero stawały się popularne, gry były tworzone przez jedną bądź kilka osób. Dziś w produkcji gier bierze udział niejednokrotnie kilkanaście osób, a w tym nie tylko programiści ale także projektanci, reżyserowie, dźwiękowcy, graficy. 
 Proces ten nabiera często ogromnego rozmachu i przynosi duże pieniądze ze sprzedaży gotowego produktu. Produkcja gry komputerowej jest tak bardzo złożonym procesem że powstają filmy dokumentalne o tym jak się odbywa ten proces. Przykładem może być tutaj film z serii \href{http://natgeotv.com/uk/megafactories/videos/ea-sports}{megafabryki} pokazujący proces tworzenia gry Fifa- realistycznego symulatora piłki nożnej. 
@@ -22,7 +22,7 @@ Gry komputerowe w dzisiejszych czasach to nie tylko rozrywka, ale także duże p
     \caption{Silnik Cry Engine}
 \end{figure}
   
-Omawiając gry komputerowe nie można pominąć zagadnienia silników gier. Silnik gry jest oprogramowaniem które dostarcza twórcy gry gotowych rozwiązań w kwestii np. wykrywania kolizji, oświetlenia, obsługi dźwięku oraz wielu innych elementów. Dzięki zastosowaniu gotowego silnika developer nie traci czasu na pisanie np. modułu do wyświetlania animacji, tylko korzysta z gotowego rozwiązania skupiając się na fabule, bądź też jakości wyświetlanej grafiki. Takie podejście znacząco przyśpiesza Tworzenie gry, oraz zwiększa jej jakość. Osobny zespół pracuje nad silnikiem, a inny nad stworzeniem na jego podstawie gry. Duże studia tworzą własne silniki, na bazie którego Tworzą kolejne gry, przykładem może być tutaj Cry Engine dający fotorealistyczną grafikę. Został on wykorzystany do stworzenia polskiej produkcji ,,Sniper Ghost Warrior 2`` korzystającej z  3 wersji tego silnika. Silnik ten dostępny jest do kupienia bądź też do ściągnięcia za darmo w celach nie komercyjnych ze strony twórców. Silnik posiada środowisko graficzne w którym w sposób wizualny można tworzyć świat dostępny w grze. Co ciekawe taki edytor znajduje zastosowanie nie tylko jako narzędzie do tworzenia gier ale także jako aplikacja do tworzenia realistycznych wizualizacji budynków przez architektów. Minusem większości komercyjnych silników jest jednak brak wsparcia dla systemu Linuks. Ewentualne dostępne dla tego systemu silniki nie dorównują możliwością tym płatnym. Stało się to też przyczyną wybrania grafiki 2D jako podstawy do napisania omawianego projektu, oraz do stworzenia gry od podstaw, bez użycia gotowych rozwiązań. 
+Omawiając gry komputerowe nie można pominąć zagadnienia silników gier. Silnik gry jest oprogramowaniem które dostarcza twórcy gry gotowych rozwiązań w kwestii np. wykrywania kolizji, oświetlenia, obsługi dźwięku oraz wielu innych elementów. Dzięki zastosowaniu gotowego silnika developer nie traci czasu na pisanie np. modułu do wyświetlania animacji, tylko korzysta z gotowego rozwiązania skupiając się na fabule, bądź też jakości wyświetlanej grafiki. Takie podejście znacząco przyśpiesza tworzenie gry, oraz zwiększa jej jakość. Osobny zespół pracuje nad silnikiem, a inny nad stworzeniem na jego podstawie gry. Duże studia tworzą własne silniki, na bazie którego tworzą kolejne gry, przykładem może być tutaj Cry Engine dający fotorealistyczną grafikę. Został on wykorzystany do stworzenia polskiej produkcji ,,Sniper Ghost Warrior 2`` korzystającej z  3 wersji tego silnika. Silnik ten dostępny jest do kupienia bądź też do ściągnięcia za darmo w celach nie komercyjnych ze strony twórców. Silnik posiada środowisko graficzne w którym w sposób wizualny można tworzyć świat dostępny w grze. Co ciekawe taki edytor znajduje zastosowanie nie tylko jako narzędzie do tworzenia gier ale także jako aplikacja do tworzenia realistycznych wizualizacji budynków przez architektów. Minusem większości komercyjnych silników jest jednak brak wsparcia dla systemu Linuks. Ewentualne dostępne dla tego systemu silniki nie dorównują możliwością tym płatnym. Stało się to też przyczyną wybrania grafiki 2D jako podstawy do napisania omawianego projektu, oraz do stworzenia gry od podstaw, bez użycia gotowych rozwiązań. 
 
 %============================================================================================================================
 % Fabuła
@@ -30,7 +30,7 @@ Omawiając gry komputerowe nie można pominąć zagadnienia silników gier. Siln
 \section{Fabuła}
 \lhead{Rozdział 1. \emph{Fabuła}}
 
-\hspace{1cm} Omawiany projekt będzie grą zręcznościową, celem gracza będzie przebiec bohaterem jak największy dystans. Bohaterem tym będzie astronauta który wylądował na obcej planecie, i musi on zbierać bańki z tlenem żeby się nie udusić. Bańki te uzupełniają poziom życia wskazywany przez pasek życia w lewym górnym rogu. Dodatkowym utrudnieniem będą przeszkody w postaci meteorytów które należy omijać żeby nie pomniejszyć ilości życia.
+\hspace{1cm} Omawiany projekt będzie grą zręcznościową, celem gracza będzie przebiec bohaterem jak największy dystans. Bohaterem tym będzie astronauta, który wylądował na obcej planecie, i musi on zbierać bańki z tlenem żeby się nie udusić. Bańki te uzupełniają poziom życia wskazywany przez pasek życia w lewym górnym rogu. Dodatkowym utrudnieniem będą przeszkody w postaci meteorytów które należy omijać żeby nie pomniejszyć ilości życia.
 
  
 \begin{wrapfigure}{left}{0.5\textwidth}
@@ -69,10 +69,16 @@ Ze względu na fabułę z biegnącym astronautą, oraz osadzenie zdarzeń na obc
 
 Wszystkie animacje w grze są przechowywane w jednym głównym pliku „atlas.png”. Skąd wyświetlany jest tylko fragment odpowiadający danemu sprite-owi.
 Po upływie określonego czasu następuje przejście do następnej klatki animacji, czyli zazwyczaj przesuniecie współrzędnej X o szerokość obrazka. W tym
-algorytmie współrzędna Y nie zmienia się. Cały algorytm wyświetlania animacji opartej przestawia schemat 1.
-Warto tutaj wspomnieć o układzie współrzędnych jaki jest używany w bibliotece SDL. Otóż punkt początkowy (0,0) znajduje się w lewym górnym
+algorytmie współrzędna Y nie zmienia się. Warto tutaj wspomnieć o układzie współrzędnych jaki jest używany w bibliotece SDL. Otóż punkt początkowy (0,0) znajduje się w lewym górnym
 rogu, prawy górny wierzchołek to ( szerokość okna, 0 ), natomiast lewy dolny to : (0, wysokość okna ). Grafika na potrzeby gry została częściowo
 stworzona w edytorze grafiki wektorowej Inkscape, który oparty jest na licencji GPL i działa pod takimi systemami operacyjnymi jak np. Windows, Linux.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=510,natheight=142]{./Pictures/sprite_algorytm.png}
+    \caption{Algorytm wyświetlania animacji w oparciu o tzw. ,,sprite``}
+\end{figure}
+
 Narysowanie części obrazków jako grafiki wektorowej pozwoliło zachować pełną skalowalność w dalszym procesie tworzenia grafiki. Utworzone grafiki
 wektorowe były składane i poprawiane w Adobe Photoshop – bardzo rozbudowanej aplikacji do obróbki grafiki rastrowej. Photoshop jest aplikacją płatną,
 jednak istnieje możliwość użycia 30 dniowej wersji Trial, co też zostało zrobione podczas tworzenia gry. W atlasie grafiki znalazły się także ikony z
@@ -87,13 +93,6 @@ kolekcji „Hand drawn icon set” które autor opublikował w internecie  na da
     \centering
     \includegraphics[width=0.9\textwidth,natwidth=525,natheight=142]{./Pictures/gra1.png}
     \caption{Przykładowy screen z gry}
-\end{figure}
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth,natwidth=510,natheight=142]{./Pictures/sprite_algorytm.png}
-    \caption{Algorytm wyświetlania animacji w oparciu o tzw. ,,sprite``}
 \end{figure}
 
 %============================================================================================================================
@@ -145,7 +144,7 @@ Konfiguracja tego środowiska do tworzenia gry Astro Rush polegała na pobraniu 
 -Integracja z Make (samo narzędzie zostanie omówione w kolejnym podrozdziale) dzięki czemu nie ma potrzeby wpisywania polecenia make w konsoli za każdym razem przy budowaniu, ale wystarczy w oknie Eclipsa wybrać cel budowania i dwa razy kliknąć w niego.
 
 Trzeba również wspomnieć o tym że przy tworzeniu projektu został wykorzystany plugin integrujący Eclipse z programem Valgrind. 
-Ta aplikacja konsolowa jest narzędziem do debugowania pamięci oraz do wykrywania wycieków pamięci. Plugin ten okazał się pomocny wielokrotnie do wyszukania miejsc w aplikacji gdzie dynamicznie przydzielana pamięć nie była zwalniania. Valgrind pozwala nawet znaleźć zmienne które nie są inicjalizowane, co pozwala uniknąć niektórych błędów związanych z tym że zmienne automatyczne zawierają po utworzeniu przypadkowe wartości z pamięci. 
+Ta aplikacja konsolowa jest narzędziem do debugowania pamięci oraz do wykrywania wycieków pamięci. Plugin ten okazał się pomocny wielokrotnie do wyszukania miejsc w aplikacji gdzie dynamicznie przydzielana pamięć nie była zwalniania. Valgrind pozwala nawet znaleźć zmienne, które nie są inicjalizowane, co pozwala uniknąć niektórych błędów związanych z tym że zmienne automatyczne zawierają po utworzeniu przypadkowe wartości z pamięci. 
 
 W ostatniej fazie tworzenia projektu zostało wykonane profilowanie, czyli dynamiczna analiza aplikacji pozwalająca znaleźć miejsca aplikacji których wywołanie trwa najdłużej w celu ich optymalizacji. Do tego celu został wykorzystany plugin łączący Eclipse z profilerem Perf. Pozwolił on na zebranie i wyświetlenie statystyk odnośnie czasu procesora jaki jest wykorzystywany przez poszczególne funkcje, klasy w programie.
 
@@ -163,7 +162,7 @@ W ostatniej fazie tworzenia projektu zostało wykonane profilowanie, czyli dynam
 
 Po uruchomienia programu make, szuka on domyślnie, o ile nie podaliśmy w parametrach innej nazwy - pliku Makefile. Plik ten opisuje zależności miedzy plikami źródłowymi, i umożliwia skompilowanie tylko tych plików które uległy zmianie od ostatniego budowania. Zdecydowanie przyśpiesza to prace nad projektem w przypadku kiedy jest potrzebne testowania poprawek na bieżąco. 
 
-Domyślne wywołanie make bez żadnych parametrów spowoduje zawsze uruchomienie domyślnego celu budowania: all. Możliwe jest definiowania dowolnej ilości celów budowania w jednym Makefile-u. Dzięki zastosowaniu takiego podejścia nie ma potrzeby edycji Makefilu kiedy chce skompilować aplikacje np. z innymi flagami kompilatora. Wystarczy wtedy dopisać odpowiedni cel budowania i go uruchomić. W projekcie Astro Rush został dodany również cel budowania służący do czyszczenia gry z wszystkich skompilowanych źródeł oraz z linkowanej aplikacji, co okazuje się przydatne kiedy występuje potrzeba przebudowania całego projektu. Tutaj należy wspomnieć o tym że Makefile sprawdza które pliki wymagają ponownej kompilacji, i kompiluje tylko te które uległy zmianie od ostatniego budowanie. Takie podejście znacząco skraca czas który programista musi poświecić na budowaniu aplikacji. Dodatkowo make wspiera kompilacje wielowątkowa, dzięki czemu na maszynach z procesorem wielordzeniowym można wykorzystać wszystkie rdzenie, skracając jeszcze bardziej czas budowy programu. 
+Domyślne wywołanie make bez żadnych parametrów spowoduje zawsze uruchomienie domyślnego celu budowania: all. Możliwe jest definiowania dowolnej ilości celów budowania w jednym Makefile-u. Dzięki zastosowaniu takiego podejścia nie ma potrzeby edycji Makefilu kiedy chce skompilować aplikacje np. z innymi flagami kompilatora. Wystarczy wtedy dopisać odpowiedni cel budowania i go uruchomić. W projekcie Astro Rush został dodany również cel budowania służący do czyszczenia gry z wszystkich skompilowanych źródeł oraz z linkowanej aplikacji, co okazuje się przydatne kiedy występuje potrzeba przebudowania całego projektu. Tutaj należy wspomnieć o tym że Makefile sprawdza które pliki wymagają ponownej kompilacji, i kompiluje tylko te które uległy zmianie od ostatniego budowanie. Takie podejście znacząco skraca czas, który programista musi poświecić na budowaniu aplikacji. Dodatkowo make wspiera kompilacje wielowątkowa, dzięki czemu na maszynach z procesorem wielordzeniowym można wykorzystać wszystkie rdzenie, skracając jeszcze bardziej czas budowy programu. 
 
 Napisany na potrzeby gry plik „Makefile” pokazuje również że w pliku reguł programu make można definiować swoje zmienne. Taką zmienną może być na przykład ścieżka do kompilatora, która może się zmienić w zależności od platformy. Takimi zmiennymi mogą być również flagi linkera, kompilatora, oraz lista plików źródłowych z katalogu src. Tak napisany Makefile okazał się bardzo uniwersalny i dodanie kolejnych nowych plików źródłowych wymaga jedynie dopisanie ich na listę w zmiennej Makefile-a. 
 
@@ -220,7 +219,7 @@ Projekt Astro Rush nie wydaje się zbyt duży biorąc pod uwagę fakt że nie pr
     \caption{Portal github.com. Podgląd pliku źródłowego. }
 \end{figure}
 
-Przy tworzeniu aplikacji został wykorzystany serwis hostujący gita: https://github.com. Portal posiada wiele funkcji wspomagających pracę zespołową nad projektem. Pozwala między innymi na edycję plików źródłowych bezpośrednio na serwerze, przeglądanie i porównywanie zmian w plikach. Dzięki czemu łatwo można sprawdzić co było w poprzedniej wersji pliku, oraz kto wysłał zmiany (ang.commit) na serwer. Github dostarcza statystyk na temat projektu np. wykres jak zmieniała się ilość kodu wraz z kolejnymi wysłanymi wersjami na serwer. Ponadto można tworzyć na serwerze dokumentacje do aplikacji (tzw. Wiki) którą następnie użytkownik może przeglądać przez przeglądarkę, bez potrzeby ściągania na dysk. Hosting dla aplikacji open source jest darmowy, jednak w takim przypadku repozytorium z kodem jest publiczne. Oznacza to że każdy może sobie ściągnąć projekt jednym poleceniem:
+Przy tworzeniu aplikacji został wykorzystany serwis hostujący gita: https://github.com. Portal posiada wiele funkcji wspomagających pracę zespołową nad projektem. Pozwala między innymi na edycję plików źródłowych bezpośrednio na serwerze, przeglądanie i porównywanie zmian w plikach. Dzięki czemu łatwo można sprawdzić co było w poprzedniej wersji pliku, oraz kto wysłał zmiany (ang.commit) na serwer. Github dostarcza statystyk na temat projektu np. wykres jak zmieniała się ilość kodu wraz z kolejnymi wysłanymi wersjami na serwer. Ponadto można tworzyć na serwerze dokumentacje do aplikacji (tzw. Wiki), którą następnie użytkownik może przeglądać przez przeglądarkę, bez potrzeby ściągania na dysk. Hosting dla aplikacji open source jest darmowy, jednak w takim przypadku repozytorium z kodem jest publiczne. Oznacza to że każdy może sobie ściągnąć projekt jednym poleceniem:
 
 \begin{verbatim}
 	git clone git://github.com/lolciuuu/astro.git
@@ -228,7 +227,7 @@ Przy tworzeniu aplikacji został wykorzystany serwis hostujący gita: https://gi
 
 Analogicznie z poziomu konsoli można później wysyłać zmiany na serwer (o ile dany użytkownik został dodany na listę osób które mogą zmieniać pliki na serwerze ), bądź też pobierać zmiany wysłanych przez innych użytkowników. Warto wspomnieć o tym że serwis github mimo tego że powstał dość nie dawno bo w 2008, ma już 2 miliony repozytoriów. 
 
-Git w środowisku Linuks jest narzędziem konsolowym (W systemie Debian wystarczy zainstalować pakiet o takie samej nazwie), jednak w ramach ułatwienia podczas tworzenia aplikacji została wykorzystana wtyczka do Eclipse która pozwala w łatwy sposób synchronizować projekt który znajduje się na dysku lokalnie z tym co jest na repozytorium, oraz wysyłanie zmian na serwer. Dzięki wtyczce do tej podczas tworzenia projektu nie było potrzeby wydawać poleceń z poziomu konsoli, wszystko można wykonać z poziomu GUI.
+Git w środowisku Linuks jest narzędziem konsolowym (w systemie Debian wystarczy zainstalować pakiet o takie samej nazwie), jednak w ramach ułatwienia podczas tworzenia aplikacji została wykorzystana wtyczka do Eclipse która pozwala w łatwy sposób synchronizować projekt, który znajduje się na dysku lokalnie z tym co jest na repozytorium, oraz wysyłanie zmian na serwer. Dzięki wtyczce do tej podczas tworzenia projektu nie było potrzeby wydawać poleceń z poziomu konsoli, wszystko można wykonać z poziomu GUI.
 
 
 \section{OpenGL jako silnik grafiki}
@@ -269,7 +268,7 @@ jak prostokąty wypełnione kolorem są rysowane również za pomocą API OpenGL
 %============================================================================================================================
 \section{Skrypty w języku Lua}
 \lhead{Rozdział 1. \emph{Skrypty w języku Lua}}
-\hspace{1cm} Lua jest lekkim językiem skryptowym zaprojektowanym do rozszerzania możliwości innych aplikacji. Został on zaimplementowany w języku C zgodnie ze standardem ANSI, zapewnia mu to przenośność na wiele platform. Najważniejszym cechami tego języka jest to że jest dynamicznie typowany, oraz obiektowy. Jest on wykorzystywany zarówno do tworzenia rozszerzeń do różnych aplikacji, co często nazywane jest skryptowaniem (ang.scripting) oraz jako samodzielny język, w którym skrypty będą wykonywane poprzez maszynę wirtualną Lua. Samo skryptowanie wiąże się z ideą programowania sterowanego danymi (ang. data driven development).
+\hspace{1cm} Lua jest lekkim językiem skryptowym zaprojektowanym do rozszerzania możliwości innych aplikacji. Został on zaimplementowany w języku C zgodnie ze standardem ANSI, zapewnia mu to przenośność na wiele platform. Najważniejszym cechami tego języka jest to, że jest dynamicznie typowany, oraz obiektowy. Jest on wykorzystywany zarówno do tworzenia rozszerzeń do różnych aplikacji, co często nazywane jest skryptowaniem (ang.scripting) oraz jako samodzielny język, w którym skrypty będą wykonywane poprzez maszynę wirtualną Lua. Samo skryptowanie wiąże się z ideą programowania sterowanego danymi (ang. data driven development).
 Podejście te zakłada że wszelkie stałe kontrolujące zachowanie programu oraz wybrane elementy logiki powinny być zdefiniowane poza programem. W aplikacji skrypty Lua są wykorzystywane do przechowywanie wszystkich ustawień, oraz obliczania pewnych wartości 
 już w czasie działania aplikacji.Przykładowo rozmiar gracza jest obliczany na poziomie skryptu przy wykorzystaniu ustawionych podczas działania gry zmiennych z rozmiarami ekranu. 
 
@@ -279,7 +278,7 @@ już w czasie działania aplikacji.Przykładowo rozmiar gracza jest obliczany na
     \caption{Przepływ danych między aplikacją C++ a skryptem Lua}
 \end{figure}
 
-Powyższy rysunek pokazuje przykładowy przepływ danych między aplikacją C++ a skryptem Lua. Wykorzystane tu zostało wywołanie funkcji C++ z poziomu skryptu, aczkolwiek w drugą stronę ten mechanizm również działa. To znaczy z poziomu C++ można wykonać funkcje Lua. Lua została wykorzystana do internacjonalizacji aplikacji. Podobnie jak to jest wykorzystywane w aplikacjach webowych w języku Java, gdzie wszystkie komunikaty są przechowywane w plikach properties. Podczas uruchamiania aplikacji zostaje odczytany odpowiedni plik dla danego języka. Cały proces ilustruje rysunek 5. W rezultacie takiej budowy aplikacja może działać z dowolnym językiem. Podczas tworzenia zostały napisane komunikaty zarówno polskie jak i angielskie.
+Powyższy rysunek pokazuje przykładowy przepływ danych między aplikacją C++ a skryptem Lua. Wykorzystane tu zostało wywołanie funkcji C++ z poziomu skryptu, aczkolwiek w drugą stronę ten mechanizm również działa. To znaczy z poziomu C++ można wykonać funkcje Lua. Lua została wykorzystana do internacjonalizacji aplikacji. Podobnie jak to jest wykorzystywane w aplikacjach webowych w języku Java, gdzie wszystkie komunikaty są przechowywane w plikach properties. Podczas uruchamiania aplikacji zostaje odczytany odpowiedni plik dla danego języka. W rezultacie takiej budowy aplikacja może działać z dowolnym językiem. Podczas tworzenia zostały napisane komunikaty zarówno polskie jak i angielskie.
 
 
 %============================================================================================================================
@@ -314,7 +313,15 @@ Tak napisany kod można skompilować przy pomocy kompilatora g++ z poziomu linuk
 Aplikacja po uruchomieniu utworzy okno które zostanie natychmiast zamknięte. Tak działająca aplikacja jest mało przydatna, dlatego też konieczna jest pętla w której będzie odbywać się praca całego programu. Bardzo ważnym elementem takiej pętli jest obsługa zdarzeń, którą można zrealizować poprzez użycie funkcji SDL\_PollEvent, przyjmującej jako parametr adres do struktury SDL\_Event, którą to wypełnia informacjami o zdarzeniach które miały miejsce. Następnie za pomocą warunków logicznych należy sprawdzić jakie zdarzenia miały miejsce. np. warunek if(pEvent.type == SDL\_KEYDOWN \&\& pEvent.key.keysym.sym == SDLK\_ESCAPE)  
 udzieli informacji czy miało miejsce naciśniecie klawisza escape. Analogicznie ze struktury SDL\_Event możemy wyciągnąć informacje o dowolnym klawiszu, naciśnięciu klawisza myszy, itp. 
 
-SDL dostarcza również obsługę wielowątkowości oraz timerów. Dzięki czemu nie potrzebna była w projekcie żadna dodatkowa biblioteka która umożliwiała by utworzenie timera. Zadaniem timera jest uruchamianie pewnego zadania co stały określony czas, w przypadku biblioteki SDL jest wywoływana funkcja do której wskaźnik przekazujemy do funkcji  SDL\_AddTimer, drugim ważnymi parametrem tej funkcji jest czas milisekundach co ile mas się wykonać ta funkcja.Funkcja która rejestrujemy do wykonywania przez timer powinna (@TODO typ) oraz funkcja SDL\_AddTimer zwróci nad dane utworzonego timera w postaci struktury SDL\_TimerID. W taki właśnie sposób zostały wykorzystane timery w Astro Rush do np wyłączania nieśmiertelności bohatera który zebrał i wykorzystał bonus. Żeby cały mechanizm timerów działał potrzebne jest zainicjowanie go przy tworzeniu okna poprzez użycie flagi SDL\_INIT\_TIMER.
+SDL dostarcza również obsługę wielowątkowości oraz timerów. Dzięki czemu nie potrzebna była w projekcie żadna dodatkowa biblioteka która umożliwiała by utworzenie timera. Zadaniem timera jest uruchamianie pewnego zadania co stały określony czas, w przypadku biblioteki SDL rozwiązane to zostało poprzez użycie wywołania zwrotnego (ang. callback). Poprzez funkcje SDL\_AddTimer rejestrowana jest metoda która będzie wywoływana przez bibliotekę. Metoda taka musi przyjmować określone parametry oraz zwracać narzucony przez bibliotekę typ.
+Funkcja którą rejestrujemy do wykonywania przez timer powinna wyglądać następująco:
+
+\begin{verbatim} 
+	Uint32 foo(Uint32 interval, void *param)
+\end{verbatim}
+
+Do funkcji SDL\_AddTimer należy przekazać wskaźnik na funkcję którą się rejestruje oraz czas w milisekundach co ile timer ma wykonać tą funkcje. 
+Funkcja SDL\_AddTimer zwróci w przypadku udanego utworzenia timera strukture SDL\_TimerID z informacjami o nim. W taki właśnie sposób zostały wykorzystane timery w Astro Rush do np wyłączania nieśmiertelności bohatera, który zebrał i wykorzystał bonus. Żeby cały mechanizm timerów działał potrzebne jest zainicjowanie go przy tworzeniu okna poprzez użycie flagi SDL\_INIT\_TIMER.
 \begin{verbatim} 
 SDL_INIT_TIMER SDL_TimerID
 onWithEnemy = false;
@@ -328,7 +335,7 @@ static Uint32 enableEnemyDetect_callbackTimer(Uint32 interval, void *param);
 %============================================================================================================================
 \section{Obsługa czcionek w SDL}
 \lhead{Rozdział 1. \emph{Obsługa czcionek w SDL}}
-W projekcie została wykorzystana biblioteka SDL\_ttf pozwalająca używać w aplikacji czcionek w formacie True Type. Format ten stworzony przez firmę Apple przechowuje kształty poszczególnych liter jako krzywe Beziera, i jest on obsługiwany przez większość platform. Na Linuksie jest on bardzo powszechnym formatem do obsługi czcionek, dodatkowym plusem jest ogromna ilość czcionek na darmowych licencjach. W grze została wykorzystana czcionka "Ubuntu" udostępniona za darmo, i będąca domyślną czcionką w dystrybucji Linuksa o tej samem nazwie. Plik z taką czcionką (standardowo o rozszerzeniu *.ttf) jest wczytywany podczas uruchamiania aplikacji, następnie poprzez wywołania funkcji z biblioteki SDL\_ttf np. TTF\_RenderUTF\_Blended zostaje utworzona powierzchnia na której narysowany jest napis o podanej treści, kolorze oraz rozmiarze. 
+W projekcie została wykorzystana biblioteka SDL\_ttf pozwalająca używać w aplikacji czcionek w formacie True Type. Format ten stworzony przez firmę Apple przechowuje kształty poszczególnych liter jako krzywe Beziera, i jest on obsługiwany przez większość platform. Na Linuksie jest on bardzo powszechnym formatem do obsługi czcionek, dodatkowym plusem jest ogromna ilość czcionek na darmowych licencjach. W grze została wykorzystana czcionka "Ubuntu"  udostępniona za darmo, i będąca domyślną czcionką w dystrybucji Linuksa o tej samem nazwie. Plik z taką czcionką (standardowo o rozszerzeniu *.ttf) jest wczytywany podczas uruchamiania aplikacji, następnie poprzez wywołania funkcji z biblioteki SDL\_ttf np. TTF\_RenderUTF\_Blended zostaje utworzona powierzchnia na której narysowany jest napis o podanej treści, kolorze oraz rozmiarze. 
 
 Niestety powierzchnia taka jest zwracana jako wskaźnik na strukturę SDL\_Surface, przez co konieczna jest konwersja na format obsługiwany przez OpenGL-a. Niedogodność taka nie występowałaby gdyby do renderowania było wykorzystywane API biblioteki SDL. Identyczny problem występuje również przy renderowaniu innych elementów graficznych które są ładowane z dysku i zwracane jako SDL\_Surface* (Wczytywanie takie realizowane jest poprzez kolejną bibliotekę będącą uzupełnieniem SDL-a: SDL\_image. Służy ona do wczytywania plików graficznych w takich formatach jak np. JPEG, PNG, TIFF. W aplikacji wykorzystana jest tylko jedna funkcja 
 z tej biblioteki stąd też nie będzie ona szerzej omawiana).
