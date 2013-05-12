@@ -3,7 +3,7 @@ CXX = g++
 CFLAGS = -Wall -pedantic -g  -std=gnu++11 -Wall -I ./include -O3 -c 
 
 # linker flags
-LIBS = -lGL -lGLU -lSDL -lSDL_mixer -lSDL_ttf -lSDL_image -lluabind -llua -lstdc++ -lX11
+LIBS = -lGL -lGLU -lSDL -lSDL_mixer -lSDL_ttf -lSDL_image -lluabind -llua5.1 -lstdc++ -lX11
 
 # list of cpp sources
 SOURCES = src/main.cpp src/App.cpp src/Property.cpp src/Resource.cpp \

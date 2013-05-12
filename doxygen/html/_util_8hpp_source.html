@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Plik źródłowy include/Util.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Util.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_util_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UTIL_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UTIL_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="struct_rect.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_rect.html">Rect</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                <span class="comment">// polozenie</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">   10</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="struct_rect.html#a4ea33d8210fa0b8b0d6ef3f7e06e6b27">   11</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#a4ea33d8210fa0b8b0d6ef3f7e06e6b27">y</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                <span class="comment">//wymiary</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">   14</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">w</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="struct_rect.html#aa10c9b8950c6b23a0b2bf0d39f2be904">   15</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#aa10c9b8950c6b23a0b2bf0d39f2be904">h</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="comment">// kolor dla SDL</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="struct_rect.html#a85940fc2ed34deef4dff4682407a3c18">   18</a></span>&#160;                Uint32 <a class="code" href="struct_rect.html#a85940fc2ed34deef4dff4682407a3c18">color</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="comment">// kolor dla GL</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="struct_rect.html#ae740874140fddd3742ed66a695087551">   21</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#ae740874140fddd3742ed66a695087551">r</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="struct_rect.html#a6c253f9e9aacf27b50baa655fec6ddb1">   22</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#a6c253f9e9aacf27b50baa655fec6ddb1">g</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="struct_rect.html#af0f56a2e80ab86de39a7cc33c04323d1">   23</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#af0f56a2e80ab86de39a7cc33c04323d1">b</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="struct_rect.html#a06cb18052d2066b7955086b292ffd6b3">   24</a></span>&#160;                <span class="keywordtype">float</span> <a class="code" href="struct_rect.html#a06cb18052d2066b7955086b292ffd6b3">a</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="struct_rect.html#a911e531b86de33734dd7de3456722115">   27</a></span>&#160;                <a class="code" href="struct_rect.html#a911e531b86de33734dd7de3456722115">Rect</a>(): <a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a>(0.0f), <a class="code" href="struct_rect.html#a4ea33d8210fa0b8b0d6ef3f7e06e6b27">y</a>(0.0f), <a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">w</a>(0.0f), <a class="code" href="struct_rect.html#aa10c9b8950c6b23a0b2bf0d39f2be904">h</a>(0.0f), <a class="code" href="struct_rect.html#a85940fc2ed34deef4dff4682407a3c18">color</a>(0),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                <a class="code" href="struct_rect.html#ae740874140fddd3742ed66a695087551">r</a>(0.0f), <a class="code" href="struct_rect.html#a6c253f9e9aacf27b50baa655fec6ddb1">g</a>(0.0f), <a class="code" href="struct_rect.html#af0f56a2e80ab86de39a7cc33c04323d1">b</a>(0.0f), <a class="code" href="struct_rect.html#a06cb18052d2066b7955086b292ffd6b3">a</a>(1.0f)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                {  }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="struct_rect.html#ae3669d5202da0f9af5d07b5c8e121282">   32</a></span>&#160;                <a class="code" href="struct_rect.html#a911e531b86de33734dd7de3456722115">Rect</a>( <span class="keywordtype">float</span> X, <span class="keywordtype">float</span> Y, <span class="keywordtype">float</span> W=0.0f, <span class="keywordtype">float</span> H=0.0f, Uint32 Color=0 ) :</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                <a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a>(X), <a class="code" href="struct_rect.html#a4ea33d8210fa0b8b0d6ef3f7e06e6b27">y</a>(Y), <a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">w</a>(W), <a class="code" href="struct_rect.html#aa10c9b8950c6b23a0b2bf0d39f2be904">h</a>(H), <a class="code" href="struct_rect.html#a85940fc2ed34deef4dff4682407a3c18">color</a>(Color),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                <a class="code" href="struct_rect.html#ae740874140fddd3742ed66a695087551">r</a>(0.0f), <a class="code" href="struct_rect.html#a6c253f9e9aacf27b50baa655fec6ddb1">g</a>(0.0f), <a class="code" href="struct_rect.html#af0f56a2e80ab86de39a7cc33c04323d1">b</a>(0.0f), <a class="code" href="struct_rect.html#a06cb18052d2066b7955086b292ffd6b3">a</a>(1.0f)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                {  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="struct_rect.html#a8f202a44f90dcdcd7867d26477f4b024">   37</a></span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="struct_rect.html#a8f202a44f90dcdcd7867d26477f4b024">isColidate</a>( <a class="code" href="struct_rect.html">Rect</a> rct ) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                <span class="keywordflow">if</span> (!(<a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a> &gt;= (rct.<a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a> + rct.<a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">w</a> )     || <a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a> + <a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">w</a> &lt;= rct.<a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                || <a class="code" href="struct_rect.html#a4ea33d8210fa0b8b0d6ef3f7e06e6b27">y</a> + h &lt;= rct.y || y &gt;= rct.<a class="code" href="struct_rect.html#a4ea33d8210fa0b8b0d6ef3f7e06e6b27">y</a> + rct.<a class="code" href="struct_rect.html#aa10c9b8950c6b23a0b2bf0d39f2be904">h</a> ) )</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

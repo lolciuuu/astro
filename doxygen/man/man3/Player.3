@@ -1,0 +1,153 @@
+.TH "Player" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Player \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Player\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const float &dt, \fBColisionSide\fP &side)"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.ti -1c
+.RI "void \fBjump\fP ()"
+.br
+.ti -1c
+.RI "void \fBfall\fP ()"
+.br
+.ti -1c
+.RI "short \fBgetPosX\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetPosY\fP () const "
+.br
+.ti -1c
+.RI "void \fBSpaceUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBSpaceDown\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetSize_X\fP () const "
+.br
+.ti -1c
+.RI "float \fBgetSize_Y\fP () const "
+.br
+.ti -1c
+.RI "void \fBdisableEnemyDetect\fP ()"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static Uint32 \fBenableEnemyDetect_callbackTimer\fP (Uint32 interval, void *param)"
+.br
+.ti -1c
+.RI "static bool \fBisColisionWithEnemy\fP ()"
+.br
+.ti -1c
+.RI "static bool \fBisFly\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 8 pliku Player\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Player::Player ()"
+
+.PP
+Definicja w linii 10 pliku Player\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Player::disableEnemyDetect ()"
+Metoda wylacza wykrywanie kolizji z wogami i uruchamiamia timer ktory te wykrywanie wlaczy ponownie 
+.PP
+Definicja w linii 63 pliku Player\&.cpp\&.
+.SS "void Player::draw ()"
+Rysowanie 
+.PP
+Definicja w linii 56 pliku Player\&.cpp\&.
+.SS "Uint32 Player::enableEnemyDetect_callbackTimer (Uint32interval, void *param)\fC [static]\fP"
+Metoda statyczna wywolywana przez timer celem wlaczenia wykrywania kolizji z wrogami 
+.PP
+Definicja w linii 69 pliku Player\&.cpp\&.
+.SS "void Player::fall ()"
+Bohater przestaje leciec w gore i zaczyna opadac 
+.PP
+Definicja w linii 50 pliku Player\&.cpp\&.
+.SS "short Player::getPosX () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 20 pliku Player\&.hpp\&.
+.SS "short Player::getPosY () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 21 pliku Player\&.hpp\&.
+.SS "float Player::getSize_X () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 28 pliku Player\&.hpp\&.
+.SS "float Player::getSize_Y () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 29 pliku Player\&.hpp\&.
+.SS "static bool Player::isColisionWithEnemy ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 33 pliku Player\&.hpp\&.
+.SS "static bool Player::isFly ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 35 pliku Player\&.hpp\&.
+.SS "void Player::jump ()"
+Obsluga podskakiwania gracza 
+.PP
+Definicja w linii 142 pliku Player\&.cpp\&.
+.SS "void Player::reset ()"
+
+.PP
+Definicja w linii 132 pliku Player\&.cpp\&.
+.SS "void Player::run ()"
+bohater zaczyna biec, mapa sie jednoczesnie przesuwa 
+.PP
+Definicja w linii 44 pliku Player\&.cpp\&.
+.SS "void Player::SpaceDown ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 26 pliku Player\&.hpp\&.
+.SS "void Player::SpaceUp ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 25 pliku Player\&.hpp\&.
+.SS "void Player::update (const float &dt, \fBColisionSide\fP &side)"
+Aktualizacja gracza Polozenie w poziomie
+.PP
+Polozenie w pionie 
+.PP
+Definicja w linii 76 pliku Player\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

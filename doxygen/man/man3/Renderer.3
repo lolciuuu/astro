@@ -1,0 +1,74 @@
+.TH "Renderer" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Renderer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Renderer\&.hpp>\fP
+.PP
+Dziedziczy \fBRendererGL\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetScreenHeight\fP (int H)"
+.br
+.ti -1c
+.RI "void \fBsetScreenWidth\fP (int W)"
+.br
+.ti -1c
+.RI "short \fBgetScreenHeight\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetScreenWidth\fP () const "
+.br
+.ti -1c
+.RI "Uint32 \fBgetRGB\fP (short R, short G, short B)"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static \fBRenderer\fP * \fBgetInstance\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Rozszerza klase rysujaca do singletona 
+.PP
+Definicja w linii 9 pliku Renderer\&.hpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "static \fBRenderer\fP* Renderer::getInstance ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 12 pliku Renderer\&.hpp\&.
+.SS "Uint32 Renderer::getRGB (shortR, shortG, shortB)\fC [inline]\fP"
+
+.PP
+Definicja w linii 26 pliku Renderer\&.hpp\&.
+.SS "short Renderer::getScreenHeight () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 23 pliku Renderer\&.hpp\&.
+.SS "short Renderer::getScreenWidth () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 24 pliku Renderer\&.hpp\&.
+.SS "void Renderer::setScreenHeight (intH)\fC [inline]\fP"
+
+.PP
+Definicja w linii 20 pliku Renderer\&.hpp\&.
+.SS "void Renderer::setScreenWidth (intW)\fC [inline]\fP"
+
+.PP
+Definicja w linii 21 pliku Renderer\&.hpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

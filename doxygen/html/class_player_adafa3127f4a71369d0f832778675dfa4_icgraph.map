@@ -1,0 +1,6 @@
+<map id="Player::getSize_X" name="Player::getSize_X">
+<area shape="rect" id="node3" href="$class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="183,5,276,35"/>
+<area shape="rect" id="node5" href="$class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="325,5,429,35"/>
+<area shape="rect" id="node7" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="479,5,548,35"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="597,5,648,35"/>
+</map>

@@ -1,0 +1,196 @@
+.TH "Map" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Map \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Map\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Komponenty"
+
+.in +1c
+.ti -1c
+.RI "struct \fBPoint\fP"
+.br
+.in -1c
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBMap\fP (short **, ushort EntitySize, uint R, uint C)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const float &dt)"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "short \fBgetEntity\fP (uint X, uint Y) const "
+.br
+.ti -1c
+.RI "void \fBnextX\fP ()"
+.br
+.ti -1c
+.RI "void \fBnextY\fP ()"
+.br
+.ti -1c
+.RI "ushort \fBgetAmountEntityVertical\fP () const "
+.br
+.ti -1c
+.RI "ushort \fBgetAmountEntityHorizontal\fP () const "
+.br
+.ti -1c
+.RI "uint \fBgetPos_X\fP () const "
+.br
+.ti -1c
+.RI "uint \fBgetPos_Y\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetSize\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetOffsetX\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetOffsetY\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetRows\fP (uint R)"
+.br
+.ti -1c
+.RI "void \fBsetColumns\fP (uint C)"
+.br
+.ti -1c
+.RI "void \fBsetSpeed\fP (float S)"
+.br
+.ti -1c
+.RI "bool \fBisAnyPlatformAbove\fP (float X, float Y)"
+.br
+.ti -1c
+.RI "bool \fBisAnyPlatformBelow\fP (float X, float Y)"
+.br
+.ti -1c
+.RI "bool \fBisAnyPlatformOnRight\fP (float X, float Y)"
+.br
+.ti -1c
+.RI "short \fBcheckColision\fP (const short &Player_x, const short &Player_y, \fBColisionSide\fP &cSide)"
+.br
+.ti -1c
+.RI "void \fBenableCheckColision\fP ()"
+.br
+.ti -1c
+.RI "bool \fBnextMeter\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 8 pliku Map\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Map::Map (short **M, ushortEntitySize, uintR, uintC)"
+
+.PP
+Definicja w linii 5 pliku Map\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "short Map::checkColision (const short &Player_x, const short &Player_y, \fBColisionSide\fP &cSide)"
+Sciaga ze stosu ostatni element na ktorym wykryto kolizje Pobieranie kolizcji z bonusem badz przeszkoda ( kolizje bez powtorzen ) odlozonej na stos podczas rysowania
+.PP
+wykrywanie kolizji z platforma 
+.PP
+Definicja w linii 33 pliku Map\&.cpp\&.
+.SS "void Map::draw ()"
+wykrywania kolizji 
+.PP
+Definicja w linii 144 pliku Map\&.cpp\&.
+.SS "void Map::enableCheckColision ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 39 pliku Map\&.hpp\&.
+.SS "ushort Map::getAmountEntityHorizontal () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 22 pliku Map\&.hpp\&.
+.SS "ushort Map::getAmountEntityVertical () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 21 pliku Map\&.hpp\&.
+.SS "short Map::getEntity (uintX, uintY) const\fC [inline]\fP"
+
+.PP
+Definicja w linii 16 pliku Map\&.hpp\&.
+.SS "short Map::getOffsetX () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 26 pliku Map\&.hpp\&.
+.SS "short Map::getOffsetY () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 27 pliku Map\&.hpp\&.
+.SS "uint Map::getPos_X () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 23 pliku Map\&.hpp\&.
+.SS "uint Map::getPos_Y () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 24 pliku Map\&.hpp\&.
+.SS "short Map::getSize () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 25 pliku Map\&.hpp\&.
+.SS "bool Map::isAnyPlatformAbove (floatX, floatY)"
+
+.PP
+Definicja w linii 209 pliku Map\&.cpp\&.
+.SS "bool Map::isAnyPlatformBelow (floatX, floatY)"
+
+.PP
+Definicja w linii 240 pliku Map\&.cpp\&.
+.SS "bool Map::isAnyPlatformOnRight (floatX, floatY)"
+
+.SS "bool Map::nextMeter ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 41 pliku Map\&.hpp\&.
+.SS "void Map::nextX ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 18 pliku Map\&.hpp\&.
+.SS "void Map::nextY ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 19 pliku Map\&.hpp\&.
+.SS "void Map::reset ()"
+Ustawienie bierzacej kolumny i wiersza na poczatek macierzy mapy 
+.PP
+Definicja w linii 274 pliku Map\&.cpp\&.
+.SS "void Map::setColumns (uintC)\fC [inline]\fP"
+
+.PP
+Definicja w linii 30 pliku Map\&.hpp\&.
+.SS "void Map::setRows (uintR)\fC [inline]\fP"
+
+.PP
+Definicja w linii 29 pliku Map\&.hpp\&.
+.SS "void Map::setSpeed (floatS)\fC [inline]\fP"
+
+.PP
+Definicja w linii 31 pliku Map\&.hpp\&.
+.SS "void Map::update (const float &dt)"
+Obliczenie przesuniecie, i ewentulnie przesuniecie pierwszej kolumny macierzy 
+.PP
+Definicja w linii 197 pliku Map\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

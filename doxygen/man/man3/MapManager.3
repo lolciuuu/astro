@@ -1,0 +1,97 @@
+.TH "MapManager" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MapManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MapManager\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBMapManager\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const float &dt)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunMap\fP ()"
+.br
+.ti -1c
+.RI "void \fBstopMap\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "short \fBcheckColision\fP (const short &Player_x, const short &Player_y, \fBColisionSide\fP &cSide)"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static void \fBload\fP ()"
+.br
+.ti -1c
+.RI "static \fBRect\fP \fBgetRectByID\fP (short ID)"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Zarzadza wszystkimi poziomami mapy 
+.PP
+Definicja w linii 10 pliku MapManager\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "MapManager::MapManager ()"
+Tworzy tablice w ktorej znajduja sie wszystkie mozliwe wersje kafelkow mapy 
+.PP
+Definicja w linii 13 pliku MapManager\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "short MapManager::checkColision (const short &Player_x, const short &Player_y, \fBColisionSide\fP &cSide)"
+
+.PP
+Definicja w linii 122 pliku MapManager\&.cpp\&.
+.SS "void MapManager::draw ()"
+
+.PP
+Definicja w linii 47 pliku MapManager\&.cpp\&.
+.SS "static \fBRect\fP MapManager::getRectByID (shortID)\fC [inline]\fP, \fC [static]\fP"
+Zwraca polozenie fragmentu mapy w atlasie ( Funkcja krytyczna pod wzgledem wydajnosci dlatego inline w klasie ) 
+.PP
+Definicja w linii 25 pliku MapManager\&.hpp\&.
+.SS "void MapManager::load ()\fC [static]\fP"
+Wczytanie wszystkich map\&. Metoda wolana podczas ladowania zasobow, poza glownym watkiem 
+.PP
+Definicja w linii 111 pliku MapManager\&.cpp\&.
+.SS "void MapManager::reset ()"
+
+.PP
+Definicja w linii 117 pliku MapManager\&.cpp\&.
+.SS "void MapManager::runMap ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 18 pliku MapManager\&.hpp\&.
+.SS "void MapManager::stopMap ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 19 pliku MapManager\&.hpp\&.
+.SS "void MapManager::update (const float &dt)"
+
+.PP
+Definicja w linii 35 pliku MapManager\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

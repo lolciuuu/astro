@@ -1,0 +1,17 @@
+<map id="critical" name="critical">
+<area shape="rect" id="node3" href="$class_map_manager.html#ae0087c048e1e54f855ad7b236e81d6b2" title="MapManager::getRectByID" alt="" coords="115,5,296,35"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1152,32,1203,61"/>
+<area shape="rect" id="node18" href="$class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="117,109,293,139"/>
+<area shape="rect" id="node22" href="$class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="573,188,709,217"/>
+<area shape="rect" id="node25" href="$class_sprite_manager.html#a9253671997278e59243b7ea99b46841c" title="SpriteManager::loadConfig" alt="" coords="117,163,293,192"/>
+<area shape="rect" id="node28" href="$class_sprite_manager.html#af42bfcb7a5e1b2b036f8d1a005703791" title="SpriteManager::getSprite" alt="" coords="123,293,288,323"/>
+<area shape="rect" id="node5" href="$class_map.html#a6a40755f8541eece2fa48e9e24a588f8" title="Map::draw" alt="" coords="393,5,476,35"/>
+<area shape="rect" id="node7" href="$class_map_manager.html#ac0ac10367094e7e4eda75cceab7dd9d3" title="MapManager::draw" alt="" coords="575,5,708,35"/>
+<area shape="rect" id="node9" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="759,5,841,35"/>
+<area shape="rect" id="node11" href="$class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="891,5,984,35"/>
+<area shape="rect" id="node13" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="1033,5,1103,35"/>
+<area shape="rect" id="node20" href="$class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="372,163,497,192"/>
+<area shape="rect" id="node30" href="$class_enemy.html#a7dcf45915f6288ef9264ec60af621b6c" title="Enemy::draw" alt="" coords="385,267,484,296"/>
+<area shape="rect" id="node32" href="$class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="345,320,524,349"/>
+<area shape="rect" id="node34" href="$class_renderer_g_l.html#a91fe9f7b4bffc9a37d73b8b4440ebd68" title="RendererGL::draw" alt="" coords="371,373,499,403"/>
+</map>

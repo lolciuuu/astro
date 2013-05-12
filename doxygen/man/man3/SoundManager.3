@@ -1,0 +1,76 @@
+.TH "SoundManager" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SoundManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SoundManager\&.hpp>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBplayMenuMusic\fP ()"
+.br
+.ti -1c
+.RI "void \fBstopMenuMusic\fP ()"
+.br
+.ti -1c
+.RI "void \fBplayGameMusic\fP ()"
+.br
+.ti -1c
+.RI "void \fBstopGameMusic\fP ()"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static \fBSoundManager\fP * \fBgetInstance\fP ()"
+.br
+.ti -1c
+.RI "static void \fBloadMusic\fP ()"
+.br
+.ti -1c
+.RI "static void \fBplaySplashIntro\fP ()"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 6 pliku SoundManager\&.hpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "\fBSoundManager\fP * SoundManager::getInstance ()\fC [static]\fP"
+Implementacja singletona 
+.PP
+Definicja w linii 11 pliku SoundManager\&.cpp\&.
+.SS "void SoundManager::loadMusic ()\fC [static]\fP"
+Metoda statyczna do inicjowania modulu dzwiekowego, wczytywania zasobow z plikow\&. Wolana jest z poziomu splasha 
+.PP
+Definicja w linii 23 pliku SoundManager\&.cpp\&.
+.SS "void SoundManager::playGameMusic ()"
+
+.PP
+Definicja w linii 78 pliku SoundManager\&.cpp\&.
+.SS "void SoundManager::playMenuMusic ()"
+
+.PP
+Definicja w linii 63 pliku SoundManager\&.cpp\&.
+.SS "void SoundManager::playSplashIntro ()\fC [static]\fP"
+Metoda dla klasy splash ktora umozliwia odtworzenie dzwieku pod wczytaniu zasobow 
+.PP
+Definicja w linii 104 pliku SoundManager\&.cpp\&.
+.SS "void SoundManager::stopGameMusic ()"
+
+.PP
+Definicja w linii 88 pliku SoundManager\&.cpp\&.
+.SS "void SoundManager::stopMenuMusic ()"
+
+.PP
+Definicja w linii 73 pliku SoundManager\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

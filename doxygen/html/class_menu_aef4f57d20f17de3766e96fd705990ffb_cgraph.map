@@ -1,0 +1,12 @@
+<map id="Menu::update" name="Menu::update">
+<area shape="rect" id="node3" href="$class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="155,136,275,165"/>
+<area shape="rect" id="node22" href="$_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327" title="warring" alt="" coords="183,189,247,219"/>
+<area shape="rect" id="node5" href="$class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="541,111,669,140"/>
+<area shape="rect" id="node7" href="$class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="339,5,469,35"/>
+<area shape="rect" id="node13" href="$class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="357,109,451,139"/>
+<area shape="rect" id="node15" href="$class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="359,163,449,192"/>
+<area shape="rect" id="node18" href="$_const_8hpp.html#abf528d73faba2d3e6eb1da5a66e5996a" title="BLACK_FONT_COLOR" alt="" coords="323,216,485,245"/>
+<area shape="rect" id="node20" href="$_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="371,269,437,299"/>
+<area shape="rect" id="node9" href="$class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="535,5,676,35"/>
+<area shape="rect" id="node11" href="$class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="727,5,820,35"/>
+</map>

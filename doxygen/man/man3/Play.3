@@ -1,0 +1,132 @@
+.TH "Play" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Play \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Play\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBPlay\fP ()"
+.br
+.ti -1c
+.RI "\fB~Play\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetGame\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const float &dt)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisCanStop\fP () const "
+.br
+.ti -1c
+.RI "void \fBSpaceUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBSpaceDown\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedBackspace\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedShift\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedChar\fP (char Char)"
+.br
+.ti -1c
+.RI "bool \fBgoToMenu\fP ()"
+.br
+.ti -1c
+.RI "void \fBuseBonus\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Obsluga taki jednostek jak: mapa, gracz, pasek zycia, highscore\&.\&.\&.stan gry 
+.PP
+Definicja w linii 14 pliku Play\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Play::Play ()"
+
+.PP
+Definicja w linii 6 pliku Play\&.cpp\&.
+.SS "Play::~Play ()"
+
+.PP
+Definicja w linii 21 pliku Play\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Play::draw ()"
+Rysowanie ekranu gry 
+.PP
+Definicja w linii 119 pliku Play\&.cpp\&.
+.SS "bool Play::goToMenu ()"
+zapisanie highscore 
+.PP
+Definicja w linii 31 pliku Play\&.cpp\&.
+.SS "bool Play::isCanStop () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 24 pliku Play\&.hpp\&.
+.SS "void Play::pressedBackspace ()"
+
+.PP
+Definicja w linii 47 pliku Play\&.cpp\&.
+.SS "void Play::pressedChar (charChar)"
+Wpisywanie swojego imienia w przypadku kiedy bohater umarl 
+.PP
+Definicja w linii 40 pliku Play\&.cpp\&.
+.SS "void Play::pressedShift ()"
+
+.PP
+Definicja w linii 26 pliku Play\&.cpp\&.
+.SS "void Play::resetGame ()"
+
+.PP
+Definicja w linii 152 pliku Play\&.cpp\&.
+.SS "void Play::SpaceDown ()"
+
+.PP
+Definicja w linii 173 pliku Play\&.cpp\&.
+.SS "void Play::SpaceUp ()"
+
+.PP
+Definicja w linii 181 pliku Play\&.cpp\&.
+.SS "void Play::update (const float &dt)"
+Aktualizacja gry \fBNota:\fP
+.RS 4
+Przez pierwsze kilka sekund po wybraniu z menu glownego nowej gry zablokowana jest mozliwosc wyjscia do menu\&. Wtedy na ekranie pojawia sie odliczanie 3,2,1\&.\&. i wtedy hero zaczyna biec\&. Ponizszy if implementuje ta funkcjonalnosc
+.RE
+.PP
+Poczatek biegu
+.PP
+Aktualizacja stania gracza
+.PP
+Gracz biegnie
+.PP
+Parametr cSide przekazuje informacje do playera z ktorej strony wystepuje kolizja z platforma 
+.PP
+Definicja w linii 53 pliku Play\&.cpp\&.
+.SS "void Play::useBonus ()"
+
+.PP
+Definicja w linii 185 pliku Play\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

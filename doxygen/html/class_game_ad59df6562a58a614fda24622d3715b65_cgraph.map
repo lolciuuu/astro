@@ -1,0 +1,7 @@
+<map id="Game::Game" name="Game::Game">
+<area shape="rect" id="node3" href="$class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="156,5,295,35"/>
+<area shape="rect" id="node7" href="$class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="172,59,279,88"/>
+<area shape="rect" id="node9" href="$class_renderer.html#aabd0720e57254d435be5d4a5b19c2bdc" title="Renderer::getRGB" alt="" coords="160,112,291,141"/>
+<area shape="rect" id="node11" href="$class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="159,165,292,195"/>
+<area shape="rect" id="node5" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="344,85,435,115"/>
+</map>

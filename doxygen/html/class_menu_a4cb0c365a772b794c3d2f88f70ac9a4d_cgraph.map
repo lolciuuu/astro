@@ -1,0 +1,4 @@
+<map id="Menu::resetMenu" name="Menu::resetMenu">
+<area shape="rect" id="node3" href="$class_logger.html#ad8cb5a1635c8222f186d0c77ea8716eb" title="Logger::debug" alt="" coords="196,5,300,35"/>
+<area shape="rect" id="node5" href="$class_menu.html#a1853e25dbac1c3adaa49056580793b91" title="Menu::pressedDown" alt="" coords="177,59,319,88"/>
+</map>

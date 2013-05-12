@@ -1,0 +1,5 @@
+<map id="SoundManager::playMenuMusic" name="SoundManager::playMenuMusic">
+<area shape="rect" id="node3" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="263,5,412,35"/>
+<area shape="rect" id="node5" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="271,59,404,88"/>
+<area shape="rect" id="node7" href="$class_play.html#a0088438837d29378e35a2beed04e64df" title="Play::Play" alt="" coords="296,112,379,141"/>
+</map>

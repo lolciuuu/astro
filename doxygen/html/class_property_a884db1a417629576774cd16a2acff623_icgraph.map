@@ -1,0 +1,10 @@
+<map id="Property::get" name="Property::get">
+<area shape="rect" id="node3" href="$class_highscore.html#a763df51b57887c8e68b6c09f4d5f27a5" title="Highscore::Highscore" alt="" coords="153,5,300,35"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="201,59,252,88"/>
+<area shape="rect" id="node7" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Menu::Menu" alt="" coords="180,112,273,141"/>
+<area shape="rect" id="node9" href="$class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="153,165,300,195"/>
+<area shape="rect" id="node13" href="$class_resource.html#a3e113312ddcfe778b3e602ea2f08400e" title="Resource::load" alt="" coords="172,219,281,248"/>
+<area shape="rect" id="node11" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="351,165,500,195"/>
+<area shape="rect" id="node15" href="$class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="363,219,488,248"/>
+<area shape="rect" id="node17" href="$class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="549,219,685,248"/>
+</map>

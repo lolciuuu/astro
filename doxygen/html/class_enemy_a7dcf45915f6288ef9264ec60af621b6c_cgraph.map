@@ -1,0 +1,6 @@
+<map id="Enemy::draw" name="Enemy::draw">
+<area shape="rect" id="node3" href="$class_sprite_manager.html#af42bfcb7a5e1b2b036f8d1a005703791" title="SpriteManager::getSprite" alt="" coords="153,5,319,35"/>
+<area shape="rect" id="node7" href="$class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="191,59,281,88"/>
+<area shape="rect" id="node5" href="$_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="403,5,461,35"/>
+<area shape="rect" id="node9" href="$class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="368,59,496,88"/>
+</map>

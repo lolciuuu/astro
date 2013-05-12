@@ -17,6 +17,8 @@ public:
 	void playGameMusic();
 	void stopGameMusic();
 
+	void playSound( const string& soundName );
+
 private:
 	SoundManager();
 

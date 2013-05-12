@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Plik źródłowy src/Logger.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Logger.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_logger_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/Logger.hpp&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="code" href="class_logger.html#a4581a991337dcd9641817d795c4ec954">    4</a></span>&#160;<a class="code" href="class_logger.html#a4581a991337dcd9641817d795c4ec954">Logger::Logger</a>( <span class="keywordtype">string</span> className ): className( className )</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{ }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="class_logger.html#a9424d0620904432ef0e4dee218be41d3">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a9424d0620904432ef0e4dee218be41d3">Logger::methodStart</a>(  <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; methodName ) {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                <a class="code" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea">info</a>( className + <span class="stringliteral">&quot;::&quot;</span> + methodName + <span class="stringliteral">&quot; | start&quot;</span>  );</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7">Logger::methodEnd</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; methodName ) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                <a class="code" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea">info</a>( className + <span class="stringliteral">&quot;::&quot;</span> + methodName + <span class="stringliteral">&quot; | end&quot;</span>  );</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea">Logger::info</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Str ) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    cout&lt;&lt; <span class="stringliteral">&quot;[ Info ] &quot;</span> &lt;&lt; Str  &lt;&lt; <span class="stringliteral">&quot; | class::&quot;</span> &lt;&lt; className &lt;&lt; <span class="stringliteral">&quot; | &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173">Logger::warring</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Str ) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    cout&lt;&lt; <span class="stringliteral">&quot;[ Warning ] &quot;</span> &lt;&lt; Str  &lt;&lt; <span class="stringliteral">&quot; | class::&quot;</span> &lt;&lt; className &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618">Logger::error</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Str ) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    cerr&lt;&lt; <span class="stringliteral">&quot;[ Error ] &quot;</span> &lt;&lt; Str  &lt;&lt; <span class="stringliteral">&quot; | class::&quot;</span> &lt;&lt; className &lt;&lt; <span class="stringliteral">&quot; | &quot;</span> &lt;&lt;endl;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_logger.html#ae04bf28f224c9f4350ac170c0facf30f">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#ae04bf28f224c9f4350ac170c0facf30f">Logger::critical</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Str ) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    cerr&lt;&lt; <span class="stringliteral">&quot;[ Critical ] &quot;</span> &lt;&lt; Str  &lt;&lt; <span class="stringliteral">&quot; | class::&quot;</span> &lt;&lt; className &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_logger.html#ad8cb5a1635c8222f186d0c77ea8716eb">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_logger.html#ad8cb5a1635c8222f186d0c77ea8716eb">Logger::debug</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Str) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span>                 cout&lt;&lt; <span class="stringliteral">&quot;[ Debug ] &quot;</span> &lt;&lt; Str  &lt;&lt; <span class="stringliteral">&quot; | class::&quot;</span> &lt;&lt; className &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

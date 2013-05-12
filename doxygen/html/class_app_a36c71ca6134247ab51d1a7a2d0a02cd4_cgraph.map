@@ -1,0 +1,12 @@
+<map id="App::init" name="App::init">
+<area shape="rect" id="node3" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="555,85,645,114"/>
+<area shape="rect" id="node5" href="$class_writer.html#ab499237f34ce2379aaeaca5e472b0d8b" title="Writer::getInstance" alt="" coords="349,31,483,61"/>
+<area shape="rect" id="node7" href="$class_writer.html#a71958f8059a6b2e755e3ec6a3ed7cebd" title="Writer::setScreenPtr" alt="" coords="131,82,272,111"/>
+<area shape="rect" id="node9" href="$class_renderer.html#a2f959c488093963b4d60b02860715c49" title="Renderer::getInstance" alt="" coords="127,135,276,165"/>
+<area shape="rect" id="node11" href="$class_writer.html#a3c06b4a50402dfcbe88507805978f9fa" title="Writer::init" alt="" coords="160,189,243,218"/>
+<area shape="rect" id="node24" href="$class_renderer_g_l.html#add6911f42a1c949e2b54fec77e3e7112" title="RendererGL::init" alt="" coords="143,242,260,271"/>
+<area shape="rect" id="node13" href="$class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="347,85,485,114"/>
+<area shape="rect" id="node17" href="$class_renderer.html#a28a025eef2f148804a316ce738a561a9" title="Renderer::getScreenWidth" alt="" coords="328,138,504,167"/>
+<area shape="rect" id="node19" href="$class_renderer.html#ad6183fab320287171b05e3ca143623fe" title="Renderer::getScreenHeight" alt="" coords="327,191,505,221"/>
+<area shape="rect" id="node21" href="$class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="349,245,483,274"/>
+</map>

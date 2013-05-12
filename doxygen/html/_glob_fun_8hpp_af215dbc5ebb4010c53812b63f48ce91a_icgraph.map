@@ -1,0 +1,8 @@
+<map id="isAdditionalBonus" name="isAdditionalBonus">
+<area shape="rect" id="node3" href="$class_map.html#ac910706c756c6fd7a9dab4a74bde3e77" title="Map::checkColision" alt="" coords="183,5,319,35"/>
+<area shape="rect" id="node7" href="$class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="604,32,697,61"/>
+<area shape="rect" id="node5" href="$class_map_manager.html#a66c5eb996f489fc9144df248a43e6107" title="MapManager::checkColision" alt="" coords="368,5,555,35"/>
+<area shape="rect" id="node9" href="$class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="747,32,851,61"/>
+<area shape="rect" id="node11" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="900,32,969,61"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1019,32,1069,61"/>
+</map>

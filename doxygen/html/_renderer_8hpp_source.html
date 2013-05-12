@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Plik źródłowy include/Renderer.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Renderer.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_renderer_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RENDERER_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RENDERER_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_headers_8hpp.html">Headers.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_property_8hpp.html">Property.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_renderer_g_l_8hpp.html">RendererGL.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="class_renderer.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_renderer.html">Renderer</a> : <span class="keyword">public</span> <a class="code" href="class_renderer_g_l.html">RendererGL</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_renderer.html#a2f959c488093963b4d60b02860715c49">   12</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_renderer.html">Renderer</a>* <a class="code" href="class_renderer.html#a2f959c488093963b4d60b02860715c49">getInstance</a>(){</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <span class="keywordflow">if</span>( pInstance == NULL ){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                  pInstance = <span class="keyword">new</span> <a class="code" href="class_renderer.html">Renderer</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                  <span class="keywordflow">return</span>( pInstance );</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">return</span>( pInstance );</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="class_renderer.html#ae873d28c1e839bf5fa766c1ace3595a6">   20</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_renderer.html#ae873d28c1e839bf5fa766c1ace3595a6">setScreenHeight</a>( <span class="keywordtype">int</span> H ){ <a class="code" href="class_renderer_g_l.html#a635bf352abf9b26245ebb671d7483280">pScreenRect</a>.<a class="code" href="struct_rect.html#aa10c9b8950c6b23a0b2bf0d39f2be904">h</a> = H;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="class_renderer.html#a74b0a4d3c5dd632e7a73ff6bde2ca9e2">   21</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_renderer.html#a74b0a4d3c5dd632e7a73ff6bde2ca9e2">setScreenWidth</a>( <span class="keywordtype">int</span> W ){ <a class="code" href="class_renderer_g_l.html#a635bf352abf9b26245ebb671d7483280">pScreenRect</a>.<a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">w</a> = W;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_renderer.html#ad6183fab320287171b05e3ca143623fe">   23</a></span>&#160;  <span class="keywordtype">short</span> <a class="code" href="class_renderer.html#ad6183fab320287171b05e3ca143623fe">getScreenHeight</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_renderer_g_l.html#afd759121c11707b1d52ca9d3a981c231">pScreen</a>-&gt;h; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_renderer.html#a28a025eef2f148804a316ce738a561a9">   24</a></span>&#160;  <span class="keywordtype">short</span> <a class="code" href="class_renderer.html#a28a025eef2f148804a316ce738a561a9">getScreenWidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_renderer_g_l.html#afd759121c11707b1d52ca9d3a981c231">pScreen</a>-&gt;w; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_renderer.html#aabd0720e57254d435be5d4a5b19c2bdc">   26</a></span>&#160;  Uint32 <a class="code" href="class_renderer.html#aabd0720e57254d435be5d4a5b19c2bdc">getRGB</a>( <span class="keywordtype">short</span> R, <span class="keywordtype">short</span> G, <span class="keywordtype">short</span> B ) { <span class="keywordflow">return</span>( SDL_MapRGB( <a class="code" href="class_renderer_g_l.html#afd759121c11707b1d52ca9d3a981c231">pScreen</a>-&gt;format,R,G,B) ); }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_renderer.html">Renderer</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_renderer.html">Renderer</a>* pInstance;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // RENDERER_HPP</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

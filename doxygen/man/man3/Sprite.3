@@ -1,0 +1,140 @@
+.TH "Sprite" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sprite \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sprite\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBSprite\fP (\fBSpriteConfig\fP Config)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (float pos_x, float pos_y)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (float pos_x, float pos_y, float w, float h)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (float dt)"
+.br
+.ti -1c
+.RI "short \fBgetX\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetY\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetAtlasX\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetAtlasY\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "short \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetX\fP (float X)"
+.br
+.ti -1c
+.RI "void \fBsetY\fP (float Y)"
+.br
+.ti -1c
+.RI "\fBRect\fP \fBgetRect\fP () const "
+.br
+.ti -1c
+.RI "void \fBcentered\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 7 pliku Sprite\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Sprite::Sprite (\fBSpriteConfig\fPConfig)"
+
+.PP
+Definicja w linii 4 pliku Sprite\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Sprite::centered ()"
+Ustawia polozenie sprita na srodek ekranu 
+.PP
+Definicja w linii 103 pliku Sprite\&.cpp\&.
+.SS "void Sprite::draw ()"
+Metoda rysuje sprita zgodnie z danymi przechowywanymi w pData TODO usunac ponizszego ifa, gdy beda wszystkie itemsy w menu glownym if ten zapobiega wywalaniu sie aplikacji gdy sprite zostal utworzony za pomoca konstruktora bez parametrow 
+.PP
+Definicja w linii 14 pliku Sprite\&.cpp\&.
+.SS "void Sprite::draw (floatpos_x, floatpos_y)"
+Metoda rysuje sprita na podanej pozycji usunac ponizszego ifa, gdy beda wszystkie itemsy w menu glownym if ten zapobiega wywalaniu sie aplikacji gdy sprite zostal utworzony za pomoca konstruktora bez parametrow 
+.PP
+Definicja w linii 47 pliku Sprite\&.cpp\&.
+.SS "void Sprite::draw (floatpos_x, floatpos_y, floatw, floath)"
+Metoda rysuje sprita na podanej pozycji i podanych wymiarach 
+.PP
+Definicja w linii 31 pliku Sprite\&.cpp\&.
+.SS "short Sprite::getAtlasX () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 22 pliku Sprite\&.hpp\&.
+.SS "short Sprite::getAtlasY () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 23 pliku Sprite\&.hpp\&.
+.SS "short Sprite::getHeight () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 26 pliku Sprite\&.hpp\&.
+.SS "\fBRect\fP Sprite::getRect () const"
+Zwraca polozenie pierwszej klatki animacji na atlasie 
+.PP
+Definicja w linii 93 pliku Sprite\&.cpp\&.
+.SS "short Sprite::getWidth () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 25 pliku Sprite\&.hpp\&.
+.SS "short Sprite::getX () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 19 pliku Sprite\&.hpp\&.
+.SS "short Sprite::getY () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 20 pliku Sprite\&.hpp\&.
+.SS "void Sprite::reset ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 35 pliku Sprite\&.hpp\&.
+.SS "void Sprite::setX (floatX)\fC [inline]\fP"
+
+.PP
+Definicja w linii 28 pliku Sprite\&.hpp\&.
+.SS "void Sprite::setY (floatY)\fC [inline]\fP"
+
+.PP
+Definicja w linii 29 pliku Sprite\&.hpp\&.
+.SS "void Sprite::update (floatdt)"
+Aktualizacja animacji sprite; przechodzenie pomiedzy kolejnymi klatkami animacji 
+.PP
+Definicja w linii 67 pliku Sprite\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

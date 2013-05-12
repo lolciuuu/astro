@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy Menu</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_menu-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Menu</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_menu_8hpp_source.html">Menu.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Menu</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu__inherit__graph.png" border="0" usemap="#_menu_inherit__map" alt="Inheritance graph"/></div>
+<map name="_menu_inherit__map" id="_menu_inherit__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="5,5,147,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla Menu:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu__coll__graph.png" border="0" usemap="#_menu_coll__map" alt="Collaboration graph"/></div>
+<map name="_menu_coll__map" id="_menu_coll__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="113,277,255,307"/><area shape="rect" id="node4" href="class_writer.html" title="Writer" alt="" coords="5,181,61,211"/><area shape="rect" id="node6" href="class_renderer.html" title="Renderer" alt="" coords="87,181,161,211"/><area shape="rect" id="node8" href="class_renderer_g_l.html" title="RendererGL" alt="" coords="79,101,169,131"/><area shape="rect" id="node10" href="struct_rect.html" title="Rect" alt="" coords="99,5,149,35"/><area shape="rect" id="node12" href="class_sound_manager.html" title="SoundManager" alt="" coords="185,181,295,211"/><area shape="rect" id="node14" href="class_logger.html" title="Logger" alt="" coords="356,181,417,211"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ad466dd83355124a6ed958430450bfe94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#ad466dd83355124a6ed958430450bfe94">Menu</a> ()</td></tr>
+<tr class="memitem:aef4f57d20f17de3766e96fd705990ffb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb">update</a> (const float &amp;dt)</td></tr>
+<tr class="memitem:a2cd7ab9901a8f42a3ae977d0774398a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">draw</a> ()</td></tr>
+<tr class="memitem:a43c673ed538036042d1b7a77c48e4601"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a43c673ed538036042d1b7a77c48e4601">isDone</a> () const </td></tr>
+<tr class="memitem:a77b6f74f278e279705155757e514f2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a77b6f74f278e279705155757e514f2a2">pressedReturn</a> ()</td></tr>
+<tr class="memitem:a5ef62eb930cc80d71feaba8d4c34d7a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a5ef62eb930cc80d71feaba8d4c34d7a5">pressedEsc</a> ()</td></tr>
+<tr class="memitem:a51cec1d1b91bfbcc3bddeaf944929fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a51cec1d1b91bfbcc3bddeaf944929fd7">pressedRight</a> ()</td></tr>
+<tr class="memitem:aece8138955f5a6cf7f1be75f0a5d507a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#aece8138955f5a6cf7f1be75f0a5d507a">pressedLeft</a> ()</td></tr>
+<tr class="memitem:a1853e25dbac1c3adaa49056580793b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a1853e25dbac1c3adaa49056580793b91">pressedDown</a> ()</td></tr>
+<tr class="memitem:a1654005f8bc25c6baf0f74d9a72c3d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a1654005f8bc25c6baf0f74d9a72c3d17">pressedUp</a> ()</td></tr>
+<tr class="memitem:a67101271622955448409d2f9a7d29fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a67101271622955448409d2f9a7d29fb4">blockItem</a> (short ID)</td></tr>
+<tr class="memitem:a4cb0c365a772b794c3d2f88f70ac9a4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html#a4cb0c365a772b794c3d2f88f70ac9a4d">resetMenu</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pub_methods_class_standard_references"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_standard_references')"><img src="closed.png" alt="-"/>&nbsp;Metody prywatne dziedziczone z <a class="el" href="class_standard_references.html">StandardReferences</a></td></tr>
+<tr class="memitem:aa3f9ee9954864d9fde792890a199d227 inherit pub_methods_class_standard_references"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#aa3f9ee9954864d9fde792890a199d227">StandardReferences</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_menu_8hpp_source.html#l00009">9</a> pliku <a class="el" href="_menu_8hpp_source.html">Menu.hpp</a>.</p>
+</div><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="ad466dd83355124a6ed958430450bfe94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Menu::Menu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tutaj odbywa sie tworzenie wszystckich elementow glownego menu pCurrentItem : domyslnie 1, bo 0 to resume game i przy starcie jest nie aktywne </p>
+<p>Wpis w menu: &ndash; Return &ndash;</p>
+<p>Wpis w menu: &ndash; New <a class="el" href="class_game.html">Game</a> &ndash;</p>
+<p>Wpis w menu: &ndash; HighScore &ndash;</p>
+<p>Wpis w menu: &ndash; About &ndash;</p>
+<p>Wpis w menu: &ndash; Exit &ndash;</p>
+<p>Dodanie wszystckich wpisow w okreslonej kolejnosci </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00008">8</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_ad466dd83355124a6ed958430450bfe94_cgraph.png" border="0" usemap="#class_menu_ad466dd83355124a6ed958430450bfe94_cgraph" alt=""/></div>
+<map name="class_menu_ad466dd83355124a6ed958430450bfe94_cgraph" id="class_menu_ad466dd83355124a6ed958430450bfe94_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="196,5,287,35"/><area shape="rect" id="node5" href="class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="167,59,316,88"/><area shape="rect" id="node7" href="class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="168,112,315,141"/><area shape="rect" id="node9" href="class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="172,165,311,195"/><area shape="rect" id="node13" href="class_sprite_manager.html#ac0d5616a7e3e83fc53dc8bf21345c955" title="SpriteManager::getInstance" alt="" coords="151,219,332,248"/><area shape="rect" id="node15" href="class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="193,272,289,301"/><area shape="rect" id="node17" href="class_menu_item.html#a46782da279e61c6c25ceb4349565435a" title="MenuItem::setActive" alt="" coords="171,325,312,355"/><area shape="rect" id="node19" href="class_menu_item.html#a3cf14b1e1fd7676421b988fc95202f52" title="MenuItem::setDescription" alt="" coords="156,379,327,408"/><area shape="rect" id="node21" href="class_menu_item.html#afb609ec018b2fd75d922fa8834a6c353" title="MenuItem::setRectName" alt="" coords="157,432,325,461"/><area shape="rect" id="node23" href="class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="171,485,312,515"/><area shape="rect" id="node27" href="class_menu_item.html#a02f11651eff4960ad368b196fa07a06f" title="MenuItem::setRectDesc" alt="" coords="159,539,324,568"/><area shape="rect" id="node29" href="class_menu_item.html#a17fb241db13784339e60f1356b4f2a66" title="MenuItem::setSelected" alt="" coords="163,592,320,621"/><area shape="rect" id="node11" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="405,165,453,195"/><area shape="rect" id="node25" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="383,485,476,515"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a67101271622955448409d2f9a7d29fb4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::blockItem </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_menu_8hpp_source.html#l00028">28</a> pliku <a class="el" href="_menu_8hpp_source.html">Menu.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a67101271622955448409d2f9a7d29fb4_icgraph.png" border="0" usemap="#class_menu_a67101271622955448409d2f9a7d29fb4_icgraph" alt=""/></div>
+<map name="class_menu_a67101271622955448409d2f9a7d29fb4_icgraph" id="class_menu_a67101271622955448409d2f9a7d29fb4_icgraph">
+<area shape="rect" id="node3" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="173,5,277,35"/><area shape="rect" id="node5" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="327,5,396,35"/><area shape="rect" id="node7" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="445,5,496,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cd7ab9901a8f42a3ae977d0774398a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00129">129</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_cgraph.png" border="0" usemap="#class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_cgraph" alt=""/></div>
+<map name="class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_cgraph" id="class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_cgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="144,136,264,165"/><area shape="rect" id="node22" href="_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327" title="warring" alt="" coords="172,189,236,219"/><area shape="rect" id="node5" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="531,111,659,140"/><area shape="rect" id="node7" href="class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="328,5,459,35"/><area shape="rect" id="node13" href="class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="347,109,440,139"/><area shape="rect" id="node15" href="class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="348,163,439,192"/><area shape="rect" id="node18" href="_const_8hpp.html#abf528d73faba2d3e6eb1da5a66e5996a" title="BLACK_FONT_COLOR" alt="" coords="312,216,475,245"/><area shape="rect" id="node20" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="360,269,427,299"/><area shape="rect" id="node9" href="class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="524,5,665,35"/><area shape="rect" id="node11" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="716,5,809,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_icgraph.png" border="0" usemap="#class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_icgraph" alt=""/></div>
+<map name="class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_icgraph" id="class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_icgraph">
+<area shape="rect" id="node3" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="144,5,237,35"/><area shape="rect" id="node5" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="287,5,356,35"/><area shape="rect" id="node7" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="405,5,456,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a43c673ed538036042d1b7a77c48e4601"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Menu::isDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_menu_8hpp_source.html#l00018">18</a> pliku <a class="el" href="_menu_8hpp_source.html">Menu.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1853e25dbac1c3adaa49056580793b91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::pressedDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obsluga nacisniecia strzalki w dol </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00279">279</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a1853e25dbac1c3adaa49056580793b91_icgraph.png" border="0" usemap="#class_menu_a1853e25dbac1c3adaa49056580793b91_icgraph" alt=""/></div>
+<map name="class_menu_a1853e25dbac1c3adaa49056580793b91_icgraph" id="class_menu_a1853e25dbac1c3adaa49056580793b91_icgraph">
+<area shape="rect" id="node3" href="class_game.html#afed42a204373ab7c406541c235161f67" title="Game::pressedDown" alt="" coords="199,5,343,35"/><area shape="rect" id="node5" href="class_menu.html#a4cb0c365a772b794c3d2f88f70ac9a4d" title="Menu::resetMenu" alt="" coords="209,59,332,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ef62eb930cc80d71feaba8d4c34d7a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::pressedEsc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0blsuga nacisniecia ESC </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00208">208</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_cgraph.png" border="0" usemap="#class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_cgraph" alt=""/></div>
+<map name="class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_cgraph" id="class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="185,5,295,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_icgraph.png" border="0" usemap="#class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_icgraph" alt=""/></div>
+<map name="class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_icgraph" id="class_menu_a5ef62eb930cc80d71feaba8d4c34d7a5_icgraph">
+<area shape="rect" id="node3" href="class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="185,5,319,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aece8138955f5a6cf7f1be75f0a5d507a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::pressedLeft </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przewijanie menu poziomego </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00258">258</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_aece8138955f5a6cf7f1be75f0a5d507a_cgraph.png" border="0" usemap="#class_menu_aece8138955f5a6cf7f1be75f0a5d507a_cgraph" alt=""/></div>
+<map name="class_menu_aece8138955f5a6cf7f1be75f0a5d507a_cgraph" id="class_menu_aece8138955f5a6cf7f1be75f0a5d507a_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="185,5,295,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_aece8138955f5a6cf7f1be75f0a5d507a_icgraph.png" border="0" usemap="#class_menu_aece8138955f5a6cf7f1be75f0a5d507a_icgraph" alt=""/></div>
+<map name="class_menu_aece8138955f5a6cf7f1be75f0a5d507a_icgraph" id="class_menu_aece8138955f5a6cf7f1be75f0a5d507a_icgraph">
+<area shape="rect" id="node3" href="class_game.html#adf8ca74e37724ae8177361f82154a55a" title="Game::pressedLeft" alt="" coords="184,5,317,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a77b6f74f278e279705155757e514f2a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::pressedReturn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obsluga nacicniecia entera w menu glownym </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00165">165</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a77b6f74f278e279705155757e514f2a2_cgraph.png" border="0" usemap="#class_menu_a77b6f74f278e279705155757e514f2a2_cgraph" alt=""/></div>
+<map name="class_menu_a77b6f74f278e279705155757e514f2a2_cgraph" id="class_menu_a77b6f74f278e279705155757e514f2a2_cgraph">
+<area shape="rect" id="node3" href="class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="257,5,353,35"/><area shape="rect" id="node5" href="class_sound_manager.html#afdaff847244a432c05658cb350b25d4f" title="SoundManager::playGameMusic" alt="" coords="200,59,411,88"/><area shape="rect" id="node9" href="class_game.html#aedc3e2965a88c0f2e1aa991c806a1f0e" title="Game::setGameState" alt="" coords="231,112,380,141"/><area shape="rect" id="node11" href="class_sound_manager.html#a45a6d0aec4722fdc5953472e369893dc" title="SoundManager::stopMenuMusic" alt="" coords="201,165,409,195"/><area shape="rect" id="node13" href="class_game.html#a47c726a80fd133c0a4f6b8fba56d8832" title="Game::resetGame" alt="" coords="241,219,369,248"/><area shape="rect" id="node7" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="459,59,507,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a77b6f74f278e279705155757e514f2a2_icgraph.png" border="0" usemap="#class_menu_a77b6f74f278e279705155757e514f2a2_icgraph" alt=""/></div>
+<map name="class_menu_a77b6f74f278e279705155757e514f2a2_icgraph" id="class_menu_a77b6f74f278e279705155757e514f2a2_icgraph">
+<area shape="rect" id="node3" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="201,5,351,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a51cec1d1b91bfbcc3bddeaf944929fd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::pressedRight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przewijanie menu poziomego dla danego itemsa </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00236">236</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_cgraph.png" border="0" usemap="#class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_cgraph" alt=""/></div>
+<map name="class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_cgraph" id="class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="193,5,303,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_icgraph.png" border="0" usemap="#class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_icgraph" alt=""/></div>
+<map name="class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_icgraph" id="class_menu_a51cec1d1b91bfbcc3bddeaf944929fd7_icgraph">
+<area shape="rect" id="node3" href="class_game.html#ae24222e5040c92e178b667dd5b94673e" title="Game::pressedRight" alt="" coords="193,5,335,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1654005f8bc25c6baf0f74d9a72c3d17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::pressedUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przechodzenie do elementu menu znajdujacego sie powyzej </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00289">289</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a1654005f8bc25c6baf0f74d9a72c3d17_icgraph.png" border="0" usemap="#class_menu_a1654005f8bc25c6baf0f74d9a72c3d17_icgraph" alt=""/></div>
+<map name="class_menu_a1654005f8bc25c6baf0f74d9a72c3d17_icgraph" id="class_menu_a1654005f8bc25c6baf0f74d9a72c3d17_icgraph">
+<area shape="rect" id="node3" href="class_game.html#a309a88435a1d836cd40c4708e74e1f76" title="Game::pressedUp" alt="" coords="179,5,307,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4cb0c365a772b794c3d2f88f70ac9a4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu::resetMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00307">307</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_a4cb0c365a772b794c3d2f88f70ac9a4d_cgraph.png" border="0" usemap="#class_menu_a4cb0c365a772b794c3d2f88f70ac9a4d_cgraph" alt=""/></div>
+<map name="class_menu_a4cb0c365a772b794c3d2f88f70ac9a4d_cgraph" id="class_menu_a4cb0c365a772b794c3d2f88f70ac9a4d_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#ad8cb5a1635c8222f186d0c77ea8716eb" title="Logger::debug" alt="" coords="196,5,300,35"/><area shape="rect" id="node5" href="class_menu.html#a1853e25dbac1c3adaa49056580793b91" title="Menu::pressedDown" alt="" coords="177,59,319,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aef4f57d20f17de3766e96fd705990ffb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Menu::update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Aktualizacja menu </p>
+
+<p>Definicja w linii <a class="el" href="_menu_8cpp_source.html#l00104">104</a> pliku <a class="el" href="_menu_8cpp_source.html">Menu.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_aef4f57d20f17de3766e96fd705990ffb_cgraph.png" border="0" usemap="#class_menu_aef4f57d20f17de3766e96fd705990ffb_cgraph" alt=""/></div>
+<map name="class_menu_aef4f57d20f17de3766e96fd705990ffb_cgraph" id="class_menu_aef4f57d20f17de3766e96fd705990ffb_cgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="155,136,275,165"/><area shape="rect" id="node22" href="_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327" title="warring" alt="" coords="183,189,247,219"/><area shape="rect" id="node5" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="541,111,669,140"/><area shape="rect" id="node7" href="class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="339,5,469,35"/><area shape="rect" id="node13" href="class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="357,109,451,139"/><area shape="rect" id="node15" href="class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="359,163,449,192"/><area shape="rect" id="node18" href="_const_8hpp.html#abf528d73faba2d3e6eb1da5a66e5996a" title="BLACK_FONT_COLOR" alt="" coords="323,216,485,245"/><area shape="rect" id="node20" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="371,269,437,299"/><area shape="rect" id="node9" href="class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="535,5,676,35"/><area shape="rect" id="node11" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="727,5,820,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_menu_aef4f57d20f17de3766e96fd705990ffb_icgraph.png" border="0" usemap="#class_menu_aef4f57d20f17de3766e96fd705990ffb_icgraph" alt=""/></div>
+<map name="class_menu_aef4f57d20f17de3766e96fd705990ffb_icgraph" id="class_menu_aef4f57d20f17de3766e96fd705990ffb_icgraph">
+<area shape="rect" id="node3" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="155,5,259,35"/><area shape="rect" id="node5" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="308,5,377,35"/><area shape="rect" id="node7" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="427,5,477,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_menu_8hpp_source.html">Menu.hpp</a></li>
+<li>src/<a class="el" href="_menu_8cpp_source.html">Menu.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

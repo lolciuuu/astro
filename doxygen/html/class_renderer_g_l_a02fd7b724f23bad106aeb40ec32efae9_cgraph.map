@@ -1,0 +1,9 @@
+<map id="RendererGL::draw" name="RendererGL::draw">
+<area shape="rect" id="node3" href="$class_sprite_manager.html#ac0d5616a7e3e83fc53dc8bf21345c955" title="SpriteManager::getInstance" alt="" coords="183,5,364,35"/>
+<area shape="rect" id="node5" href="$class_sprite_manager.html#af42bfcb7a5e1b2b036f8d1a005703791" title="SpriteManager::getSprite" alt="" coords="191,59,356,88"/>
+<area shape="rect" id="node9" href="$class_sprite.html#a7cf0d657b2e422df6760d524a844af77" title="Sprite::getAtlasX" alt="" coords="213,112,333,141"/>
+<area shape="rect" id="node11" href="$class_sprite.html#a92584b2ec1a1fea5402d08f49271e0ad" title="Sprite::getAtlasY" alt="" coords="213,165,333,195"/>
+<area shape="rect" id="node13" href="$class_sprite.html#aa5568519fd8e3b3bee720f1c8decb3f0" title="Sprite::getWidth" alt="" coords="216,219,331,248"/>
+<area shape="rect" id="node15" href="$class_sprite.html#a665b581febc06afbfe1b3dbbac92e3ea" title="Sprite::getHeight" alt="" coords="213,272,333,301"/>
+<area shape="rect" id="node7" href="$_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="415,59,473,88"/>
+</map>

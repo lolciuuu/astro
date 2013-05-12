@@ -1,0 +1,81 @@
+.TH "Property" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Property \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Property\&.hpp>\fP
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static void \fBinit\fP (const string &Languages='ENG')"
+.br
+.ti -1c
+.RI "static void \fBaddProperty\fP (const string &key, const string &value)"
+.br
+.ti -1c
+.RI "static void \fBaddSetting\fP (const string &key, double value)"
+.br
+.ti -1c
+.RI "static string \fBget\fP (const string &key)"
+.br
+.ti -1c
+.RI "static double \fBgetSetting\fP (const string &key)"
+.br
+.ti -1c
+.RI "static string \fBgetCurrentLang\fP ()"
+.br
+.ti -1c
+.RI "static void \fBresetLang\fP (string Lang)"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+opisac klase 
+.PP
+Definicja w linii 6 pliku Property\&.hpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "static void Property::addProperty (const string &key, const string &value)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 13 pliku Property\&.hpp\&.
+.SS "static void Property::addSetting (const string &key, doublevalue)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 18 pliku Property\&.hpp\&.
+.SS "static string Property::get (const string &key)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 23 pliku Property\&.hpp\&.
+.SS "static string Property::getCurrentLang ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 45 pliku Property\&.hpp\&.
+.SS "static double Property::getSetting (const string &key)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 34 pliku Property\&.hpp\&.
+.SS "void Property::init (const string &Languages = \fC'ENG'\fP)\fC [static]\fP"
+Funkcja na podstawie podanego jako parametr jezyka wczytuje komunikaty w danym jezyku\&. Domyslnie jest to ANG\&. Komunikaty sa przechowywane w tablicy asocjacyjnej w bierzacej klasie\&. Komunikatow pobranych z propertys nalezy uzywac w calej aplikacji\&. ZAKAZUJE SIE UZYWANIE STRINGOW NA SZTYWNO W KODZIE! 
+.PP
+\fBParametry:\fP
+.RS 4
+\fIstring\fP : Jezyk jaki bedzie ustawiony w grze, jest to zarazem koncowka w nazwie pliku ( data/property_xxx ) 
+.RE
+.PP
+
+.PP
+Definicja w linii 19 pliku Property\&.cpp\&.
+.SS "void Property::resetLang (stringLang)\fC [static]\fP"
+
+.PP
+Definicja w linii 150 pliku Property\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

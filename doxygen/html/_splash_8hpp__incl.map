@@ -1,0 +1,17 @@
+<map id="include/Splash.hpp" name="include/Splash.hpp">
+<area shape="rect" id="node3" href="$_headers_8hpp.html" title="Headers.hpp" alt="" coords="812,624,908,653"/>
+<area shape="rect" id="node47" href="$_property_8hpp.html" title="Property.hpp" alt="" coords="923,469,1019,499"/>
+<area shape="rect" id="node50" href="$_resource_8hpp.html" title="Resource.hpp" alt="" coords="1123,547,1224,576"/>
+<area shape="rect" id="node53" href="$_sprite_manager_8hpp.html" title="SpriteManager.hpp" alt="" coords="1080,83,1211,112"/>
+<area shape="rect" id="node76" href="$_logger_8hpp.html" title="Logger.hpp" alt="" coords="712,392,797,421"/>
+<area shape="rect" id="node86" href="$_const_8hpp.html" title="Const.hpp" alt="" coords="1285,83,1368,112"/>
+<area shape="rect" id="node23" href="$_util_8hpp.html" title="Util.hpp" alt="" coords="827,701,893,731"/>
+<area shape="rect" id="node44" href="$_glob_fun_8hpp.html" title="GlobFun.hpp" alt="" coords="2061,701,2157,731"/>
+<area shape="rect" id="node56" href="$_sprite_8hpp.html" title="Sprite.hpp" alt="" coords="924,160,1004,189"/>
+<area shape="rect" id="node58" href="$_spriteconfig_8hpp.html" title="Spriteconfig.hpp" alt="" coords="523,547,637,576"/>
+<area shape="rect" id="node61" href="$_renderer_8hpp.html" title="Renderer.hpp" alt="" coords="968,392,1067,421"/>
+<area shape="rect" id="node69" href="$_standard_references_8hpp.html" title="StandardReferences.hpp" alt="" coords="851,237,1016,267"/>
+<area shape="rect" id="node65" href="$_renderer_g_l_8hpp.html" title="RendererGL.hpp" alt="" coords="1043,469,1160,499"/>
+<area shape="rect" id="node72" href="$_writer_8hpp.html" title="Writer.hpp" alt="" coords="832,315,915,344"/>
+<area shape="rect" id="node82" href="$_sound_manager_8hpp.html" title="SoundManager.hpp" alt="" coords="573,315,707,344"/>
+</map>

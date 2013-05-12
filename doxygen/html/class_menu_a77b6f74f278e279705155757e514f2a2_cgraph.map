@@ -1,0 +1,8 @@
+<map id="Menu::pressedReturn" name="Menu::pressedReturn">
+<area shape="rect" id="node3" href="$class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="257,5,353,35"/>
+<area shape="rect" id="node5" href="$class_sound_manager.html#afdaff847244a432c05658cb350b25d4f" title="SoundManager::playGameMusic" alt="" coords="200,59,411,88"/>
+<area shape="rect" id="node9" href="$class_game.html#aedc3e2965a88c0f2e1aa991c806a1f0e" title="Game::setGameState" alt="" coords="231,112,380,141"/>
+<area shape="rect" id="node11" href="$class_sound_manager.html#a45a6d0aec4722fdc5953472e369893dc" title="SoundManager::stopMenuMusic" alt="" coords="201,165,409,195"/>
+<area shape="rect" id="node13" href="$class_game.html#a47c726a80fd133c0a4f6b8fba56d8832" title="Game::resetGame" alt="" coords="241,219,369,248"/>
+<area shape="rect" id="node7" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="459,59,507,88"/>
+</map>

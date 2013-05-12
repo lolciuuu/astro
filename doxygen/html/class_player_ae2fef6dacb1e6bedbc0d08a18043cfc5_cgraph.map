@@ -1,0 +1,5 @@
+<map id="Player::update" name="Player::update">
+<area shape="rect" id="node3" href="$class_sprite.html#a23d60e39f1ab1a7ef881ebd7beb82626" title="Sprite::update" alt="" coords="191,5,292,35"/>
+<area shape="rect" id="node5" href="$class_live_bar.html#aeda5d101833697079d54d4c5f23f8814" title="LiveBar::getLiveAmount" alt="" coords="161,59,321,88"/>
+<area shape="rect" id="node7" href="$class_player.html#aaa6c350ffeaef504d03bd97c85e0c8eb" title="Player::fall" alt="" coords="200,112,283,141"/>
+</map>

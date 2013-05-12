@@ -1,0 +1,125 @@
+.TH "EnemyManager" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EnemyManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <EnemyManager\&.hpp>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBaddEnemy\fP (ushort R, ushort C, ushort ID)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const float &dt)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisColidate\fP (\fBRect\fP rect)"
+.br
+.ti -1c
+.RI "ulong \fBgetCurrentX\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetCurrentX\fP (ulong currentX)"
+.br
+.ti -1c
+.RI "float \fBgetOffsetX\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOffsetX\fP (float offsetX)"
+.br
+.ti -1c
+.RI "float \fBgetTilesSize\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetTilesSize\fP (float tilesSize)"
+.br
+.ti -1c
+.RI "ushort \fBgetHorizontalTilesAmount\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetHorizontalTilesAmount\fP (ushort horizontalTilesAmount)"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static \fBEnemyManager\fP * \fBgetInstance\fP ()"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 9 pliku EnemyManager\&.hpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void EnemyManager::addEnemy (ushortR, ushortC, ushortID)"
+Dodanie nowego enmy - row i column to kolumna i wiersz na macierzy reprezentujacej mape\&. 
+.PP
+Definicja w linii 22 pliku EnemyManager\&.cpp\&.
+.SS "void EnemyManager::draw ()"
+
+.PP
+Definicja w linii 39 pliku EnemyManager\&.cpp\&.
+.SS "ulong EnemyManager::getCurrentX () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 23 pliku EnemyManager\&.hpp\&.
+.SS "ushort EnemyManager::getHorizontalTilesAmount () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 47 pliku EnemyManager\&.hpp\&.
+.SS "\fBEnemyManager\fP * EnemyManager::getInstance ()\fC [static]\fP"
+
+.PP
+Definicja w linii 7 pliku EnemyManager\&.cpp\&.
+.SS "float EnemyManager::getOffsetX () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 31 pliku EnemyManager\&.hpp\&.
+.SS "float EnemyManager::getTilesSize () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 39 pliku EnemyManager\&.hpp\&.
+.SS "bool EnemyManager::isColidate (\fBRect\fPrect)"
+
+.PP
+Definicja w linii 58 pliku EnemyManager\&.cpp\&.
+.SS "void EnemyManager::reset ()"
+
+.PP
+Definicja w linii 73 pliku EnemyManager\&.cpp\&.
+.SS "void EnemyManager::setCurrentX (ulongcurrentX)\fC [inline]\fP"
+
+.PP
+Definicja w linii 27 pliku EnemyManager\&.hpp\&.
+.SS "void EnemyManager::setHorizontalTilesAmount (ushorthorizontalTilesAmount)\fC [inline]\fP"
+
+.PP
+Definicja w linii 51 pliku EnemyManager\&.hpp\&.
+.SS "void EnemyManager::setOffsetX (floatoffsetX)\fC [inline]\fP"
+
+.PP
+Definicja w linii 35 pliku EnemyManager\&.hpp\&.
+.SS "void EnemyManager::setTilesSize (floattilesSize)\fC [inline]\fP"
+
+.PP
+Definicja w linii 43 pliku EnemyManager\&.hpp\&.
+.SS "void EnemyManager::update (const float &dt)"
+
+.PP
+Definicja w linii 27 pliku EnemyManager\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

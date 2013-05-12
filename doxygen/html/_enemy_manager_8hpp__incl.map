@@ -1,0 +1,17 @@
+<map id="include/EnemyManager.hpp" name="include/EnemyManager.hpp">
+<area shape="rect" id="node3" href="$_headers_8hpp.html" title="Headers.hpp" alt="" coords="812,701,908,731"/>
+<area shape="rect" id="node47" href="$_enemy_8hpp.html" title="Enemy.hpp" alt="" coords="592,83,680,112"/>
+<area shape="rect" id="node77" href="$_logger_8hpp.html" title="Logger.hpp" alt="" coords="1144,469,1229,499"/>
+<area shape="rect" id="node23" href="$_util_8hpp.html" title="Util.hpp" alt="" coords="827,779,893,808"/>
+<area shape="rect" id="node44" href="$_glob_fun_8hpp.html" title="GlobFun.hpp" alt="" coords="2061,779,2157,808"/>
+<area shape="rect" id="node50" href="$_sprite_manager_8hpp.html" title="SpriteManager.hpp" alt="" coords="607,160,737,189"/>
+<area shape="rect" id="node53" href="$_sprite_8hpp.html" title="Sprite.hpp" alt="" coords="691,237,771,267"/>
+<area shape="rect" id="node55" href="$_spriteconfig_8hpp.html" title="Spriteconfig.hpp" alt="" coords="657,624,772,653"/>
+<area shape="rect" id="node58" href="$_renderer_8hpp.html" title="Renderer.hpp" alt="" coords="785,469,884,499"/>
+<area shape="rect" id="node70" href="$_standard_references_8hpp.html" title="StandardReferences.hpp" alt="" coords="896,315,1061,344"/>
+<area shape="rect" id="node61" href="$_property_8hpp.html" title="Property.hpp" alt="" coords="781,547,877,576"/>
+<area shape="rect" id="node64" href="$_renderer_g_l_8hpp.html" title="RendererGL.hpp" alt="" coords="901,547,1019,576"/>
+<area shape="rect" id="node67" href="$_resource_8hpp.html" title="Resource.hpp" alt="" coords="948,624,1049,653"/>
+<area shape="rect" id="node73" href="$_writer_8hpp.html" title="Writer.hpp" alt="" coords="1016,392,1099,421"/>
+<area shape="rect" id="node83" href="$_sound_manager_8hpp.html" title="SoundManager.hpp" alt="" coords="1224,392,1357,421"/>
+</map>

@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy EnemyManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_enemy_manager-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy EnemyManager</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a530fdd642525581087aba61d30ab6362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a530fdd642525581087aba61d30ab6362">addEnemy</a> (ushort R, ushort C, ushort ID)</td></tr>
+<tr class="memitem:a14b5bfca9f74c1a87229545142c616ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a14b5bfca9f74c1a87229545142c616ca">update</a> (const float &amp;dt)</td></tr>
+<tr class="memitem:a3a35c0d67050453bf8ea3556d84eb544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a3a35c0d67050453bf8ea3556d84eb544">draw</a> ()</td></tr>
+<tr class="memitem:aa0a1fa781b2705495e68d1a8ff0b07e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#aa0a1fa781b2705495e68d1a8ff0b07e9">reset</a> ()</td></tr>
+<tr class="memitem:a5cad38e9be8a2a53e7bb9c9f557d6d7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a5cad38e9be8a2a53e7bb9c9f557d6d7b">isColidate</a> (<a class="el" href="struct_rect.html">Rect</a> rect)</td></tr>
+<tr class="memitem:a3fa3d7b56a7ed9ab957bba8b689756c7"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a3fa3d7b56a7ed9ab957bba8b689756c7">getCurrentX</a> () const </td></tr>
+<tr class="memitem:ad759d6ff6368969f743bbf1d231f837b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#ad759d6ff6368969f743bbf1d231f837b">setCurrentX</a> (ulong currentX)</td></tr>
+<tr class="memitem:a8a1ff693ac2275e93a0a8fd5a73a518a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a8a1ff693ac2275e93a0a8fd5a73a518a">getOffsetX</a> () const </td></tr>
+<tr class="memitem:a01e9ce1976b63dc5306cb079cfda482a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a01e9ce1976b63dc5306cb079cfda482a">setOffsetX</a> (float offsetX)</td></tr>
+<tr class="memitem:aeabc981dd706913ff26f057581b87cfc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#aeabc981dd706913ff26f057581b87cfc">getTilesSize</a> () const </td></tr>
+<tr class="memitem:a565ebbe1cf87fcbce8108bbe4909270e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a565ebbe1cf87fcbce8108bbe4909270e">setTilesSize</a> (float tilesSize)</td></tr>
+<tr class="memitem:afa1c7dd7bb4006a0c677f14a7eb08e27"><td class="memItemLeft" align="right" valign="top">ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#afa1c7dd7bb4006a0c677f14a7eb08e27">getHorizontalTilesAmount</a> () const </td></tr>
+<tr class="memitem:a374670a22cdd8c69a27e5de52700a1bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a374670a22cdd8c69a27e5de52700a1bd">setHorizontalTilesAmount</a> (ushort horizontalTilesAmount)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:abc63717df2420e6df19cbc9200fbbfcf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_enemy_manager.html">EnemyManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#abc63717df2420e6df19cbc9200fbbfcf">getInstance</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00009">9</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+</div><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a530fdd642525581087aba61d30ab6362"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::addEnemy </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>C</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>ID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dodanie nowego enmy - row i column to kolumna i wiersz na macierzy reprezentujacej mape. </p>
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8cpp_source.html#l00022">22</a> pliku <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a35c0d67050453bf8ea3556d84eb544"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8cpp_source.html#l00039">39</a> pliku <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_cgraph.png" border="0" usemap="#class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_cgraph" alt=""/></div>
+<map name="class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_cgraph" id="class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_cgraph">
+<area shape="rect" id="node3" href="class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="203,5,349,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_icgraph.png" border="0" usemap="#class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_icgraph" alt=""/></div>
+<map name="class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_icgraph" id="class_enemy_manager_a3a35c0d67050453bf8ea3556d84eb544_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="204,5,287,35"/><area shape="rect" id="node5" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="336,5,429,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="479,5,548,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="597,5,648,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fa3d7b56a7ed9ab957bba8b689756c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong EnemyManager::getCurrentX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00023">23</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa1c7dd7bb4006a0c677f14a7eb08e27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ushort EnemyManager::getHorizontalTilesAmount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00047">47</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc63717df2420e6df19cbc9200fbbfcf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_enemy_manager.html">EnemyManager</a> * EnemyManager::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8cpp_source.html#l00007">7</a> pliku <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a1ff693ac2275e93a0a8fd5a73a518a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EnemyManager::getOffsetX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00031">31</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeabc981dd706913ff26f057581b87cfc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EnemyManager::getTilesSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00039">39</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5cad38e9be8a2a53e7bb9c9f557d6d7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EnemyManager::isColidate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rect.html">Rect</a>&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8cpp_source.html#l00058">58</a> pliku <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_cgraph.png" border="0" usemap="#class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_cgraph" alt=""/></div>
+<map name="class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_cgraph" id="class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_cgraph">
+<area shape="rect" id="node3" href="class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="232,5,379,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_icgraph.png" border="0" usemap="#class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_icgraph" alt=""/></div>
+<map name="class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_icgraph" id="class_enemy_manager_a5cad38e9be8a2a53e7bb9c9f557d6d7b_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="233,5,327,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="376,5,480,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="529,5,599,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="648,5,699,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0a1fa781b2705495e68d1a8ff0b07e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8cpp_source.html#l00073">73</a> pliku <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_aa0a1fa781b2705495e68d1a8ff0b07e9_icgraph.png" border="0" usemap="#class_enemy_manager_aa0a1fa781b2705495e68d1a8ff0b07e9_icgraph" alt=""/></div>
+<map name="class_enemy_manager_aa0a1fa781b2705495e68d1a8ff0b07e9_icgraph" id="class_enemy_manager_aa0a1fa781b2705495e68d1a8ff0b07e9_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="205,5,325,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad759d6ff6368969f743bbf1d231f837b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::setCurrentX </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>currentX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00027">27</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_ad759d6ff6368969f743bbf1d231f837b_icgraph.png" border="0" usemap="#class_enemy_manager_ad759d6ff6368969f743bbf1d231f837b_icgraph" alt=""/></div>
+<map name="class_enemy_manager_ad759d6ff6368969f743bbf1d231f837b_icgraph" id="class_enemy_manager_ad759d6ff6368969f743bbf1d231f837b_icgraph">
+<area shape="rect" id="node3" href="class_map_manager.html#a26b78ab244077dc4e8fc5b83c45e415d" title="MapManager::update" alt="" coords="245,5,389,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="439,5,532,35"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="581,5,685,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="735,5,804,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="853,5,904,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a374670a22cdd8c69a27e5de52700a1bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::setHorizontalTilesAmount </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>horizontalTilesAmount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00051">51</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a374670a22cdd8c69a27e5de52700a1bd_icgraph.png" border="0" usemap="#class_enemy_manager_a374670a22cdd8c69a27e5de52700a1bd_icgraph" alt=""/></div>
+<map name="class_enemy_manager_a374670a22cdd8c69a27e5de52700a1bd_icgraph" id="class_enemy_manager_a374670a22cdd8c69a27e5de52700a1bd_icgraph">
+<area shape="rect" id="node3" href="class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="255,13,433,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a01e9ce1976b63dc5306cb079cfda482a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::setOffsetX </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offsetX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00035">35</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a01e9ce1976b63dc5306cb079cfda482a_icgraph.png" border="0" usemap="#class_enemy_manager_a01e9ce1976b63dc5306cb079cfda482a_icgraph" alt=""/></div>
+<map name="class_enemy_manager_a01e9ce1976b63dc5306cb079cfda482a_icgraph" id="class_enemy_manager_a01e9ce1976b63dc5306cb079cfda482a_icgraph">
+<area shape="rect" id="node3" href="class_map_manager.html#a26b78ab244077dc4e8fc5b83c45e415d" title="MapManager::update" alt="" coords="237,5,381,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="431,5,524,35"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="573,5,677,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="727,5,796,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="845,5,896,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a565ebbe1cf87fcbce8108bbe4909270e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::setTilesSize </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tilesSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8hpp_source.html#l00043">43</a> pliku <a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a565ebbe1cf87fcbce8108bbe4909270e_icgraph.png" border="0" usemap="#class_enemy_manager_a565ebbe1cf87fcbce8108bbe4909270e_icgraph" alt=""/></div>
+<map name="class_enemy_manager_a565ebbe1cf87fcbce8108bbe4909270e_icgraph" id="class_enemy_manager_a565ebbe1cf87fcbce8108bbe4909270e_icgraph">
+<area shape="rect" id="node3" href="class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="249,5,428,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a14b5bfca9f74c1a87229545142c616ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_enemy_manager_8cpp_source.html#l00027">27</a> pliku <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_cgraph.png" border="0" usemap="#class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_cgraph" alt=""/></div>
+<map name="class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_cgraph" id="class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_cgraph">
+<area shape="rect" id="node3" href="class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="213,5,360,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_icgraph.png" border="0" usemap="#class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_icgraph" alt=""/></div>
+<map name="class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_icgraph" id="class_enemy_manager_a14b5bfca9f74c1a87229545142c616ca_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="215,5,308,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="357,5,461,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="511,5,580,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="629,5,680,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a></li>
+<li>src/<a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="App" name="App">
+<area shape="rect" id="node2" href="$class_splash.html" title="Splash" alt="" coords="53,117,115,147"/>
+<area shape="rect" id="node4" href="$struct_rect.html" title="Rect" alt="" coords="5,5,56,35"/>
+<area shape="rect" id="node6" href="$class_logger.html" title="Logger" alt="" coords="107,5,168,35"/>
+</map>

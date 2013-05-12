@@ -1,0 +1,16 @@
+<map id="Menu::Menu" name="Menu::Menu">
+<area shape="rect" id="node3" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="196,5,287,35"/>
+<area shape="rect" id="node5" href="$class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="167,59,316,88"/>
+<area shape="rect" id="node7" href="$class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="168,112,315,141"/>
+<area shape="rect" id="node9" href="$class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="172,165,311,195"/>
+<area shape="rect" id="node13" href="$class_sprite_manager.html#ac0d5616a7e3e83fc53dc8bf21345c955" title="SpriteManager::getInstance" alt="" coords="151,219,332,248"/>
+<area shape="rect" id="node15" href="$class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="193,272,289,301"/>
+<area shape="rect" id="node17" href="$class_menu_item.html#a46782da279e61c6c25ceb4349565435a" title="MenuItem::setActive" alt="" coords="171,325,312,355"/>
+<area shape="rect" id="node19" href="$class_menu_item.html#a3cf14b1e1fd7676421b988fc95202f52" title="MenuItem::setDescription" alt="" coords="156,379,327,408"/>
+<area shape="rect" id="node21" href="$class_menu_item.html#afb609ec018b2fd75d922fa8834a6c353" title="MenuItem::setRectName" alt="" coords="157,432,325,461"/>
+<area shape="rect" id="node23" href="$class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="171,485,312,515"/>
+<area shape="rect" id="node27" href="$class_menu_item.html#a02f11651eff4960ad368b196fa07a06f" title="MenuItem::setRectDesc" alt="" coords="159,539,324,568"/>
+<area shape="rect" id="node29" href="$class_menu_item.html#a17fb241db13784339e60f1356b4f2a66" title="MenuItem::setSelected" alt="" coords="163,592,320,621"/>
+<area shape="rect" id="node11" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="405,165,453,195"/>
+<area shape="rect" id="node25" href="$class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="383,485,476,515"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Sprite::centered" name="Sprite::centered">
+<area shape="rect" id="node3" href="$class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="171,5,317,35"/>
+<area shape="rect" id="node5" href="$class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="169,59,319,88"/>
+</map>

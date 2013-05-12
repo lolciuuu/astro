@@ -1,0 +1,5 @@
+<map id="Game::pressedBackspace" name="Game::pressedBackspace">
+<area shape="rect" id="node3" href="$class_play.html#a1030d426e7a7072d905dea261f53dd36" title="Play::pressedBackspace" alt="" coords="231,32,396,61"/>
+<area shape="rect" id="node5" href="$class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="487,5,604,35"/>
+<area shape="rect" id="node7" href="$class_highscore.html#a3f44a8911a05d1aaf74a66f0abdae458" title="Highscore::pressedBackspace" alt="" coords="445,59,645,88"/>
+</map>

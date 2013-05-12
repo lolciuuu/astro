@@ -1,0 +1,7 @@
+<map id="Play::isCanStop" name="Play::isCanStop">
+<area shape="rect" id="node3" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="172,5,305,35"/>
+<area shape="rect" id="node5" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="197,59,280,88"/>
+<area shape="rect" id="node7" href="$class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="355,59,448,88"/>
+<area shape="rect" id="node9" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="497,59,567,88"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="616,59,667,88"/>
+</map>

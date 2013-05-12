@@ -1,0 +1,25 @@
+<map id="include/Play.hpp" name="include/Play.hpp">
+<area shape="rect" id="node3" href="$_player_8hpp.html" title="Player.hpp" alt="" coords="765,315,848,344"/>
+<area shape="rect" id="node66" href="$_standard_references_8hpp.html" title="StandardReferences.hpp" alt="" coords="632,469,797,499"/>
+<area shape="rect" id="node85" href="$_map_manager_8hpp.html" title="MapManager.hpp" alt="" coords="877,83,1000,112"/>
+<area shape="rect" id="node93" href="$_enemy_manager_8hpp.html" title="EnemyManager.hpp" alt="" coords="1125,160,1264,189"/>
+<area shape="rect" id="node99" href="$_sprite_manager_8hpp.html" title="SpriteManager.hpp" alt="" coords="1027,315,1157,344"/>
+<area shape="rect" id="node105" href="$_highscore_8hpp.html" title="Highscore.hpp" alt="" coords="565,315,672,344"/>
+<area shape="rect" id="node110" href="$_live_bar_8hpp.html" title="LiveBar.hpp" alt="" coords="376,315,467,344"/>
+<area shape="rect" id="node122" href="$_background_8hpp.html" title="Background.hpp" alt="" coords="1404,392,1519,421"/>
+<area shape="rect" id="node5" href="$_headers_8hpp.html" title="Headers.hpp" alt="" coords="812,856,908,885"/>
+<area shape="rect" id="node49" href="$_sprite_8hpp.html" title="Sprite.hpp" alt="" coords="560,392,640,421"/>
+<area shape="rect" id="node73" href="$_logger_8hpp.html" title="Logger.hpp" alt="" coords="948,624,1033,653"/>
+<area shape="rect" id="node25" href="$_util_8hpp.html" title="Util.hpp" alt="" coords="827,933,893,963"/>
+<area shape="rect" id="node46" href="$_glob_fun_8hpp.html" title="GlobFun.hpp" alt="" coords="2061,933,2157,963"/>
+<area shape="rect" id="node51" href="$_spriteconfig_8hpp.html" title="Spriteconfig.hpp" alt="" coords="297,779,412,808"/>
+<area shape="rect" id="node54" href="$_renderer_8hpp.html" title="Renderer.hpp" alt="" coords="484,624,583,653"/>
+<area shape="rect" id="node57" href="$_property_8hpp.html" title="Property.hpp" alt="" coords="727,701,823,731"/>
+<area shape="rect" id="node60" href="$_renderer_g_l_8hpp.html" title="RendererGL.hpp" alt="" coords="535,701,652,731"/>
+<area shape="rect" id="node63" href="$_resource_8hpp.html" title="Resource.hpp" alt="" coords="639,779,740,808"/>
+<area shape="rect" id="node69" href="$_writer_8hpp.html" title="Writer.hpp" alt="" coords="481,547,564,576"/>
+<area shape="rect" id="node79" href="$_sound_manager_8hpp.html" title="SoundManager.hpp" alt="" coords="740,547,873,576"/>
+<area shape="rect" id="node88" href="$_map_8hpp.html" title="Map.hpp" alt="" coords="1035,392,1107,421"/>
+<area shape="rect" id="node96" href="$_enemy_8hpp.html" title="Enemy.hpp" alt="" coords="1232,237,1320,267"/>
+<area shape="rect" id="node116" href="$_const_8hpp.html" title="Const.hpp" alt="" coords="301,392,384,421"/>
+</map>

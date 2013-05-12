@@ -1,0 +1,6 @@
+<map id="Map::checkColision" name="Map::checkColision">
+<area shape="rect" id="node3" href="$_glob_fun_8hpp.html#a621ed46a50f0c95a0059619746bab524" title="isBonus" alt="" coords="233,5,303,35"/>
+<area shape="rect" id="node5" href="$_glob_fun_8hpp.html#af215dbc5ebb4010c53812b63f48ce91a" title="isAdditionalBonus" alt="" coords="205,59,331,88"/>
+<area shape="rect" id="node7" href="$class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="193,112,343,141"/>
+<area shape="rect" id="node9" href="$_glob_fun_8hpp.html#ad9afd5d93e426776a73c1e4643030ac1" title="isPlatform" alt="" coords="228,165,308,195"/>
+</map>

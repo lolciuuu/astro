@@ -1,0 +1,22 @@
+<map id="include/Map.hpp" name="include/Map.hpp">
+<area shape="rect" id="node3" href="$_map_manager_8hpp.html" title="include/MapManager.hpp" alt="" coords="1395,83,1560,112"/>
+<area shape="rect" id="node21" href="$_map_8cpp.html" title="src/Map.cpp" alt="" coords="5,392,99,421"/>
+<area shape="rect" id="node5" href="$_play_8hpp.html" title="include/Play.hpp" alt="" coords="1004,160,1121,189"/>
+<area shape="rect" id="node23" href="$_map_manager_8cpp.html" title="src/MapManager.cpp" alt="" coords="1499,392,1643,421"/>
+<area shape="rect" id="node33" href="$_resource_8cpp.html" title="src/Resource.cpp" alt="" coords="1667,392,1792,421"/>
+<area shape="rect" id="node44" href="$_splash_8cpp.html" title="src/Splash.cpp" alt="" coords="1565,160,1675,189"/>
+<area shape="rect" id="node7" href="$_game_8hpp.html" title="include/Game.hpp" alt="" coords="708,237,833,267"/>
+<area shape="rect" id="node40" href="$_play_8cpp.html" title="src/Play.cpp" alt="" coords="1016,237,1109,267"/>
+<area shape="rect" id="node9" href="$_app_8hpp.html" title="include/App.hpp" alt="" coords="780,315,895,344"/>
+<area shape="rect" id="node25" href="$_menu_8cpp.html" title="src/Menu.cpp" alt="" coords="123,392,224,421"/>
+<area shape="rect" id="node37" href="$_game_8cpp.html" title="src/Game.cpp" alt="" coords="652,315,756,344"/>
+<area shape="rect" id="node11" href="$_app_8cpp.html" title="src/App.cpp" alt="" coords="792,392,883,421"/>
+<area shape="rect" id="node13" href="$_enemy_manager_8cpp.html" title="src/EnemyManager.cpp" alt="" coords="907,392,1067,421"/>
+<area shape="rect" id="node15" href="$_highscore_8cpp.html" title="src/Highscore.cpp" alt="" coords="1091,392,1219,421"/>
+<area shape="rect" id="node17" href="$_live_bar_8cpp.html" title="src/LiveBar.cpp" alt="" coords="1243,392,1355,421"/>
+<area shape="rect" id="node19" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="1379,392,1475,421"/>
+<area shape="rect" id="node27" href="$_player_8cpp.html" title="src/Player.cpp" alt="" coords="248,392,355,421"/>
+<area shape="rect" id="node29" href="$_property_8cpp.html" title="src/Property.cpp" alt="" coords="379,392,496,421"/>
+<area shape="rect" id="node31" href="$_renderer_8cpp.html" title="src/Renderer.cpp" alt="" coords="520,392,643,421"/>
+<area shape="rect" id="node35" href="$_sprite_8cpp.html" title="src/Sprite.cpp" alt="" coords="667,392,768,421"/>
+</map>

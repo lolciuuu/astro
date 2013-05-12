@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy Game</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_game-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Game</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_game_8hpp_source.html">Game.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Game</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game__inherit__graph.png" border="0" usemap="#_game_inherit__map" alt="Inheritance graph"/></div>
+<map name="_game_inherit__map" id="_game_inherit__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="5,5,147,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla Game:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game__coll__graph.png" border="0" usemap="#_game_coll__map" alt="Collaboration graph"/></div>
+<map name="_game_coll__map" id="_game_coll__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="113,277,255,307"/><area shape="rect" id="node4" href="class_writer.html" title="Writer" alt="" coords="5,181,61,211"/><area shape="rect" id="node6" href="class_renderer.html" title="Renderer" alt="" coords="87,181,161,211"/><area shape="rect" id="node8" href="class_renderer_g_l.html" title="RendererGL" alt="" coords="79,101,169,131"/><area shape="rect" id="node10" href="struct_rect.html" title="Rect" alt="" coords="99,5,149,35"/><area shape="rect" id="node12" href="class_sound_manager.html" title="SoundManager" alt="" coords="185,181,295,211"/><area shape="rect" id="node14" href="class_logger.html" title="Logger" alt="" coords="356,181,417,211"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ad59df6562a58a614fda24622d3715b65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game</a> ()</td></tr>
+<tr class="memitem:acc5022f7f8abcbab013f7f3195583a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e">update</a> (const float &amp;dt)</td></tr>
+<tr class="memitem:a6d54497ce3a66f6dd45eacfdccc8d0bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd">draw</a> ()</td></tr>
+<tr class="memitem:a5a3446e60cfe3ddabc2e2e48afdcdac0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a5a3446e60cfe3ddabc2e2e48afdcdac0">isDone</a> () const </td></tr>
+<tr class="memitem:ae24222e5040c92e178b667dd5b94673e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ae24222e5040c92e178b667dd5b94673e">pressedRight</a> ()</td></tr>
+<tr class="memitem:adf8ca74e37724ae8177361f82154a55a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#adf8ca74e37724ae8177361f82154a55a">pressedLeft</a> ()</td></tr>
+<tr class="memitem:afed42a204373ab7c406541c235161f67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#afed42a204373ab7c406541c235161f67">pressedDown</a> ()</td></tr>
+<tr class="memitem:a309a88435a1d836cd40c4708e74e1f76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a309a88435a1d836cd40c4708e74e1f76">pressedUp</a> ()</td></tr>
+<tr class="memitem:a9af61dd5911ec6106f3679e0893803da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a9af61dd5911ec6106f3679e0893803da">pressedEsc</a> ()</td></tr>
+<tr class="memitem:a86f7f99a765d47c349ca7e1b5b85465e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e">pressedReturn</a> ()</td></tr>
+<tr class="memitem:a4c0d1cea30797efbc569599afd3031fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a4c0d1cea30797efbc569599afd3031fe">pressedBackspace</a> ()</td></tr>
+<tr class="memitem:af6d80d3230138c94bdaa6b3b5a9671ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed">pressedCtrl</a> ()</td></tr>
+<tr class="memitem:a261cae6c4ddbf90d3b6da058135544cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a261cae6c4ddbf90d3b6da058135544cb">pressedShift</a> ()</td></tr>
+<tr class="memitem:a092ef4e71121cbb22e716f11e3ed27f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a092ef4e71121cbb22e716f11e3ed27f0">SpaceUp</a> ()</td></tr>
+<tr class="memitem:a3235b108275993a9f7cf0a426c01d1ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a3235b108275993a9f7cf0a426c01d1ef">SpaceDown</a> ()</td></tr>
+<tr class="memitem:a411cd70fc63356705a8abe77ae6e5d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a411cd70fc63356705a8abe77ae6e5d57">pressedChar</a> (char)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:aedc3e2965a88c0f2e1aa991c806a1f0e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aedc3e2965a88c0f2e1aa991c806a1f0e">setGameState</a> (<a class="el" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9">GameState</a> newState)</td></tr>
+<tr class="memitem:a47c726a80fd133c0a4f6b8fba56d8832"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a47c726a80fd133c0a4f6b8fba56d8832">resetGame</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pub_methods_class_standard_references"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_standard_references')"><img src="closed.png" alt="-"/>&nbsp;Metody prywatne dziedziczone z <a class="el" href="class_standard_references.html">StandardReferences</a></td></tr>
+<tr class="memitem:aa3f9ee9954864d9fde792890a199d227 inherit pub_methods_class_standard_references"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#aa3f9ee9954864d9fde792890a199d227">StandardReferences</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa jest singletonem, konstruktor zawiera zabezpieczenie przed wielokrotnym utworzeniem obiektu Dodatkowo <a class="el" href="class_game.html">Game</a> jest fasada, ktora decyduje o tym ktora klasa ma byc narywana (menu czy play), oraz gdzie przekazac informacje o wykrytym zdarzeniu np. nacisnieciu klawisza. </p>
+
+<p>Definicja w linii <a class="el" href="_game_8hpp_source.html#l00014">14</a> pliku <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+</div><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="ad59df6562a58a614fda24622d3715b65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game::Game </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00010">10</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_ad59df6562a58a614fda24622d3715b65_cgraph.png" border="0" usemap="#class_game_ad59df6562a58a614fda24622d3715b65_cgraph" alt=""/></div>
+<map name="class_game_ad59df6562a58a614fda24622d3715b65_cgraph" id="class_game_ad59df6562a58a614fda24622d3715b65_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="156,5,295,35"/><area shape="rect" id="node7" href="class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="172,59,279,88"/><area shape="rect" id="node9" href="class_renderer.html#aabd0720e57254d435be5d4a5b19c2bdc" title="Renderer::getRGB" alt="" coords="160,112,291,141"/><area shape="rect" id="node11" href="class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="159,165,292,195"/><area shape="rect" id="node5" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="344,85,435,115"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a6d54497ce3a66f6dd45eacfdccc8d0bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kontrola ktora klasa ma rysowac na ekranie </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00033">33</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_cgraph.png" border="0" usemap="#class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_cgraph" alt=""/></div>
+<map name="class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_cgraph" id="class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_cgraph">
+<area shape="rect" id="node3" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="151,271,233,300"/><area shape="rect" id="node81" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="147,764,237,793"/><area shape="rect" id="node5" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="325,112,443,141"/><area shape="rect" id="node7" href="class_renderer_g_l.html#a46a63f5c41617150fc00492856fcdc90" title="RendererGL::drawBackground" alt="" coords="285,165,483,195"/><area shape="rect" id="node9" href="class_background.html#a448f05ff40a9d17be87c568294c63aaf" title="Background::draw" alt="" coords="556,269,681,299"/><area shape="rect" id="node13" href="class_map_manager.html#ac0ac10367094e7e4eda75cceab7dd9d3" title="MapManager::draw" alt="" coords="317,219,451,248"/><area shape="rect" id="node24" href="class_enemy_manager.html#a3a35c0d67050453bf8ea3556d84eb544" title="EnemyManager::draw" alt="" coords="309,5,459,35"/><area shape="rect" id="node28" href="class_player.html#ac18c9d30d2997765321c62030a4b20b7" title="Player::draw" alt="" coords="337,373,431,403"/><area shape="rect" id="node30" href="class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="800,337,891,367"/><area shape="rect" id="node33" href="class_live_bar.html#a01bc017470a611f2d09ec37b222c2144" title="LiveBar::draw" alt="" coords="568,475,669,504"/><area shape="rect" id="node49" href="class_play.html#ae5622a2f78ce8316ca14f82e41102a7b" title="Play::isCanStop" alt="" coords="325,59,443,88"/><area shape="rect" id="node52" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="325,685,443,715"/><area shape="rect" id="node11" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="992,364,1120,393"/><area shape="rect" id="node15" href="class_map.html#a6a40755f8541eece2fa48e9e24a588f8" title="Map::draw" alt="" coords="577,191,660,220"/><area shape="rect" id="node17" href="class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="771,183,920,212"/><area shape="rect" id="node19" href="class_map_manager.html#ae0087c048e1e54f855ad7b236e81d6b2" title="MapManager::getRectByID" alt="" coords="755,129,936,159"/><area shape="rect" id="node21" href="_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="1027,129,1085,159"/><area shape="rect" id="node26" href="class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="545,5,692,35"/><area shape="rect" id="node35" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="791,441,900,471"/><area shape="rect" id="node37" href="class_renderer_g_l.html#a4e537fcba130f20797f584a76974f86e" title="RendererGL::getSurfaceIn\lGLFormat" alt="" coords="759,494,932,541"/><area shape="rect" id="node39" href="class_resource.html#a1c26fda83105920c413977159931db72" title="Resource::getSurf" alt="" coords="781,564,909,593"/><area shape="rect" id="node44" href="class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="799,684,892,713"/><area shape="rect" id="node46" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="812,737,879,767"/><area shape="rect" id="node41" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="1032,564,1080,593"/><area shape="rect" id="node54" href="class_live_bar.html#a6bf0650bcaadb35e5914f31d2aed4e52" title="LiveBar::getResultNum" alt="" coords="540,579,697,608"/><area shape="rect" id="node56" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="559,843,679,872"/><area shape="rect" id="node59" href="class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="780,895,911,924"/><area shape="rect" id="node61" href="class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="985,920,1127,949"/><area shape="rect" id="node72" href="_const_8hpp.html#ad33c55057da6e704301c6f5349eed5b7" title="WHITE_FONT_COLOR" alt="" coords="537,632,700,661"/><area shape="rect" id="node76" href="class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="553,685,684,715"/><area shape="rect" id="node78" href="_const_8hpp.html#a1f9b7c54a17f59212b050535753b5760" title="YELLOW_FONT_COLOR" alt="" coords="532,789,705,819"/><area shape="rect" id="node67" href="_const_8hpp.html#abf528d73faba2d3e6eb1da5a66e5996a" title="BLACK_FONT_COLOR" alt="" coords="764,841,927,871"/><area shape="rect" id="node63" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="1177,920,1271,949"/><area shape="rect" id="node84" href="_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327" title="warring" alt="" coords="352,764,416,793"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_icgraph.png" border="0" usemap="#class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_icgraph" alt=""/></div>
+<map name="class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_icgraph" id="class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd_icgraph">
+<area shape="rect" id="node3" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="148,5,217,35"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="267,5,317,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a3446e60cfe3ddabc2e2e48afdcdac0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::isDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_game_8hpp_source.html#l00021">21</a> pliku <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a5a3446e60cfe3ddabc2e2e48afdcdac0_icgraph.png" border="0" usemap="#class_game_a5a3446e60cfe3ddabc2e2e48afdcdac0_icgraph" alt=""/></div>
+<map name="class_game_a5a3446e60cfe3ddabc2e2e48afdcdac0_icgraph" id="class_game_a5a3446e60cfe3ddabc2e2e48afdcdac0_icgraph">
+<area shape="rect" id="node3" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="161,5,231,35"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="280,5,331,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c0d1cea30797efbc569599afd3031fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedBackspace </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>uklaiwsz backscpace - na potrzeby usuwania znaczkow podczas ich wpisywania do highscore </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00121">121</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a4c0d1cea30797efbc569599afd3031fe_cgraph.png" border="0" usemap="#class_game_a4c0d1cea30797efbc569599afd3031fe_cgraph" alt=""/></div>
+<map name="class_game_a4c0d1cea30797efbc569599afd3031fe_cgraph" id="class_game_a4c0d1cea30797efbc569599afd3031fe_cgraph">
+<area shape="rect" id="node3" href="class_play.html#a1030d426e7a7072d905dea261f53dd36" title="Play::pressedBackspace" alt="" coords="231,32,396,61"/><area shape="rect" id="node5" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="487,5,604,35"/><area shape="rect" id="node7" href="class_highscore.html#a3f44a8911a05d1aaf74a66f0abdae458" title="Highscore::pressedBackspace" alt="" coords="445,59,645,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a411cd70fc63356705a8abe77ae6e5d57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedChar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>Char</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>obsluga nacisniecia jakielkowiek literki </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00127">127</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a411cd70fc63356705a8abe77ae6e5d57_cgraph.png" border="0" usemap="#class_game_a411cd70fc63356705a8abe77ae6e5d57_cgraph" alt=""/></div>
+<map name="class_game_a411cd70fc63356705a8abe77ae6e5d57_cgraph" id="class_game_a411cd70fc63356705a8abe77ae6e5d57_cgraph">
+<area shape="rect" id="node3" href="class_play.html#a058fff0dde8c59d9407df174f6b71565" title="Play::pressedChar" alt="" coords="192,32,323,61"/><area shape="rect" id="node5" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="393,5,511,35"/><area shape="rect" id="node7" href="class_highscore.html#ac92abdde763658c8e782b15f4b68aa2c" title="Highscore::pressedChar" alt="" coords="371,59,533,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af6d80d3230138c94bdaa6b3b5a9671ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedCtrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>uzycie prawego kontrola (doladowanie zycia gracza) </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00203">203</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_af6d80d3230138c94bdaa6b3b5a9671ed_cgraph.png" border="0" usemap="#class_game_af6d80d3230138c94bdaa6b3b5a9671ed_cgraph" alt=""/></div>
+<map name="class_game_af6d80d3230138c94bdaa6b3b5a9671ed_cgraph" id="class_game_af6d80d3230138c94bdaa6b3b5a9671ed_cgraph">
+<area shape="rect" id="node3" href="class_play.html#a33e6089a84e2e3ace2fd8e0410962a2e" title="Play::useBonus" alt="" coords="187,32,301,61"/><area shape="rect" id="node5" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="357,5,475,35"/><area shape="rect" id="node7" href="class_live_bar.html#a45fdcba09493a5f04f74fb063d012352" title="LiveBar::useBonus" alt="" coords="351,59,481,88"/><area shape="rect" id="node9" href="class_live_bar.html#a5a05234a2125dc05e9c5e62d31d426b1" title="LiveBar::disableImmortal\l_callbackTimer" alt="" coords="532,50,697,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afed42a204373ab7c406541c235161f67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>strzalka w dol </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00161">161</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_afed42a204373ab7c406541c235161f67_cgraph.png" border="0" usemap="#class_game_afed42a204373ab7c406541c235161f67_cgraph" alt=""/></div>
+<map name="class_game_afed42a204373ab7c406541c235161f67_cgraph" id="class_game_afed42a204373ab7c406541c235161f67_cgraph">
+<area shape="rect" id="node3" href="class_menu.html#a1853e25dbac1c3adaa49056580793b91" title="Menu::pressedDown" alt="" coords="201,5,343,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9af61dd5911ec6106f3679e0893803da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedEsc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nacisniecie escape </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00101">101</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a9af61dd5911ec6106f3679e0893803da_cgraph.png" border="0" usemap="#class_game_a9af61dd5911ec6106f3679e0893803da_cgraph" alt=""/></div>
+<map name="class_game_a9af61dd5911ec6106f3679e0893803da_cgraph" id="class_game_a9af61dd5911ec6106f3679e0893803da_cgraph">
+<area shape="rect" id="node3" href="class_menu.html#a5ef62eb930cc80d71feaba8d4c34d7a5" title="Menu::pressedEsc" alt="" coords="228,5,359,35"/><area shape="rect" id="node7" href="class_play.html#ae5622a2f78ce8316ca14f82e41102a7b" title="Play::isCanStop" alt="" coords="235,59,352,88"/><area shape="rect" id="node9" href="class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="235,112,352,141"/><area shape="rect" id="node21" href="class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7" title="SoundManager::playMenuMusic" alt="" coords="189,165,397,195"/><area shape="rect" id="node5" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="449,5,559,35"/><area shape="rect" id="node11" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="445,59,563,88"/><area shape="rect" id="node13" href="class_highscore.html#a34562ccb710bdf7aecb7827b17275a9c" title="Highscore::save" alt="" coords="445,112,563,141"/><area shape="rect" id="node15" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="631,59,721,88"/><area shape="rect" id="node17" href="class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="611,112,741,141"/><area shape="rect" id="node19" href="class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="623,165,729,195"/><area shape="rect" id="node23" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="480,165,528,195"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adf8ca74e37724ae8177361f82154a55a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedLeft </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>strzalka w lewo </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00134">134</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_adf8ca74e37724ae8177361f82154a55a_cgraph.png" border="0" usemap="#class_game_adf8ca74e37724ae8177361f82154a55a_cgraph" alt=""/></div>
+<map name="class_game_adf8ca74e37724ae8177361f82154a55a_cgraph" id="class_game_adf8ca74e37724ae8177361f82154a55a_cgraph">
+<area shape="rect" id="node3" href="class_menu.html#aece8138955f5a6cf7f1be75f0a5d507a" title="Menu::pressedLeft" alt="" coords="187,5,317,35"/><area shape="rect" id="node5" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="367,5,476,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a86f7f99a765d47c349ca7e1b5b85465e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedReturn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obsluga nacisniecia entera </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00086">86</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a86f7f99a765d47c349ca7e1b5b85465e_cgraph.png" border="0" usemap="#class_game_a86f7f99a765d47c349ca7e1b5b85465e_cgraph" alt=""/></div>
+<map name="class_game_a86f7f99a765d47c349ca7e1b5b85465e_cgraph" id="class_game_a86f7f99a765d47c349ca7e1b5b85465e_cgraph">
+<area shape="rect" id="node3" href="class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="236,139,383,168"/><area shape="rect" id="node17" href="class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="251,324,368,353"/><area shape="rect" id="node29" href="class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7" title="SoundManager::playMenuMusic" alt="" coords="205,271,413,300"/><area shape="rect" id="node5" href="class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="519,165,615,195"/><area shape="rect" id="node7" href="class_sound_manager.html#afdaff847244a432c05658cb350b25d4f" title="SoundManager::playGameMusic" alt="" coords="461,219,672,248"/><area shape="rect" id="node11" href="class_game.html#aedc3e2965a88c0f2e1aa991c806a1f0e" title="Game::setGameState" alt="" coords="492,5,641,35"/><area shape="rect" id="node13" href="class_sound_manager.html#a45a6d0aec4722fdc5953472e369893dc" title="SoundManager::stopMenuMusic" alt="" coords="463,59,671,88"/><area shape="rect" id="node15" href="class_game.html#a47c726a80fd133c0a4f6b8fba56d8832" title="Game::resetGame" alt="" coords="503,112,631,141"/><area shape="rect" id="node9" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="761,244,809,273"/><area shape="rect" id="node19" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="508,323,625,352"/><area shape="rect" id="node21" href="class_highscore.html#a34562ccb710bdf7aecb7827b17275a9c" title="Highscore::save" alt="" coords="508,376,625,405"/><area shape="rect" id="node23" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="740,376,831,405"/><area shape="rect" id="node25" href="class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="720,429,851,459"/><area shape="rect" id="node27" href="class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="732,323,839,352"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae24222e5040c92e178b667dd5b94673e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedRight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metody obslugujace zdarzenia zwiazane z klawiatura</p>
+<p>strzalka w prawo </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00144">144</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_ae24222e5040c92e178b667dd5b94673e_cgraph.png" border="0" usemap="#class_game_ae24222e5040c92e178b667dd5b94673e_cgraph" alt=""/></div>
+<map name="class_game_ae24222e5040c92e178b667dd5b94673e_cgraph" id="class_game_ae24222e5040c92e178b667dd5b94673e_cgraph">
+<area shape="rect" id="node3" href="class_menu.html#a51cec1d1b91bfbcc3bddeaf944929fd7" title="Menu::pressedRight" alt="" coords="197,5,336,35"/><area shape="rect" id="node5" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="385,5,495,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a261cae6c4ddbf90d3b6da058135544cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedShift </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shift odpowiada za zatrzymanie rychu gracza. tzn. na ulamek sekundy przestaje spadac badz wznosic sie do gory </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00048">48</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a261cae6c4ddbf90d3b6da058135544cb_cgraph.png" border="0" usemap="#class_game_a261cae6c4ddbf90d3b6da058135544cb_cgraph" alt=""/></div>
+<map name="class_game_a261cae6c4ddbf90d3b6da058135544cb_cgraph" id="class_game_a261cae6c4ddbf90d3b6da058135544cb_cgraph">
+<area shape="rect" id="node3" href="class_play.html#ac1adb60b13e8bd9fb9142fd6a46ed71d" title="Play::pressedShift" alt="" coords="193,5,321,35"/><area shape="rect" id="node5" href="class_player.html#aaa6c350ffeaef504d03bd97c85e0c8eb" title="Player::fall" alt="" coords="372,5,455,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a309a88435a1d836cd40c4708e74e1f76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::pressedUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>strzalka do gory </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00153">153</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a309a88435a1d836cd40c4708e74e1f76_cgraph.png" border="0" usemap="#class_game_a309a88435a1d836cd40c4708e74e1f76_cgraph" alt=""/></div>
+<map name="class_game_a309a88435a1d836cd40c4708e74e1f76_cgraph" id="class_game_a309a88435a1d836cd40c4708e74e1f76_cgraph">
+<area shape="rect" id="node3" href="class_menu.html#a1654005f8bc25c6baf0f74d9a72c3d17" title="Menu::pressedUp" alt="" coords="181,5,307,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a47c726a80fd133c0a4f6b8fba56d8832"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::resetGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda statyczny wywolujaca reset na instancji obiektu </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00220">220</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a47c726a80fd133c0a4f6b8fba56d8832_icgraph.png" border="0" usemap="#class_game_a47c726a80fd133c0a4f6b8fba56d8832_icgraph" alt=""/></div>
+<map name="class_game_a47c726a80fd133c0a4f6b8fba56d8832_icgraph" id="class_game_a47c726a80fd133c0a4f6b8fba56d8832_icgraph">
+<area shape="rect" id="node3" href="class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="184,5,331,35"/><area shape="rect" id="node5" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="380,5,529,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aedc3e2965a88c0f2e1aa991c806a1f0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Game::setGameState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9">GameState</a>&#160;</td>
+          <td class="paramname"><em>newState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_game_8hpp_source.html#l00023">23</a> pliku <a class="el" href="_game_8hpp_source.html">Game.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_aedc3e2965a88c0f2e1aa991c806a1f0e_icgraph.png" border="0" usemap="#class_game_aedc3e2965a88c0f2e1aa991c806a1f0e_icgraph" alt=""/></div>
+<map name="class_game_aedc3e2965a88c0f2e1aa991c806a1f0e_icgraph" id="class_game_aedc3e2965a88c0f2e1aa991c806a1f0e_icgraph">
+<area shape="rect" id="node3" href="class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="203,5,349,35"/><area shape="rect" id="node5" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="399,5,548,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3235b108275993a9f7cf0a426c01d1ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::SpaceDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>wcisniecie spacji </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00171">171</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a3235b108275993a9f7cf0a426c01d1ef_cgraph.png" border="0" usemap="#class_game_a3235b108275993a9f7cf0a426c01d1ef_cgraph" alt=""/></div>
+<map name="class_game_a3235b108275993a9f7cf0a426c01d1ef_cgraph" id="class_game_a3235b108275993a9f7cf0a426c01d1ef_cgraph">
+<area shape="rect" id="node3" href="class_play.html#a3bbad9729548d58ab732d7fa25977b10" title="Play::SpaceDown" alt="" coords="191,5,316,35"/><area shape="rect" id="node5" href="class_player.html#aed736c6c99e769f21fa750277dd500cf" title="Player::SpaceDown" alt="" coords="365,5,504,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a092ef4e71121cbb22e716f11e3ed27f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::SpaceUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>puszczenie klaiwasza spacja </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00187">187</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a092ef4e71121cbb22e716f11e3ed27f0_cgraph.png" border="0" usemap="#class_game_a092ef4e71121cbb22e716f11e3ed27f0_cgraph" alt=""/></div>
+<map name="class_game_a092ef4e71121cbb22e716f11e3ed27f0_cgraph" id="class_game_a092ef4e71121cbb22e716f11e3ed27f0_cgraph">
+<area shape="rect" id="node3" href="class_play.html#a581654732997bd8ef599a7db0accea9e" title="Play::SpaceUp" alt="" coords="175,5,284,35"/><area shape="rect" id="node5" href="class_player.html#aa293f31631b83862422b497a72510fa9" title="Player::SpaceUp" alt="" coords="335,5,455,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc5022f7f8abcbab013f7f3195583a1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>aktualizacja gry </p>
+
+<p>Definicja w linii <a class="el" href="_game_8cpp_source.html#l00062">62</a> pliku <a class="el" href="_game_8cpp_source.html">Game.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_acc5022f7f8abcbab013f7f3195583a1e_cgraph.png" border="0" usemap="#class_game_acc5022f7f8abcbab013f7f3195583a1e_cgraph" alt=""/></div>
+<map name="class_game_acc5022f7f8abcbab013f7f3195583a1e_cgraph" id="class_game_acc5022f7f8abcbab013f7f3195583a1e_cgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="171,669,264,699"/><area shape="rect" id="node5" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="363,5,480,35"/><area shape="rect" id="node92" href="class_menu.html#a67101271622955448409d2f9a7d29fb4" title="Menu::blockItem" alt="" coords="159,853,276,883"/><area shape="rect" id="node94" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="167,1168,268,1197"/><area shape="rect" id="node106" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="163,1221,272,1251"/><area shape="rect" id="node7" href="class_highscore.html#ae2381a0928f829fe2a84bd9d0b6d6656" title="Highscore::update" alt="" coords="357,536,485,565"/><area shape="rect" id="node9" href="class_player.html#a499cc0cb1e2fb8bdb8139c8848b367b9" title="Player::run" alt="" coords="379,589,464,619"/><area shape="rect" id="node11" href="class_map_manager.html#a76b01559d19e76225af98adf4ca67c09" title="MapManager::runMap" alt="" coords="348,643,495,672"/><area shape="rect" id="node13" href="class_sprite.html#a23d60e39f1ab1a7ef881ebd7beb82626" title="Sprite::update" alt="" coords="611,480,712,509"/><area shape="rect" id="node15" href="class_map_manager.html#a26b78ab244077dc4e8fc5b83c45e415d" title="MapManager::update" alt="" coords="349,800,493,829"/><area shape="rect" id="node31" href="class_live_bar.html#a6d52777855cbc0087f1663fa32a5fb43" title="LiveBar::update" alt="" coords="365,853,477,883"/><area shape="rect" id="node35" href="class_enemy_manager.html#a14b5bfca9f74c1a87229545142c616ca" title="EnemyManager::update" alt="" coords="341,960,501,989"/><area shape="rect" id="node39" href="class_background.html#afe40702a8eabb0367ff7441690052b8f" title="Background::update" alt="" coords="352,1013,491,1043"/><area shape="rect" id="node41" href="class_player.html#a1184347a38ffd7e7fce3f53884d92c34" title="Player::getPosY" alt="" coords="363,1067,480,1096"/><area shape="rect" id="node43" href="class_map_manager.html#a66c5eb996f489fc9144df248a43e6107" title="MapManager::checkColision" alt="" coords="328,1221,515,1251"/><area shape="rect" id="node47" href="_glob_fun_8hpp.html#a621ed46a50f0c95a0059619746bab524" title="isBonus" alt="" coords="835,1125,904,1155"/><area shape="rect" id="node49" href="_glob_fun_8hpp.html#af215dbc5ebb4010c53812b63f48ce91a" title="isAdditionalBonus" alt="" coords="807,1203,932,1232"/><area shape="rect" id="node51" href="_glob_fun_8hpp.html#ad9afd5d93e426776a73c1e4643030ac1" title="isPlatform" alt="" coords="829,1268,909,1297"/><area shape="rect" id="node53" href="class_player.html#ac5243d405f750df62cd004d9fb8e5c91" title="Player::getPosX" alt="" coords="363,59,480,88"/><area shape="rect" id="node56" href="class_highscore.html#a939201ed5dee0525ec7359ab880e1549" title="Highscore::colision" alt="" coords="355,112,488,141"/><area shape="rect" id="node63" href="class_live_bar.html#aa92c4df16b9931bf892fa4cfc271d2cc" title="LiveBar::addBonus" alt="" coords="356,165,487,195"/><area shape="rect" id="node66" href="class_live_bar.html#a6cc13313240f3ee5c99b1e40e3f83692" title="LiveBar::colision" alt="" coords="363,219,480,248"/><area shape="rect" id="node68" href="_const_8hpp.html#aadfc5d919e1c74b24a6bd11855f74b5d" title="COLISION_WITH_ENEMY" alt="" coords="571,245,752,275"/><area shape="rect" id="node70" href="class_player.html#ae2fef6dacb1e6bedbc0d08a18043cfc5" title="Player::update" alt="" coords="368,747,475,776"/><area shape="rect" id="node77" href="class_enemy_manager.html#a5cad38e9be8a2a53e7bb9c9f557d6d7b" title="EnemyManager::isColidate" alt="" coords="332,907,511,936"/><area shape="rect" id="node80" href="class_player.html#adafa3127f4a71369d0f832778675dfa4" title="Player::getSize_X" alt="" coords="359,323,484,352"/><area shape="rect" id="node82" href="class_player.html#a9f9458c5583ba37753ec2900025edda0" title="Player::getSize_Y" alt="" coords="359,376,484,405"/><area shape="rect" id="node84" href="class_player.html#a7b0405e64b94140fc76229e9f1dfdfc0" title="Player::isColisionWithEnemy" alt="" coords="325,429,517,459"/><area shape="rect" id="node87" href="class_player.html#a8cede5e4431ed5fdee02dae18dba752b" title="Player::disableEnemyDetect" alt="" coords="328,483,515,512"/><area shape="rect" id="node17" href="class_map.html#a5ea735df11d3df66a7941a65bc812715" title="Map::update" alt="" coords="615,747,708,776"/><area shape="rect" id="node19" href="class_map.html#a3c76a3112581d8b715f5c7275d74305d" title="Map::nextMeter" alt="" coords="605,800,717,829"/><area shape="rect" id="node21" href="class_live_bar.html#a12b9fcd78f70675e806335e17a49ee58" title="LiveBar::nextMeter" alt="" coords="596,853,727,883"/><area shape="rect" id="node23" href="class_enemy_manager.html#ad759d6ff6368969f743bbf1d231f837b" title="EnemyManager::setCurrentX" alt="" coords="567,907,756,936"/><area shape="rect" id="node25" href="class_map.html#a4b1340f038f54a58c13a5660c5259cb1" title="Map::getPos_X" alt="" coords="605,960,717,989"/><area shape="rect" id="node27" href="class_enemy_manager.html#a01e9ce1976b63dc5306cb079cfda482a" title="EnemyManager::setOffsetX" alt="" coords="569,640,753,669"/><area shape="rect" id="node29" href="class_map.html#a54bd2797d012936135f7d4f7ef2a859d" title="Map::getOffsetX" alt="" coords="603,693,720,723"/><area shape="rect" id="node33" href="class_player.html#a68c3709af9ef2651c99074a8792bbd04" title="Player::isFly" alt="" coords="615,1013,708,1043"/><area shape="rect" id="node37" href="class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="588,1067,735,1096"/><area shape="rect" id="node45" href="class_map.html#ac910706c756c6fd7a9dab4a74bde3e77" title="Map::checkColision" alt="" coords="593,1221,729,1251"/><area shape="rect" id="node58" href="_glob_fun_8hpp.html#af5fce20464ba9ee0a4f29f97542a6dc4" title="debug" alt="" coords="633,139,689,168"/><area shape="rect" id="node60" href="class_live_bar.html#aaabbb5ed6674d9c1d5315343a104b972" title="LiveBar::increaseLive" alt="" coords="588,85,735,115"/><area shape="rect" id="node73" href="class_live_bar.html#aeda5d101833697079d54d4c5f23f8814" title="LiveBar::getLiveAmount" alt="" coords="581,587,741,616"/><area shape="rect" id="node75" href="class_player.html#aaa6c350ffeaef504d03bd97c85e0c8eb" title="Player::fall" alt="" coords="620,533,703,563"/><area shape="rect" id="node89" href="class_player.html#ab08212b69e4aeac99002337901fab36e" title="Player::enableEnemyDetect\l_callbackTimer" alt="" coords="569,410,753,457"/><area shape="rect" id="node96" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="361,1379,481,1408"/><area shape="rect" id="node104" href="_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327" title="warring" alt="" coords="389,1325,453,1355"/><area shape="rect" id="node98" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="597,1325,725,1355"/><area shape="rect" id="node100" href="class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="596,1379,727,1408"/><area shape="rect" id="node102" href="class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="615,1432,708,1461"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_acc5022f7f8abcbab013f7f3195583a1e_icgraph.png" border="0" usemap="#class_game_acc5022f7f8abcbab013f7f3195583a1e_icgraph" alt=""/></div>
+<map name="class_game_acc5022f7f8abcbab013f7f3195583a1e_icgraph" id="class_game_acc5022f7f8abcbab013f7f3195583a1e_icgraph">
+<area shape="rect" id="node3" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="159,5,228,35"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="277,5,328,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_game_8hpp_source.html">Game.hpp</a></li>
+<li>src/<a class="el" href="_game_8cpp_source.html">Game.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<map id="Game::pressedEsc" name="Game::pressedEsc">
+<area shape="rect" id="node3" href="$class_menu.html#a5ef62eb930cc80d71feaba8d4c34d7a5" title="Menu::pressedEsc" alt="" coords="228,5,359,35"/>
+<area shape="rect" id="node7" href="$class_play.html#ae5622a2f78ce8316ca14f82e41102a7b" title="Play::isCanStop" alt="" coords="235,59,352,88"/>
+<area shape="rect" id="node9" href="$class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="235,112,352,141"/>
+<area shape="rect" id="node21" href="$class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7" title="SoundManager::playMenuMusic" alt="" coords="189,165,397,195"/>
+<area shape="rect" id="node5" href="$class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="449,5,559,35"/>
+<area shape="rect" id="node11" href="$class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="445,59,563,88"/>
+<area shape="rect" id="node13" href="$class_highscore.html#a34562ccb710bdf7aecb7827b17275a9c" title="Highscore::save" alt="" coords="445,112,563,141"/>
+<area shape="rect" id="node15" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="631,59,721,88"/>
+<area shape="rect" id="node17" href="$class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="611,112,741,141"/>
+<area shape="rect" id="node19" href="$class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="623,165,729,195"/>
+<area shape="rect" id="node23" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="480,165,528,195"/>
+</map>

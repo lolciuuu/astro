@@ -1,0 +1,9 @@
+<map id="info" name="info">
+<area shape="rect" id="node3" href="$_glob_fun_8hpp.html#a599c224b4128c858251887bdde5ef9b3" title="startMethod" alt="" coords="139,5,229,35"/>
+<area shape="rect" id="node5" href="$_glob_fun_8hpp.html#a3515b2c3821130d75c7cece739434360" title="endMethod" alt="" coords="141,59,227,88"/>
+<area shape="rect" id="node7" href="$_glob_fun_8hpp.html#a05b268b673c6ff3acf2349663be750d4" title="printRect" alt="" coords="147,112,221,141"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="159,165,209,195"/>
+<area shape="rect" id="node11" href="$class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="96,219,272,248"/>
+<area shape="rect" id="node13" href="$class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="321,245,447,275"/>
+<area shape="rect" id="node15" href="$class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="496,245,632,275"/>
+</map>

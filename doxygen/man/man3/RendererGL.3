@@ -1,0 +1,184 @@
+.TH "RendererGL" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RendererGL \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RendererGL\&.hpp>\fP
+.PP
+Dziedziczona przez \fBRenderer\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBRendererGL\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~RendererGL\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBRect\fP &Src, \fBRect\fP &Dest)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (SDL_Surface *surf, \fBRect\fP &where)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (GLuint, \fBRect\fP &where)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (GLuint, const float &x, const float &y, const float &w, const float &h)"
+.br
+.ti -1c
+.RI "virtual void \fBfillRect\fP (\fBRect\fP &rect)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBRect\fP &Src, float x, float y, float w, float h)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBRect\fP &Src, string Name)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (float x, float y, string Name)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (string Name, float x, float y, float w, float h)"
+.br
+.ti -1c
+.RI "virtual void \fBdrawBackground\fP (bool menu)"
+.br
+.ti -1c
+.RI "void \fBflip\fP ()"
+.br
+.ti -1c
+.RI "void \fBcleanScreen\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static GLuint \fBgetSurfaceInGLFormat\fP (SDL_Surface *surface)"
+.br
+.in -1c
+.SS "Atrybuty chronione"
+
+.in +1c
+.ti -1c
+.RI "SDL_Surface * \fBpScreen\fP"
+.br
+.ti -1c
+.RI "SDL_Surface * \fBpAtlas\fP"
+.br
+.ti -1c
+.RI "SDL_Surface * \fBpBackground\fP"
+.br
+.ti -1c
+.RI "SDL_Surface * \fBpMenuBackground\fP"
+.br
+.ti -1c
+.RI "\fBRect\fP \fBpScreenRect\fP"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 7 pliku RendererGL\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "RendererGL::RendererGL ()"
+
+.PP
+Definicja w linii 6 pliku RendererGL\&.cpp\&.
+.SS "virtual RendererGL::~RendererGL ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definicja w linii 11 pliku RendererGL\&.hpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void RendererGL::cleanScreen ()"
+Czyszczenie ekranu za pomoca GL 
+.PP
+Definicja w linii 65 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (\fBRect\fP &Src, \fBRect\fP &Dest)\fC [virtual]\fP"
+Wyswietlanei fragmetnu textury na ekranie\&. Polozenie na ekranie pochodzi z Dest, a w atlasie z Src 
+.PP
+Definicja w linii 244 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (SDL_Surface *surf, \fBRect\fP &where)\fC [virtual]\fP"
+
+.PP
+Definicja w linii 278 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (GLuinttexture, \fBRect\fP &where)\fC [virtual]\fP"
+
+.PP
+Definicja w linii 100 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (GLuinttexture, const float &x, const float &y, const float &w, const float &h)\fC [virtual]\fP"
+
+.PP
+Definicja w linii 129 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (\fBRect\fP &Src, floatx, floaty, floatw, floath)\fC [virtual]\fP"
+Rysowanie fragmetnu atlasu na podanym miejscu i w podanych wymiarach\&. Polozenie w atlasie wyciagane jest z Src 
+.PP
+Definicja w linii 208 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (\fBRect\fP &Src, stringName)\fC [virtual]\fP"
+
+.PP
+Definicja w linii 362 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (floatx, floaty, stringName)\fC [virtual]\fP"
+
+.PP
+Definicja w linii 325 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::draw (stringName, floatx, floaty, floatw = \fC-1\fP, floath = \fC-1\fP)\fC [virtual]\fP"
+
+.PP
+Definicja w linii 285 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::drawBackground (boolmenu)\fC [virtual]\fP"
+Rysowanie tla gry za pomoca GL-a 
+.PP
+Definicja w linii 71 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::fillRect (\fBRect\fP &rect)\fC [virtual]\fP"
+Wypelnianie prostokata podanym kolorem 
+.PP
+Definicja w linii 189 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::flip ()"
+Wyslanie na ekran zawartosci buforu 
+.PP
+Definicja w linii 59 pliku RendererGL\&.cpp\&.
+.SS "GLuint RendererGL::getSurfaceInGLFormat (SDL_Surface *surface)\fC [static]\fP"
+
+.PP
+Definicja w linii 125 pliku RendererGL\&.cpp\&.
+.SS "void RendererGL::init ()"
+Wygenerowanie textur openGL-a 
+.PP
+Definicja w linii 17 pliku RendererGL\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "SDL_Surface* RendererGL::pAtlas\fC [protected]\fP"
+
+.PP
+Definicja w linii 43 pliku RendererGL\&.hpp\&.
+.SS "SDL_Surface* RendererGL::pBackground\fC [protected]\fP"
+
+.PP
+Definicja w linii 44 pliku RendererGL\&.hpp\&.
+.SS "SDL_Surface* RendererGL::pMenuBackground\fC [protected]\fP"
+
+.PP
+Definicja w linii 45 pliku RendererGL\&.hpp\&.
+.SS "SDL_Surface* RendererGL::pScreen\fC [protected]\fP"
+
+.PP
+Definicja w linii 42 pliku RendererGL\&.hpp\&.
+.SS "\fBRect\fP RendererGL::pScreenRect\fC [protected]\fP"
+
+.PP
+Definicja w linii 47 pliku RendererGL\&.hpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

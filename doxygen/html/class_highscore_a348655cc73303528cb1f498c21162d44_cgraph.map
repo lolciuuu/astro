@@ -1,0 +1,15 @@
+<map id="Highscore::draw" name="Highscore::draw">
+<area shape="rect" id="node3" href="$class_live_bar.html#a6bf0650bcaadb35e5914f31d2aed4e52" title="LiveBar::getResultNum" alt="" coords="180,5,337,35"/>
+<area shape="rect" id="node5" href="$class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="199,268,319,297"/>
+<area shape="rect" id="node7" href="$class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="613,268,741,297"/>
+<area shape="rect" id="node9" href="$class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="411,109,541,139"/>
+<area shape="rect" id="node11" href="$class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="607,84,748,113"/>
+<area shape="rect" id="node15" href="$class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="429,373,523,403"/>
+<area shape="rect" id="node17" href="$class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="431,163,521,192"/>
+<area shape="rect" id="node26" href="$_const_8hpp.html#ad33c55057da6e704301c6f5349eed5b7" title="WHITE_FONT_COLOR" alt="" coords="177,463,340,492"/>
+<area shape="rect" id="node30" href="$class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="193,516,324,545"/>
+<area shape="rect" id="node32" href="$_const_8hpp.html#a1f9b7c54a17f59212b050535753b5760" title="YELLOW_FONT_COLOR" alt="" coords="172,569,345,599"/>
+<area shape="rect" id="node20" href="$_const_8hpp.html#abf528d73faba2d3e6eb1da5a66e5996a" title="BLACK_FONT_COLOR" alt="" coords="395,216,557,245"/>
+<area shape="rect" id="node22" href="$_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="443,320,509,349"/>
+<area shape="rect" id="node13" href="$class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="799,84,892,113"/>
+</map>

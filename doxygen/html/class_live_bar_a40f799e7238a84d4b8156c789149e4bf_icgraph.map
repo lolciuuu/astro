@@ -1,0 +1,17 @@
+<map id="LiveBar::isALive" name="LiveBar::isALive">
+<area shape="rect" id="node3" href="$class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="423,5,527,35"/>
+<area shape="rect" id="node9" href="$class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="196,112,313,141"/>
+<area shape="rect" id="node15" href="$class_play.html#a058fff0dde8c59d9407df174f6b71565" title="Play::pressedChar" alt="" coords="189,165,320,195"/>
+<area shape="rect" id="node19" href="$class_play.html#a1030d426e7a7072d905dea261f53dd36" title="Play::pressedBackspace" alt="" coords="172,219,337,248"/>
+<area shape="rect" id="node23" href="$class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="208,59,301,88"/>
+<area shape="rect" id="node26" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="213,272,296,301"/>
+<area shape="rect" id="node31" href="$class_play.html#a33e6089a84e2e3ace2fd8e0410962a2e" title="Play::useBonus" alt="" coords="197,325,312,355"/>
+<area shape="rect" id="node5" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="612,139,681,168"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="731,139,781,168"/>
+<area shape="rect" id="node11" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="400,59,549,88"/>
+<area shape="rect" id="node13" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="408,112,541,141"/>
+<area shape="rect" id="node17" href="$class_game.html#a411cd70fc63356705a8abe77ae6e5d57" title="Game::pressedChar" alt="" coords="405,165,544,195"/>
+<area shape="rect" id="node21" href="$class_game.html#a4c0d1cea30797efbc569599afd3031fe" title="Game::pressedBackspace" alt="" coords="387,219,563,248"/>
+<area shape="rect" id="node28" href="$class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="428,272,521,301"/>
+<area shape="rect" id="node33" href="$class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed" title="Game::pressedCtrl" alt="" coords="409,325,540,355"/>
+</map>

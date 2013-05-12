@@ -1,0 +1,118 @@
+.TH "include/GlobFun.hpp" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/GlobFun.hpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Headers\&.hpp'\fP
+.br
+
+.SS "Funkcje"
+
+.in +1c
+.ti -1c
+.RI "void \fBinfo\fP (const string &t)"
+.br
+.ti -1c
+.RI "void \fBdebug\fP (const string &t)"
+.br
+.ti -1c
+.RI "bool \fBisPlatform\fP (short ID)"
+.br
+.ti -1c
+.RI "bool \fBisBonus\fP (const short &ID)"
+.br
+.ti -1c
+.RI "bool \fBisAdditionalBonus\fP (const short &ID)"
+.br
+.ti -1c
+.RI "bool \fBisEnemy\fP (const short &ID)"
+.br
+.ti -1c
+.RI "void \fBwarring\fP (const string &Text)"
+.br
+.ti -1c
+.RI "void \fBerror\fP (const string &Text)"
+.br
+.ti -1c
+.RI "void \fBstartMethod\fP (const string &name)"
+.br
+.ti -1c
+.RI "void \fBendMethod\fP (const string &name)"
+.br
+.ti -1c
+.RI "void \fBcritical\fP (const string &Text)"
+.br
+.ti -1c
+.RI "string \fBloadLanguages\fP ()"
+.br
+.ti -1c
+.RI "template<typename T > string \fBtoString\fP (T number)"
+.br
+.ti -1c
+.RI "void \fBprintRect\fP (const string &Name, \fBRect\fP &rect)"
+.br
+.in -1c
+.SH "Dokumentacja funkcji"
+.PP 
+.SS "void critical (const string &Text)\fC [inline]\fP"
+Metoda wyswietla w konsoli informacje\&. Podana jako parametr informacja to informacja o bledzie krytycznym\&. 
+.PP
+Definicja w linii 72 pliku GlobFun\&.hpp\&.
+.SS "void debug (const string &t)\fC [inline]\fP"
+Wyswietla komunikat wtedy kiedy aplikacja skompilowana jest w trybie debug 
+.PP
+Definicja w linii 14 pliku GlobFun\&.hpp\&.
+.SS "void endMethod (const string &name)\fC [inline]\fP"
+
+.PP
+Definicja w linii 65 pliku GlobFun\&.hpp\&.
+.SS "void error (const string &Text)\fC [inline]\fP"
+Metoda wyswietla w konsoli informacje\&. Podana jako parametr informacja to informacja o bledzie\&. 
+.PP
+Definicja w linii 55 pliku GlobFun\&.hpp\&.
+.SS "void info (const string &t)\fC [inline]\fP"
+Plik zawiera funkcje globalne inline, ktore pelnia role pomocnicze, i sa one dostepne w calym systemie\&. wypisuje komunikat w konsoli 
+.PP
+Definicja w linii 9 pliku GlobFun\&.hpp\&.
+.SS "bool isAdditionalBonus (const short &ID)\fC [inline]\fP"
+Czy kafelek jest bonusem ktory gracz moze zebrac? 
+.PP
+Definicja w linii 33 pliku GlobFun\&.hpp\&.
+.SS "bool isBonus (const short &ID)\fC [inline]\fP"
+Czy kafelek jest bonusem dodajacym zycia? 
+.PP
+Definicja w linii 27 pliku GlobFun\&.hpp\&.
+.SS "bool isEnemy (const short &ID)\fC [inline]\fP"
+okresla czy kafalek to wrog 
+.PP
+Definicja w linii 39 pliku GlobFun\&.hpp\&.
+.SS "bool isPlatform (shortID)\fC [inline]\fP"
+Zwraca informacje o tym czy kafelek jest platforma 
+.PP
+Definicja w linii 21 pliku GlobFun\&.hpp\&.
+.SS "string loadLanguages ()\fC [inline]\fP"
+Metoda odczytuje kod jezyka jaki ma byc ustawiony w grze i zwraca go jako string\&. W razie problemow ze znalezieniem pliku zwraca informacje ze jezykiem w grze jest angielski\&. 
+.PP
+Definicja w linii 80 pliku GlobFun\&.hpp\&.
+.SS "void printRect (const string &Name, \fBRect\fP &rect)\fC [inline]\fP"
+Drukuje na ekranie info o SDL_Rect oraz jego nazwe podana jako parametr 
+.PP
+Definicja w linii 105 pliku GlobFun\&.hpp\&.
+.SS "void startMethod (const string &name)\fC [inline]\fP"
+
+.PP
+Definicja w linii 60 pliku GlobFun\&.hpp\&.
+.SS "template<typename T > string toString (Tnumber)\fC [inline]\fP"
+Zamienia liczbe na string 
+.PP
+Definicja w linii 98 pliku GlobFun\&.hpp\&.
+.SS "void warring (const string &Text)\fC [inline]\fP"
+Metoda wyswietla w konsoli informacje\&. Podana jako parametr informacja to ostrzezenie\&. 
+.PP
+Definicja w linii 47 pliku GlobFun\&.hpp\&.
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

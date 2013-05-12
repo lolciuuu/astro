@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Plik źródłowy src/Game.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Game.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/Game.hpp&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_writer_8hpp.html">Writer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//Init zmiennych statycznych</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9">GameState</a> Game::pGameState;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="class_game.html">Game</a>* Game::pGameInstance;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//END</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_game.html#ad59df6562a58a614fda24622d3715b65">   10</a></span>&#160;<a class="code" href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game::Game</a>(): pIsDone( false ), logger(<span class="stringliteral">&quot;Game&quot;</span>)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">string</span> methodName = <span class="stringliteral">&quot;Game&quot;</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  logger.<a class="code" href="class_logger.html#a9424d0620904432ef0e4dee218be41d3">methodStart</a>( methodName );</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="comment">// Zabezpieczenie przed wielokrot</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">if</span>( pGameInstance == NULL ) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      pGameInstance = <span class="keyword">this</span>;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                  logger.<a class="code" href="class_logger.html#ae04bf28f224c9f4350ac170c0facf30f">critical</a>(<span class="stringliteral">&quot;Game::Game() pGameInstance alerady initialized&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Game::Game()&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">// Definiowanie tla aplikacji</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  pColorBackgroundPlay =  <a class="code" href="class_standard_references.html#ac43615496e7d82e7b00077850ce3ba41">pRendererPtr</a>-&gt;<a class="code" href="class_renderer.html#aabd0720e57254d435be5d4a5b19c2bdc">getRGB</a>( 0, 40, 86 );</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  logger.<a class="code" href="class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7">methodEnd</a>( methodName );</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd">Game::draw</a>() {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">switch</span> ( pGameState ) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ): {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                pPlay.<a class="code" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61">draw</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                 }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ): {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                pMenu.<a class="code" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">draw</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_game.html#a261cae6c4ddbf90d3b6da058135544cb">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a261cae6c4ddbf90d3b6da058135544cb">Game::pressedShift</a>() {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">switch</span> ( pGameState ) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ): {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                pPlay.<a class="code" href="class_play.html#ac1adb60b13e8bd9fb9142fd6a46ed71d">pressedShift</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">default</span>: {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;       }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e">Game::update</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; dt ) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">switch</span> ( pGameState ) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ): {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                pPlay.<a class="code" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa">update</a>( dt );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ): {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                  <span class="keywordflow">if</span>( !<a class="code" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf">LiveBar::isALive</a>() ) {  <span class="comment">// Jezeli gracz nie zyje to wylaczam resume</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                  pMenu.<a class="code" href="class_menu.html#a67101271622955448409d2f9a7d29fb4">blockItem</a>(0);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          pIsDone = pMenu.<a class="code" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb">update</a>( dt );         <span class="comment">// menu decyduje o wyjsciu z gry</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">default</span>: {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          logger.<a class="code" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173">warring</a>(<span class="stringliteral">&quot;Unknown value of GameState [Method: Game::update(double) ]&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e">Game::pressedReturn</a>() {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> ( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        pMenu.<a class="code" href="class_menu.html#a77b6f74f278e279705155757e514f2a2">pressedReturn</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span>(  pPlay.<a class="code" href="class_play.html#a7877e785a6e1cf628a867429ef713b4e">goToMenu</a>() ) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                pGameState = <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <a class="code" href="class_standard_references.html#abf65eb4e405c8f36c07a47dcbcdb08a0">pSoundManagerPtr</a>-&gt;<a class="code" href="class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7">playMenuMusic</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="class_game.html#a9af61dd5911ec6106f3679e0893803da">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a9af61dd5911ec6106f3679e0893803da">Game::pressedEsc</a>() {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">switch</span> ( pGameState ) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ): {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        pMenu.<a class="code" href="class_menu.html#a5ef62eb930cc80d71feaba8d4c34d7a5">pressedEsc</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ): {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">if</span>( pPlay.<a class="code" href="class_play.html#ae5622a2f78ce8316ca14f82e41102a7b">isCanStop</a>() ) { <span class="comment">// Wyjsc do menu mozna wtedy gdy play pozwala na to</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                pPlay.<a class="code" href="class_play.html#a7877e785a6e1cf628a867429ef713b4e">goToMenu</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <a class="code" href="class_standard_references.html#abf65eb4e405c8f36c07a47dcbcdb08a0">pSoundManagerPtr</a>-&gt;<a class="code" href="class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7">playMenuMusic</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                pGameState = <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                 }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    };</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="class_game.html#a4c0d1cea30797efbc569599afd3031fe">  121</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a4c0d1cea30797efbc569599afd3031fe">Game::pressedBackspace</a>() {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">if</span>( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> )</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                pPlay.<a class="code" href="class_play.html#a1030d426e7a7072d905dea261f53dd36">pressedBackspace</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="class_game.html#a411cd70fc63356705a8abe77ae6e5d57">  127</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a411cd70fc63356705a8abe77ae6e5d57">Game::pressedChar</a>(<span class="keywordtype">char</span> Char) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">if</span>( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> )</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                pPlay.<a class="code" href="class_play.html#a058fff0dde8c59d9407df174f6b71565">pressedChar</a>( Char );</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="class_game.html#adf8ca74e37724ae8177361f82154a55a">  134</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#adf8ca74e37724ae8177361f82154a55a">Game::pressedLeft</a>() {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> ( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        pMenu.<a class="code" href="class_menu.html#aece8138955f5a6cf7f1be75f0a5d507a">pressedLeft</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="code" href="class_game.html#ae24222e5040c92e178b667dd5b94673e">  144</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#ae24222e5040c92e178b667dd5b94673e">Game::pressedRight</a>() {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">if</span> ( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        pMenu.<a class="code" href="class_menu.html#a51cec1d1b91bfbcc3bddeaf944929fd7">pressedRight</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="code" href="class_game.html#a309a88435a1d836cd40c4708e74e1f76">  153</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a309a88435a1d836cd40c4708e74e1f76">Game::pressedUp</a>() {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> ( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ) {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        pMenu.<a class="code" href="class_menu.html#a1654005f8bc25c6baf0f74d9a72c3d17">pressedUp</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="code" href="class_game.html#afed42a204373ab7c406541c235161f67">  161</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#afed42a204373ab7c406541c235161f67">Game::pressedDown</a>() {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> ( pGameState == <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        pMenu.<a class="code" href="class_menu.html#a1853e25dbac1c3adaa49056580793b91">pressedDown</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="code" href="class_game.html#a3235b108275993a9f7cf0a426c01d1ef">  171</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a3235b108275993a9f7cf0a426c01d1ef">Game::SpaceDown</a>() {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">switch</span> ( pGameState ) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ): {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                pPlay.<a class="code" href="class_play.html#a3bbad9729548d58ab732d7fa25977b10">SpaceDown</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ): {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="code" href="class_game.html#a092ef4e71121cbb22e716f11e3ed27f0">  187</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a092ef4e71121cbb22e716f11e3ed27f0">Game::SpaceUp</a>() {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordflow">switch</span> ( pGameState ) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ): {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                pPlay.<a class="code" href="class_play.html#a581654732997bd8ef599a7db0accea9e">SpaceUp</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">case</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a> ): {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="code" href="class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed">  203</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed">Game::pressedCtrl</a>() {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                  <span class="keywordflow">if</span>( <a class="code" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a> ) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                pPlay.<a class="code" href="class_play.html#a33e6089a84e2e3ace2fd8e0410962a2e">useBonus</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                  }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">void</span> Game::reset(){</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  logger.<a class="code" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea">info</a>(<span class="stringliteral">&quot;Restaring game&quot;</span>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  pPlay.<a class="code" href="class_play.html#a3c2ed44943188c8b9ae5280c91a62442">resetGame</a>();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="code" href="class_game.html#a47c726a80fd133c0a4f6b8fba56d8832">  220</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a47c726a80fd133c0a4f6b8fba56d8832">Game::resetGame</a>(){</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  pGameInstance-&gt;reset();  </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

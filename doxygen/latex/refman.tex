@@ -1,0 +1,97 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage{amssymb}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=16,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Astro\-Rush \\[1ex]\large 0.\-0.\-3 }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.1.2}\\
+\vspace*{0.5cm}
+{\small Pn, 11 mar 2013 13:14:09}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{Indeks plików}
+\input{files}
+\chapter{Dokumentacja plików}
+\input{_app_8cpp}
+\input{_background_8cpp}
+\input{_enemy_8cpp}
+\input{_enemy_manager_8cpp}
+\input{_game_8cpp}
+\input{_highscore_8cpp}
+\input{_live_bar_8cpp}
+\input{_logger_8cpp}
+\input{main_8cpp}
+\input{_map_8cpp}
+\input{_map_manager_8cpp}
+\input{_menu_8cpp}
+\input{_menu_item_8cpp}
+\input{_play_8cpp}
+\input{_player_8cpp}
+\input{_property_8cpp}
+\input{_renderer_8cpp}
+\input{_renderer_g_l_8cpp}
+\input{_resource_8cpp}
+\input{_sound_manager_8cpp}
+\input{_splash_8cpp}
+\input{_sprite_8cpp}
+\input{_sprite_manager_8cpp}
+\input{_writer_8cpp}
+\printindex
+\end{document}

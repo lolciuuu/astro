@@ -1,0 +1,4 @@
+<map id="Play::goToMenu" name="Play::goToMenu">
+<area shape="rect" id="node3" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="172,5,321,35"/>
+<area shape="rect" id="node5" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="180,59,313,88"/>
+</map>

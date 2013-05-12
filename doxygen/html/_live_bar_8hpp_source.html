@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Plik źródłowy include/LiveBar.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">LiveBar.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_live_bar_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIVEBAR_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIVEBAR_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_headers_8hpp.html">Headers.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_renderer_8hpp.html">Renderer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_writer_8hpp.html">Writer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_standard_references_8hpp.html">StandardReferences.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_const_8hpp.html">Const.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprite_8hpp.html">Sprite.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_live_bar.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_live_bar.html">LiveBar</a>: <span class="keyword">public</span> <a class="code" href="class_standard_references.html">StandardReferences</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="class_live_bar.html#a5b6e7765489a6d8f4431152590c7c446">LiveBar</a>();  </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#afb0075ce874cf12615e8a0c55c8d097f">reset</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#a01bc017470a611f2d09ec37b222c2144">draw</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#a6d52777855cbc0087f1663fa32a5fb43">update</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; dt );</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="class_live_bar.html#aa92c4df16b9931bf892fa4cfc271d2cc">   20</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#aa92c4df16b9931bf892fa4cfc271d2cc">addBonus</a>(){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                  <span class="keywordflow">if</span>( pBonusAmount &lt; 3 ) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                  ++pBonusAmount;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">static</span> Uint32 <a class="code" href="class_live_bar.html#a5a05234a2125dc05e9c5e62d31d426b1">disableImmortal_callbackTimer</a>(Uint32 interval, <span class="keywordtype">void</span> *param);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_live_bar.html#a45fdcba09493a5f04f74fb063d012352">useBonus</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf">   30</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf">isALive</a>() {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">                                #ifndef IMMORTAL</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span>                                                  <span class="keywordflow">if</span>( pLiveAmount &lt;= 0.0 ) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                                  isLive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                  <span class="keywordflow">return</span>( isLive );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                  <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">                                #else</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span>                                                  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">                                #endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#a6cc13313240f3ee5c99b1e40e3f83692">colision</a>( <span class="keywordtype">short</span> type );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#aaabbb5ed6674d9c1d5315343a104b972">increaseLive</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655">   45</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655">getResult</a>() { <span class="keywordflow">return</span>( toString&lt;ulong&gt;(pDistNum) ); }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_live_bar.html#a6bf0650bcaadb35e5914f31d2aed4e52">   46</a></span>&#160;  <span class="keyword">static</span> ulong <a class="code" href="class_live_bar.html#a6bf0650bcaadb35e5914f31d2aed4e52">getResultNum</a>() { <span class="keywordflow">return</span> pDistNum; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_live_bar.html#aeda5d101833697079d54d4c5f23f8814">   48</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_live_bar.html#aeda5d101833697079d54d4c5f23f8814">getLiveAmount</a>() { <span class="keywordflow">return</span> pLiveAmount; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_live_bar.html#a2963de8fa002489f3c114a5ee4404553">   49</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_live_bar.html#a2963de8fa002489f3c114a5ee4404553">getMapSpeed</a>() { <span class="keywordflow">return</span> pMapSpeed; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_live_bar.html#a12b9fcd78f70675e806335e17a49ee58">   51</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#a12b9fcd78f70675e806335e17a49ee58">nextMeter</a>() { ++pDistNum; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_live_bar.html#ab8f833c86a833ce7da0edd336183f65c">   52</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_live_bar.html#ab8f833c86a833ce7da0edd336183f65c">resetMeter</a>() { pDistNum = 0; } </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isLive;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span> pLiveAmount;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="struct_rect.html">Rect</a> pDistanceRect;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">string</span> pDistStr;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> ulong pDistNum;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span> pMapSpeed;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  ushort pBonusAmount;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isImmortal;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  SDL_TimerID timer;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  GLuint pImmortalTexture;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">float</span> pImmortalOpacity;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_sprite.html">Sprite</a> pBonusIcon;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

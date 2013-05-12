@@ -1,0 +1,14 @@
+<map id="Play::resetGame" name="Play::resetGame">
+<area shape="rect" id="node3" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="563,57,653,87"/>
+<area shape="rect" id="node5" href="$class_player.html#a1af5d39f7bac2aeaa1e30c7dda2332fa" title="Player::reset" alt="" coords="203,163,299,192"/>
+<area shape="rect" id="node12" href="$class_map_manager.html#ac1327fd87303c198ef8af2a8160491f1" title="MapManager::stopMap" alt="" coords="173,109,328,139"/>
+<area shape="rect" id="node14" href="$class_map_manager.html#ad30f83341d8bd5ba2a465feafd5bc510" title="MapManager::reset" alt="" coords="184,5,317,35"/>
+<area shape="rect" id="node19" href="$class_live_bar.html#afb0075ce874cf12615e8a0c55c8d097f" title="LiveBar::reset" alt="" coords="200,216,301,245"/>
+<area shape="rect" id="node21" href="$class_sprite.html#ab66a91ddcb59ba71246968c933375e2a" title="Sprite::reset" alt="" coords="204,269,297,299"/>
+<area shape="rect" id="node23" href="$class_enemy_manager.html#aa0a1fa781b2705495e68d1a8ff0b07e9" title="EnemyManager::reset" alt="" coords="176,323,325,352"/>
+<area shape="rect" id="node25" href="$class_background.html#a05f88936aa2209af03d4f5fbe9eacaee" title="Background::reset" alt="" coords="187,376,315,405"/>
+<area shape="rect" id="node28" href="$class_live_bar.html#ab8f833c86a833ce7da0edd336183f65c" title="LiveBar::resetMeter" alt="" coords="183,429,319,459"/>
+<area shape="rect" id="node8" href="$class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="376,189,515,219"/>
+<area shape="rect" id="node10" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="584,189,632,219"/>
+<area shape="rect" id="node16" href="$class_map.html#a904c445fdce79257fedeba09070cf88a" title="Map::reset" alt="" coords="404,5,487,35"/>
+</map>

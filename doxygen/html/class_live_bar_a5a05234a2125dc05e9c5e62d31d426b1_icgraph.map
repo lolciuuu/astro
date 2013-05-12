@@ -1,0 +1,5 @@
+<map id="LiveBar::disableImmortal_callbackTimer" name="LiveBar::disableImmortal_callbackTimer">
+<area shape="rect" id="node3" href="$class_live_bar.html#a45fdcba09493a5f04f74fb063d012352" title="LiveBar::useBonus" alt="" coords="223,13,353,43"/>
+<area shape="rect" id="node5" href="$class_play.html#a33e6089a84e2e3ace2fd8e0410962a2e" title="Play::useBonus" alt="" coords="403,13,517,43"/>
+<area shape="rect" id="node7" href="$class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed" title="Game::pressedCtrl" alt="" coords="567,13,697,43"/>
+</map>

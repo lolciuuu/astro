@@ -1,0 +1,121 @@
+.TH "Gamespace" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Gamespace \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Komponenty"
+
+.in +1c
+.ti -1c
+.RI "struct \fBColisionSide\fP"
+.br
+.ti -1c
+.RI "struct \fBHighscoreItem\fP"
+.br
+.in -1c
+.SS "Definicje typów"
+
+.in +1c
+.ti -1c
+.RI "typedef vector< string >::iterator \fBvStrIt\fP"
+.br
+.in -1c
+.SS "Wyliczenia"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFontSize\fP { \fBSMALL\fP, \fBNORMALL\fP, \fBBIG\fP }"
+.br
+.ti -1c
+.RI "enum \fBGameState\fP { \fBMENU\fP, \fBPLAY\fP }"
+.br
+.ti -1c
+.RI "enum \fBMenuState\fP { \fBMAIN\fP, \fBHIGHSCORE\fP, \fBABOUT\fP }"
+.br
+.ti -1c
+.RI "enum \fBPlayerState\fP { \fBStand\fP, \fBRun\fP, \fBFly\fP }"
+.br
+.ti -1c
+.RI "enum \fBEnemyState\fP { \fBLeft\fP, \fBRight\fP }"
+.br
+.in -1c
+.SH "Dokumentacja definicji typów"
+.PP 
+.SS "typedef vector<string>::iterator \fBGamespace::vStrIt\fP"
+
+.PP
+Definicja w linii 51 pliku Headers\&.hpp\&.
+.SH "Dokumentacja typów wyliczanych"
+.PP 
+.SS "enum \fBGamespace::EnemyState\fP"
+
+.PP
+\fBWartości wyliczeń: \fP
+.in +1c
+.TP
+\fB\fILeft \fP\fP
+.TP
+\fB\fIRight \fP\fP
+
+.PP
+Definicja w linii 77 pliku Headers\&.hpp\&.
+.SS "enum \fBGamespace::FontSize\fP"
+
+.PP
+\fBWartości wyliczeń: \fP
+.in +1c
+.TP
+\fB\fISMALL \fP\fP
+.TP
+\fB\fINORMALL \fP\fP
+.TP
+\fB\fIBIG \fP\fP
+
+.PP
+Definicja w linii 54 pliku Headers\&.hpp\&.
+.SS "enum \fBGamespace::GameState\fP"
+
+.PP
+\fBWartości wyliczeń: \fP
+.in +1c
+.TP
+\fB\fIMENU \fP\fP
+.TP
+\fB\fIPLAY \fP\fP
+
+.PP
+Definicja w linii 60 pliku Headers\&.hpp\&.
+.SS "enum \fBGamespace::MenuState\fP"
+
+.PP
+\fBWartości wyliczeń: \fP
+.in +1c
+.TP
+\fB\fIMAIN \fP\fP
+.TP
+\fB\fIHIGHSCORE \fP\fP
+.TP
+\fB\fIABOUT \fP\fP
+
+.PP
+Definicja w linii 65 pliku Headers\&.hpp\&.
+.SS "enum \fBGamespace::PlayerState\fP"
+
+.PP
+\fBWartości wyliczeń: \fP
+.in +1c
+.TP
+\fB\fIStand \fP\fP
+.TP
+\fB\fIRun \fP\fP
+.TP
+\fB\fIFly \fP\fP
+
+.PP
+Definicja w linii 71 pliku Headers\&.hpp\&.
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

@@ -36,11 +36,11 @@ void SoundManager::loadMusic() {
 
 	 info("SoundManager::loadMusic | init audio: success");
 
-	 pInstance->loadSound( "./data/sound/menu.wav", "MENU" );
-	 pInstance->loadSound( "./data/sound/menu.wav", "PLAY" );
-	 pInstance->loadSound( "./data/sound/menu.wav", "SPLASH" );
-	// pInstance->loadSound( "./data/sound/play.mp3", "PLAY" );
-	// pInstance->loadSound( "./data/sound/splash.mp3", "SPLASH" );
+	 pInstance->loadSound( "./data/sound/menu.mp3", "MENU" );
+	 pInstance->loadSound( "./data/sound/dead.mp3", "DEAD" );
+
+	 pInstance->loadSound( "./data/sound/play.mp3", "PLAY" );
+	 pInstance->loadSound( "./data/sound/splash.mp3", "SPLASH" );
 
 	 info("Load sound finish");
 
@@ -63,12 +63,7 @@ void SoundManager::loadSound(const string& str, const string& name ) {
 
 /** */
 void SoundManager::playMenuMusic() {
-
-	if( Mix_FadeInMusic( pSounds.find( "MENU" )->second, -1, 4600 ) == -1 ) {
-		error( string(SDL_GetError()) );
-	    throw std::runtime_error("Cannot play menu music" );
-	}
-
+	pInstance->playSound( "MENU" );
 }
 
 /** */
@@ -78,17 +73,20 @@ void SoundManager::stopMenuMusic() {
 
 /** */
 void SoundManager::playGameMusic() {
-
-	if( Mix_FadeInMusic( pSounds.find( "PLAY" )->second, -1, 4600 ) == -1 ) {
-		error( string(SDL_GetError()) );
-	    throw std::runtime_error("Cannot play menu music" );
-	}
-
+	pInstance->playSound( "PLAY" );
 }
 
 /** */
 void SoundManager::stopGameMusic() {
 	Mix_FadeOutMusic( 100 );
+}
+
+void SoundManager::playSound(const string& soundName) {
+
+		if( Mix_FadeInMusic( pSounds.find( soundName )->second, -1, 4600 ) == -1 ) {
+		error( string(SDL_GetError()) );
+	    throw std::runtime_error("Cannot play menu music" );
+	}
 }
 
 /** Wylaczenie dzwiekow przy wysciu*/
@@ -104,9 +102,5 @@ void SoundManager::onClose() {
 
 /** Metoda dla klasy splash ktora umozliwia odtworzenie dzwieku pod wczytaniu zasobow */
 void SoundManager::playSplashIntro() {
-
-	if( Mix_PlayMusic( pInstance->pSounds.find( "SPLASH" )->second, 1 ) == -1 ) {
-		error( string(SDL_GetError()) );
-	    throw std::runtime_error("Cannot play music" );
-	}
+	pInstance->playSound( "SPLASH" );
 }

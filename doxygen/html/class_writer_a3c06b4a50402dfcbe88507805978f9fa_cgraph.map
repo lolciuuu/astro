@@ -1,0 +1,8 @@
+<map id="Writer::init" name="Writer::init">
+<area shape="rect" id="node3" href="$class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="157,5,296,35"/>
+<area shape="rect" id="node7" href="$class_writer.html#ab499237f34ce2379aaeaca5e472b0d8b" title="Writer::getInstance" alt="" coords="160,59,293,88"/>
+<area shape="rect" id="node9" href="$class_renderer.html#a28a025eef2f148804a316ce738a561a9" title="Renderer::getScreenWidth" alt="" coords="139,112,315,141"/>
+<area shape="rect" id="node11" href="$class_renderer.html#ad6183fab320287171b05e3ca143623fe" title="Renderer::getScreenHeight" alt="" coords="137,165,316,195"/>
+<area shape="rect" id="node13" href="$class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="160,219,293,248"/>
+<area shape="rect" id="node5" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="365,112,456,141"/>
+</map>

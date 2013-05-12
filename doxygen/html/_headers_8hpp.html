@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja pliku include/Headers.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#namespaces">Przestrzenie nazw</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#typedef-members">Definicje typów</a> &#124;
+<a href="#enum-members">Wyliczenia</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Headers.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdexcept&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;stack&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_util_8hpp_source.html">Util.hpp</a>&quot;</code><br/>
+<code>#include &lt;lua5.1/lua.hpp&gt;</code><br/>
+<code>#include &lt;lua5.1/lualib.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_timer.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_ttf.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_image.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_mixer.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_audio.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_opengl.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Headers.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_headers_8hpp__incl.png" border="0" usemap="#include_2_headers_8hpp" alt=""/></div>
+<map name="include_2_headers_8hpp" id="include_2_headers_8hpp">
+<area shape="rect" id="node21" href="_util_8hpp.html" title="Util.hpp" alt="" coords="776,83,843,112"/><area shape="rect" id="node42" href="_glob_fun_8hpp.html" title="GlobFun.hpp" alt="" coords="2061,83,2157,112"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="_headers_8hpp__dep__incl.png" border="0" usemap="#include_2_headers_8hppdep" alt=""/></div>
+<map name="include_2_headers_8hppdep" id="include_2_headers_8hppdep">
+<area shape="rect" id="node3" href="_app_8hpp.html" title="include/App.hpp" alt="" coords="1583,1011,1697,1040"/><area shape="rect" id="node13" href="main_8cpp.html" title="src/main.cpp" alt="" coords="45,1088,141,1117"/><area shape="rect" id="node31" href="_glob_fun_8hpp.html" title="include/GlobFun.hpp" alt="" coords="384,83,525,112"/><area shape="rect" id="node34" href="_game_8hpp.html" title="include/Game.hpp" alt="" coords="2764,933,2889,963"/><area shape="rect" id="node40" href="_player_8hpp.html" title="include/Player.hpp" alt="" coords="1901,547,2029,576"/><area shape="rect" id="node46" href="_spriteconfig_8hpp.html" title="include/Spriteconfig.hpp" alt="" coords="1736,160,1896,189"/><area shape="rect" id="node51" href="_sprite_manager_8hpp.html" title="include/SpriteManager.hpp" alt="" coords="1531,547,1707,576"/><area shape="rect" id="node53" href="_enemy_8hpp.html" title="include/Enemy.hpp" alt="" coords="1008,624,1141,653"/><area shape="rect" id="node55" href="_enemy_manager_8hpp.html" title="include/EnemyManager.hpp" alt="" coords="931,701,1112,731"/><area shape="rect" id="node57" href="_map_manager_8hpp.html" title="include/MapManager.hpp" alt="" coords="952,779,1117,808"/><area shape="rect" id="node62" href="_splash_8cpp.html" title="src/Splash.cpp" alt="" coords="600,856,709,885"/><area shape="rect" id="node70" href="_splash_8hpp.html" title="include/Splash.hpp" alt="" coords="651,624,781,653"/><area shape="rect" id="node81" href="_highscore_8hpp.html" title="include/Highscore.hpp" alt="" coords="2315,547,2464,576"/><area shape="rect" id="node84" href="_menu_8hpp.html" title="include/Menu.hpp" alt="" coords="2667,624,2789,653"/><area shape="rect" id="node89" href="_live_bar_8hpp.html" title="include/LiveBar.hpp" alt="" coords="2155,547,2291,576"/><area shape="rect" id="node93" href="_menu_item_8hpp.html" title="include/MenuItem.hpp" alt="" coords="2488,547,2637,576"/><area shape="rect" id="node100" href="_renderer_8hpp.html" title="include/Renderer.hpp" alt="" coords="1619,237,1763,267"/><area shape="rect" id="node107" href="_map_8hpp.html" title="include/Map.hpp" alt="" coords="1309,469,1427,499"/><area shape="rect" id="node115" href="_background_8hpp.html" title="include/Background.hpp" alt="" coords="1451,469,1611,499"/><area shape="rect" id="node123" href="_writer_8hpp.html" title="include/Writer.hpp" alt="" coords="2272,315,2397,344"/><area shape="rect" id="node132" href="_property_8hpp.html" title="include/Property.hpp" alt="" coords="387,160,528,189"/><area shape="rect" id="node143" href="_renderer_g_l_8hpp.html" title="include/RendererGL.hpp" alt="" coords="1157,160,1320,189"/><area shape="rect" id="node147" href="_resource_8hpp.html" title="include/Resource.hpp" alt="" coords="996,83,1143,112"/><area shape="rect" id="node158" href="_logger_8hpp.html" title="include/Logger.hpp" alt="" coords="1995,237,2125,267"/><area shape="rect" id="node162" href="_sound_manager_8hpp.html" title="include/SoundManager.hpp" alt="" coords="2421,315,2600,344"/><area shape="rect" id="node5" href="_app_8cpp.html" title="src/App.cpp" alt="" coords="1565,1088,1656,1117"/><area shape="rect" id="node7" href="_enemy_manager_8cpp.html" title="src/EnemyManager.cpp" alt="" coords="533,1088,693,1117"/><area shape="rect" id="node9" href="_highscore_8cpp.html" title="src/Highscore.cpp" alt="" coords="2361,1088,2489,1117"/><area shape="rect" id="node11" href="_live_bar_8cpp.html" title="src/LiveBar.cpp" alt="" coords="2224,1088,2336,1117"/><area shape="rect" id="node15" href="_map_8cpp.html" title="src/Map.cpp" alt="" coords="1811,1088,1904,1117"/><area shape="rect" id="node17" href="_map_manager_8cpp.html" title="src/MapManager.cpp" alt="" coords="2053,1088,2197,1117"/><area shape="rect" id="node19" href="_menu_8cpp.html" title="src/Menu.cpp" alt="" coords="2675,1088,2776,1117"/><area shape="rect" id="node21" href="_player_8cpp.html" title="src/Player.cpp" alt="" coords="1680,1088,1787,1117"/><area shape="rect" id="node23" href="_property_8cpp.html" title="src/Property.cpp" alt="" coords="369,1088,487,1117"/><area shape="rect" id="node25" href="_renderer_8cpp.html" title="src/Renderer.cpp" alt="" coords="1068,1088,1191,1117"/><area shape="rect" id="node27" href="_resource_8cpp.html" title="src/Resource.cpp" alt="" coords="208,1088,333,1117"/><area shape="rect" id="node29" href="_sprite_8cpp.html" title="src/Sprite.cpp" alt="" coords="1928,1088,2029,1117"/><area shape="rect" id="node37" href="_game_8cpp.html" title="src/Game.cpp" alt="" coords="2883,1011,2987,1040"/><area shape="rect" id="node42" href="_play_8hpp.html" title="include/Play.hpp" alt="" coords="2061,856,2179,885"/><area shape="rect" id="node48" href="_sprite_8hpp.html" title="include/Sprite.hpp" alt="" coords="2053,469,2179,499"/><area shape="rect" id="node66" href="_enemy_8cpp.html" title="src/Enemy.cpp" alt="" coords="1395,701,1504,731"/><area shape="rect" id="node77" href="_renderer_g_l_8cpp.html" title="src/RendererGL.cpp" alt="" coords="1267,624,1405,653"/><area shape="rect" id="node79" href="_sprite_manager_8cpp.html" title="src/SpriteManager.cpp" alt="" coords="1429,624,1581,653"/><area shape="rect" id="node96" href="_menu_item_8cpp.html" title="src/MenuItem.cpp" alt="" coords="2467,624,2592,653"/><area shape="rect" id="node103" href="_standard_references_8hpp.html" title="include/StandardReferences.hpp" alt="" coords="2087,392,2297,421"/><area shape="rect" id="node118" href="_background_8cpp.html" title="src/Background.cpp" alt="" coords="1187,547,1325,576"/><area shape="rect" id="node128" href="_writer_8cpp.html" title="src/Writer.cpp" alt="" coords="1672,392,1776,421"/><area shape="rect" id="node174" href="_logger_8cpp.html" title="src/Logger.cpp" alt="" coords="2091,315,2197,344"/><area shape="rect" id="node165" href="_sound_manager_8cpp.html" title="src/SoundManager.cpp" alt="" coords="2483,392,2637,421"/></map>
+</div>
+</div>
+<p><a href="_headers_8hpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gamespace_1_1_colision_side.html">Gamespace::ColisionSide</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gamespace_1_1_highscore_item.html">Gamespace::HighscoreItem</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="namespaces"></a>
+Przestrzenie nazw</h2></td></tr>
+<tr class="memitem:namespace_gamespace"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gamespace.html">Gamespace</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ad72dbcf6d0153db1b8d8a58001feed83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_headers_8hpp.html#ad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
+Definicje typów</h2></td></tr>
+<tr class="memitem:a438006b47aabcd7d5e24944e3286c096"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; string &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gamespace.html#a438006b47aabcd7d5e24944e3286c096">Gamespace::vStrIt</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:ab66a811d64a6bb639cc5d7b01024c698"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698">Gamespace::FontSize</a> { <a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698af2b7d8220fa00173f597746490335875">Gamespace::SMALL</a>, 
+<a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698a950fa53989d650e29826802744c59fa2">Gamespace::NORMALL</a>, 
+<a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698a42cfa94b74bfd7f2662f6eebf257ee23">Gamespace::BIG</a>
+ }</td></tr>
+<tr class="memitem:aefe0904c2f5e8db9fd73373655773de9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9">Gamespace::GameState</a> { <a class="el" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9a28b3a872336506999480cd3b6bb0d43d">Gamespace::MENU</a>, 
+<a class="el" href="namespace_gamespace.html#aefe0904c2f5e8db9fd73373655773de9ab9f4b1d9477cfa2c83eab468aaebe330">Gamespace::PLAY</a>
+ }</td></tr>
+<tr class="memitem:a2c98125d83ba1bfc9fc80728adea2f93"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gamespace.html#a2c98125d83ba1bfc9fc80728adea2f93">Gamespace::MenuState</a> { <a class="el" href="namespace_gamespace.html#a2c98125d83ba1bfc9fc80728adea2f93ae642be1d3f61d414ecaf2e7b24e34b41">Gamespace::MAIN</a>, 
+<a class="el" href="namespace_gamespace.html#a2c98125d83ba1bfc9fc80728adea2f93a9c351cdabf0a3f9c2235ae6604917ef8">Gamespace::HIGHSCORE</a>, 
+<a class="el" href="namespace_gamespace.html#a2c98125d83ba1bfc9fc80728adea2f93aec56630877de4042d7715bb80828b850">Gamespace::ABOUT</a>
+ }</td></tr>
+<tr class="memitem:a936a35f34bf65ef0841dd74d7eab3561"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gamespace.html#a936a35f34bf65ef0841dd74d7eab3561">Gamespace::PlayerState</a> { <a class="el" href="namespace_gamespace.html#a936a35f34bf65ef0841dd74d7eab3561a8faaf2d3e7e503f7ba50ebda7ba91645">Gamespace::Stand</a>, 
+<a class="el" href="namespace_gamespace.html#a936a35f34bf65ef0841dd74d7eab3561a0d44f6715210ecec181d488470d67e83">Gamespace::Run</a>, 
+<a class="el" href="namespace_gamespace.html#a936a35f34bf65ef0841dd74d7eab3561a217249969280ada0deb68fab340ff13a">Gamespace::Fly</a>
+ }</td></tr>
+<tr class="memitem:a38f464ff3b0574f3c5eb1c6a5a867cd1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gamespace.html#a38f464ff3b0574f3c5eb1c6a5a867cd1">Gamespace::EnemyState</a> { <a class="el" href="namespace_gamespace.html#a38f464ff3b0574f3c5eb1c6a5a867cd1a3991c2fc4bd11d1ac29903d02f278d30">Gamespace::Left</a>, 
+<a class="el" href="namespace_gamespace.html#a38f464ff3b0574f3c5eb1c6a5a867cd1aea532827df43b916930a770461cb7d37">Gamespace::Right</a>
+ }</td></tr>
+</table>
+<h2>Dokumentacja definicji</h2>
+<a class="anchor" id="ad72dbcf6d0153db1b8d8a58001feed83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_headers_8hpp_source.html#l00020">20</a> pliku <a class="el" href="_headers_8hpp_source.html">Headers.hpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja pliku include/Const.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Const.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp__dep__incl.png" border="0" usemap="#include_2_const_8hppdep" alt=""/></div>
+<map name="include_2_const_8hppdep" id="include_2_const_8hppdep">
+<area shape="rect" id="node3" href="_live_bar_8hpp.html" title="include/LiveBar.hpp" alt="" coords="751,83,887,112"/><area shape="rect" id="node11" href="_app_8cpp.html" title="src/App.cpp" alt="" coords="5,392,96,421"/><area shape="rect" id="node43" href="_splash_8hpp.html" title="include/Splash.hpp" alt="" coords="911,83,1041,112"/><area shape="rect" id="node49" href="_renderer_g_l_8cpp.html" title="src/RendererGL.cpp" alt="" coords="1065,83,1204,112"/><area shape="rect" id="node5" href="_play_8hpp.html" title="include/Play.hpp" alt="" coords="664,160,781,189"/><area shape="rect" id="node17" href="_live_bar_8cpp.html" title="src/LiveBar.cpp" alt="" coords="1680,392,1792,421"/><area shape="rect" id="node7" href="_game_8hpp.html" title="include/Game.hpp" alt="" coords="660,237,785,267"/><area shape="rect" id="node40" href="_play_8cpp.html" title="src/Play.cpp" alt="" coords="543,237,636,267"/><area shape="rect" id="node9" href="_app_8hpp.html" title="include/App.hpp" alt="" coords="773,315,888,344"/><area shape="rect" id="node25" href="_menu_8cpp.html" title="src/Menu.cpp" alt="" coords="120,392,221,421"/><area shape="rect" id="node37" href="_game_8cpp.html" title="src/Game.cpp" alt="" coords="645,315,749,344"/><area shape="rect" id="node13" href="_enemy_manager_8cpp.html" title="src/EnemyManager.cpp" alt="" coords="667,392,827,421"/><area shape="rect" id="node15" href="_highscore_8cpp.html" title="src/Highscore.cpp" alt="" coords="851,392,979,421"/><area shape="rect" id="node19" href="main_8cpp.html" title="src/main.cpp" alt="" coords="1003,392,1099,421"/><area shape="rect" id="node21" href="_map_8cpp.html" title="src/Map.cpp" alt="" coords="1123,392,1216,421"/><area shape="rect" id="node23" href="_map_manager_8cpp.html" title="src/MapManager.cpp" alt="" coords="1240,392,1384,421"/><area shape="rect" id="node27" href="_player_8cpp.html" title="src/Player.cpp" alt="" coords="1408,392,1515,421"/><area shape="rect" id="node29" href="_property_8cpp.html" title="src/Property.cpp" alt="" coords="1539,392,1656,421"/><area shape="rect" id="node31" href="_renderer_8cpp.html" title="src/Renderer.cpp" alt="" coords="245,392,368,421"/><area shape="rect" id="node33" href="_resource_8cpp.html" title="src/Resource.cpp" alt="" coords="392,392,517,421"/><area shape="rect" id="node35" href="_sprite_8cpp.html" title="src/Sprite.cpp" alt="" coords="541,392,643,421"/><area shape="rect" id="node46" href="_splash_8cpp.html" title="src/Splash.cpp" alt="" coords="1013,160,1123,189"/></map>
+</div>
+</div>
+<p><a href="_const_8hpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a1325fa1be96f017c9d708a42687e0597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a1325fa1be96f017c9d708a42687e0597">RENDER_GL</a></td></tr>
+<tr class="memitem:a1cc0a1a67b2cfd8e2101c2a959aa0613"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a1cc0a1a67b2cfd8e2101c2a959aa0613">LIGHT_GL</a></td></tr>
+<tr class="memitem:a93d15af1990d18715f15cdda70882cf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a93d15af1990d18715f15cdda70882cf1">TEXTURE</a></td></tr>
+<tr class="memitem:a1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>&#160;&#160;&#160;&quot; build 0.3 &quot;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a86bdc76706a8d444b9dac3ad55f5b79f"><td class="memItemLeft" align="right" valign="top">const unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a86bdc76706a8d444b9dac3ad55f5b79f">WIDHT</a> (1400)</td></tr>
+<tr class="memitem:a4292b735a9213a6e984bebbbf5964e08"><td class="memItemLeft" align="right" valign="top">const unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a4292b735a9213a6e984bebbbf5964e08">HEIGHT</a> (900)</td></tr>
+<tr class="memitem:a5f66486699d4aa869f23e71241841d1e"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a5f66486699d4aa869f23e71241841d1e">SPLASH_TIME</a> (1.7)</td></tr>
+<tr class="memitem:a0b2d2b77594d3dcaed03ebfce5220661"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a0b2d2b77594d3dcaed03ebfce5220661">LEVEL_WIDHT</a> (30000)</td></tr>
+<tr class="memitem:a4954d1fee04d9961ae1fa3ca783cde8d"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a4954d1fee04d9961ae1fa3ca783cde8d">LEVEL_HEIGHT</a> (25)</td></tr>
+<tr class="memitem:ad659d347fd5f39e7bba0ed7a36dcdd0f"><td class="memItemLeft" align="right" valign="top">const ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#ad659d347fd5f39e7bba0ed7a36dcdd0f">MAX_SCREEN_HEIGHT</a> (1080)</td></tr>
+<tr class="memitem:a6a4397fc96f168f1ff01fc22daa1fa55"><td class="memItemLeft" align="right" valign="top">const ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a6a4397fc96f168f1ff01fc22daa1fa55">MAX_SCREEN_WIDTH</a> (1920)</td></tr>
+<tr class="memitem:ace32d5dd77dc828e82bbacd37f2f5538"><td class="memItemLeft" align="right" valign="top">const ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#ace32d5dd77dc828e82bbacd37f2f5538">MIN_SCREEN_WIDTH</a> (800)</td></tr>
+<tr class="memitem:a6b9d30e4d18c49951ff1846955d83ed0"><td class="memItemLeft" align="right" valign="top">const ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a6b9d30e4d18c49951ff1846955d83ed0">MIN_SCREEN_HEIGHT</a> (600)</td></tr>
+<tr class="memitem:aadfc5d919e1c74b24a6bd11855f74b5d"><td class="memItemLeft" align="right" valign="top">const ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#aadfc5d919e1c74b24a6bd11855f74b5d">COLISION_WITH_ENEMY</a> (10000)</td></tr>
+<tr class="memitem:abf528d73faba2d3e6eb1da5a66e5996a"><td class="memItemLeft" align="right" valign="top">const SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#abf528d73faba2d3e6eb1da5a66e5996a">BLACK_FONT_COLOR</a> ({8, 16, 29})</td></tr>
+<tr class="memitem:ad33c55057da6e704301c6f5349eed5b7"><td class="memItemLeft" align="right" valign="top">const SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#ad33c55057da6e704301c6f5349eed5b7">WHITE_FONT_COLOR</a> ({240, 240, 250})</td></tr>
+<tr class="memitem:a1f9b7c54a17f59212b050535753b5760"><td class="memItemLeft" align="right" valign="top">const SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_const_8hpp.html#a1f9b7c54a17f59212b050535753b5760">YELLOW_FONT_COLOR</a> ({235, 190, 0})</td></tr>
+</table>
+<h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a1cc0a1a67b2cfd8e2101c2a959aa0613"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIGHT_GL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_const_8hpp_source.html#l00009">9</a> pliku <a class="el" href="_const_8hpp_source.html">Const.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1325fa1be96f017c9d708a42687e0597"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RENDER_GL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_const_8hpp_source.html#l00008">8</a> pliku <a class="el" href="_const_8hpp_source.html">Const.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93d15af1990d18715f15cdda70882cf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXTURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_const_8hpp_source.html#l00013">13</a> pliku <a class="el" href="_const_8hpp_source.html">Const.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c6d5de492ac61ad29aec7aa9a436bbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VERSION&#160;&#160;&#160;&quot; build 0.3 &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_const_8hpp_source.html#l00015">15</a> pliku <a class="el" href="_const_8hpp_source.html">Const.hpp</a>.</p>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="abf528d73faba2d3e6eb1da5a66e5996a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SDL_Color BLACK_FONT_COLOR </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_abf528d73faba2d3e6eb1da5a66e5996a_icgraph.png" border="0" usemap="#_const_8hpp_abf528d73faba2d3e6eb1da5a66e5996a_icgraph" alt=""/></div>
+<map name="_const_8hpp_abf528d73faba2d3e6eb1da5a66e5996a_icgraph" id="_const_8hpp_abf528d73faba2d3e6eb1da5a66e5996a_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="216,59,336,88"/><area shape="rect" id="node5" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="384,59,501,88"/><area shape="rect" id="node15" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="549,111,651,140"/><area shape="rect" id="node20" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="397,5,488,35"/><area shape="rect" id="node7" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="559,57,641,87"/><area shape="rect" id="node9" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="704,57,797,87"/><area shape="rect" id="node11" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="852,84,921,113"/><area shape="rect" id="node13" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="971,84,1021,113"/><area shape="rect" id="node17" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="699,111,803,140"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aadfc5d919e1c74b24a6bd11855f74b5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ushort COLISION_WITH_ENEMY </td>
+          <td>(</td>
+          <td class="paramtype">10000&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_aadfc5d919e1c74b24a6bd11855f74b5d_icgraph.png" border="0" usemap="#_const_8hpp_aadfc5d919e1c74b24a6bd11855f74b5d_icgraph" alt=""/></div>
+<map name="_const_8hpp_aadfc5d919e1c74b24a6bd11855f74b5d_icgraph" id="_const_8hpp_aadfc5d919e1c74b24a6bd11855f74b5d_icgraph">
+<area shape="rect" id="node3" href="class_live_bar.html#a6cc13313240f3ee5c99b1e40e3f83692" title="LiveBar::colision" alt="" coords="239,5,356,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="407,32,500,61"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="549,32,653,61"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="703,32,772,61"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="821,32,872,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4292b735a9213a6e984bebbbf5964e08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned short HEIGHT </td>
+          <td>(</td>
+          <td class="paramtype">900&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_a4292b735a9213a6e984bebbbf5964e08_icgraph.png" border="0" usemap="#_const_8hpp_a4292b735a9213a6e984bebbbf5964e08_icgraph" alt=""/></div>
+<map name="_const_8hpp_a4292b735a9213a6e984bebbbf5964e08_icgraph" id="_const_8hpp_a4292b735a9213a6e984bebbbf5964e08_icgraph">
+<area shape="rect" id="node3" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="129,5,204,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4954d1fee04d9961ae1fa3ca783cde8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int LEVEL_HEIGHT </td>
+          <td>(</td>
+          <td class="paramtype">25&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0b2d2b77594d3dcaed03ebfce5220661"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int LEVEL_WIDHT </td>
+          <td>(</td>
+          <td class="paramtype">30000&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad659d347fd5f39e7bba0ed7a36dcdd0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ushort MAX_SCREEN_HEIGHT </td>
+          <td>(</td>
+          <td class="paramtype">1080&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_ad659d347fd5f39e7bba0ed7a36dcdd0f_icgraph.png" border="0" usemap="#_const_8hpp_ad659d347fd5f39e7bba0ed7a36dcdd0f_icgraph" alt=""/></div>
+<map name="_const_8hpp_ad659d347fd5f39e7bba0ed7a36dcdd0f_icgraph" id="_const_8hpp_ad659d347fd5f39e7bba0ed7a36dcdd0f_icgraph">
+<area shape="rect" id="node3" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="228,5,303,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a4397fc96f168f1ff01fc22daa1fa55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ushort MAX_SCREEN_WIDTH </td>
+          <td>(</td>
+          <td class="paramtype">1920&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_a6a4397fc96f168f1ff01fc22daa1fa55_icgraph.png" border="0" usemap="#_const_8hpp_a6a4397fc96f168f1ff01fc22daa1fa55_icgraph" alt=""/></div>
+<map name="_const_8hpp_a6a4397fc96f168f1ff01fc22daa1fa55_icgraph" id="_const_8hpp_a6a4397fc96f168f1ff01fc22daa1fa55_icgraph">
+<area shape="rect" id="node3" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="223,5,297,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b9d30e4d18c49951ff1846955d83ed0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ushort MIN_SCREEN_HEIGHT </td>
+          <td>(</td>
+          <td class="paramtype">600&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_a6b9d30e4d18c49951ff1846955d83ed0_icgraph.png" border="0" usemap="#_const_8hpp_a6b9d30e4d18c49951ff1846955d83ed0_icgraph" alt=""/></div>
+<map name="_const_8hpp_a6b9d30e4d18c49951ff1846955d83ed0_icgraph" id="_const_8hpp_a6b9d30e4d18c49951ff1846955d83ed0_icgraph">
+<area shape="rect" id="node3" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="225,5,300,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ace32d5dd77dc828e82bbacd37f2f5538"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ushort MIN_SCREEN_WIDTH </td>
+          <td>(</td>
+          <td class="paramtype">800&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_ace32d5dd77dc828e82bbacd37f2f5538_icgraph.png" border="0" usemap="#_const_8hpp_ace32d5dd77dc828e82bbacd37f2f5538_icgraph" alt=""/></div>
+<map name="_const_8hpp_ace32d5dd77dc828e82bbacd37f2f5538_icgraph" id="_const_8hpp_ace32d5dd77dc828e82bbacd37f2f5538_icgraph">
+<area shape="rect" id="node3" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="217,5,292,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f66486699d4aa869f23e71241841d1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float SPLASH_TIME </td>
+          <td>(</td>
+          <td class="paramtype">1.&#160;</td>
+          <td class="paramname"><em>7</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_a5f66486699d4aa869f23e71241841d1e_icgraph.png" border="0" usemap="#_const_8hpp_a5f66486699d4aa869f23e71241841d1e_icgraph" alt=""/></div>
+<map name="_const_8hpp_a5f66486699d4aa869f23e71241841d1e_icgraph" id="_const_8hpp_a5f66486699d4aa869f23e71241841d1e_icgraph">
+<area shape="rect" id="node3" href="class_splash.html#aeaa9a649934c3390dfc0a16f93393b97" title="Splash::drawSplash" alt="" coords="168,5,307,35"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="355,5,405,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad33c55057da6e704301c6f5349eed5b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SDL_Color WHITE_FONT_COLOR </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_ad33c55057da6e704301c6f5349eed5b7_icgraph.png" border="0" usemap="#_const_8hpp_ad33c55057da6e704301c6f5349eed5b7_icgraph" alt=""/></div>
+<map name="_const_8hpp_ad33c55057da6e704301c6f5349eed5b7_icgraph" id="_const_8hpp_ad33c55057da6e704301c6f5349eed5b7_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="216,5,333,35"/><area shape="rect" id="node5" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="383,5,465,35"/><area shape="rect" id="node7" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="515,5,608,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="657,5,727,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="776,5,827,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a86bdc76706a8d444b9dac3ad55f5b79f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned short WIDHT </td>
+          <td>(</td>
+          <td class="paramtype">1400&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_a86bdc76706a8d444b9dac3ad55f5b79f_icgraph.png" border="0" usemap="#_const_8hpp_a86bdc76706a8d444b9dac3ad55f5b79f_icgraph" alt=""/></div>
+<map name="_const_8hpp_a86bdc76706a8d444b9dac3ad55f5b79f_icgraph" id="_const_8hpp_a86bdc76706a8d444b9dac3ad55f5b79f_icgraph">
+<area shape="rect" id="node3" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="121,5,196,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f9b7c54a17f59212b050535753b5760"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SDL_Color YELLOW_FONT_COLOR </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_const_8hpp_a1f9b7c54a17f59212b050535753b5760_icgraph.png" border="0" usemap="#_const_8hpp_a1f9b7c54a17f59212b050535753b5760_icgraph" alt=""/></div>
+<map name="_const_8hpp_a1f9b7c54a17f59212b050535753b5760_icgraph" id="_const_8hpp_a1f9b7c54a17f59212b050535753b5760_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="229,5,347,35"/><area shape="rect" id="node5" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="396,5,479,35"/><area shape="rect" id="node7" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="528,5,621,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="671,5,740,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="789,5,840,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

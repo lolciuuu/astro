@@ -1,0 +1,161 @@
+.TH "MenuItem" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MenuItem \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MenuItem\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBMenuItem\fP (\fBSprite\fP sprite, string name, \fBRect\fP where)"
+.br
+.ti -1c
+.RI "void \fBaddItem\fP (string Item)"
+.br
+.ti -1c
+.RI "int \fBgetSize\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetItemsNumber\fP () const "
+.br
+.ti -1c
+.RI "string \fBgetItemName\fP () const "
+.br
+.ti -1c
+.RI "string \fBgetCurrent\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisActive\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisSelected\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetItemsNo\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetActive\fP (bool Active)"
+.br
+.ti -1c
+.RI "void \fBsetSelected\fP (bool Selected)"
+.br
+.ti -1c
+.RI "void \fBsetDescription\fP (string desc)"
+.br
+.ti -1c
+.RI "void \fBsetRectName\fP (\fBRect\fP Where)"
+.br
+.ti -1c
+.RI "void \fBsetRectDesc\fP (\fBRect\fP Where)"
+.br
+.ti -1c
+.RI "void \fBsetRectSprite\fP (\fBRect\fP Where)"
+.br
+.ti -1c
+.RI "void \fBnext\fP ()"
+.br
+.ti -1c
+.RI "void \fBprev\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (float dt)"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Klasa reprezentuje pozycje w glownym menu\&. Name to jest jest nazwa wyswietlana w glownym menu, sprite to obrazek pokazywany obok menu\&. Desciption to opis lub opcja wyboru 
+.PP
+Definicja w linii 11 pliku MenuItem\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "MenuItem::MenuItem (\fBSprite\fPsprite, stringname, \fBRect\fPwhere)"
+przeniesc offset sprita do zasobow 
+.PP
+Definicja w linii 3 pliku MenuItem\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void MenuItem::addItem (stringItem)\fC [inline]\fP"
+
+.PP
+Definicja w linii 17 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::draw ()"
+Metoda rysuje pojedynczy element w menu\&. W zaleznosci do statu w jakim sie znajduje moze miec kolor: szary - nie aktywny, pomaranczowy- aktualnie wybrany badz bialy domyslny\&. 
+.PP
+Definicja w linii 20 pliku MenuItem\&.cpp\&.
+.SS "string MenuItem::getCurrent ()"
+
+.SS "string MenuItem::getItemName () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 27 pliku MenuItem\&.hpp\&.
+.SS "int MenuItem::getItemsNo () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 38 pliku MenuItem\&.hpp\&.
+.SS "int MenuItem::getItemsNumber () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 24 pliku MenuItem\&.hpp\&.
+.SS "int MenuItem::getSize () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 21 pliku MenuItem\&.hpp\&.
+.SS "bool MenuItem::isActive () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 32 pliku MenuItem\&.hpp\&.
+.SS "bool MenuItem::isSelected () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 35 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::next ()"
+przejscie do poprzedniej pozycji w menu 
+.PP
+Definicja w linii 48 pliku MenuItem\&.cpp\&.
+.SS "void MenuItem::prev ()"
+Przejscie do nastepnej pozycji w menu 
+.PP
+Definicja w linii 57 pliku MenuItem\&.cpp\&.
+.SS "void MenuItem::setActive (boolActive)\fC [inline]\fP"
+
+.PP
+Definicja w linii 42 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::setDescription (stringdesc)\fC [inline]\fP"
+
+.PP
+Definicja w linii 48 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::setRectDesc (\fBRect\fPWhere)\fC [inline]\fP"
+
+.PP
+Definicja w linii 54 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::setRectName (\fBRect\fPWhere)\fC [inline]\fP"
+
+.PP
+Definicja w linii 51 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::setRectSprite (\fBRect\fPWhere)\fC [inline]\fP"
+
+.PP
+Definicja w linii 57 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::setSelected (boolSelected)\fC [inline]\fP"
+
+.PP
+Definicja w linii 45 pliku MenuItem\&.hpp\&.
+.SS "void MenuItem::update (floatdt)"
+Aktualizacja sprajta ktory sie wyswietla w menu 
+.PP
+Definicja w linii 66 pliku MenuItem\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

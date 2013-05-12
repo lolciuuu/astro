@@ -1,0 +1,4 @@
+<map id="Map::reset" name="Map::reset">
+<area shape="rect" id="node3" href="$class_map_manager.html#ad30f83341d8bd5ba2a465feafd5bc510" title="MapManager::reset" alt="" coords="140,5,273,35"/>
+<area shape="rect" id="node5" href="$class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="323,5,443,35"/>
+</map>

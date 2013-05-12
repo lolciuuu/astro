@@ -1,0 +1,8 @@
+<map id="Map::Map" name="Map::Map">
+<area shape="rect" id="node3" href="$class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="136,5,283,35"/>
+<area shape="rect" id="node5" href="$class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="135,59,284,88"/>
+<area shape="rect" id="node7" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="164,112,255,141"/>
+<area shape="rect" id="node9" href="$_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="176,165,243,195"/>
+<area shape="rect" id="node11" href="$class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="140,219,279,248"/>
+<area shape="rect" id="node13" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="333,219,381,248"/>
+</map>

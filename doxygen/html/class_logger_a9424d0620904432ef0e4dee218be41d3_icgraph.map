@@ -1,0 +1,8 @@
+<map id="Logger::methodStart" name="Logger::methodStart">
+<area shape="rect" id="node3" href="$class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="209,5,284,35"/>
+<area shape="rect" id="node5" href="$class_game.html#ad59df6562a58a614fda24622d3715b65" title="Game::Game" alt="" coords="197,59,296,88"/>
+<area shape="rect" id="node7" href="$class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Player::Player" alt="" coords="195,112,299,141"/>
+<area shape="rect" id="node9" href="$class_writer.html#a3c06b4a50402dfcbe88507805978f9fa" title="Writer::init" alt="" coords="205,165,288,195"/>
+<area shape="rect" id="node11" href="$class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="348,165,417,195"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="467,165,517,195"/>
+</map>

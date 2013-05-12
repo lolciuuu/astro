@@ -1,0 +1,221 @@
+.TH "Splash" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Splash \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Splash\&.hpp>\fP
+.PP
+Dziedziczona przez \fBApp\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBSplash\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~Splash\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisInitDone\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisSplashDone\fP () const "
+.br
+.ti -1c
+.RI "void \fBstartSplash\fP (ushort W, ushort H, SDL_Surface *Screen)"
+.br
+.ti -1c
+.RI "void \fBendSplash\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrawSplash\fP ()"
+.br
+.ti -1c
+.RI "void \fBsplashAnimStep\fP ()"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static int \fBinitThread\fP (void *)"
+.br
+.in -1c
+.SS "Atrybuty chronione"
+
+.in +1c
+.ti -1c
+.RI "bool \fBpSplashIsDone\fP"
+.br
+.ti -1c
+.RI "int \fBpSplashLong\fP"
+.br
+.ti -1c
+.RI "SDL_Surface * \fBpSplash\fP"
+.br
+.ti -1c
+.RI "GLuint \fBpSplashGL\fP"
+.br
+.ti -1c
+.RI "\fBRect\fP \fBpRectSplash\fP"
+.br
+.ti -1c
+.RI "\fBRect\fP \fBpRectLoad\fP"
+.br
+.ti -1c
+.RI "int \fBpCurrentLoop\fP"
+.br
+.ti -1c
+.RI "int \fBpSplashLoadLong\fP"
+.br
+.ti -1c
+.RI "Uint32 \fBpColor\fP"
+.br
+.ti -1c
+.RI "ushort \fBpScreenW\fP"
+.br
+.ti -1c
+.RI "ushort \fBpScreenH\fP"
+.br
+.ti -1c
+.RI "SDL_Surface * \fBpScreen\fP"
+.br
+.ti -1c
+.RI "SDL_TimerID \fBtimerFPS\fP"
+.br
+.ti -1c
+.RI "\fBLogger\fP \fBlogger\fP"
+.br
+.ti -1c
+.RI "ushort \fBpSplashRectWidth\fP"
+.br
+.in -1c
+.SS "Statyczne atrybuty chronione"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBpInitIsDone\fP"
+.br
+.ti -1c
+.RI "static int \fBpframeRating\fP"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 11 pliku Splash\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Splash::Splash ()"
+
+.PP
+Definicja w linii 8 pliku Splash\&.cpp\&.
+.SS "Splash::~Splash ()\fC [virtual]\fP"
+
+.PP
+Definicja w linii 22 pliku Splash\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Splash::drawSplash ()"
+
+.PP
+Definicja w linii 125 pliku Splash\&.cpp\&.
+.SS "void Splash::endSplash ()"
+
+.PP
+Definicja w linii 118 pliku Splash\&.cpp\&.
+.SS "int Splash::initThread (void *)\fC [static]\fP"
+Metoda jest wykonywana w osobnym watku, i wczytuje wszystkie zasoby Podczas wczytywania zasobow w glownym watku jest rysowany splash 
+.PP
+Definicja w linii 179 pliku Splash\&.cpp\&.
+.SS "bool Splash::isInitDone () const"
+
+.PP
+Definicja w linii 28 pliku Splash\&.cpp\&.
+.SS "bool Splash::isSplashDone () const"
+
+.PP
+Definicja w linii 33 pliku Splash\&.cpp\&.
+.SS "void Splash::splashAnimStep ()"
+
+.SS "void Splash::startSplash (ushortW, ushortH, SDL_Surface *Screen)"
+
+.PP
+Definicja w linii 39 pliku Splash\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "\fBLogger\fP Splash::logger\fC [protected]\fP"
+
+.PP
+Definicja w linii 51 pliku Splash\&.hpp\&.
+.SS "Uint32 Splash::pColor\fC [protected]\fP"
+
+.PP
+Definicja w linii 41 pliku Splash\&.hpp\&.
+.SS "int Splash::pCurrentLoop\fC [protected]\fP"
+
+.PP
+Definicja w linii 39 pliku Splash\&.hpp\&.
+.SS "int Splash::pframeRating\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Definicja w linii 48 pliku Splash\&.hpp\&.
+.SS "bool Splash::pInitIsDone\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Definicja w linii 30 pliku Splash\&.hpp\&.
+.SS "\fBRect\fP Splash::pRectLoad\fC [protected]\fP"
+
+.PP
+Definicja w linii 37 pliku Splash\&.hpp\&.
+.SS "\fBRect\fP Splash::pRectSplash\fC [protected]\fP"
+
+.PP
+Definicja w linii 36 pliku Splash\&.hpp\&.
+.SS "SDL_Surface* Splash::pScreen\fC [protected]\fP"
+
+.PP
+Definicja w linii 46 pliku Splash\&.hpp\&.
+.SS "ushort Splash::pScreenH\fC [protected]\fP"
+
+.PP
+Definicja w linii 44 pliku Splash\&.hpp\&.
+.SS "ushort Splash::pScreenW\fC [protected]\fP"
+
+.PP
+Definicja w linii 43 pliku Splash\&.hpp\&.
+.SS "SDL_Surface* Splash::pSplash\fC [protected]\fP"
+
+.PP
+Definicja w linii 34 pliku Splash\&.hpp\&.
+.SS "GLuint Splash::pSplashGL\fC [protected]\fP"
+
+.PP
+Definicja w linii 35 pliku Splash\&.hpp\&.
+.SS "bool Splash::pSplashIsDone\fC [protected]\fP"
+
+.PP
+Definicja w linii 31 pliku Splash\&.hpp\&.
+.SS "int Splash::pSplashLoadLong\fC [protected]\fP"
+
+.PP
+Definicja w linii 40 pliku Splash\&.hpp\&.
+.SS "int Splash::pSplashLong\fC [protected]\fP"
+
+.PP
+Definicja w linii 32 pliku Splash\&.hpp\&.
+.SS "ushort Splash::pSplashRectWidth\fC [protected]\fP"
+
+.PP
+Definicja w linii 53 pliku Splash\&.hpp\&.
+.SS "SDL_TimerID Splash::timerFPS\fC [protected]\fP"
+
+.PP
+Definicja w linii 49 pliku Splash\&.hpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

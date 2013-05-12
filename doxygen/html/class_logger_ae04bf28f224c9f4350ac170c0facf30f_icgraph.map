@@ -1,0 +1,9 @@
+<map id="Logger::critical" name="Logger::critical">
+<area shape="rect" id="node3" href="$class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="191,5,265,35"/>
+<area shape="rect" id="node5" href="$class_game.html#ad59df6562a58a614fda24622d3715b65" title="Game::Game" alt="" coords="179,59,277,88"/>
+<area shape="rect" id="node7" href="$class_highscore.html#a34562ccb710bdf7aecb7827b17275a9c" title="Highscore::save" alt="" coords="169,112,287,141"/>
+<area shape="rect" id="node15" href="$class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="160,165,296,195"/>
+<area shape="rect" id="node9" href="$class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="344,112,461,141"/>
+<area shape="rect" id="node11" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="511,85,660,115"/>
+<area shape="rect" id="node13" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="519,139,652,168"/>
+</map>

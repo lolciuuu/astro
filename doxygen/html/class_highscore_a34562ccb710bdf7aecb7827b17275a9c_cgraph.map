@@ -1,0 +1,5 @@
+<map id="Highscore::save" name="Highscore::save">
+<area shape="rect" id="node3" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="191,5,281,35"/>
+<area shape="rect" id="node5" href="$class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="171,59,301,88"/>
+<area shape="rect" id="node7" href="$class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="183,112,289,141"/>
+</map>

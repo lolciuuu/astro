@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy Writer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_writer-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Writer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_writer_8hpp_source.html">Writer.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a3c9838d8a0c5620b0a9cf06f6dcca90d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d">draw</a> (<a class="el" href="struct_rect.html">Rect</a> WhereRect, string Text, <a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698">FontSize</a> Size=FontSize::SMALL)</td></tr>
+<tr class="memitem:aa86d50324b5b0920b05059415978fb6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#aa86d50324b5b0920b05059415978fb6d">draw</a> (<a class="el" href="struct_rect.html">Rect</a> WhereRect, string Text, SDL_Color Color, <a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698">FontSize</a> Size=FontSize::SMALL)</td></tr>
+<tr class="memitem:a09b7ee57c068f226afa669b04c26f4ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#a09b7ee57c068f226afa669b04c26f4ab">getTextWidth</a> (const string &amp;str)</td></tr>
+<tr class="memitem:a5c493bc1ddc0d846c67ce12e5c3d4312"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#a5c493bc1ddc0d846c67ce12e5c3d4312">getTextHeight</a> (const string &amp;str)</td></tr>
+<tr class="memitem:a82df193ef4dfea3a05cdc8878af4968e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#a82df193ef4dfea3a05cdc8878af4968e">getCenterX</a> (const string &amp;str)</td></tr>
+<tr class="memitem:a6f57399b94731301d267ce10a2f52ea3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#a6f57399b94731301d267ce10a2f52ea3">~Writer</a> ()</td></tr>
+<tr class="memitem:a3c06b4a50402dfcbe88507805978f9fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#a3c06b4a50402dfcbe88507805978f9fa">init</a> ()</td></tr>
+<tr class="memitem:a71958f8059a6b2e755e3ec6a3ed7cebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#a71958f8059a6b2e755e3ec6a3ed7cebd">setScreenPtr</a> (SDL_Surface *Screen)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:ab499237f34ce2379aaeaca5e472b0d8b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_writer.html">Writer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_writer.html#ab499237f34ce2379aaeaca5e472b0d8b">getInstance</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa obslugujaca wypisywanie tekstu na ekranie. Jest to facade do wywolanie renderera w przypadku tworzenia napisow </p>
+
+<p>Definicja w linii <a class="el" href="_writer_8hpp_source.html#l00010">10</a> pliku <a class="el" href="_writer_8hpp_source.html">Writer.hpp</a>.</p>
+</div><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a6f57399b94731301d267ce10a2f52ea3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Writer::~Writer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_writer_8cpp_source.html#l00024">24</a> pliku <a class="el" href="_writer_8cpp_source.html">Writer.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a3c9838d8a0c5620b0a9cf06f6dcca90d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Writer::draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rect.html">Rect</a>&#160;</td>
+          <td class="paramname"><em>WhereRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>Text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698">FontSize</a>&#160;</td>
+          <td class="paramname"><em>Size</em> = <code>FontSize::SMALL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wypisuje przekazany text pod wspolrzednymi w WhereRect ( wysokosc i szerokosc w whereRect sa ignorowane) </p>
+
+<p>Definicja w linii <a class="el" href="_writer_8cpp_source.html#l00103">103</a> pliku <a class="el" href="_writer_8cpp_source.html">Writer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a3c9838d8a0c5620b0a9cf06f6dcca90d_icgraph.png" border="0" usemap="#class_writer_a3c9838d8a0c5620b0a9cf06f6dcca90d_icgraph" alt=""/></div>
+<map name="class_writer_a3c9838d8a0c5620b0a9cf06f6dcca90d_icgraph" id="class_writer_a3c9838d8a0c5620b0a9cf06f6dcca90d_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="315,111,432,140"/><area shape="rect" id="node13" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="147,57,267,87"/><area shape="rect" id="node24" href="class_live_bar.html#a01bc017470a611f2d09ec37b222c2144" title="LiveBar::draw" alt="" coords="323,164,424,193"/><area shape="rect" id="node27" href="class_menu_item.html#af1e7bf9b4451876735cf2baea06cee3d" title="MenuItem::draw" alt="" coords="149,213,264,243"/><area shape="rect" id="node5" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="489,111,572,140"/><area shape="rect" id="node7" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="635,59,728,88"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="783,32,852,61"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="901,32,952,61"/><area shape="rect" id="node16" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="480,5,581,35"/><area shape="rect" id="node21" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="328,57,419,87"/><area shape="rect" id="node18" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="629,5,733,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa86d50324b5b0920b05059415978fb6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Writer::draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rect.html">Rect</a>&#160;</td>
+          <td class="paramname"><em>WhereRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>Text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>Color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_gamespace.html#ab66a811d64a6bb639cc5d7b01024c698">FontSize</a>&#160;</td>
+          <td class="paramname"><em>Size</em> = <code>FontSize::SMALL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wypisuje text o podanym kolorze </p>
+
+<p>Definicja w linii <a class="el" href="_writer_8cpp_source.html#l00060">60</a> pliku <a class="el" href="_writer_8cpp_source.html">Writer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_aa86d50324b5b0920b05059415978fb6d_cgraph.png" border="0" usemap="#class_writer_aa86d50324b5b0920b05059415978fb6d_cgraph" alt=""/></div>
+<map name="class_writer_aa86d50324b5b0920b05059415978fb6d_cgraph" id="class_writer_aa86d50324b5b0920b05059415978fb6d_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="156,5,265,35"/><area shape="rect" id="node5" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="147,59,275,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a82df193ef4dfea3a05cdc8878af4968e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Writer::getCenterX </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_writer_8cpp_source.html#l00019">19</a> pliku <a class="el" href="_writer_8cpp_source.html">Writer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a82df193ef4dfea3a05cdc8878af4968e_cgraph.png" border="0" usemap="#class_writer_a82df193ef4dfea3a05cdc8878af4968e_cgraph" alt=""/></div>
+<map name="class_writer_a82df193ef4dfea3a05cdc8878af4968e_cgraph" id="class_writer_a82df193ef4dfea3a05cdc8878af4968e_cgraph">
+<area shape="rect" id="node3" href="class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="185,5,327,35"/><area shape="rect" id="node5" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="377,5,471,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a82df193ef4dfea3a05cdc8878af4968e_icgraph.png" border="0" usemap="#class_writer_a82df193ef4dfea3a05cdc8878af4968e_icgraph" alt=""/></div>
+<map name="class_writer_a82df193ef4dfea3a05cdc8878af4968e_icgraph" id="class_writer_a82df193ef4dfea3a05cdc8878af4968e_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="352,5,469,35"/><area shape="rect" id="node13" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="184,59,304,88"/><area shape="rect" id="node5" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="527,7,609,36"/><area shape="rect" id="node7" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="672,57,765,87"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="820,84,889,113"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="939,84,989,113"/><area shape="rect" id="node16" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="517,111,619,140"/><area shape="rect" id="node21" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="365,59,456,88"/><area shape="rect" id="node18" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="667,111,771,140"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab499237f34ce2379aaeaca5e472b0d8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_writer.html">Writer</a>* Writer::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_writer_8hpp_source.html#l00023">23</a> pliku <a class="el" href="_writer_8hpp_source.html">Writer.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_ab499237f34ce2379aaeaca5e472b0d8b_icgraph.png" border="0" usemap="#class_writer_ab499237f34ce2379aaeaca5e472b0d8b_icgraph" alt=""/></div>
+<map name="class_writer_ab499237f34ce2379aaeaca5e472b0d8b_icgraph" id="class_writer_ab499237f34ce2379aaeaca5e472b0d8b_icgraph">
+<area shape="rect" id="node3" href="class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="319,5,388,35"/><area shape="rect" id="node7" href="class_writer.html#a3c06b4a50402dfcbe88507805978f9fa" title="Writer::init" alt="" coords="187,31,269,60"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="437,5,488,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c493bc1ddc0d846c67ce12e5c3d4312"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Writer::getTextHeight </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda zwraca ile pixeli wysokosci ma text na ekranie. Jezeli sa bledy to zwraca -1 </p>
+
+<p>Definicja w linii <a class="el" href="_writer_8cpp_source.html#l00046">46</a> pliku <a class="el" href="_writer_8cpp_source.html">Writer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a5c493bc1ddc0d846c67ce12e5c3d4312_cgraph.png" border="0" usemap="#class_writer_a5c493bc1ddc0d846c67ce12e5c3d4312_cgraph" alt=""/></div>
+<map name="class_writer_a5c493bc1ddc0d846c67ce12e5c3d4312_cgraph" id="class_writer_a5c493bc1ddc0d846c67ce12e5c3d4312_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="201,5,295,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a09b7ee57c068f226afa669b04c26f4ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Writer::getTextWidth </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda zwraca ile pixeli szerokosci ma text na ekranie. Jezeli sa bledy to zwraca -1 </p>
+
+<p>Definicja w linii <a class="el" href="_writer_8cpp_source.html#l00032">32</a> pliku <a class="el" href="_writer_8cpp_source.html">Writer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a09b7ee57c068f226afa669b04c26f4ab_cgraph.png" border="0" usemap="#class_writer_a09b7ee57c068f226afa669b04c26f4ab_cgraph" alt=""/></div>
+<map name="class_writer_a09b7ee57c068f226afa669b04c26f4ab_cgraph" id="class_writer_a09b7ee57c068f226afa669b04c26f4ab_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="199,5,292,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a09b7ee57c068f226afa669b04c26f4ab_icgraph.png" border="0" usemap="#class_writer_a09b7ee57c068f226afa669b04c26f4ab_icgraph" alt=""/></div>
+<map name="class_writer_a09b7ee57c068f226afa669b04c26f4ab_icgraph" id="class_writer_a09b7ee57c068f226afa669b04c26f4ab_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="544,22,661,52"/><area shape="rect" id="node13" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Menu::Menu" alt="" coords="216,22,309,52"/><area shape="rect" id="node15" href="class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="197,76,328,105"/><area shape="rect" id="node5" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="719,24,801,53"/><area shape="rect" id="node7" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="864,74,957,104"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="1012,101,1081,130"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1131,101,1181,130"/><area shape="rect" id="node18" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="376,76,496,105"/><area shape="rect" id="node21" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="709,128,811,157"/><area shape="rect" id="node26" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="557,76,648,105"/><area shape="rect" id="node23" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="859,128,963,157"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c06b4a50402dfcbe88507805978f9fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Writer::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pobranie referencji do Renderera </p>
+
+<p>Definicja w linii <a class="el" href="_writer_8cpp_source.html#l00110">110</a> pliku <a class="el" href="_writer_8cpp_source.html">Writer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a3c06b4a50402dfcbe88507805978f9fa_cgraph.png" border="0" usemap="#class_writer_a3c06b4a50402dfcbe88507805978f9fa_cgraph" alt=""/></div>
+<map name="class_writer_a3c06b4a50402dfcbe88507805978f9fa_cgraph" id="class_writer_a3c06b4a50402dfcbe88507805978f9fa_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="157,5,296,35"/><area shape="rect" id="node7" href="class_writer.html#ab499237f34ce2379aaeaca5e472b0d8b" title="Writer::getInstance" alt="" coords="160,59,293,88"/><area shape="rect" id="node9" href="class_renderer.html#a28a025eef2f148804a316ce738a561a9" title="Renderer::getScreenWidth" alt="" coords="139,112,315,141"/><area shape="rect" id="node11" href="class_renderer.html#ad6183fab320287171b05e3ca143623fe" title="Renderer::getScreenHeight" alt="" coords="137,165,316,195"/><area shape="rect" id="node13" href="class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="160,219,293,248"/><area shape="rect" id="node5" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="365,112,456,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a3c06b4a50402dfcbe88507805978f9fa_icgraph.png" border="0" usemap="#class_writer_a3c06b4a50402dfcbe88507805978f9fa_icgraph" alt=""/></div>
+<map name="class_writer_a3c06b4a50402dfcbe88507805978f9fa_icgraph" id="class_writer_a3c06b4a50402dfcbe88507805978f9fa_icgraph">
+<area shape="rect" id="node3" href="class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="137,5,207,35"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="256,5,307,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a71958f8059a6b2e755e3ec6a3ed7cebd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Writer::setScreenPtr </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>Screen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_writer_8hpp_source.html#l00036">36</a> pliku <a class="el" href="_writer_8hpp_source.html">Writer.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_writer_a71958f8059a6b2e755e3ec6a3ed7cebd_icgraph.png" border="0" usemap="#class_writer_a71958f8059a6b2e755e3ec6a3ed7cebd_icgraph" alt=""/></div>
+<map name="class_writer_a71958f8059a6b2e755e3ec6a3ed7cebd_icgraph" id="class_writer_a71958f8059a6b2e755e3ec6a3ed7cebd_icgraph">
+<area shape="rect" id="node3" href="class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="196,5,265,35"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="315,5,365,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_writer_8hpp_source.html">Writer.hpp</a></li>
+<li>src/<a class="el" href="_writer_8cpp_source.html">Writer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

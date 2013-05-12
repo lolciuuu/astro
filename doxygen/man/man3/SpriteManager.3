@@ -1,0 +1,79 @@
+.TH "SpriteManager" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SpriteManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SpriteManager\&.hpp>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBSprite\fP \fBgetSprite\fP (string Name)"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static void \fBloadConfig\fP ()"
+.br
+.ti -1c
+.RI "static \fBSpriteManager\fP * \fBgetInstance\fP ()"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 6 pliku SpriteManager\&.hpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "\fBSpriteManager\fP * SpriteManager::getInstance ()\fC [static]\fP"
+Metoda implementuje singleton 
+.PP
+\fBZwraca:\fP
+.RS 4
+\fBSpriteManager\fP& : referencja do jedynej instancji tej klasy 
+.RE
+.PP
+\fBParametry:\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+
+.PP
+Definicja w linii 91 pliku SpriteManager\&.cpp\&.
+.SS "\fBSprite\fP SpriteManager::getSprite (stringName)"
+Metoda zwraca sprita o podanej nazwie 
+.PP
+\fBWyjątki:\fP
+.RS 4
+\fIstd::runtime_error\fP const char* : nazwa metody 
+.RE
+.PP
+
+.PP
+Definicja w linii 114 pliku SpriteManager\&.cpp\&.
+.SS "void SpriteManager::loadConfig ()\fC [static]\fP"
+Metoda uruchamia skrypt lua, ktory dodaje wszystkie informacje o spritach\&. W skrypcie dostepna jest metoda cxx_addSprite 
+.PP
+\fBParametry:\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBZwraca:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definicja w linii 69 pliku SpriteManager\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

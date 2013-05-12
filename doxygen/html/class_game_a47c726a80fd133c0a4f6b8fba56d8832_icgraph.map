@@ -1,0 +1,4 @@
+<map id="Game::resetGame" name="Game::resetGame">
+<area shape="rect" id="node3" href="$class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="184,5,331,35"/>
+<area shape="rect" id="node5" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="380,5,529,35"/>
+</map>

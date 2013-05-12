@@ -1,0 +1,28 @@
+<map id="include/SpriteManager.hpp" name="include/SpriteManager.hpp">
+<area shape="rect" id="node3" href="$_enemy_8hpp.html" title="include/Enemy.hpp" alt="" coords="624,83,757,112"/>
+<area shape="rect" id="node9" href="$_play_8hpp.html" title="include/Play.hpp" alt="" coords="512,315,629,344"/>
+<area shape="rect" id="node13" href="$_app_8hpp.html" title="include/App.hpp" alt="" coords="857,469,972,499"/>
+<area shape="rect" id="node27" href="$_map_manager_8cpp.html" title="src/MapManager.cpp" alt="" coords="1517,547,1661,576"/>
+<area shape="rect" id="node31" href="$_player_8cpp.html" title="src/Player.cpp" alt="" coords="1685,547,1792,576"/>
+<area shape="rect" id="node52" href="$_enemy_8cpp.html" title="src/Enemy.cpp" alt="" coords="467,160,576,189"/>
+<area shape="rect" id="node56" href="$_splash_8hpp.html" title="include/Splash.hpp" alt="" coords="797,237,928,267"/>
+<area shape="rect" id="node63" href="$_renderer_g_l_8cpp.html" title="src/RendererGL.cpp" alt="" coords="1155,83,1293,112"/>
+<area shape="rect" id="node65" href="$_sprite_manager_8cpp.html" title="src/SpriteManager.cpp" alt="" coords="1317,83,1469,112"/>
+<area shape="rect" id="node5" href="$_enemy_manager_8hpp.html" title="include/EnemyManager.hpp" alt="" coords="600,160,781,189"/>
+<area shape="rect" id="node7" href="$_map_manager_8hpp.html" title="include/MapManager.hpp" alt="" coords="608,237,773,267"/>
+<area shape="rect" id="node17" href="$_enemy_manager_8cpp.html" title="src/EnemyManager.cpp" alt="" coords="5,547,165,576"/>
+<area shape="rect" id="node37" href="$_resource_8cpp.html" title="src/Resource.cpp" alt="" coords="315,547,440,576"/>
+<area shape="rect" id="node48" href="$_splash_8cpp.html" title="src/Splash.cpp" alt="" coords="768,315,877,344"/>
+<area shape="rect" id="node11" href="$_game_8hpp.html" title="include/Game.hpp" alt="" coords="400,392,525,421"/>
+<area shape="rect" id="node44" href="$_play_8cpp.html" title="src/Play.cpp" alt="" coords="549,392,643,421"/>
+<area shape="rect" id="node29" href="$_menu_8cpp.html" title="src/Menu.cpp" alt="" coords="189,547,291,576"/>
+<area shape="rect" id="node41" href="$_game_8cpp.html" title="src/Game.cpp" alt="" coords="451,469,555,499"/>
+<area shape="rect" id="node15" href="$_app_8cpp.html" title="src/App.cpp" alt="" coords="464,547,555,576"/>
+<area shape="rect" id="node19" href="$_highscore_8cpp.html" title="src/Highscore.cpp" alt="" coords="579,547,707,576"/>
+<area shape="rect" id="node21" href="$_live_bar_8cpp.html" title="src/LiveBar.cpp" alt="" coords="731,547,843,576"/>
+<area shape="rect" id="node23" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="867,547,963,576"/>
+<area shape="rect" id="node25" href="$_map_8cpp.html" title="src/Map.cpp" alt="" coords="987,547,1080,576"/>
+<area shape="rect" id="node33" href="$_property_8cpp.html" title="src/Property.cpp" alt="" coords="1104,547,1221,576"/>
+<area shape="rect" id="node35" href="$_renderer_8cpp.html" title="src/Renderer.cpp" alt="" coords="1245,547,1368,576"/>
+<area shape="rect" id="node39" href="$_sprite_8cpp.html" title="src/Sprite.cpp" alt="" coords="1392,547,1493,576"/>
+</map>

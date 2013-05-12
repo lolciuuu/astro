@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy Renderer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_renderer-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Renderer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Renderer</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer__inherit__graph.png" border="0" usemap="#_renderer_inherit__map" alt="Inheritance graph"/></div>
+<map name="_renderer_inherit__map" id="_renderer_inherit__map">
+<area shape="rect" id="node2" href="class_renderer_g_l.html" title="RendererGL" alt="" coords="5,5,96,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla Renderer:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer__coll__graph.png" border="0" usemap="#_renderer_coll__map" alt="Collaboration graph"/></div>
+<map name="_renderer_coll__map" id="_renderer_coll__map">
+<area shape="rect" id="node2" href="class_renderer_g_l.html" title="RendererGL" alt="" coords="5,101,96,131"/><area shape="rect" id="node4" href="struct_rect.html" title="Rect" alt="" coords="25,5,76,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ae873d28c1e839bf5fa766c1ace3595a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae873d28c1e839bf5fa766c1ace3595a6">setScreenHeight</a> (int H)</td></tr>
+<tr class="memitem:a74b0a4d3c5dd632e7a73ff6bde2ca9e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a74b0a4d3c5dd632e7a73ff6bde2ca9e2">setScreenWidth</a> (int W)</td></tr>
+<tr class="memitem:ad6183fab320287171b05e3ca143623fe"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ad6183fab320287171b05e3ca143623fe">getScreenHeight</a> () const </td></tr>
+<tr class="memitem:a28a025eef2f148804a316ce738a561a9"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a28a025eef2f148804a316ce738a561a9">getScreenWidth</a> () const </td></tr>
+<tr class="memitem:aabd0720e57254d435be5d4a5b19c2bdc"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#aabd0720e57254d435be5d4a5b19c2bdc">getRGB</a> (short R, short G, short B)</td></tr>
+<tr class="inherit_header pub_methods_class_renderer_g_l"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_renderer_g_l')"><img src="closed.png" alt="-"/>&nbsp;Metody publiczne dziedziczone z <a class="el" href="class_renderer_g_l.html">RendererGL</a></td></tr>
+<tr class="memitem:a6dd6386273ba6a6f45d2f9a1f6533b68 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a6dd6386273ba6a6f45d2f9a1f6533b68">RendererGL</a> ()</td></tr>
+<tr class="memitem:a2be6f150853e327ed5ab8ec4a653bcc0 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a2be6f150853e327ed5ab8ec4a653bcc0">~RendererGL</a> ()</td></tr>
+<tr class="memitem:aa581ba9cf4733d696147df3a1802db37 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37">draw</a> (<a class="el" href="struct_rect.html">Rect</a> &amp;Src, <a class="el" href="struct_rect.html">Rect</a> &amp;Dest)</td></tr>
+<tr class="memitem:abb51f5c0e19c25e9bab643d60f942e45 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#abb51f5c0e19c25e9bab643d60f942e45">draw</a> (SDL_Surface *surf, <a class="el" href="struct_rect.html">Rect</a> &amp;where)</td></tr>
+<tr class="memitem:a39d2a01a9f7e2bbc30ba3ac40ac51e51 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a39d2a01a9f7e2bbc30ba3ac40ac51e51">draw</a> (GLuint, <a class="el" href="struct_rect.html">Rect</a> &amp;where)</td></tr>
+<tr class="memitem:a6511a2b0a206816def552df92b16b4e2 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a6511a2b0a206816def552df92b16b4e2">draw</a> (GLuint, const float &amp;x, const float &amp;y, const float &amp;w, const float &amp;h)</td></tr>
+<tr class="memitem:a9f7006664fcfe683bd693b911488b974 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a9f7006664fcfe683bd693b911488b974">fillRect</a> (<a class="el" href="struct_rect.html">Rect</a> &amp;rect)</td></tr>
+<tr class="memitem:a289960b77c7f6c010383b5d53b759ad2 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a289960b77c7f6c010383b5d53b759ad2">draw</a> (<a class="el" href="struct_rect.html">Rect</a> &amp;Src, float x, float y, float w, float h)</td></tr>
+<tr class="memitem:a4e496130f562903ce609fc0d5fe583e7 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a4e496130f562903ce609fc0d5fe583e7">draw</a> (<a class="el" href="struct_rect.html">Rect</a> &amp;Src, string Name)</td></tr>
+<tr class="memitem:a02fd7b724f23bad106aeb40ec32efae9 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a02fd7b724f23bad106aeb40ec32efae9">draw</a> (float x, float y, string Name)</td></tr>
+<tr class="memitem:a91fe9f7b4bffc9a37d73b8b4440ebd68 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a91fe9f7b4bffc9a37d73b8b4440ebd68">draw</a> (string Name, float x, float y, float w, float h)</td></tr>
+<tr class="memitem:a46a63f5c41617150fc00492856fcdc90 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a46a63f5c41617150fc00492856fcdc90">drawBackground</a> (bool menu)</td></tr>
+<tr class="memitem:a1f13ce2b5019dceb631d0a79bc3ed5a0 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a1f13ce2b5019dceb631d0a79bc3ed5a0">flip</a> ()</td></tr>
+<tr class="memitem:afc97deaeb96886ff072668c2e4507d48 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#afc97deaeb96886ff072668c2e4507d48">cleanScreen</a> ()</td></tr>
+<tr class="memitem:add6911f42a1c949e2b54fec77e3e7112 inherit pub_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#add6911f42a1c949e2b54fec77e3e7112">init</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:a2f959c488093963b4d60b02860715c49"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a2f959c488093963b4d60b02860715c49">getInstance</a> ()</td></tr>
+<tr class="inherit_header pub_static_methods_class_renderer_g_l"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_renderer_g_l')"><img src="closed.png" alt="-"/>&nbsp;Statyczne metody publiczne dziedziczone z <a class="el" href="class_renderer_g_l.html">RendererGL</a></td></tr>
+<tr class="memitem:a4e537fcba130f20797f584a76974f86e inherit pub_static_methods_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">static GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a4e537fcba130f20797f584a76974f86e">getSurfaceInGLFormat</a> (SDL_Surface *surface)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_renderer_g_l"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_renderer_g_l')"><img src="closed.png" alt="-"/>&nbsp;Atrybuty chronione dziedziczone z <a class="el" href="class_renderer_g_l.html">RendererGL</a></td></tr>
+<tr class="memitem:afd759121c11707b1d52ca9d3a981c231 inherit pro_attribs_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#afd759121c11707b1d52ca9d3a981c231">pScreen</a></td></tr>
+<tr class="memitem:a743f21c3a31caf3ab41eefbebd4d905e inherit pro_attribs_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a743f21c3a31caf3ab41eefbebd4d905e">pAtlas</a></td></tr>
+<tr class="memitem:a679a2a1d00db36aee533a7b7f3edf723 inherit pro_attribs_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a679a2a1d00db36aee533a7b7f3edf723">pBackground</a></td></tr>
+<tr class="memitem:a878b7af4528c8aa08cfb0278e3ef5d36 inherit pro_attribs_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a878b7af4528c8aa08cfb0278e3ef5d36">pMenuBackground</a></td></tr>
+<tr class="memitem:a635bf352abf9b26245ebb671d7483280 inherit pro_attribs_class_renderer_g_l"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_g_l.html#a635bf352abf9b26245ebb671d7483280">pScreenRect</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock"><p>Rozszerza klase rysujaca do singletona </p>
+
+<p>Definicja w linii <a class="el" href="_renderer_8hpp_source.html#l00009">9</a> pliku <a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>.</p>
+</div><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a2f959c488093963b4d60b02860715c49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_renderer.html">Renderer</a>* Renderer::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_renderer_8hpp_source.html#l00012">12</a> pliku <a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a2f959c488093963b4d60b02860715c49_icgraph.png" border="0" usemap="#class_renderer_a2f959c488093963b4d60b02860715c49_icgraph" alt=""/></div>
+<map name="class_renderer_a2f959c488093963b4d60b02860715c49_icgraph" id="class_renderer_a2f959c488093963b4d60b02860715c49_icgraph">
+<area shape="rect" id="node3" href="class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="207,5,276,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="207,59,276,88"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="325,32,376,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aabd0720e57254d435be5d4a5b19c2bdc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 Renderer::getRGB </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>G</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_renderer_8hpp_source.html#l00026">26</a> pliku <a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_aabd0720e57254d435be5d4a5b19c2bdc_icgraph.png" border="0" usemap="#class_renderer_aabd0720e57254d435be5d4a5b19c2bdc_icgraph" alt=""/></div>
+<map name="class_renderer_aabd0720e57254d435be5d4a5b19c2bdc_icgraph" id="class_renderer_aabd0720e57254d435be5d4a5b19c2bdc_icgraph">
+<area shape="rect" id="node3" href="class_game.html#ad59df6562a58a614fda24622d3715b65" title="Game::Game" alt="" coords="185,5,284,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6183fab320287171b05e3ca143623fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">short Renderer::getScreenHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_renderer_8hpp_source.html#l00023">23</a> pliku <a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_ad6183fab320287171b05e3ca143623fe_icgraph.png" border="0" usemap="#class_renderer_ad6183fab320287171b05e3ca143623fe_icgraph" alt=""/></div>
+<map name="class_renderer_ad6183fab320287171b05e3ca143623fe_icgraph" id="class_renderer_ad6183fab320287171b05e3ca143623fe_icgraph">
+<area shape="rect" id="node3" href="class_standard_references.html#aa3f9ee9954864d9fde792890a199d227" title="StandardReferences\l::StandardReferences" alt="" coords="235,5,384,51"/><area shape="rect" id="node5" href="class_writer.html#a3c06b4a50402dfcbe88507805978f9fa" title="Writer::init" alt="" coords="268,75,351,104"/><area shape="rect" id="node7" href="class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="433,75,503,104"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="552,75,603,104"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a28a025eef2f148804a316ce738a561a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">short Renderer::getScreenWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_renderer_8hpp_source.html#l00024">24</a> pliku <a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a28a025eef2f148804a316ce738a561a9_icgraph.png" border="0" usemap="#class_renderer_a28a025eef2f148804a316ce738a561a9_icgraph" alt=""/></div>
+<map name="class_renderer_a28a025eef2f148804a316ce738a561a9_icgraph" id="class_renderer_a28a025eef2f148804a316ce738a561a9_icgraph">
+<area shape="rect" id="node3" href="class_standard_references.html#aa3f9ee9954864d9fde792890a199d227" title="StandardReferences\l::StandardReferences" alt="" coords="229,5,379,51"/><area shape="rect" id="node5" href="class_writer.html#a3c06b4a50402dfcbe88507805978f9fa" title="Writer::init" alt="" coords="263,75,345,104"/><area shape="rect" id="node7" href="class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="428,75,497,104"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="547,75,597,104"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae873d28c1e839bf5fa766c1ace3595a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::setScreenHeight </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>H</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_renderer_8hpp_source.html#l00020">20</a> pliku <a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74b0a4d3c5dd632e7a73ff6bde2ca9e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::setScreenWidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>W</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_renderer_8hpp_source.html#l00021">21</a> pliku <a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_renderer_8hpp_source.html">Renderer.hpp</a></li>
+<li>src/<a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

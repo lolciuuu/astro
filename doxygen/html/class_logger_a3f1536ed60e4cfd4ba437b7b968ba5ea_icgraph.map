@@ -1,0 +1,26 @@
+<map id="Logger::info" name="Logger::info">
+<area shape="rect" id="node3" href="$class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="411,64,485,94"/>
+<area shape="rect" id="node5" href="$class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4" title="App::init" alt="" coords="612,171,681,200"/>
+<area shape="rect" id="node9" href="$class_highscore.html#ac7add697994e550eca0839a490147db5" title="Highscore::load" alt="" coords="179,328,291,358"/>
+<area shape="rect" id="node13" href="$class_highscore.html#a34562ccb710bdf7aecb7827b17275a9c" title="Highscore::save" alt="" coords="176,382,293,411"/>
+<area shape="rect" id="node21" href="$class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="165,171,304,200"/>
+<area shape="rect" id="node26" href="$class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Player::Player" alt="" coords="396,224,500,254"/>
+<area shape="rect" id="node31" href="$class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="168,118,301,147"/>
+<area shape="rect" id="node37" href="$class_map.html#aca156771a10dc9804eb45a4a4b09c632" title="Map::Map" alt="" coords="195,435,275,464"/>
+<area shape="rect" id="node39" href="$class_map.html#a904c445fdce79257fedeba09070cf88a" title="Map::reset" alt="" coords="193,539,276,568"/>
+<area shape="rect" id="node43" href="$class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="587,539,707,568"/>
+<area shape="rect" id="node45" href="$class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="145,643,324,672"/>
+<area shape="rect" id="node47" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Menu::Menu" alt="" coords="188,696,281,726"/>
+<area shape="rect" id="node49" href="$class_play.html#a0088438837d29378e35a2beed04e64df" title="Play::Play" alt="" coords="193,750,276,779"/>
+<area shape="rect" id="node53" href="$class_player.html#a1af5d39f7bac2aeaa1e30c7dda2332fa" title="Player::reset" alt="" coords="400,592,496,622"/>
+<area shape="rect" id="node56" href="$class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="167,803,303,832"/>
+<area shape="rect" id="node58" href="$class_splash.html#aef2607ef78dd97b0e7783e76efe8637f" title="Splash::endSplash" alt="" coords="581,66,712,95"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="771,119,821,148"/>
+<area shape="rect" id="node11" href="$class_highscore.html#a763df51b57887c8e68b6c09f4d5f27a5" title="Highscore::Highscore" alt="" coords="375,328,521,358"/>
+<area shape="rect" id="node15" href="$class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="389,382,507,411"/>
+<area shape="rect" id="node17" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="572,408,721,438"/>
+<area shape="rect" id="node19" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="580,355,713,384"/>
+<area shape="rect" id="node24" href="$class_game.html#ad59df6562a58a614fda24622d3715b65" title="Game::Game" alt="" coords="399,118,497,147"/>
+<area shape="rect" id="node28" href="$class_writer.html#a3c06b4a50402dfcbe88507805978f9fa" title="Writer::init" alt="" coords="407,171,489,200"/>
+<area shape="rect" id="node41" href="$class_map_manager.html#ad30f83341d8bd5ba2a465feafd5bc510" title="MapManager::reset" alt="" coords="381,539,515,568"/>
+</map>

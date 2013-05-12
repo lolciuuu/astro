@@ -1,0 +1,5 @@
+<map id="Game::pressedChar" name="Game::pressedChar">
+<area shape="rect" id="node3" href="$class_play.html#a058fff0dde8c59d9407df174f6b71565" title="Play::pressedChar" alt="" coords="192,32,323,61"/>
+<area shape="rect" id="node5" href="$class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="393,5,511,35"/>
+<area shape="rect" id="node7" href="$class_highscore.html#ac92abdde763658c8e782b15f4b68aa2c" title="Highscore::pressedChar" alt="" coords="371,59,533,88"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="Game::draw" name="Game::draw">
+<area shape="rect" id="node3" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="151,271,233,300"/>
+<area shape="rect" id="node81" href="$class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="147,764,237,793"/>
+<area shape="rect" id="node5" href="$class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="325,112,443,141"/>
+<area shape="rect" id="node7" href="$class_renderer_g_l.html#a46a63f5c41617150fc00492856fcdc90" title="RendererGL::drawBackground" alt="" coords="285,165,483,195"/>
+<area shape="rect" id="node9" href="$class_background.html#a448f05ff40a9d17be87c568294c63aaf" title="Background::draw" alt="" coords="556,269,681,299"/>
+<area shape="rect" id="node13" href="$class_map_manager.html#ac0ac10367094e7e4eda75cceab7dd9d3" title="MapManager::draw" alt="" coords="317,219,451,248"/>
+<area shape="rect" id="node24" href="$class_enemy_manager.html#a3a35c0d67050453bf8ea3556d84eb544" title="EnemyManager::draw" alt="" coords="309,5,459,35"/>
+<area shape="rect" id="node28" href="$class_player.html#ac18c9d30d2997765321c62030a4b20b7" title="Player::draw" alt="" coords="337,373,431,403"/>
+<area shape="rect" id="node30" href="$class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="800,337,891,367"/>
+<area shape="rect" id="node33" href="$class_live_bar.html#a01bc017470a611f2d09ec37b222c2144" title="LiveBar::draw" alt="" coords="568,475,669,504"/>
+<area shape="rect" id="node49" href="$class_play.html#ae5622a2f78ce8316ca14f82e41102a7b" title="Play::isCanStop" alt="" coords="325,59,443,88"/>
+<area shape="rect" id="node52" href="$class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="325,685,443,715"/>
+<area shape="rect" id="node11" href="$class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="992,364,1120,393"/>
+<area shape="rect" id="node15" href="$class_map.html#a6a40755f8541eece2fa48e9e24a588f8" title="Map::draw" alt="" coords="577,191,660,220"/>
+<area shape="rect" id="node17" href="$class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="771,183,920,212"/>
+<area shape="rect" id="node19" href="$class_map_manager.html#ae0087c048e1e54f855ad7b236e81d6b2" title="MapManager::getRectByID" alt="" coords="755,129,936,159"/>
+<area shape="rect" id="node21" href="$_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="1027,129,1085,159"/>
+<area shape="rect" id="node26" href="$class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="545,5,692,35"/>
+<area shape="rect" id="node35" href="$class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="791,441,900,471"/>
+<area shape="rect" id="node37" href="$class_renderer_g_l.html#a4e537fcba130f20797f584a76974f86e" title="RendererGL::getSurfaceIn\lGLFormat" alt="" coords="759,494,932,541"/>
+<area shape="rect" id="node39" href="$class_resource.html#a1c26fda83105920c413977159931db72" title="Resource::getSurf" alt="" coords="781,564,909,593"/>
+<area shape="rect" id="node44" href="$class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="799,684,892,713"/>
+<area shape="rect" id="node46" href="$_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="812,737,879,767"/>
+<area shape="rect" id="node41" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="1032,564,1080,593"/>
+<area shape="rect" id="node54" href="$class_live_bar.html#a6bf0650bcaadb35e5914f31d2aed4e52" title="LiveBar::getResultNum" alt="" coords="540,579,697,608"/>
+<area shape="rect" id="node56" href="$class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="559,843,679,872"/>
+<area shape="rect" id="node59" href="$class_writer.html#a82df193ef4dfea3a05cdc8878af4968e" title="Writer::getCenterX" alt="" coords="780,895,911,924"/>
+<area shape="rect" id="node61" href="$class_writer.html#a09b7ee57c068f226afa669b04c26f4ab" title="Writer::getTextWidth" alt="" coords="985,920,1127,949"/>
+<area shape="rect" id="node72" href="$_const_8hpp.html#ad33c55057da6e704301c6f5349eed5b7" title="WHITE_FONT_COLOR" alt="" coords="537,632,700,661"/>
+<area shape="rect" id="node76" href="$class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="553,685,684,715"/>
+<area shape="rect" id="node78" href="$_const_8hpp.html#a1f9b7c54a17f59212b050535753b5760" title="YELLOW_FONT_COLOR" alt="" coords="532,789,705,819"/>
+<area shape="rect" id="node67" href="$_const_8hpp.html#abf528d73faba2d3e6eb1da5a66e5996a" title="BLACK_FONT_COLOR" alt="" coords="764,841,927,871"/>
+<area shape="rect" id="node63" href="$class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="1177,920,1271,949"/>
+<area shape="rect" id="node84" href="$_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327" title="warring" alt="" coords="352,764,416,793"/>
+</map>

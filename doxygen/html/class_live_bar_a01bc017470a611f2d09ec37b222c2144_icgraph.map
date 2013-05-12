@@ -1,0 +1,6 @@
+<map id="LiveBar::draw" name="LiveBar::draw">
+<area shape="rect" id="node3" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="159,5,241,35"/>
+<area shape="rect" id="node5" href="$class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="291,5,384,35"/>
+<area shape="rect" id="node7" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="433,5,503,35"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="552,5,603,35"/>
+</map>

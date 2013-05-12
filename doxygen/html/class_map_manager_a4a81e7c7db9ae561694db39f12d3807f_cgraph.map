@@ -1,0 +1,16 @@
+<map id="MapManager::MapManager" name="MapManager::MapManager">
+<area shape="rect" id="node3" href="$class_logger.html#a56973f3193424dcc2b7802d762e8f35d" title="Logger::setClassName" alt="" coords="263,5,417,35"/>
+<area shape="rect" id="node5" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="295,59,385,88"/>
+<area shape="rect" id="node7" href="$class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="271,112,409,141"/>
+<area shape="rect" id="node11" href="$_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="307,165,373,195"/>
+<area shape="rect" id="node13" href="$class_sprite_manager.html#ac0d5616a7e3e83fc53dc8bf21345c955" title="SpriteManager::getInstance" alt="" coords="249,219,431,248"/>
+<area shape="rect" id="node15" href="$class_sprite_manager.html#af42bfcb7a5e1b2b036f8d1a005703791" title="SpriteManager::getSprite" alt="" coords="257,272,423,301"/>
+<area shape="rect" id="node19" href="$class_sprite.html#a58b2d6bd3ebd559d52c35d017a8c826e" title="Sprite::getRect" alt="" coords="285,325,395,355"/>
+<area shape="rect" id="node21" href="$class_enemy_manager.html#a374670a22cdd8c69a27e5de52700a1bd" title="EnemyManager::setHorizontal\lTilesAmount" alt="" coords="241,378,439,425"/>
+<area shape="rect" id="node23" href="$class_map.html#a747eb222246594c4927563c07133fdc3" title="Map::getAmountEntityHorizontal" alt="" coords="235,448,445,477"/>
+<area shape="rect" id="node25" href="$class_enemy_manager.html#a565ebbe1cf87fcbce8108bbe4909270e" title="EnemyManager::setTilesSize" alt="" coords="244,501,436,531"/>
+<area shape="rect" id="node27" href="$class_map.html#a9143ad6b256d73201c0b74a3e80011c7" title="Map::getSize" alt="" coords="291,555,389,584"/>
+<area shape="rect" id="node29" href="$class_map.html#afa5e22102546b7f21098864c7536592d" title="Map::enableCheckColision" alt="" coords="251,608,429,637"/>
+<area shape="rect" id="node9" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="500,112,548,141"/>
+<area shape="rect" id="node17" href="$_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="495,272,553,301"/>
+</map>

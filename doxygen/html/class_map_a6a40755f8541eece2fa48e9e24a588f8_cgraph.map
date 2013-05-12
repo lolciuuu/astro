@@ -1,0 +1,6 @@
+<map id="Map::draw" name="Map::draw">
+<area shape="rect" id="node3" href="$class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="152,5,301,35"/>
+<area shape="rect" id="node5" href="$class_map_manager.html#ae0087c048e1e54f855ad7b236e81d6b2" title="MapManager::getRectByID" alt="" coords="136,59,317,88"/>
+<area shape="rect" id="node9" href="$class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="163,112,291,141"/>
+<area shape="rect" id="node7" href="$_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="367,59,425,88"/>
+</map>

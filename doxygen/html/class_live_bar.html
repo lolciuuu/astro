@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy LiveBar</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_live_bar-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy LiveBar</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla LiveBar</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar__inherit__graph.png" border="0" usemap="#_live_bar_inherit__map" alt="Inheritance graph"/></div>
+<map name="_live_bar_inherit__map" id="_live_bar_inherit__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="5,5,147,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla LiveBar:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar__coll__graph.png" border="0" usemap="#_live_bar_coll__map" alt="Collaboration graph"/></div>
+<map name="_live_bar_coll__map" id="_live_bar_coll__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="113,277,255,307"/><area shape="rect" id="node4" href="class_writer.html" title="Writer" alt="" coords="5,181,61,211"/><area shape="rect" id="node6" href="class_renderer.html" title="Renderer" alt="" coords="87,181,161,211"/><area shape="rect" id="node8" href="class_renderer_g_l.html" title="RendererGL" alt="" coords="79,101,169,131"/><area shape="rect" id="node10" href="struct_rect.html" title="Rect" alt="" coords="99,5,149,35"/><area shape="rect" id="node12" href="class_sound_manager.html" title="SoundManager" alt="" coords="185,181,295,211"/><area shape="rect" id="node14" href="class_logger.html" title="Logger" alt="" coords="356,181,417,211"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a5b6e7765489a6d8f4431152590c7c446"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a5b6e7765489a6d8f4431152590c7c446">LiveBar</a> ()</td></tr>
+<tr class="memitem:afb0075ce874cf12615e8a0c55c8d097f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#afb0075ce874cf12615e8a0c55c8d097f">reset</a> ()</td></tr>
+<tr class="memitem:a01bc017470a611f2d09ec37b222c2144"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a01bc017470a611f2d09ec37b222c2144">draw</a> ()</td></tr>
+<tr class="memitem:a6d52777855cbc0087f1663fa32a5fb43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a6d52777855cbc0087f1663fa32a5fb43">update</a> (const float &amp;dt)</td></tr>
+<tr class="memitem:aa92c4df16b9931bf892fa4cfc271d2cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#aa92c4df16b9931bf892fa4cfc271d2cc">addBonus</a> ()</td></tr>
+<tr class="memitem:a45fdcba09493a5f04f74fb063d012352"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a45fdcba09493a5f04f74fb063d012352">useBonus</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_standard_references"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_standard_references')"><img src="closed.png" alt="-"/>&nbsp;Metody publiczne dziedziczone z <a class="el" href="class_standard_references.html">StandardReferences</a></td></tr>
+<tr class="memitem:aa3f9ee9954864d9fde792890a199d227 inherit pub_methods_class_standard_references"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#aa3f9ee9954864d9fde792890a199d227">StandardReferences</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:a5a05234a2125dc05e9c5e62d31d426b1"><td class="memItemLeft" align="right" valign="top">static Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a5a05234a2125dc05e9c5e62d31d426b1">disableImmortal_callbackTimer</a> (Uint32 interval, void *param)</td></tr>
+<tr class="memitem:a40f799e7238a84d4b8156c789149e4bf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf">isALive</a> ()</td></tr>
+<tr class="memitem:a6cc13313240f3ee5c99b1e40e3f83692"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a6cc13313240f3ee5c99b1e40e3f83692">colision</a> (short type)</td></tr>
+<tr class="memitem:aaabbb5ed6674d9c1d5315343a104b972"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#aaabbb5ed6674d9c1d5315343a104b972">increaseLive</a> ()</td></tr>
+<tr class="memitem:a95a8f1de5a9c123505c7c9bd9e1db655"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655">getResult</a> ()</td></tr>
+<tr class="memitem:a6bf0650bcaadb35e5914f31d2aed4e52"><td class="memItemLeft" align="right" valign="top">static ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a6bf0650bcaadb35e5914f31d2aed4e52">getResultNum</a> ()</td></tr>
+<tr class="memitem:aeda5d101833697079d54d4c5f23f8814"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#aeda5d101833697079d54d4c5f23f8814">getLiveAmount</a> ()</td></tr>
+<tr class="memitem:a2963de8fa002489f3c114a5ee4404553"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a2963de8fa002489f3c114a5ee4404553">getMapSpeed</a> ()</td></tr>
+<tr class="memitem:a12b9fcd78f70675e806335e17a49ee58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#a12b9fcd78f70675e806335e17a49ee58">nextMeter</a> ()</td></tr>
+<tr class="memitem:ab8f833c86a833ce7da0edd336183f65c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_bar.html#ab8f833c86a833ce7da0edd336183f65c">resetMeter</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_standard_references"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_standard_references')"><img src="closed.png" alt="-"/>&nbsp;Atrybuty chronione dziedziczone z <a class="el" href="class_standard_references.html">StandardReferences</a></td></tr>
+<tr class="memitem:ac43615496e7d82e7b00077850ce3ba41 inherit pro_attribs_class_standard_references"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#ac43615496e7d82e7b00077850ce3ba41">pRendererPtr</a></td></tr>
+<tr class="memitem:a09cd11c1b65381b84da6a022bca6f7be inherit pro_attribs_class_standard_references"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_writer.html">Writer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#a09cd11c1b65381b84da6a022bca6f7be">pWriterPtr</a></td></tr>
+<tr class="memitem:abf65eb4e405c8f36c07a47dcbcdb08a0 inherit pro_attribs_class_standard_references"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sound_manager.html">SoundManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#abf65eb4e405c8f36c07a47dcbcdb08a0">pSoundManagerPtr</a></td></tr>
+<tr class="memitem:a83e60c666892448e2d757a606d2b7954 inherit pro_attribs_class_standard_references"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#a83e60c666892448e2d757a606d2b7954">pScreenWidth</a></td></tr>
+<tr class="memitem:a9ea04824408aefc7f251ac7d601d3436 inherit pro_attribs_class_standard_references"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#a9ea04824408aefc7f251ac7d601d3436">pScreenHeight</a></td></tr>
+<tr class="memitem:ac9c165da0475e55dcb86e7205a31b35d inherit pro_attribs_class_standard_references"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#ac9c165da0475e55dcb86e7205a31b35d">logger</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00010">10</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+</div><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a5b6e7765489a6d8f4431152590c7c446"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LiveBar::LiveBar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00010">10</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a5b6e7765489a6d8f4431152590c7c446_cgraph.png" border="0" usemap="#class_live_bar_a5b6e7765489a6d8f4431152590c7c446_cgraph" alt=""/></div>
+<map name="class_live_bar_a5b6e7765489a6d8f4431152590c7c446_cgraph" id="class_live_bar_a5b6e7765489a6d8f4431152590c7c446_cgraph">
+<area shape="rect" id="node3" href="class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="177,5,316,35"/><area shape="rect" id="node7" href="class_app.html#a0560774e21c5f73a36e3ba0f5a2ee9a2" title="App::getScreenWidth" alt="" coords="173,59,320,88"/><area shape="rect" id="node5" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="368,5,416,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="aa92c4df16b9931bf892fa4cfc271d2cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LiveBar::addBonus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00020">20</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_aa92c4df16b9931bf892fa4cfc271d2cc_icgraph.png" border="0" usemap="#class_live_bar_aa92c4df16b9931bf892fa4cfc271d2cc_icgraph" alt=""/></div>
+<map name="class_live_bar_aa92c4df16b9931bf892fa4cfc271d2cc_icgraph" id="class_live_bar_aa92c4df16b9931bf892fa4cfc271d2cc_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="188,5,281,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="331,5,435,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="484,5,553,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="603,5,653,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cc13313240f3ee5c99b1e40e3f83692"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LiveBar::colision </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00081">81</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_cgraph.png" border="0" usemap="#class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_cgraph" alt=""/></div>
+<map name="class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_cgraph" id="class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_cgraph">
+<area shape="rect" id="node3" href="_const_8hpp.html#aadfc5d919e1c74b24a6bd11855f74b5d" title="COLISION_WITH_ENEMY" alt="" coords="175,5,356,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_icgraph.png" border="0" usemap="#class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_icgraph" alt=""/></div>
+<map name="class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_icgraph" id="class_live_bar_a6cc13313240f3ee5c99b1e40e3f83692_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="175,5,268,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="317,5,421,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="471,5,540,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="589,5,640,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a05234a2125dc05e9c5e62d31d426b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 LiveBar::disableImmortal_callbackTimer </td>
+          <td>(</td>
+          <td class="paramtype">Uint32&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda statyczna wywolywana przez timer wtedy kiedy mija czas w ktorym gracz nie traci zycia </p>
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00111">111</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a5a05234a2125dc05e9c5e62d31d426b1_icgraph.png" border="0" usemap="#class_live_bar_a5a05234a2125dc05e9c5e62d31d426b1_icgraph" alt=""/></div>
+<map name="class_live_bar_a5a05234a2125dc05e9c5e62d31d426b1_icgraph" id="class_live_bar_a5a05234a2125dc05e9c5e62d31d426b1_icgraph">
+<area shape="rect" id="node3" href="class_live_bar.html#a45fdcba09493a5f04f74fb063d012352" title="LiveBar::useBonus" alt="" coords="223,13,353,43"/><area shape="rect" id="node5" href="class_play.html#a33e6089a84e2e3ace2fd8e0410962a2e" title="Play::useBonus" alt="" coords="403,13,517,43"/><area shape="rect" id="node7" href="class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed" title="Game::pressedCtrl" alt="" coords="567,13,697,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a01bc017470a611f2d09ec37b222c2144"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LiveBar::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rysowanie paska zycia...cala gorna czesc ekranu </p>
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00020">20</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a01bc017470a611f2d09ec37b222c2144_cgraph.png" border="0" usemap="#class_live_bar_a01bc017470a611f2d09ec37b222c2144_cgraph" alt=""/></div>
+<map name="class_live_bar_a01bc017470a611f2d09ec37b222c2144_cgraph" id="class_live_bar_a01bc017470a611f2d09ec37b222c2144_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a98e08484c3e5e07c1cbe9a20f1cc4173" title="Logger::warring" alt="" coords="191,5,300,35"/><area shape="rect" id="node5" href="class_renderer_g_l.html#a4e537fcba130f20797f584a76974f86e" title="RendererGL::getSurfaceIn\lGLFormat" alt="" coords="159,58,332,105"/><area shape="rect" id="node7" href="class_resource.html#a1c26fda83105920c413977159931db72" title="Resource::getSurf" alt="" coords="181,128,309,157"/><area shape="rect" id="node11" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="381,260,509,289"/><area shape="rect" id="node13" href="class_writer.html#a3c9838d8a0c5620b0a9cf06f6dcca90d" title="Writer::draw" alt="" coords="199,232,292,261"/><area shape="rect" id="node15" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="212,285,279,315"/><area shape="rect" id="node17" href="class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="200,339,291,368"/><area shape="rect" id="node9" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="421,128,469,157"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a01bc017470a611f2d09ec37b222c2144_icgraph.png" border="0" usemap="#class_live_bar_a01bc017470a611f2d09ec37b222c2144_icgraph" alt=""/></div>
+<map name="class_live_bar_a01bc017470a611f2d09ec37b222c2144_icgraph" id="class_live_bar_a01bc017470a611f2d09ec37b222c2144_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="159,5,241,35"/><area shape="rect" id="node5" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="291,5,384,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="433,5,503,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="552,5,603,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeda5d101833697079d54d4c5f23f8814"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float LiveBar::getLiveAmount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00048">48</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_aeda5d101833697079d54d4c5f23f8814_icgraph.png" border="0" usemap="#class_live_bar_aeda5d101833697079d54d4c5f23f8814_icgraph" alt=""/></div>
+<map name="class_live_bar_aeda5d101833697079d54d4c5f23f8814_icgraph" id="class_live_bar_aeda5d101833697079d54d4c5f23f8814_icgraph">
+<area shape="rect" id="node3" href="class_player.html#ae2fef6dacb1e6bedbc0d08a18043cfc5" title="Player::update" alt="" coords="216,5,323,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="372,5,465,35"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="515,5,619,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="668,5,737,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="787,5,837,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2963de8fa002489f3c114a5ee4404553"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float LiveBar::getMapSpeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00049">49</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a95a8f1de5a9c123505c7c9bd9e1db655"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string LiveBar::getResult </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00045">45</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a95a8f1de5a9c123505c7c9bd9e1db655_icgraph.png" border="0" usemap="#class_live_bar_a95a8f1de5a9c123505c7c9bd9e1db655_icgraph" alt=""/></div>
+<map name="class_live_bar_a95a8f1de5a9c123505c7c9bd9e1db655_icgraph" id="class_live_bar_a95a8f1de5a9c123505c7c9bd9e1db655_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="184,5,301,35"/><area shape="rect" id="node13" href="class_highscore.html#a34562ccb710bdf7aecb7827b17275a9c" title="Highscore::save" alt="" coords="184,59,301,88"/><area shape="rect" id="node5" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="367,5,449,35"/><area shape="rect" id="node7" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="544,5,637,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="716,5,785,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="835,5,885,35"/><area shape="rect" id="node15" href="class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="349,59,467,88"/><area shape="rect" id="node17" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="516,59,665,88"/><area shape="rect" id="node19" href="class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="524,112,657,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bf0650bcaadb35e5914f31d2aed4e52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ulong LiveBar::getResultNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00046">46</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a6bf0650bcaadb35e5914f31d2aed4e52_icgraph.png" border="0" usemap="#class_live_bar_a6bf0650bcaadb35e5914f31d2aed4e52_icgraph" alt=""/></div>
+<map name="class_live_bar_a6bf0650bcaadb35e5914f31d2aed4e52_icgraph" id="class_live_bar_a6bf0650bcaadb35e5914f31d2aed4e52_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="213,5,331,35"/><area shape="rect" id="node5" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="380,5,463,35"/><area shape="rect" id="node7" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="512,5,605,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="655,5,724,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="773,5,824,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaabbb5ed6674d9c1d5315343a104b972"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LiveBar::increaseLive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00117">117</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_aaabbb5ed6674d9c1d5315343a104b972_icgraph.png" border="0" usemap="#class_live_bar_aaabbb5ed6674d9c1d5315343a104b972_icgraph" alt=""/></div>
+<map name="class_live_bar_aaabbb5ed6674d9c1d5315343a104b972_icgraph" id="class_live_bar_aaabbb5ed6674d9c1d5315343a104b972_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a939201ed5dee0525ec7359ab880e1549" title="Highscore::colision" alt="" coords="200,5,333,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="383,5,476,35"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="525,5,629,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="679,5,748,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="797,5,848,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a40f799e7238a84d4b8156c789149e4bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool LiveBar::isALive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00030">30</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a40f799e7238a84d4b8156c789149e4bf_icgraph.png" border="0" usemap="#class_live_bar_a40f799e7238a84d4b8156c789149e4bf_icgraph" alt=""/></div>
+<map name="class_live_bar_a40f799e7238a84d4b8156c789149e4bf_icgraph" id="class_live_bar_a40f799e7238a84d4b8156c789149e4bf_icgraph">
+<area shape="rect" id="node3" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="423,5,527,35"/><area shape="rect" id="node9" href="class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="196,112,313,141"/><area shape="rect" id="node15" href="class_play.html#a058fff0dde8c59d9407df174f6b71565" title="Play::pressedChar" alt="" coords="189,165,320,195"/><area shape="rect" id="node19" href="class_play.html#a1030d426e7a7072d905dea261f53dd36" title="Play::pressedBackspace" alt="" coords="172,219,337,248"/><area shape="rect" id="node23" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="208,59,301,88"/><area shape="rect" id="node26" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="213,272,296,301"/><area shape="rect" id="node31" href="class_play.html#a33e6089a84e2e3ace2fd8e0410962a2e" title="Play::useBonus" alt="" coords="197,325,312,355"/><area shape="rect" id="node5" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="612,139,681,168"/><area shape="rect" id="node7" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="731,139,781,168"/><area shape="rect" id="node11" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="400,59,549,88"/><area shape="rect" id="node13" href="class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="408,112,541,141"/><area shape="rect" id="node17" href="class_game.html#a411cd70fc63356705a8abe77ae6e5d57" title="Game::pressedChar" alt="" coords="405,165,544,195"/><area shape="rect" id="node21" href="class_game.html#a4c0d1cea30797efbc569599afd3031fe" title="Game::pressedBackspace" alt="" coords="387,219,563,248"/><area shape="rect" id="node28" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="428,272,521,301"/><area shape="rect" id="node33" href="class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed" title="Game::pressedCtrl" alt="" coords="409,325,540,355"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a12b9fcd78f70675e806335e17a49ee58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void LiveBar::nextMeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00051">51</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a12b9fcd78f70675e806335e17a49ee58_icgraph.png" border="0" usemap="#class_live_bar_a12b9fcd78f70675e806335e17a49ee58_icgraph" alt=""/></div>
+<map name="class_live_bar_a12b9fcd78f70675e806335e17a49ee58_icgraph" id="class_live_bar_a12b9fcd78f70675e806335e17a49ee58_icgraph">
+<area shape="rect" id="node3" href="class_map_manager.html#a26b78ab244077dc4e8fc5b83c45e415d" title="MapManager::update" alt="" coords="187,5,331,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="380,5,473,35"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="523,5,627,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="676,5,745,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="795,5,845,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afb0075ce874cf12615e8a0c55c8d097f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LiveBar::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00123">123</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_afb0075ce874cf12615e8a0c55c8d097f_icgraph.png" border="0" usemap="#class_live_bar_afb0075ce874cf12615e8a0c55c8d097f_icgraph" alt=""/></div>
+<map name="class_live_bar_afb0075ce874cf12615e8a0c55c8d097f_icgraph" id="class_live_bar_afb0075ce874cf12615e8a0c55c8d097f_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="157,5,277,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8f833c86a833ce7da0edd336183f65c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void LiveBar::resetMeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8hpp_source.html#l00052">52</a> pliku <a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_ab8f833c86a833ce7da0edd336183f65c_icgraph.png" border="0" usemap="#class_live_bar_ab8f833c86a833ce7da0edd336183f65c_icgraph" alt=""/></div>
+<map name="class_live_bar_ab8f833c86a833ce7da0edd336183f65c_icgraph" id="class_live_bar_ab8f833c86a833ce7da0edd336183f65c_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="189,5,309,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d52777855cbc0087f1663fa32a5fb43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LiveBar::update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00062">62</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_cgraph.png" border="0" usemap="#class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_cgraph" alt=""/></div>
+<map name="class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_cgraph" id="class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_cgraph">
+<area shape="rect" id="node3" href="class_player.html#a68c3709af9ef2651c99074a8792bbd04" title="Player::isFly" alt="" coords="169,5,263,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_icgraph.png" border="0" usemap="#class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_icgraph" alt=""/></div>
+<map name="class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_icgraph" id="class_live_bar_a6d52777855cbc0087f1663fa32a5fb43_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="169,5,263,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="312,5,416,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="465,5,535,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="584,5,635,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a45fdcba09493a5f04f74fb063d012352"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LiveBar::useBonus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_live_bar_8cpp_source.html#l00094">94</a> pliku <a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a45fdcba09493a5f04f74fb063d012352_cgraph.png" border="0" usemap="#class_live_bar_a45fdcba09493a5f04f74fb063d012352_cgraph" alt=""/></div>
+<map name="class_live_bar_a45fdcba09493a5f04f74fb063d012352_cgraph" id="class_live_bar_a45fdcba09493a5f04f74fb063d012352_cgraph">
+<area shape="rect" id="node3" href="class_live_bar.html#a5a05234a2125dc05e9c5e62d31d426b1" title="LiveBar::disableImmortal\l_callbackTimer" alt="" coords="188,5,353,51"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_live_bar_a45fdcba09493a5f04f74fb063d012352_icgraph.png" border="0" usemap="#class_live_bar_a45fdcba09493a5f04f74fb063d012352_icgraph" alt=""/></div>
+<map name="class_live_bar_a45fdcba09493a5f04f74fb063d012352_icgraph" id="class_live_bar_a45fdcba09493a5f04f74fb063d012352_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a33e6089a84e2e3ace2fd8e0410962a2e" title="Play::useBonus" alt="" coords="187,5,301,35"/><area shape="rect" id="node5" href="class_game.html#af6d80d3230138c94bdaa6b3b5a9671ed" title="Game::pressedCtrl" alt="" coords="351,5,481,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_live_bar_8hpp_source.html">LiveBar.hpp</a></li>
+<li>src/<a class="el" href="_live_bar_8cpp_source.html">LiveBar.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

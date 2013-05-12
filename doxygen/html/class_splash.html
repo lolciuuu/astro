@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy Splash</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="#pro-attribs">Atrybuty chronione</a> &#124;
+<a href="#pro-static-attribs">Statyczne atrybuty chronione</a> &#124;
+<a href="class_splash-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Splash</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Splash</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash__inherit__graph.png" border="0" usemap="#_splash_inherit__map" alt="Inheritance graph"/></div>
+<map name="_splash_inherit__map" id="_splash_inherit__map">
+<area shape="rect" id="node3" href="class_app.html" title="App" alt="" coords="13,83,59,112"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla Splash:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash__coll__graph.png" border="0" usemap="#_splash_coll__map" alt="Collaboration graph"/></div>
+<map name="_splash_coll__map" id="_splash_coll__map">
+<area shape="rect" id="node2" href="struct_rect.html" title="Rect" alt="" coords="5,5,56,35"/><area shape="rect" id="node4" href="class_logger.html" title="Logger" alt="" coords="107,5,168,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aa03e4b045318c73512c6df548c85b360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#aa03e4b045318c73512c6df548c85b360">Splash</a> ()</td></tr>
+<tr class="memitem:a79ad60c130603f25b888235cd5d2c6c1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a79ad60c130603f25b888235cd5d2c6c1">~Splash</a> ()</td></tr>
+<tr class="memitem:a7da7933898faf6b2692f28a6733447db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a7da7933898faf6b2692f28a6733447db">isInitDone</a> () const </td></tr>
+<tr class="memitem:a019d17528fb1d2079d00570625e2faaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a019d17528fb1d2079d00570625e2faaf">isSplashDone</a> () const </td></tr>
+<tr class="memitem:a29b2a888832f523440c378d7412a7011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a29b2a888832f523440c378d7412a7011">startSplash</a> (ushort W, ushort H, SDL_Surface *Screen)</td></tr>
+<tr class="memitem:aef2607ef78dd97b0e7783e76efe8637f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#aef2607ef78dd97b0e7783e76efe8637f">endSplash</a> ()</td></tr>
+<tr class="memitem:aeaa9a649934c3390dfc0a16f93393b97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#aeaa9a649934c3390dfc0a16f93393b97">drawSplash</a> ()</td></tr>
+<tr class="memitem:aa3c53f4c6723c0760a3551fca33a4353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#aa3c53f4c6723c0760a3551fca33a4353">splashAnimStep</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:ad6c116f785928ed90dd3011e14daa237"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237">initThread</a> (void *)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
+Atrybuty chronione</h2></td></tr>
+<tr class="memitem:a824537c8e19a784c00dc2d61376c6cd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a824537c8e19a784c00dc2d61376c6cd3">pSplashIsDone</a></td></tr>
+<tr class="memitem:acbbc73b606ef26b193af56f1acd9e11e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#acbbc73b606ef26b193af56f1acd9e11e">pSplashLong</a></td></tr>
+<tr class="memitem:ac9a49cd8f44366f5716c17dbe9db701d"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#ac9a49cd8f44366f5716c17dbe9db701d">pSplash</a></td></tr>
+<tr class="memitem:aefb59fb3d168a0679a76de6d07743282"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#aefb59fb3d168a0679a76de6d07743282">pSplashGL</a></td></tr>
+<tr class="memitem:a312cd275c3359747d29bbbd0cfe2be4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a312cd275c3359747d29bbbd0cfe2be4f">pRectSplash</a></td></tr>
+<tr class="memitem:ab6bbb6b6bc8a3cbfc4181b09c53f2665"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#ab6bbb6b6bc8a3cbfc4181b09c53f2665">pRectLoad</a></td></tr>
+<tr class="memitem:a9af6a9438a62cfbeeecf4a819327497c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a9af6a9438a62cfbeeecf4a819327497c">pCurrentLoop</a></td></tr>
+<tr class="memitem:af459e2439a94374345c388b162f1ecb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#af459e2439a94374345c388b162f1ecb2">pSplashLoadLong</a></td></tr>
+<tr class="memitem:a92b99b88714bb89244d38b3520a1ed86"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a92b99b88714bb89244d38b3520a1ed86">pColor</a></td></tr>
+<tr class="memitem:aaf8cae8b1f3a0b86e0d854dc737e7580"><td class="memItemLeft" align="right" valign="top">ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#aaf8cae8b1f3a0b86e0d854dc737e7580">pScreenW</a></td></tr>
+<tr class="memitem:a0aee4ecdeee84a5b97918715d6a736ce"><td class="memItemLeft" align="right" valign="top">ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a0aee4ecdeee84a5b97918715d6a736ce">pScreenH</a></td></tr>
+<tr class="memitem:a467762a37156430ca5ab3c956bd362d2"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a467762a37156430ca5ab3c956bd362d2">pScreen</a></td></tr>
+<tr class="memitem:a0daf0a8e992aad4d9a61ab389f018a00"><td class="memItemLeft" align="right" valign="top">SDL_TimerID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a0daf0a8e992aad4d9a61ab389f018a00">timerFPS</a></td></tr>
+<tr class="memitem:a26f2ee763916abd5206311e01855f2c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a26f2ee763916abd5206311e01855f2c3">logger</a></td></tr>
+<tr class="memitem:a2a096895220d799e78d8d796d5b54098"><td class="memItemLeft" align="right" valign="top">ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a2a096895220d799e78d8d796d5b54098">pSplashRectWidth</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-static-attribs"></a>
+Statyczne atrybuty chronione</h2></td></tr>
+<tr class="memitem:a0ad0521aabe259e795e6f5a8ebbe56f1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a0ad0521aabe259e795e6f5a8ebbe56f1">pInitIsDone</a></td></tr>
+<tr class="memitem:a2e877ab471c2a1c2a431521fa81e7cf6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_splash.html#a2e877ab471c2a1c2a431521fa81e7cf6">pframeRating</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00011">11</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+</div><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="aa03e4b045318c73512c6df548c85b360"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Splash::Splash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00008">8</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79ad60c130603f25b888235cd5d2c6c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Splash::~Splash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00022">22</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="aeaa9a649934c3390dfc0a16f93393b97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Splash::drawSplash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00125">125</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_aeaa9a649934c3390dfc0a16f93393b97_cgraph.png" border="0" usemap="#class_splash_aeaa9a649934c3390dfc0a16f93393b97_cgraph" alt=""/></div>
+<map name="class_splash_aeaa9a649934c3390dfc0a16f93393b97_cgraph" id="class_splash_aeaa9a649934c3390dfc0a16f93393b97_cgraph">
+<area shape="rect" id="node3" href="_const_8hpp.html#a5f66486699d4aa869f23e71241841d1e" title="SPLASH_TIME" alt="" coords="192,5,307,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_aeaa9a649934c3390dfc0a16f93393b97_icgraph.png" border="0" usemap="#class_splash_aeaa9a649934c3390dfc0a16f93393b97_icgraph" alt=""/></div>
+<map name="class_splash_aeaa9a649934c3390dfc0a16f93393b97_icgraph" id="class_splash_aeaa9a649934c3390dfc0a16f93393b97_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="192,5,243,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aef2607ef78dd97b0e7783e76efe8637f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Splash::endSplash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00118">118</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_aef2607ef78dd97b0e7783e76efe8637f_cgraph.png" border="0" usemap="#class_splash_aef2607ef78dd97b0e7783e76efe8637f_cgraph" alt=""/></div>
+<map name="class_splash_aef2607ef78dd97b0e7783e76efe8637f_cgraph" id="class_splash_aef2607ef78dd97b0e7783e76efe8637f_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="184,5,275,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_aef2607ef78dd97b0e7783e76efe8637f_icgraph.png" border="0" usemap="#class_splash_aef2607ef78dd97b0e7783e76efe8637f_icgraph" alt=""/></div>
+<map name="class_splash_aef2607ef78dd97b0e7783e76efe8637f_icgraph" id="class_splash_aef2607ef78dd97b0e7783e76efe8637f_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="184,5,235,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6c116f785928ed90dd3011e14daa237"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Splash::initThread </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda jest wykonywana w osobnym watku, i wczytuje wszystkie zasoby Podczas wczytywania zasobow w glownym watku jest rysowany splash </p>
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00179">179</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_ad6c116f785928ed90dd3011e14daa237_cgraph.png" border="0" usemap="#class_splash_ad6c116f785928ed90dd3011e14daa237_cgraph" alt=""/></div>
+<map name="class_splash_ad6c116f785928ed90dd3011e14daa237_cgraph" id="class_splash_ad6c116f785928ed90dd3011e14daa237_cgraph">
+<area shape="rect" id="node3" href="class_property.html#a5253bef04b711a4aff445894aed0118d" title="Property::init" alt="" coords="221,5,317,35"/><area shape="rect" id="node5" href="_glob_fun_8hpp.html#ac51ab013dc41c4d019a6b67d2a3cf9f6" title="loadLanguages" alt="" coords="215,59,324,88"/><area shape="rect" id="node7" href="class_resource.html#a3e113312ddcfe778b3e602ea2f08400e" title="Resource::load" alt="" coords="215,320,324,349"/><area shape="rect" id="node15" href="class_sprite_manager.html#a9253671997278e59243b7ea99b46841c" title="SpriteManager::loadConfig" alt="" coords="181,163,357,192"/><area shape="rect" id="node19" href="class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="181,216,357,245"/><area shape="rect" id="node21" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec" title="info" alt="" coords="475,267,517,296"/><area shape="rect" id="node25" href="class_sound_manager.html#aa9c7c78f6d4ed497b01495206b53007d" title="SoundManager::playSplash\lIntro" alt="" coords="405,93,587,139"/><area shape="rect" id="node28" href="class_map_manager.html#ac742da239b98b0dbb493607f01d06050" title="MapManager::load" alt="" coords="205,373,333,403"/><area shape="rect" id="node9" href="class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="448,320,544,349"/><area shape="rect" id="node11" href="class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="427,373,565,403"/><area shape="rect" id="node13" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="635,215,683,244"/><area shape="rect" id="node17" href="_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="467,163,525,192"/><area shape="rect" id="node30" href="class_map.html#a083b14500a4ab346f4872c9be29ee872" title="Map::setSpeed" alt="" coords="441,427,551,456"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_ad6c116f785928ed90dd3011e14daa237_icgraph.png" border="0" usemap="#class_splash_ad6c116f785928ed90dd3011e14daa237_icgraph" alt=""/></div>
+<map name="class_splash_ad6c116f785928ed90dd3011e14daa237_icgraph" id="class_splash_ad6c116f785928ed90dd3011e14daa237_icgraph">
+<area shape="rect" id="node3" href="class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="181,5,317,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7da7933898faf6b2692f28a6733447db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Splash::isInitDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00028">28</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_a7da7933898faf6b2692f28a6733447db_icgraph.png" border="0" usemap="#class_splash_a7da7933898faf6b2692f28a6733447db_icgraph" alt=""/></div>
+<map name="class_splash_a7da7933898faf6b2692f28a6733447db_icgraph" id="class_splash_a7da7933898faf6b2692f28a6733447db_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="184,5,235,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a019d17528fb1d2079d00570625e2faaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Splash::isSplashDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00033">33</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_a019d17528fb1d2079d00570625e2faaf_icgraph.png" border="0" usemap="#class_splash_a019d17528fb1d2079d00570625e2faaf_icgraph" alt=""/></div>
+<map name="class_splash_a019d17528fb1d2079d00570625e2faaf_icgraph" id="class_splash_a019d17528fb1d2079d00570625e2faaf_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="205,5,256,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3c53f4c6723c0760a3551fca33a4353"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Splash::splashAnimStep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29b2a888832f523440c378d7412a7011"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Splash::startSplash </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>H</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>Screen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8cpp_source.html#l00039">39</a> pliku <a class="el" href="_splash_8cpp_source.html">Splash.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_splash_a29b2a888832f523440c378d7412a7011_cgraph.png" border="0" usemap="#class_splash_a29b2a888832f523440c378d7412a7011_cgraph" alt=""/></div>
+<map name="class_splash_a29b2a888832f523440c378d7412a7011_cgraph" id="class_splash_a29b2a888832f523440c378d7412a7011_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="208,190,299,220"/><area shape="rect" id="node5" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="191,244,316,273"/><area shape="rect" id="node21" href="_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="651,374,709,404"/><area shape="rect" id="node38" href="class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="200,478,307,508"/><area shape="rect" id="node40" href="class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="207,532,300,561"/><area shape="rect" id="node7" href="class_property.html#a5253bef04b711a4aff445894aed0118d" title="Property::init" alt="" coords="405,57,501,86"/><area shape="rect" id="node9" href="_glob_fun_8hpp.html#ac51ab013dc41c4d019a6b67d2a3cf9f6" title="loadLanguages" alt="" coords="399,110,508,140"/><area shape="rect" id="node11" href="class_resource.html#a3e113312ddcfe778b3e602ea2f08400e" title="Resource::load" alt="" coords="399,217,508,246"/><area shape="rect" id="node19" href="class_sprite_manager.html#a9253671997278e59243b7ea99b46841c" title="SpriteManager::loadConfig" alt="" coords="365,374,541,404"/><area shape="rect" id="node23" href="class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="365,321,541,350"/><area shape="rect" id="node25" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec" title="info" alt="" coords="659,270,701,300"/><area shape="rect" id="node29" href="class_sound_manager.html#aa9c7c78f6d4ed497b01495206b53007d" title="SoundManager::playSplash\lIntro" alt="" coords="589,19,771,66"/><area shape="rect" id="node32" href="class_map_manager.html#ac742da239b98b0dbb493607f01d06050" title="MapManager::load" alt="" coords="389,164,517,193"/><area shape="rect" id="node13" href="class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="632,217,728,246"/><area shape="rect" id="node15" href="class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="611,164,749,193"/><area shape="rect" id="node17" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="819,164,867,193"/><area shape="rect" id="node34" href="class_map.html#a083b14500a4ab346f4872c9be29ee872" title="Map::setSpeed" alt="" coords="625,110,735,140"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="a26f2ee763916abd5206311e01855f2c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_logger.html">Logger</a> Splash::logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00051">51</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92b99b88714bb89244d38b3520a1ed86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 Splash::pColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00041">41</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9af6a9438a62cfbeeecf4a819327497c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Splash::pCurrentLoop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00039">39</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e877ab471c2a1c2a431521fa81e7cf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Splash::pframeRating</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00048">48</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ad0521aabe259e795e6f5a8ebbe56f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Splash::pInitIsDone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00030">30</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6bbb6b6bc8a3cbfc4181b09c53f2665"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rect.html">Rect</a> Splash::pRectLoad</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00037">37</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a312cd275c3359747d29bbbd0cfe2be4f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rect.html">Rect</a> Splash::pRectSplash</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00036">36</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a467762a37156430ca5ab3c956bd362d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* Splash::pScreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00046">46</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0aee4ecdeee84a5b97918715d6a736ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ushort Splash::pScreenH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00044">44</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf8cae8b1f3a0b86e0d854dc737e7580"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ushort Splash::pScreenW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00043">43</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9a49cd8f44366f5716c17dbe9db701d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* Splash::pSplash</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00034">34</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefb59fb3d168a0679a76de6d07743282"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint Splash::pSplashGL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00035">35</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a824537c8e19a784c00dc2d61376c6cd3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Splash::pSplashIsDone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00031">31</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af459e2439a94374345c388b162f1ecb2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Splash::pSplashLoadLong</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00040">40</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbbc73b606ef26b193af56f1acd9e11e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Splash::pSplashLong</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00032">32</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a096895220d799e78d8d796d5b54098"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ushort Splash::pSplashRectWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00053">53</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0daf0a8e992aad4d9a61ab389f018a00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_TimerID Splash::timerFPS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_splash_8hpp_source.html#l00049">49</a> pliku <a class="el" href="_splash_8hpp_source.html">Splash.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_splash_8hpp_source.html">Splash.hpp</a></li>
+<li>src/<a class="el" href="_splash_8cpp_source.html">Splash.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.TH "Writer" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Writer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Writer\&.hpp>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBdraw\fP (\fBRect\fP WhereRect, string Text, \fBFontSize\fP Size=FontSize::SMALL)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBRect\fP WhereRect, string Text, SDL_Color Color, \fBFontSize\fP Size=FontSize::SMALL)"
+.br
+.ti -1c
+.RI "int \fBgetTextWidth\fP (const string &str)"
+.br
+.ti -1c
+.RI "int \fBgetTextHeight\fP (const string &str)"
+.br
+.ti -1c
+.RI "float \fBgetCenterX\fP (const string &str)"
+.br
+.ti -1c
+.RI "\fB~Writer\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetScreenPtr\fP (SDL_Surface *Screen)"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static \fBWriter\fP * \fBgetInstance\fP ()"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa obslugujaca wypisywanie tekstu na ekranie\&. Jest to facade do wywolanie renderera w przypadku tworzenia napisow 
+.PP
+Definicja w linii 10 pliku Writer\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Writer::~Writer ()"
+
+.PP
+Definicja w linii 24 pliku Writer\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Writer::draw (\fBRect\fPWhereRect, stringText, \fBFontSize\fPSize = \fCFontSize::SMALL\fP)"
+Wypisuje przekazany text pod wspolrzednymi w WhereRect ( wysokosc i szerokosc w whereRect sa ignorowane) 
+.PP
+Definicja w linii 103 pliku Writer\&.cpp\&.
+.SS "void Writer::draw (\fBRect\fPWhereRect, stringText, SDL_ColorColor, \fBFontSize\fPSize = \fCFontSize::SMALL\fP)"
+Wypisuje text o podanym kolorze 
+.PP
+Definicja w linii 60 pliku Writer\&.cpp\&.
+.SS "float Writer::getCenterX (const string &str)"
+
+.PP
+Definicja w linii 19 pliku Writer\&.cpp\&.
+.SS "static \fBWriter\fP* Writer::getInstance ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 23 pliku Writer\&.hpp\&.
+.SS "int Writer::getTextHeight (const string &str)"
+Metoda zwraca ile pixeli wysokosci ma text na ekranie\&. Jezeli sa bledy to zwraca -1 
+.PP
+Definicja w linii 46 pliku Writer\&.cpp\&.
+.SS "int Writer::getTextWidth (const string &str)"
+Metoda zwraca ile pixeli szerokosci ma text na ekranie\&. Jezeli sa bledy to zwraca -1 
+.PP
+Definicja w linii 32 pliku Writer\&.cpp\&.
+.SS "void Writer::init ()"
+Pobranie referencji do Renderera 
+.PP
+Definicja w linii 110 pliku Writer\&.cpp\&.
+.SS "void Writer::setScreenPtr (SDL_Surface *Screen)\fC [inline]\fP"
+
+.PP
+Definicja w linii 36 pliku Writer\&.hpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

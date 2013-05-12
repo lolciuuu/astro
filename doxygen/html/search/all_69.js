@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['increaselive',['increaseLive',['../class_live_bar.html#aaabbb5ed6674d9c1d5315343a104b972',1,'LiveBar']]],
+  ['info',['info',['../class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea',1,'Logger::info()'],['../_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec',1,'info():&#160;GlobFun.hpp']]],
+  ['init',['init',['../class_app.html#a36c71ca6134247ab51d1a7a2d0a02cd4',1,'App::init()'],['../class_background.html#a4d2d0b7731d07ae0b831f900eb20c717',1,'Background::init()'],['../class_property.html#a5253bef04b711a4aff445894aed0118d',1,'Property::init()'],['../class_renderer_g_l.html#add6911f42a1c949e2b54fec77e3e7112',1,'RendererGL::init()'],['../class_writer.html#a3c06b4a50402dfcbe88507805978f9fa',1,'Writer::init()']]],
+  ['initthread',['initThread',['../class_splash.html#ad6c116f785928ed90dd3011e14daa237',1,'Splash']]],
+  ['isactive',['isActive',['../class_menu_item.html#a17cc342c7b920f2eba859427c32d5bfe',1,'MenuItem']]],
+  ['isadditionalbonus',['isAdditionalBonus',['../_glob_fun_8hpp.html#af215dbc5ebb4010c53812b63f48ce91a',1,'GlobFun.hpp']]],
+  ['isalive',['isALive',['../class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf',1,'LiveBar']]],
+  ['isanyplatformabove',['isAnyPlatformAbove',['../class_map.html#a7818d9b838dcc9933d3b00c2f1c55727',1,'Map']]],
+  ['isanyplatformbelow',['isAnyPlatformBelow',['../class_map.html#a5e8fc843b527f4e90e877fd9b4a1135b',1,'Map']]],
+  ['isanyplatformonright',['isAnyPlatformOnRight',['../class_map.html#aa3523af6c5cef65e7bbc8489dd1caf22',1,'Map']]],
+  ['isbonus',['isBonus',['../_glob_fun_8hpp.html#a621ed46a50f0c95a0059619746bab524',1,'GlobFun.hpp']]],
+  ['iscanstop',['isCanStop',['../class_play.html#ae5622a2f78ce8316ca14f82e41102a7b',1,'Play']]],
+  ['iscolidate',['isColidate',['../class_enemy.html#a4d1898161f7f1fdb68af4db919400893',1,'Enemy::isColidate()'],['../class_enemy_manager.html#a5cad38e9be8a2a53e7bb9c9f557d6d7b',1,'EnemyManager::isColidate()'],['../struct_rect.html#a8f202a44f90dcdcd7867d26477f4b024',1,'Rect::isColidate()']]],
+  ['iscolisionwithenemy',['isColisionWithEnemy',['../class_player.html#a7b0405e64b94140fc76229e9f1dfdfc0',1,'Player']]],
+  ['isdone',['isDone',['../class_game.html#a5a3446e60cfe3ddabc2e2e48afdcdac0',1,'Game::isDone()'],['../class_menu.html#a43c673ed538036042d1b7a77c48e4601',1,'Menu::isDone()']]],
+  ['isenemy',['isEnemy',['../_glob_fun_8hpp.html#a0598e0af96286acbe0d7c40a12187ad8',1,'GlobFun.hpp']]],
+  ['isfly',['isFly',['../class_player.html#a68c3709af9ef2651c99074a8792bbd04',1,'Player']]],
+  ['isinitdone',['isInitDone',['../class_splash.html#a7da7933898faf6b2692f28a6733447db',1,'Splash']]],
+  ['isplatform',['isPlatform',['../_glob_fun_8hpp.html#ad9afd5d93e426776a73c1e4643030ac1',1,'GlobFun.hpp']]],
+  ['isselected',['isSelected',['../class_menu_item.html#afd42a961655d0633b9aa4574aa6c21ba',1,'MenuItem']]],
+  ['issplashdone',['isSplashDone',['../class_splash.html#a019d17528fb1d2079d00570625e2faaf',1,'Splash']]]
+];

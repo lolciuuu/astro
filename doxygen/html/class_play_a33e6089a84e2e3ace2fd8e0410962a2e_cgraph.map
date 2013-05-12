@@ -1,0 +1,5 @@
+<map id="Play::useBonus" name="Play::useBonus">
+<area shape="rect" id="node3" href="$class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="176,5,293,35"/>
+<area shape="rect" id="node5" href="$class_live_bar.html#a45fdcba09493a5f04f74fb063d012352" title="LiveBar::useBonus" alt="" coords="169,59,300,88"/>
+<area shape="rect" id="node7" href="$class_live_bar.html#a5a05234a2125dc05e9c5e62d31d426b1" title="LiveBar::disableImmortal\l_callbackTimer" alt="" coords="351,50,516,97"/>
+</map>

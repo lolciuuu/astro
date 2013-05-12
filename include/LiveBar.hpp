@@ -30,6 +30,9 @@ public:
   static bool isALive() {
 		#ifndef IMMORTAL
 	  	  	  if( pLiveAmount <= 0.0 ) {
+	  	  		  if( isLive == true )
+	  	  			 SoundManager::getInstance()->playSound("DEAD");
+
 	  	  		  isLive = false;
 	  	  		  return( isLive );
 	  	  	  }

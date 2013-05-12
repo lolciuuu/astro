@@ -1,0 +1,13 @@
+<map id="Writer::draw" name="Writer::draw">
+<area shape="rect" id="node3" href="$class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="315,111,432,140"/>
+<area shape="rect" id="node13" href="$class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="147,57,267,87"/>
+<area shape="rect" id="node24" href="$class_live_bar.html#a01bc017470a611f2d09ec37b222c2144" title="LiveBar::draw" alt="" coords="323,164,424,193"/>
+<area shape="rect" id="node27" href="$class_menu_item.html#af1e7bf9b4451876735cf2baea06cee3d" title="MenuItem::draw" alt="" coords="149,213,264,243"/>
+<area shape="rect" id="node5" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="489,111,572,140"/>
+<area shape="rect" id="node7" href="$class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="635,59,728,88"/>
+<area shape="rect" id="node9" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="783,32,852,61"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="901,32,952,61"/>
+<area shape="rect" id="node16" href="$class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="480,5,581,35"/>
+<area shape="rect" id="node21" href="$class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="328,57,419,87"/>
+<area shape="rect" id="node18" href="$class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="629,5,733,35"/>
+</map>

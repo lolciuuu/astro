@@ -1,0 +1,15 @@
+<map id="Splash::initThread" name="Splash::initThread">
+<area shape="rect" id="node3" href="$class_property.html#a5253bef04b711a4aff445894aed0118d" title="Property::init" alt="" coords="221,5,317,35"/>
+<area shape="rect" id="node5" href="$_glob_fun_8hpp.html#ac51ab013dc41c4d019a6b67d2a3cf9f6" title="loadLanguages" alt="" coords="215,59,324,88"/>
+<area shape="rect" id="node7" href="$class_resource.html#a3e113312ddcfe778b3e602ea2f08400e" title="Resource::load" alt="" coords="215,320,324,349"/>
+<area shape="rect" id="node15" href="$class_sprite_manager.html#a9253671997278e59243b7ea99b46841c" title="SpriteManager::loadConfig" alt="" coords="181,163,357,192"/>
+<area shape="rect" id="node19" href="$class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="181,216,357,245"/>
+<area shape="rect" id="node21" href="$_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec" title="info" alt="" coords="475,267,517,296"/>
+<area shape="rect" id="node25" href="$class_sound_manager.html#aa9c7c78f6d4ed497b01495206b53007d" title="SoundManager::playSplash\lIntro" alt="" coords="405,93,587,139"/>
+<area shape="rect" id="node28" href="$class_map_manager.html#ac742da239b98b0dbb493607f01d06050" title="MapManager::load" alt="" coords="205,373,333,403"/>
+<area shape="rect" id="node9" href="$class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="448,320,544,349"/>
+<area shape="rect" id="node11" href="$class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="427,373,565,403"/>
+<area shape="rect" id="node13" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="635,215,683,244"/>
+<area shape="rect" id="node17" href="$_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="467,163,525,192"/>
+<area shape="rect" id="node30" href="$class_map.html#a083b14500a4ab346f4872c9be29ee872" title="Map::setSpeed" alt="" coords="441,427,551,456"/>
+</map>

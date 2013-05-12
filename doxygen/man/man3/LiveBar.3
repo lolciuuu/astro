@@ -1,0 +1,144 @@
+.TH "LiveBar" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LiveBar \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LiveBar\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBLiveBar\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const float &dt)"
+.br
+.ti -1c
+.RI "void \fBaddBonus\fP ()"
+.br
+.ti -1c
+.RI "bool \fBuseBonus\fP ()"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static Uint32 \fBdisableImmortal_callbackTimer\fP (Uint32 interval, void *param)"
+.br
+.ti -1c
+.RI "static bool \fBisALive\fP ()"
+.br
+.ti -1c
+.RI "static void \fBcolision\fP (short type)"
+.br
+.ti -1c
+.RI "static void \fBincreaseLive\fP ()"
+.br
+.ti -1c
+.RI "static string \fBgetResult\fP ()"
+.br
+.ti -1c
+.RI "static ulong \fBgetResultNum\fP ()"
+.br
+.ti -1c
+.RI "static float \fBgetLiveAmount\fP ()"
+.br
+.ti -1c
+.RI "static float \fBgetMapSpeed\fP ()"
+.br
+.ti -1c
+.RI "static void \fBnextMeter\fP ()"
+.br
+.ti -1c
+.RI "static void \fBresetMeter\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 10 pliku LiveBar\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "LiveBar::LiveBar ()"
+
+.PP
+Definicja w linii 10 pliku LiveBar\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void LiveBar::addBonus ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 20 pliku LiveBar\&.hpp\&.
+.SS "void LiveBar::colision (shorttype)\fC [static]\fP"
+
+.PP
+Definicja w linii 81 pliku LiveBar\&.cpp\&.
+.SS "Uint32 LiveBar::disableImmortal_callbackTimer (Uint32interval, void *param)\fC [static]\fP"
+Metoda statyczna wywolywana przez timer wtedy kiedy mija czas w ktorym gracz nie traci zycia 
+.PP
+Definicja w linii 111 pliku LiveBar\&.cpp\&.
+.SS "void LiveBar::draw ()"
+Rysowanie paska zycia\&.\&.\&.cala gorna czesc ekranu 
+.PP
+Definicja w linii 20 pliku LiveBar\&.cpp\&.
+.SS "static float LiveBar::getLiveAmount ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 48 pliku LiveBar\&.hpp\&.
+.SS "static float LiveBar::getMapSpeed ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 49 pliku LiveBar\&.hpp\&.
+.SS "static string LiveBar::getResult ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 45 pliku LiveBar\&.hpp\&.
+.SS "static ulong LiveBar::getResultNum ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 46 pliku LiveBar\&.hpp\&.
+.SS "void LiveBar::increaseLive ()\fC [static]\fP"
+
+.PP
+Definicja w linii 117 pliku LiveBar\&.cpp\&.
+.SS "static bool LiveBar::isALive ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 30 pliku LiveBar\&.hpp\&.
+.SS "static void LiveBar::nextMeter ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 51 pliku LiveBar\&.hpp\&.
+.SS "void LiveBar::reset ()"
+
+.PP
+Definicja w linii 123 pliku LiveBar\&.cpp\&.
+.SS "static void LiveBar::resetMeter ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 52 pliku LiveBar\&.hpp\&.
+.SS "void LiveBar::update (const float &dt)"
+
+.PP
+Definicja w linii 62 pliku LiveBar\&.cpp\&.
+.SS "bool LiveBar::useBonus ()"
+
+.PP
+Definicja w linii 94 pliku LiveBar\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

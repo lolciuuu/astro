@@ -1,0 +1,162 @@
+.TH "Game" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Game\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBGame\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const float &dt)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisDone\fP () const "
+.br
+.ti -1c
+.RI "void \fBpressedRight\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedLeft\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedDown\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedEsc\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedReturn\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedBackspace\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedCtrl\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedShift\fP ()"
+.br
+.ti -1c
+.RI "void \fBSpaceUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBSpaceDown\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedChar\fP (char)"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static void \fBsetGameState\fP (\fBGameState\fP newState)"
+.br
+.ti -1c
+.RI "static void \fBresetGame\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Klasa jest singletonem, konstruktor zawiera zabezpieczenie przed wielokrotnym utworzeniem obiektu Dodatkowo \fBGame\fP jest fasada, ktora decyduje o tym ktora klasa ma byc narywana (menu czy play), oraz gdzie przekazac informacje o wykrytym zdarzeniu np\&. nacisnieciu klawisza\&. 
+.PP
+Definicja w linii 14 pliku Game\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Game::Game ()"
+
+.PP
+Definicja w linii 10 pliku Game\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Game::draw ()"
+Kontrola ktora klasa ma rysowac na ekranie 
+.PP
+Definicja w linii 33 pliku Game\&.cpp\&.
+.SS "bool Game::isDone () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 21 pliku Game\&.hpp\&.
+.SS "void Game::pressedBackspace ()"
+uklaiwsz backscpace - na potrzeby usuwania znaczkow podczas ich wpisywania do highscore 
+.PP
+Definicja w linii 121 pliku Game\&.cpp\&.
+.SS "void Game::pressedChar (charChar)"
+obsluga nacisniecia jakielkowiek literki 
+.PP
+Definicja w linii 127 pliku Game\&.cpp\&.
+.SS "void Game::pressedCtrl ()"
+uzycie prawego kontrola (doladowanie zycia gracza) 
+.PP
+Definicja w linii 203 pliku Game\&.cpp\&.
+.SS "void Game::pressedDown ()"
+strzalka w dol 
+.PP
+Definicja w linii 161 pliku Game\&.cpp\&.
+.SS "void Game::pressedEsc ()"
+nacisniecie escape 
+.PP
+Definicja w linii 101 pliku Game\&.cpp\&.
+.SS "void Game::pressedLeft ()"
+strzalka w lewo 
+.PP
+Definicja w linii 134 pliku Game\&.cpp\&.
+.SS "void Game::pressedReturn ()"
+Obsluga nacisniecia entera 
+.PP
+Definicja w linii 86 pliku Game\&.cpp\&.
+.SS "void Game::pressedRight ()"
+Metody obslugujace zdarzenia zwiazane z klawiatura
+.PP
+strzalka w prawo 
+.PP
+Definicja w linii 144 pliku Game\&.cpp\&.
+.SS "void Game::pressedShift ()"
+Shift odpowiada za zatrzymanie rychu gracza\&. tzn\&. na ulamek sekundy przestaje spadac badz wznosic sie do gory 
+.PP
+Definicja w linii 48 pliku Game\&.cpp\&.
+.SS "void Game::pressedUp ()"
+strzalka do gory 
+.PP
+Definicja w linii 153 pliku Game\&.cpp\&.
+.SS "void Game::resetGame ()\fC [static]\fP"
+Metoda statyczny wywolujaca reset na instancji obiektu 
+.PP
+Definicja w linii 220 pliku Game\&.cpp\&.
+.SS "static void Game::setGameState (\fBGameState\fPnewState)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 23 pliku Game\&.hpp\&.
+.SS "void Game::SpaceDown ()"
+wcisniecie spacji 
+.PP
+Definicja w linii 171 pliku Game\&.cpp\&.
+.SS "void Game::SpaceUp ()"
+puszczenie klaiwasza spacja 
+.PP
+Definicja w linii 187 pliku Game\&.cpp\&.
+.SS "void Game::update (const float &dt)"
+aktualizacja gry 
+.PP
+Definicja w linii 62 pliku Game\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

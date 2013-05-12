@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja pliku include/GlobFun.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku GlobFun.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_headers_8hpp_source.html">Headers.hpp</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla GlobFun.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp__incl.png" border="0" usemap="#include_2_glob_fun_8hpp" alt=""/></div>
+<map name="include_2_glob_fun_8hpp" id="include_2_glob_fun_8hpp">
+<area shape="rect" id="node3" href="_headers_8hpp.html" title="Headers.hpp" alt="" coords="761,83,857,112"/><area shape="rect" id="node23" href="_util_8hpp.html" title="Util.hpp" alt="" coords="776,160,843,189"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp__dep__incl.png" border="0" usemap="#include_2_glob_fun_8hppdep" alt=""/></div>
+<map name="include_2_glob_fun_8hppdep" id="include_2_glob_fun_8hppdep">
+<area shape="rect" id="node3" href="_headers_8hpp.html" title="include/Headers.hpp" alt="" coords="1413,83,1555,112"/><area shape="rect" id="node5" href="_app_8hpp.html" title="include/App.hpp" alt="" coords="1583,1088,1697,1117"/><area shape="rect" id="node15" href="main_8cpp.html" title="src/main.cpp" alt="" coords="45,1165,141,1195"/><area shape="rect" id="node34" href="_game_8hpp.html" title="include/Game.hpp" alt="" coords="2764,1011,2889,1040"/><area shape="rect" id="node40" href="_player_8hpp.html" title="include/Player.hpp" alt="" coords="1901,624,2029,653"/><area shape="rect" id="node46" href="_spriteconfig_8hpp.html" title="include/Spriteconfig.hpp" alt="" coords="1735,160,1895,189"/><area shape="rect" id="node51" href="_sprite_manager_8hpp.html" title="include/SpriteManager.hpp" alt="" coords="1531,624,1707,653"/><area shape="rect" id="node53" href="_enemy_8hpp.html" title="include/Enemy.hpp" alt="" coords="1008,701,1141,731"/><area shape="rect" id="node55" href="_enemy_manager_8hpp.html" title="include/EnemyManager.hpp" alt="" coords="933,779,1115,808"/><area shape="rect" id="node57" href="_map_manager_8hpp.html" title="include/MapManager.hpp" alt="" coords="1019,856,1184,885"/><area shape="rect" id="node62" href="_splash_8cpp.html" title="src/Splash.cpp" alt="" coords="600,933,709,963"/><area shape="rect" id="node70" href="_splash_8hpp.html" title="include/Splash.hpp" alt="" coords="651,701,781,731"/><area shape="rect" id="node81" href="_highscore_8hpp.html" title="include/Highscore.hpp" alt="" coords="2315,624,2464,653"/><area shape="rect" id="node84" href="_menu_8hpp.html" title="include/Menu.hpp" alt="" coords="2667,701,2789,731"/><area shape="rect" id="node89" href="_live_bar_8hpp.html" title="include/LiveBar.hpp" alt="" coords="2155,624,2291,653"/><area shape="rect" id="node93" href="_menu_item_8hpp.html" title="include/MenuItem.hpp" alt="" coords="2488,624,2637,653"/><area shape="rect" id="node100" href="_renderer_8hpp.html" title="include/Renderer.hpp" alt="" coords="1619,315,1763,344"/><area shape="rect" id="node107" href="_map_8hpp.html" title="include/Map.hpp" alt="" coords="1309,547,1427,576"/><area shape="rect" id="node115" href="_background_8hpp.html" title="include/Background.hpp" alt="" coords="1451,547,1611,576"/><area shape="rect" id="node123" href="_writer_8hpp.html" title="include/Writer.hpp" alt="" coords="2272,392,2397,421"/><area shape="rect" id="node132" href="_property_8hpp.html" title="include/Property.hpp" alt="" coords="377,237,519,267"/><area shape="rect" id="node143" href="_renderer_g_l_8hpp.html" title="include/RendererGL.hpp" alt="" coords="1157,237,1320,267"/><area shape="rect" id="node147" href="_resource_8hpp.html" title="include/Resource.hpp" alt="" coords="996,160,1143,189"/><area shape="rect" id="node158" href="_logger_8hpp.html" title="include/Logger.hpp" alt="" coords="1995,315,2125,344"/><area shape="rect" id="node162" href="_sound_manager_8hpp.html" title="include/SoundManager.hpp" alt="" coords="2421,392,2600,421"/><area shape="rect" id="node7" href="_app_8cpp.html" title="src/App.cpp" alt="" coords="1565,1165,1656,1195"/><area shape="rect" id="node9" href="_enemy_manager_8cpp.html" title="src/EnemyManager.cpp" alt="" coords="533,1165,693,1195"/><area shape="rect" id="node11" href="_highscore_8cpp.html" title="src/Highscore.cpp" alt="" coords="2361,1165,2489,1195"/><area shape="rect" id="node13" href="_live_bar_8cpp.html" title="src/LiveBar.cpp" alt="" coords="2224,1165,2336,1195"/><area shape="rect" id="node17" href="_map_8cpp.html" title="src/Map.cpp" alt="" coords="1811,1165,1904,1195"/><area shape="rect" id="node19" href="_map_manager_8cpp.html" title="src/MapManager.cpp" alt="" coords="2053,1165,2197,1195"/><area shape="rect" id="node21" href="_menu_8cpp.html" title="src/Menu.cpp" alt="" coords="2675,1165,2776,1195"/><area shape="rect" id="node23" href="_player_8cpp.html" title="src/Player.cpp" alt="" coords="1680,1165,1787,1195"/><area shape="rect" id="node25" href="_property_8cpp.html" title="src/Property.cpp" alt="" coords="380,1165,497,1195"/><area shape="rect" id="node27" href="_renderer_8cpp.html" title="src/Renderer.cpp" alt="" coords="1068,1165,1191,1195"/><area shape="rect" id="node29" href="_resource_8cpp.html" title="src/Resource.cpp" alt="" coords="208,1165,333,1195"/><area shape="rect" id="node31" href="_sprite_8cpp.html" title="src/Sprite.cpp" alt="" coords="1928,1165,2029,1195"/><area shape="rect" id="node37" href="_game_8cpp.html" title="src/Game.cpp" alt="" coords="2883,1088,2987,1117"/><area shape="rect" id="node42" href="_play_8hpp.html" title="include/Play.hpp" alt="" coords="2061,933,2179,963"/><area shape="rect" id="node48" href="_sprite_8hpp.html" title="include/Sprite.hpp" alt="" coords="2053,547,2179,576"/><area shape="rect" id="node66" href="_enemy_8cpp.html" title="src/Enemy.cpp" alt="" coords="1395,779,1504,808"/><area shape="rect" id="node77" href="_renderer_g_l_8cpp.html" title="src/RendererGL.cpp" alt="" coords="1267,701,1405,731"/><area shape="rect" id="node79" href="_sprite_manager_8cpp.html" title="src/SpriteManager.cpp" alt="" coords="1429,701,1581,731"/><area shape="rect" id="node96" href="_menu_item_8cpp.html" title="src/MenuItem.cpp" alt="" coords="2467,701,2592,731"/><area shape="rect" id="node103" href="_standard_references_8hpp.html" title="include/StandardReferences.hpp" alt="" coords="2087,469,2297,499"/><area shape="rect" id="node118" href="_background_8cpp.html" title="src/Background.cpp" alt="" coords="1187,624,1325,653"/><area shape="rect" id="node128" href="_writer_8cpp.html" title="src/Writer.cpp" alt="" coords="1672,469,1776,499"/><area shape="rect" id="node174" href="_logger_8cpp.html" title="src/Logger.cpp" alt="" coords="2091,392,2197,421"/><area shape="rect" id="node165" href="_sound_manager_8cpp.html" title="src/SoundManager.cpp" alt="" coords="2483,469,2637,499"/></map>
+</div>
+</div>
+<p><a href="_glob_fun_8hpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:aedb98e64eb01d1501c2a6123c18efeec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec">info</a> (const string &amp;t)</td></tr>
+<tr class="memitem:af5fce20464ba9ee0a4f29f97542a6dc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#af5fce20464ba9ee0a4f29f97542a6dc4">debug</a> (const string &amp;t)</td></tr>
+<tr class="memitem:ad9afd5d93e426776a73c1e4643030ac1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#ad9afd5d93e426776a73c1e4643030ac1">isPlatform</a> (short ID)</td></tr>
+<tr class="memitem:a621ed46a50f0c95a0059619746bab524"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#a621ed46a50f0c95a0059619746bab524">isBonus</a> (const short &amp;ID)</td></tr>
+<tr class="memitem:af215dbc5ebb4010c53812b63f48ce91a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#af215dbc5ebb4010c53812b63f48ce91a">isAdditionalBonus</a> (const short &amp;ID)</td></tr>
+<tr class="memitem:a0598e0af96286acbe0d7c40a12187ad8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#a0598e0af96286acbe0d7c40a12187ad8">isEnemy</a> (const short &amp;ID)</td></tr>
+<tr class="memitem:ab5ad1ea34b13e1fbfee23de263de0327"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327">warring</a> (const string &amp;Text)</td></tr>
+<tr class="memitem:a31b40351182ffb867e1a2ed49365de00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00">error</a> (const string &amp;Text)</td></tr>
+<tr class="memitem:a599c224b4128c858251887bdde5ef9b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#a599c224b4128c858251887bdde5ef9b3">startMethod</a> (const string &amp;name)</td></tr>
+<tr class="memitem:a3515b2c3821130d75c7cece739434360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#a3515b2c3821130d75c7cece739434360">endMethod</a> (const string &amp;name)</td></tr>
+<tr class="memitem:aba9ec9a67442e7226601bb68c2c3c634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634">critical</a> (const string &amp;Text)</td></tr>
+<tr class="memitem:ac51ab013dc41c4d019a6b67d2a3cf9f6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#ac51ab013dc41c4d019a6b67d2a3cf9f6">loadLanguages</a> ()</td></tr>
+<tr class="memitem:afa990c7f8b290aa5e31e7ff6847de01d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afa990c7f8b290aa5e31e7ff6847de01d"><td class="memTemplItemLeft" align="right" valign="top">string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d">toString</a> (T number)</td></tr>
+<tr class="memitem:a05b268b673c6ff3acf2349663be750d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_glob_fun_8hpp.html#a05b268b673c6ff3acf2349663be750d4">printRect</a> (const string &amp;Name, <a class="el" href="struct_rect.html">Rect</a> &amp;rect)</td></tr>
+</table>
+<h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="aba9ec9a67442e7226601bb68c2c3c634"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void critical </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda wyswietla w konsoli informacje. Podana jako parametr informacja to informacja o bledzie krytycznym. </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00072">72</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_aba9ec9a67442e7226601bb68c2c3c634_icgraph.png" border="0" usemap="#_glob_fun_8hpp_aba9ec9a67442e7226601bb68c2c3c634_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_aba9ec9a67442e7226601bb68c2c3c634_icgraph" id="_glob_fun_8hpp_aba9ec9a67442e7226601bb68c2c3c634_icgraph">
+<area shape="rect" id="node3" href="class_map_manager.html#ae0087c048e1e54f855ad7b236e81d6b2" title="MapManager::getRectByID" alt="" coords="115,5,296,35"/><area shape="rect" id="node15" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1152,32,1203,61"/><area shape="rect" id="node18" href="class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="117,109,293,139"/><area shape="rect" id="node22" href="class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="573,188,709,217"/><area shape="rect" id="node25" href="class_sprite_manager.html#a9253671997278e59243b7ea99b46841c" title="SpriteManager::loadConfig" alt="" coords="117,163,293,192"/><area shape="rect" id="node28" href="class_sprite_manager.html#af42bfcb7a5e1b2b036f8d1a005703791" title="SpriteManager::getSprite" alt="" coords="123,293,288,323"/><area shape="rect" id="node5" href="class_map.html#a6a40755f8541eece2fa48e9e24a588f8" title="Map::draw" alt="" coords="393,5,476,35"/><area shape="rect" id="node7" href="class_map_manager.html#ac0ac10367094e7e4eda75cceab7dd9d3" title="MapManager::draw" alt="" coords="575,5,708,35"/><area shape="rect" id="node9" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="759,5,841,35"/><area shape="rect" id="node11" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="891,5,984,35"/><area shape="rect" id="node13" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="1033,5,1103,35"/><area shape="rect" id="node20" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="372,163,497,192"/><area shape="rect" id="node30" href="class_enemy.html#a7dcf45915f6288ef9264ec60af621b6c" title="Enemy::draw" alt="" coords="385,267,484,296"/><area shape="rect" id="node32" href="class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="345,320,524,349"/><area shape="rect" id="node34" href="class_renderer_g_l.html#a91fe9f7b4bffc9a37d73b8b4440ebd68" title="RendererGL::draw" alt="" coords="371,373,499,403"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af5fce20464ba9ee0a4f29f97542a6dc4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debug </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wyswietla komunikat wtedy kiedy aplikacja skompilowana jest w trybie debug </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00014">14</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_af5fce20464ba9ee0a4f29f97542a6dc4_icgraph.png" border="0" usemap="#_glob_fun_8hpp_af5fce20464ba9ee0a4f29f97542a6dc4_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_af5fce20464ba9ee0a4f29f97542a6dc4_icgraph" id="_glob_fun_8hpp_af5fce20464ba9ee0a4f29f97542a6dc4_icgraph">
+<area shape="rect" id="node3" href="class_highscore.html#a939201ed5dee0525ec7359ab880e1549" title="Highscore::colision" alt="" coords="112,5,245,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="295,5,388,35"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="437,5,541,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="591,5,660,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="709,5,760,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3515b2c3821130d75c7cece739434360"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void endMethod </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00065">65</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_a3515b2c3821130d75c7cece739434360_cgraph.png" border="0" usemap="#_glob_fun_8hpp_a3515b2c3821130d75c7cece739434360_cgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_a3515b2c3821130d75c7cece739434360_cgraph" id="_glob_fun_8hpp_a3515b2c3821130d75c7cece739434360_cgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec" title="info" alt="" coords="141,5,184,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a31b40351182ffb867e1a2ed49365de00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void error </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda wyswietla w konsoli informacje. Podana jako parametr informacja to informacja o bledzie. </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00055">55</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_a31b40351182ffb867e1a2ed49365de00_icgraph.png" border="0" usemap="#_glob_fun_8hpp_a31b40351182ffb867e1a2ed49365de00_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_a31b40351182ffb867e1a2ed49365de00_icgraph" id="_glob_fun_8hpp_a31b40351182ffb867e1a2ed49365de00_icgraph">
+<area shape="rect" id="node3" href="class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="137,272,276,301"/><area shape="rect" id="node33" href="class_resource.html#a6a3a9c7b87fc5b9c1bcfe8fa395ed0b0" title="Resource::getFont" alt="" coords="141,493,272,523"/><area shape="rect" id="node35" href="class_resource.html#a1c26fda83105920c413977159931db72" title="Resource::getSurf" alt="" coords="143,685,271,715"/><area shape="rect" id="node55" href="class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="119,547,295,576"/><area shape="rect" id="node58" href="class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7" title="SoundManager::playMenuMusic" alt="" coords="360,800,568,829"/><area shape="rect" id="node65" href="class_sound_manager.html#afdaff847244a432c05658cb350b25d4f" title="SoundManager::playGameMusic" alt="" coords="101,831,312,860"/><area shape="rect" id="node70" href="class_sound_manager.html#aa9c7c78f6d4ed497b01495206b53007d" title="SoundManager::playSplash\lIntro" alt="" coords="116,599,297,646"/><area shape="rect" id="node5" href="class_background.html#a05f88936aa2209af03d4f5fbe9eacaee" title="Background::reset" alt="" coords="400,112,528,141"/><area shape="rect" id="node9" href="class_enemy.html#a0402919217537a88ca474fc9c1874d6e" title="Enemy::Enemy" alt="" coords="408,325,520,355"/><area shape="rect" id="node11" href="class_live_bar.html#a5b6e7765489a6d8f4431152590c7c446" title="LiveBar::LiveBar" alt="" coords="405,379,523,408"/><area shape="rect" id="node13" href="class_map.html#aca156771a10dc9804eb45a4a4b09c632" title="Map::Map" alt="" coords="424,5,504,35"/><area shape="rect" id="node15" href="class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="375,59,553,88"/><area shape="rect" id="node17" href="class_map_manager.html#ac742da239b98b0dbb493607f01d06050" title="MapManager::load" alt="" coords="400,485,528,515"/><area shape="rect" id="node23" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Menu::Menu" alt="" coords="417,165,511,195"/><area shape="rect" id="node25" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Player::Player" alt="" coords="412,219,516,248"/><area shape="rect" id="node27" href="class_player.html#a1af5d39f7bac2aeaa1e30c7dda2332fa" title="Player::reset" alt="" coords="416,272,512,301"/><area shape="rect" id="node30" href="class_resource.html#a3e113312ddcfe778b3e602ea2f08400e" title="Resource::load" alt="" coords="409,432,519,461"/><area shape="rect" id="node7" href="class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="632,192,752,221"/><area shape="rect" id="node19" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="629,512,755,541"/><area shape="rect" id="node21" href="class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="816,512,952,541"/><area shape="rect" id="node37" href="class_background.html#a4d2d0b7731d07ae0b831f900eb20c717" title="Background::init" alt="" coords="407,747,521,776"/><area shape="rect" id="node41" href="class_highscore.html#ac7add697994e550eca0839a490147db5" title="Highscore::load" alt="" coords="408,640,520,669"/><area shape="rect" id="node45" href="class_live_bar.html#a01bc017470a611f2d09ec37b222c2144" title="LiveBar::draw" alt="" coords="413,693,515,723"/><area shape="rect" id="node39" href="class_play.html#a0088438837d29378e35a2beed04e64df" title="Play::Play" alt="" coords="651,747,733,776"/><area shape="rect" id="node43" href="class_highscore.html#a763df51b57887c8e68b6c09f4d5f27a5" title="Highscore::Highscore" alt="" coords="619,640,765,669"/><area shape="rect" id="node47" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="651,693,733,723"/><area shape="rect" id="node49" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="837,693,931,723"/><area shape="rect" id="node51" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="1001,693,1071,723"/><area shape="rect" id="node53" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1120,693,1171,723"/><area shape="rect" id="node60" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="617,853,767,883"/><area shape="rect" id="node62" href="class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="625,800,759,829"/><area shape="rect" id="node67" href="class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="391,853,537,883"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aedb98e64eb01d1501c2a6123c18efeec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void info </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Plik zawiera funkcje globalne inline, ktore pelnia role pomocnicze, i sa one dostepne w calym systemie. wypisuje komunikat w konsoli </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00009">9</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_aedb98e64eb01d1501c2a6123c18efeec_icgraph.png" border="0" usemap="#_glob_fun_8hpp_aedb98e64eb01d1501c2a6123c18efeec_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_aedb98e64eb01d1501c2a6123c18efeec_icgraph" id="_glob_fun_8hpp_aedb98e64eb01d1501c2a6123c18efeec_icgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#a599c224b4128c858251887bdde5ef9b3" title="startMethod" alt="" coords="139,5,229,35"/><area shape="rect" id="node5" href="_glob_fun_8hpp.html#a3515b2c3821130d75c7cece739434360" title="endMethod" alt="" coords="141,59,227,88"/><area shape="rect" id="node7" href="_glob_fun_8hpp.html#a05b268b673c6ff3acf2349663be750d4" title="printRect" alt="" coords="147,112,221,141"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="159,165,209,195"/><area shape="rect" id="node11" href="class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="96,219,272,248"/><area shape="rect" id="node13" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="321,245,447,275"/><area shape="rect" id="node15" href="class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="496,245,632,275"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af215dbc5ebb4010c53812b63f48ce91a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isAdditionalBonus </td>
+          <td>(</td>
+          <td class="paramtype">const short &amp;&#160;</td>
+          <td class="paramname"><em>ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Czy kafelek jest bonusem ktory gracz moze zebrac? </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00033">33</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_af215dbc5ebb4010c53812b63f48ce91a_icgraph.png" border="0" usemap="#_glob_fun_8hpp_af215dbc5ebb4010c53812b63f48ce91a_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_af215dbc5ebb4010c53812b63f48ce91a_icgraph" id="_glob_fun_8hpp_af215dbc5ebb4010c53812b63f48ce91a_icgraph">
+<area shape="rect" id="node3" href="class_map.html#ac910706c756c6fd7a9dab4a74bde3e77" title="Map::checkColision" alt="" coords="183,5,319,35"/><area shape="rect" id="node7" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="604,32,697,61"/><area shape="rect" id="node5" href="class_map_manager.html#a66c5eb996f489fc9144df248a43e6107" title="MapManager::checkColision" alt="" coords="368,5,555,35"/><area shape="rect" id="node9" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="747,32,851,61"/><area shape="rect" id="node11" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="900,32,969,61"/><area shape="rect" id="node13" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1019,32,1069,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a621ed46a50f0c95a0059619746bab524"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isBonus </td>
+          <td>(</td>
+          <td class="paramtype">const short &amp;&#160;</td>
+          <td class="paramname"><em>ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Czy kafelek jest bonusem dodajacym zycia? </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00027">27</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_a621ed46a50f0c95a0059619746bab524_icgraph.png" border="0" usemap="#_glob_fun_8hpp_a621ed46a50f0c95a0059619746bab524_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_a621ed46a50f0c95a0059619746bab524_icgraph" id="_glob_fun_8hpp_a621ed46a50f0c95a0059619746bab524_icgraph">
+<area shape="rect" id="node3" href="class_map.html#ac910706c756c6fd7a9dab4a74bde3e77" title="Map::checkColision" alt="" coords="124,5,260,35"/><area shape="rect" id="node7" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="545,32,639,61"/><area shape="rect" id="node5" href="class_map_manager.html#a66c5eb996f489fc9144df248a43e6107" title="MapManager::checkColision" alt="" coords="309,5,496,35"/><area shape="rect" id="node9" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="688,32,792,61"/><area shape="rect" id="node11" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="841,32,911,61"/><area shape="rect" id="node13" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="960,32,1011,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0598e0af96286acbe0d7c40a12187ad8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isEnemy </td>
+          <td>(</td>
+          <td class="paramtype">const short &amp;&#160;</td>
+          <td class="paramname"><em>ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>okresla czy kafalek to wrog </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00039">39</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9afd5d93e426776a73c1e4643030ac1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isPlatform </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Zwraca informacje o tym czy kafelek jest platforma </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00021">21</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_ad9afd5d93e426776a73c1e4643030ac1_icgraph.png" border="0" usemap="#_glob_fun_8hpp_ad9afd5d93e426776a73c1e4643030ac1_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_ad9afd5d93e426776a73c1e4643030ac1_icgraph" id="_glob_fun_8hpp_ad9afd5d93e426776a73c1e4643030ac1_icgraph">
+<area shape="rect" id="node3" href="class_map.html#ac910706c756c6fd7a9dab4a74bde3e77" title="Map::checkColision" alt="" coords="156,5,292,35"/><area shape="rect" id="node7" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="596,32,689,61"/><area shape="rect" id="node15" href="class_map.html#a7818d9b838dcc9933d3b00c2f1c55727" title="Map::isAnyPlatformAbove" alt="" coords="137,109,311,139"/><area shape="rect" id="node17" href="class_map.html#a5e8fc843b527f4e90e877fd9b4a1135b" title="Map::isAnyPlatformBelow" alt="" coords="137,163,311,192"/><area shape="rect" id="node5" href="class_map_manager.html#a66c5eb996f489fc9144df248a43e6107" title="MapManager::checkColision" alt="" coords="360,5,547,35"/><area shape="rect" id="node9" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="739,32,843,61"/><area shape="rect" id="node11" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="892,32,961,61"/><area shape="rect" id="node13" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1011,32,1061,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac51ab013dc41c4d019a6b67d2a3cf9f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string loadLanguages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda odczytuje kod jezyka jaki ma byc ustawiony w grze i zwraca go jako string. W razie problemow ze znalezieniem pliku zwraca informacje ze jezykiem w grze jest angielski. </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00080">80</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_ac51ab013dc41c4d019a6b67d2a3cf9f6_icgraph.png" border="0" usemap="#_glob_fun_8hpp_ac51ab013dc41c4d019a6b67d2a3cf9f6_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_ac51ab013dc41c4d019a6b67d2a3cf9f6_icgraph" id="_glob_fun_8hpp_ac51ab013dc41c4d019a6b67d2a3cf9f6_icgraph">
+<area shape="rect" id="node3" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="164,5,289,35"/><area shape="rect" id="node5" href="class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="339,5,475,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a05b268b673c6ff3acf2349663be750d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printRect </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_rect.html">Rect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Drukuje na ekranie info o SDL_Rect oraz jego nazwe podana jako parametr </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00105">105</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_a05b268b673c6ff3acf2349663be750d4_cgraph.png" border="0" usemap="#_glob_fun_8hpp_a05b268b673c6ff3acf2349663be750d4_cgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_a05b268b673c6ff3acf2349663be750d4_cgraph" id="_glob_fun_8hpp_a05b268b673c6ff3acf2349663be750d4_cgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec" title="info" alt="" coords="128,5,171,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a599c224b4128c858251887bdde5ef9b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void startMethod </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00060">60</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_a599c224b4128c858251887bdde5ef9b3_cgraph.png" border="0" usemap="#_glob_fun_8hpp_a599c224b4128c858251887bdde5ef9b3_cgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_a599c224b4128c858251887bdde5ef9b3_cgraph" id="_glob_fun_8hpp_a599c224b4128c858251887bdde5ef9b3_cgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec" title="info" alt="" coords="144,5,187,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afa990c7f8b290aa5e31e7ff6847de01d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string toString </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Zamienia liczbe na string </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00098">98</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_afa990c7f8b290aa5e31e7ff6847de01d_icgraph.png" border="0" usemap="#_glob_fun_8hpp_afa990c7f8b290aa5e31e7ff6847de01d_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_afa990c7f8b290aa5e31e7ff6847de01d_icgraph" id="_glob_fun_8hpp_afa990c7f8b290aa5e31e7ff6847de01d_icgraph">
+<area shape="rect" id="node3" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5" title="App::App" alt="" coords="173,5,248,35"/><area shape="rect" id="node5" href="class_highscore.html#a0f2c98c338d39a4ee2db2d87227b9663" title="Highscore::show" alt="" coords="151,109,271,139"/><area shape="rect" id="node25" href="class_live_bar.html#a01bc017470a611f2d09ec37b222c2144" title="LiveBar::draw" alt="" coords="357,29,459,59"/><area shape="rect" id="node28" href="class_map.html#aca156771a10dc9804eb45a4a4b09c632" title="Map::Map" alt="" coords="171,163,251,192"/><area shape="rect" id="node30" href="class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="121,216,300,245"/><area shape="rect" id="node32" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Player::Player" alt="" coords="159,269,263,299"/><area shape="rect" id="node7" href="class_highscore.html#a348655cc73303528cb1f498c21162d44" title="Highscore::draw" alt="" coords="349,83,467,112"/><area shape="rect" id="node17" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="515,188,616,217"/><area shape="rect" id="node22" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="363,136,453,165"/><area shape="rect" id="node9" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="524,83,607,112"/><area shape="rect" id="node11" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="669,135,763,164"/><area shape="rect" id="node13" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="817,161,887,191"/><area shape="rect" id="node15" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="936,161,987,191"/><area shape="rect" id="node19" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="664,188,768,217"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5ad1ea34b13e1fbfee23de263de0327"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void warring </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda wyswietla w konsoli informacje. Podana jako parametr informacja to ostrzezenie. </p>
+
+<p>Definicja w linii <a class="el" href="_glob_fun_8hpp_source.html#l00047">47</a> pliku <a class="el" href="_glob_fun_8hpp_source.html">GlobFun.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_glob_fun_8hpp_ab5ad1ea34b13e1fbfee23de263de0327_icgraph.png" border="0" usemap="#_glob_fun_8hpp_ab5ad1ea34b13e1fbfee23de263de0327_icgraph" alt=""/></div>
+<map name="_glob_fun_8hpp_ab5ad1ea34b13e1fbfee23de263de0327_icgraph" id="_glob_fun_8hpp_ab5ad1ea34b13e1fbfee23de263de0327_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="539,6,589,35"/><area shape="rect" id="node5" href="class_menu.html#aef4f57d20f17de3766e96fd705990ffb" title="Menu::update" alt="" coords="117,31,219,61"/><area shape="rect" id="node12" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="123,85,213,114"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="267,31,371,61"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="420,31,489,61"/><area shape="rect" id="node14" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="272,85,365,114"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

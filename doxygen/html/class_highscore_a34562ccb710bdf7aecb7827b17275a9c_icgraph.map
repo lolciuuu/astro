@@ -1,0 +1,5 @@
+<map id="Highscore::save" name="Highscore::save">
+<area shape="rect" id="node3" href="$class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="171,32,288,61"/>
+<area shape="rect" id="node5" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="337,5,487,35"/>
+<area shape="rect" id="node7" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="345,59,479,88"/>
+</map>

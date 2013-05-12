@@ -1,0 +1,9 @@
+<map id="Highscore::Highscore" name="Highscore::Highscore">
+<area shape="rect" id="node3" href="$class_logger.html#a56973f3193424dcc2b7802d762e8f35d" title="Logger::setClassName" alt="" coords="204,13,359,43"/>
+<area shape="rect" id="node5" href="$class_highscore.html#ac7add697994e550eca0839a490147db5" title="Highscore::load" alt="" coords="225,67,337,96"/>
+<area shape="rect" id="node15" href="$class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="233,120,329,149"/>
+<area shape="rect" id="node7" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="451,5,541,35"/>
+<area shape="rect" id="node9" href="$class_renderer_g_l.html#a4e537fcba130f20797f584a76974f86e" title="RendererGL::getSurfaceIn\lGLFormat" alt="" coords="409,58,583,105"/>
+<area shape="rect" id="node11" href="$class_resource.html#a1c26fda83105920c413977159931db72" title="Resource::getSurf" alt="" coords="432,128,560,157"/>
+<area shape="rect" id="node13" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="632,128,680,157"/>
+</map>

@@ -1,0 +1,108 @@
+.TH "include/Headers.hpp" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/Headers.hpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdexcept>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <map>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <stack>\fP
+.br
+\fC#include 'Util\&.hpp'\fP
+.br
+\fC#include <lua5\&.1/lua\&.hpp>\fP
+.br
+\fC#include <lua5\&.1/lualib\&.h>\fP
+.br
+\fC#include <SDL/SDL\&.h>\fP
+.br
+\fC#include <SDL/SDL_timer\&.h>\fP
+.br
+\fC#include <SDL/SDL_ttf\&.h>\fP
+.br
+\fC#include <SDL/SDL_image\&.h>\fP
+.br
+\fC#include <SDL/SDL_mixer\&.h>\fP
+.br
+\fC#include <SDL/SDL_audio\&.h>\fP
+.br
+\fC#include <SDL/SDL_opengl\&.h>\fP
+.br
+\fC#include 'GlobFun\&.hpp'\fP
+.br
+
+.SS "Komponenty"
+
+.in +1c
+.ti -1c
+.RI "struct \fBGamespace::ColisionSide\fP"
+.br
+.ti -1c
+.RI "struct \fBGamespace::HighscoreItem\fP"
+.br
+.in -1c
+.SS "Przestrzenie nazw"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBGamespace\fP"
+.br
+.in -1c
+.SS "Definicje"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEBUG\fP"
+.br
+.in -1c
+.SS "Definicje typów"
+
+.in +1c
+.ti -1c
+.RI "typedef vector< string >::iterator \fBGamespace::vStrIt\fP"
+.br
+.in -1c
+.SS "Wyliczenia"
+
+.in +1c
+.ti -1c
+.RI "enum \fBGamespace::FontSize\fP { \fBGamespace::SMALL\fP, \fBGamespace::NORMALL\fP, \fBGamespace::BIG\fP }"
+.br
+.ti -1c
+.RI "enum \fBGamespace::GameState\fP { \fBGamespace::MENU\fP, \fBGamespace::PLAY\fP }"
+.br
+.ti -1c
+.RI "enum \fBGamespace::MenuState\fP { \fBGamespace::MAIN\fP, \fBGamespace::HIGHSCORE\fP, \fBGamespace::ABOUT\fP }"
+.br
+.ti -1c
+.RI "enum \fBGamespace::PlayerState\fP { \fBGamespace::Stand\fP, \fBGamespace::Run\fP, \fBGamespace::Fly\fP }"
+.br
+.ti -1c
+.RI "enum \fBGamespace::EnemyState\fP { \fBGamespace::Left\fP, \fBGamespace::Right\fP }"
+.br
+.in -1c
+.SH "Dokumentacja definicji"
+.PP 
+.SS "#define DEBUG"
+
+.PP
+Definicja w linii 20 pliku Headers\&.hpp\&.
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

@@ -1,0 +1,14 @@
+<map id="App::App" name="App::App">
+<area shape="rect" id="node3" href="$class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="148,5,287,35"/>
+<area shape="rect" id="node5" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="352,57,443,87"/>
+<area shape="rect" id="node7" href="$class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="164,109,271,139"/>
+<area shape="rect" id="node9" href="$class_logger.html#a39b68cc430580a6b51a6ed8084c38618" title="Logger::error" alt="" coords="171,163,264,192"/>
+<area shape="rect" id="node11" href="$_const_8hpp.html#a4292b735a9213a6e984bebbbf5964e08" title="HEIGHT" alt="" coords="181,216,253,245"/>
+<area shape="rect" id="node13" href="$_const_8hpp.html#a86bdc76706a8d444b9dac3ad55f5b79f" title="WIDHT" alt="" coords="184,269,251,299"/>
+<area shape="rect" id="node16" href="$_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="184,323,251,352"/>
+<area shape="rect" id="node18" href="$_const_8hpp.html#a6a4397fc96f168f1ff01fc22daa1fa55" title="MAX_SCREEN_WIDTH" alt="" coords="135,376,300,405"/>
+<area shape="rect" id="node20" href="$_const_8hpp.html#ad659d347fd5f39e7bba0ed7a36dcdd0f" title="MAX_SCREEN_HEIGHT" alt="" coords="131,429,304,459"/>
+<area shape="rect" id="node22" href="$_const_8hpp.html#ace32d5dd77dc828e82bbacd37f2f5538" title="MIN_SCREEN_WIDTH" alt="" coords="136,483,299,512"/>
+<area shape="rect" id="node24" href="$_const_8hpp.html#a6b9d30e4d18c49951ff1846955d83ed0" title="MIN_SCREEN_HEIGHT" alt="" coords="133,536,301,565"/>
+<area shape="rect" id="node26" href="$class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="151,589,284,619"/>
+</map>

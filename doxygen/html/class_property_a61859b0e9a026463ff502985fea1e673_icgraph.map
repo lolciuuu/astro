@@ -1,0 +1,15 @@
+<map id="Property::getSetting" name="Property::getSetting">
+<area shape="rect" id="node3" href="$class_background.html#a05f88936aa2209af03d4f5fbe9eacaee" title="Background::reset" alt="" coords="219,5,347,35"/>
+<area shape="rect" id="node7" href="$class_enemy.html#a0402919217537a88ca474fc9c1874d6e" title="Enemy::Enemy" alt="" coords="227,59,339,88"/>
+<area shape="rect" id="node9" href="$class_live_bar.html#a5b6e7765489a6d8f4431152590c7c446" title="LiveBar::LiveBar" alt="" coords="224,112,341,141"/>
+<area shape="rect" id="node11" href="$class_map.html#aca156771a10dc9804eb45a4a4b09c632" title="Map::Map" alt="" coords="243,165,323,195"/>
+<area shape="rect" id="node13" href="$class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="193,219,372,248"/>
+<area shape="rect" id="node15" href="$class_map_manager.html#ac742da239b98b0dbb493607f01d06050" title="MapManager::load" alt="" coords="219,485,347,515"/>
+<area shape="rect" id="node21" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Menu::Menu" alt="" coords="236,325,329,355"/>
+<area shape="rect" id="node23" href="$class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Player::Player" alt="" coords="231,379,335,408"/>
+<area shape="rect" id="node25" href="$class_player.html#a1af5d39f7bac2aeaa1e30c7dda2332fa" title="Player::reset" alt="" coords="235,272,331,301"/>
+<area shape="rect" id="node28" href="$class_resource.html#a3e113312ddcfe778b3e602ea2f08400e" title="Resource::load" alt="" coords="228,432,337,461"/>
+<area shape="rect" id="node5" href="$class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="425,139,545,168"/>
+<area shape="rect" id="node17" href="$class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="423,459,548,488"/>
+<area shape="rect" id="node19" href="$class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="597,459,733,488"/>
+</map>

@@ -1,0 +1,115 @@
+.TH "App" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+App \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <App\&.hpp>\fP
+.PP
+Dziedziczy \fBSplash\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBApp\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~App\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.ti -1c
+.RI "void \fBstartSplash\fP ()"
+.br
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static Uint32 \fBFPS_callbackTimer\fP (Uint32 interval, void *param)"
+.br
+.ti -1c
+.RI "static ushort \fBgetScreenHeight\fP ()"
+.br
+.ti -1c
+.RI "static ushort \fBgetScreenWidth\fP ()"
+.br
+.ti -1c
+.RI "static SDL_Surface * \fBgetMainSurface\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Glowna klasa aplikacji 
+.PP
+Definicja w linii 12 pliku App\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "App::App ()"
+Zainicjowanie bibliotek, utworzenie okna -- Inicjowanie SDL-a i wtyczek --
+.PP
+--- Pobranie rozdzielczosci ekranu --- 
+.PP
+Definicja w linii 19 pliku App\&.cpp\&.
+.SS "App::~App ()\fC [virtual]\fP"
+Wyjscie z aplikacji 
+.PP
+Definicja w linii 156 pliku App\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "Uint32 App::FPS_callbackTimer (Uint32interval, void *param)\fC [static]\fP"
+Metoda jest callbackiem wywolywanym automatycznie przez Timer SDL-a Jako parametr przyjmuje wskaznik do obiektu klasy \fBApp\fP na rzecz ktorego ma wywolac metoda obliczajaca FPS-y
+.PP
+\fBParametry:\fP
+.RS 4
+\fIUint32\fP interval: wysylany przez SDL-a czas 
+.br
+\fIvoid\fP \fIparam : Rzutowanie na \fBApp\fP\fP 
+.RE
+.PP
+\fBZwraca:\fP
+.RS 4
+Uint32 : przekazany Timer 
+.RE
+.PP
+
+.PP
+Definicja w linii 339 pliku App\&.cpp\&.
+.SS "static SDL_Surface* App::getMainSurface ()\fC [inline]\fP, \fC [static]\fP"
+Dostep do glownej powierzchni ma tylko klasa \fBRenderer\fP 
+.PP
+Definicja w linii 30 pliku App\&.hpp\&.
+.SS "static ushort App::getScreenHeight ()\fC [inline]\fP, \fC [static]\fP"
+Informacje o wymiarach ekranu dostepne w calej aplikacji 
+.PP
+Definicja w linii 26 pliku App\&.hpp\&.
+.SS "static ushort App::getScreenWidth ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Definicja w linii 27 pliku App\&.hpp\&.
+.SS "void App::init ()"
+zainicjowanie renderera !!!
+.PP
+zainicjowanie writera !!! 
+.PP
+Definicja w linii 169 pliku App\&.cpp\&.
+.SS "void App::run ()"
+
+.PP
+Definicja w linii 218 pliku App\&.cpp\&.
+.SS "void App::startSplash ()\fC [inline]\fP"
+
+.PP
+Definicja w linii 21 pliku App\&.hpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

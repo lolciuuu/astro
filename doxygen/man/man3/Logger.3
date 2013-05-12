@@ -1,0 +1,90 @@
+.TH "Logger" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Logger \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Logger\&.hpp>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBLogger\fP (string className)"
+.br
+.ti -1c
+.RI "void \fBmethodStart\fP (const string &methodName)"
+.br
+.ti -1c
+.RI "void \fBmethodEnd\fP (const string &methodName)"
+.br
+.ti -1c
+.RI "void \fBinfo\fP (const string &Str)"
+.br
+.ti -1c
+.RI "void \fBdebug\fP (const string &Str)"
+.br
+.ti -1c
+.RI "void \fBwarring\fP (const string &Str)"
+.br
+.ti -1c
+.RI "void \fBerror\fP (const string &Str)"
+.br
+.ti -1c
+.RI "void \fBcritical\fP (const string &Str)"
+.br
+.ti -1c
+.RI "void \fBsetClassName\fP (string Name)"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Globalna klasa uzywana do logowania\&. Dodatkowo dla funkcji statycznych dosteone sa metody z \fBGlobFun\&.hpp\fP\&. Wiekszosc modulow dziedziczy po \fBStandardReferences\fP w ktorym jest obiekt klasy \fBLogger\fP\&. Nalezy jedynie na liscie inicjalizacyjnej dac jako parametr nazwe klasy, ktora jest pozniej dopisywana do logow 
+.PP
+Definicja w linii 8 pliku Logger\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Logger::Logger (stringclassName)"
+Podana nazwa klasy jest doklejana do logow 
+.PP
+Definicja w linii 4 pliku Logger\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Logger::critical (const string &Str)"
+informacja o bledzie krytycznym 
+.PP
+Definicja w linii 33 pliku Logger\&.cpp\&.
+.SS "void Logger::debug (const string &Str)"
+Wypisuje tylko kiedy ustawiona flaga debug 
+.PP
+Definicja w linii 38 pliku Logger\&.cpp\&.
+.SS "void Logger::error (const string &Str)"
+informacja o bledzie 
+.PP
+Definicja w linii 28 pliku Logger\&.cpp\&.
+.SS "void Logger::info (const string &Str)"
+wypisuje informacje 
+.PP
+Definicja w linii 18 pliku Logger\&.cpp\&.
+.SS "void Logger::methodEnd (const string &methodName)"
+wypisuje informacje o tym ze metoda sie zakonczyla 
+.PP
+Definicja w linii 13 pliku Logger\&.cpp\&.
+.SS "void Logger::methodStart (const string &methodName)"
+wypisuje informacje o rozpoaczeciu dzialania metody 
+.PP
+Definicja w linii 8 pliku Logger\&.cpp\&.
+.SS "void Logger::setClassName (stringName)\fC [inline]\fP"
+
+.PP
+Definicja w linii 26 pliku Logger\&.hpp\&.
+.SS "void Logger::warring (const string &Str)"
+wypisuje ostrzezenie 
+.PP
+Definicja w linii 23 pliku Logger\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

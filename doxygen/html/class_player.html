@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy Player</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_player-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Player</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_player_8hpp_source.html">Player.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Player</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player__inherit__graph.png" border="0" usemap="#_player_inherit__map" alt="Inheritance graph"/></div>
+<map name="_player_inherit__map" id="_player_inherit__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="5,5,147,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla Player:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player__coll__graph.png" border="0" usemap="#_player_coll__map" alt="Collaboration graph"/></div>
+<map name="_player_coll__map" id="_player_coll__map">
+<area shape="rect" id="node2" href="class_standard_references.html" title="StandardReferences" alt="" coords="113,277,255,307"/><area shape="rect" id="node4" href="class_writer.html" title="Writer" alt="" coords="5,181,61,211"/><area shape="rect" id="node6" href="class_renderer.html" title="Renderer" alt="" coords="87,181,161,211"/><area shape="rect" id="node8" href="class_renderer_g_l.html" title="RendererGL" alt="" coords="79,101,169,131"/><area shape="rect" id="node10" href="struct_rect.html" title="Rect" alt="" coords="99,5,149,35"/><area shape="rect" id="node12" href="class_sound_manager.html" title="SoundManager" alt="" coords="185,181,295,211"/><area shape="rect" id="node14" href="class_logger.html" title="Logger" alt="" coords="356,181,417,211"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:affe0cc3cb714f6deb4e62f0c0d3f1fd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</a> ()</td></tr>
+<tr class="memitem:ac18c9d30d2997765321c62030a4b20b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ac18c9d30d2997765321c62030a4b20b7">draw</a> ()</td></tr>
+<tr class="memitem:ae2fef6dacb1e6bedbc0d08a18043cfc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae2fef6dacb1e6bedbc0d08a18043cfc5">update</a> (const float &amp;dt, <a class="el" href="struct_gamespace_1_1_colision_side.html">ColisionSide</a> &amp;side)</td></tr>
+<tr class="memitem:a1af5d39f7bac2aeaa1e30c7dda2332fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1af5d39f7bac2aeaa1e30c7dda2332fa">reset</a> ()</td></tr>
+<tr class="memitem:a499cc0cb1e2fb8bdb8139c8848b367b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a499cc0cb1e2fb8bdb8139c8848b367b9">run</a> ()</td></tr>
+<tr class="memitem:a70e21ca98281b7d72f105f2693113d7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a70e21ca98281b7d72f105f2693113d7e">jump</a> ()</td></tr>
+<tr class="memitem:aaa6c350ffeaef504d03bd97c85e0c8eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aaa6c350ffeaef504d03bd97c85e0c8eb">fall</a> ()</td></tr>
+<tr class="memitem:ac5243d405f750df62cd004d9fb8e5c91"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ac5243d405f750df62cd004d9fb8e5c91">getPosX</a> () const </td></tr>
+<tr class="memitem:a1184347a38ffd7e7fce3f53884d92c34"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1184347a38ffd7e7fce3f53884d92c34">getPosY</a> () const </td></tr>
+<tr class="memitem:aa293f31631b83862422b497a72510fa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa293f31631b83862422b497a72510fa9">SpaceUp</a> ()</td></tr>
+<tr class="memitem:aed736c6c99e769f21fa750277dd500cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aed736c6c99e769f21fa750277dd500cf">SpaceDown</a> ()</td></tr>
+<tr class="memitem:adafa3127f4a71369d0f832778675dfa4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#adafa3127f4a71369d0f832778675dfa4">getSize_X</a> () const </td></tr>
+<tr class="memitem:a9f9458c5583ba37753ec2900025edda0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a9f9458c5583ba37753ec2900025edda0">getSize_Y</a> () const </td></tr>
+<tr class="memitem:a8cede5e4431ed5fdee02dae18dba752b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8cede5e4431ed5fdee02dae18dba752b">disableEnemyDetect</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:ab08212b69e4aeac99002337901fab36e"><td class="memItemLeft" align="right" valign="top">static Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab08212b69e4aeac99002337901fab36e">enableEnemyDetect_callbackTimer</a> (Uint32 interval, void *param)</td></tr>
+<tr class="memitem:a7b0405e64b94140fc76229e9f1dfdfc0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a7b0405e64b94140fc76229e9f1dfdfc0">isColisionWithEnemy</a> ()</td></tr>
+<tr class="memitem:a68c3709af9ef2651c99074a8792bbd04"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a68c3709af9ef2651c99074a8792bbd04">isFly</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pub_methods_class_standard_references"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_standard_references')"><img src="closed.png" alt="-"/>&nbsp;Metody prywatne dziedziczone z <a class="el" href="class_standard_references.html">StandardReferences</a></td></tr>
+<tr class="memitem:aa3f9ee9954864d9fde792890a199d227 inherit pub_methods_class_standard_references"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_standard_references.html#aa3f9ee9954864d9fde792890a199d227">StandardReferences</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00008">8</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+</div><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="affe0cc3cb714f6deb4e62f0c0d3f1fd8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Player::Player </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00010">10</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8_cgraph.png" border="0" usemap="#class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8_cgraph" alt=""/></div>
+<map name="class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8_cgraph" id="class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a9424d0620904432ef0e4dee218be41d3" title="Logger::methodStart" alt="" coords="164,59,303,88"/><area shape="rect" id="node5" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="357,59,448,88"/><area shape="rect" id="node7" href="class_sprite.html#a102290467339b417b0fa920dadbab125" title="Sprite::setX" alt="" coords="188,112,279,141"/><area shape="rect" id="node9" href="class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="164,323,303,352"/><area shape="rect" id="node13" href="class_app.html#ae9d297339e65cd51b29d698962fbd1cc" title="App::getScreenHeight" alt="" coords="159,216,308,245"/><area shape="rect" id="node16" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d" title="toString" alt="" coords="200,269,267,299"/><area shape="rect" id="node18" href="class_logger.html#a1f5563b3ff737209fb2b352f806c3ba7" title="Logger::methodEnd" alt="" coords="167,5,300,35"/><area shape="rect" id="node11" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="379,323,427,352"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a8cede5e4431ed5fdee02dae18dba752b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::disableEnemyDetect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda wylacza wykrywanie kolizji z wogami i uruchamiamia timer ktory te wykrywanie wlaczy ponownie </p>
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00063">63</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a8cede5e4431ed5fdee02dae18dba752b_cgraph.png" border="0" usemap="#class_player_a8cede5e4431ed5fdee02dae18dba752b_cgraph" alt=""/></div>
+<map name="class_player_a8cede5e4431ed5fdee02dae18dba752b_cgraph" id="class_player_a8cede5e4431ed5fdee02dae18dba752b_cgraph">
+<area shape="rect" id="node3" href="class_player.html#ab08212b69e4aeac99002337901fab36e" title="Player::enableEnemyDetect\l_callbackTimer" alt="" coords="244,5,428,51"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a8cede5e4431ed5fdee02dae18dba752b_icgraph.png" border="0" usemap="#class_player_a8cede5e4431ed5fdee02dae18dba752b_icgraph" alt=""/></div>
+<map name="class_player_a8cede5e4431ed5fdee02dae18dba752b_icgraph" id="class_player_a8cede5e4431ed5fdee02dae18dba752b_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="244,5,337,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="387,5,491,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="540,5,609,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="659,5,709,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac18c9d30d2997765321c62030a4b20b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rysowanie </p>
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00056">56</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ac18c9d30d2997765321c62030a4b20b7_cgraph.png" border="0" usemap="#class_player_ac18c9d30d2997765321c62030a4b20b7_cgraph" alt=""/></div>
+<map name="class_player_ac18c9d30d2997765321c62030a4b20b7_cgraph" id="class_player_ac18c9d30d2997765321c62030a4b20b7_cgraph">
+<area shape="rect" id="node3" href="class_sprite.html#a564601ca4ab75681bc6d74acc8199d42" title="Sprite::draw" alt="" coords="151,5,241,35"/><area shape="rect" id="node5" href="class_renderer_g_l.html#aa581ba9cf4733d696147df3a1802db37" title="RendererGL::draw" alt="" coords="291,5,419,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ac18c9d30d2997765321c62030a4b20b7_icgraph.png" border="0" usemap="#class_player_ac18c9d30d2997765321c62030a4b20b7_icgraph" alt=""/></div>
+<map name="class_player_ac18c9d30d2997765321c62030a4b20b7_icgraph" id="class_player_ac18c9d30d2997765321c62030a4b20b7_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="151,5,233,35"/><area shape="rect" id="node5" href="class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="283,5,376,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="425,5,495,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="544,5,595,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab08212b69e4aeac99002337901fab36e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 Player::enableEnemyDetect_callbackTimer </td>
+          <td>(</td>
+          <td class="paramtype">Uint32&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda statyczna wywolywana przez timer celem wlaczenia wykrywania kolizji z wrogami </p>
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00069">69</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ab08212b69e4aeac99002337901fab36e_icgraph.png" border="0" usemap="#class_player_ab08212b69e4aeac99002337901fab36e_icgraph" alt=""/></div>
+<map name="class_player_ab08212b69e4aeac99002337901fab36e_icgraph" id="class_player_ab08212b69e4aeac99002337901fab36e_icgraph">
+<area shape="rect" id="node3" href="class_player.html#a8cede5e4431ed5fdee02dae18dba752b" title="Player::disableEnemyDetect" alt="" coords="241,13,428,43"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="479,13,572,43"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="621,13,725,43"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="775,13,844,43"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="893,13,944,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa6c350ffeaef504d03bd97c85e0c8eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::fall </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bohater przestaje leciec w gore i zaczyna opadac </p>
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00050">50</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_aaa6c350ffeaef504d03bd97c85e0c8eb_icgraph.png" border="0" usemap="#class_player_aaa6c350ffeaef504d03bd97c85e0c8eb_icgraph" alt=""/></div>
+<map name="class_player_aaa6c350ffeaef504d03bd97c85e0c8eb_icgraph" id="class_player_aaa6c350ffeaef504d03bd97c85e0c8eb_icgraph">
+<area shape="rect" id="node3" href="class_play.html#ac1adb60b13e8bd9fb9142fd6a46ed71d" title="Play::pressedShift" alt="" coords="140,5,268,35"/><area shape="rect" id="node7" href="class_player.html#ae2fef6dacb1e6bedbc0d08a18043cfc5" title="Player::update" alt="" coords="151,59,257,88"/><area shape="rect" id="node5" href="class_game.html#a261cae6c4ddbf90d3b6da058135544cb" title="Game::pressedShift" alt="" coords="317,5,456,35"/><area shape="rect" id="node9" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="340,59,433,88"/><area shape="rect" id="node11" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="504,59,608,88"/><area shape="rect" id="node13" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="657,59,727,88"/><area shape="rect" id="node15" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="776,59,827,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5243d405f750df62cd004d9fb8e5c91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">short Player::getPosX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00020">20</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ac5243d405f750df62cd004d9fb8e5c91_icgraph.png" border="0" usemap="#class_player_ac5243d405f750df62cd004d9fb8e5c91_icgraph" alt=""/></div>
+<map name="class_player_ac5243d405f750df62cd004d9fb8e5c91_icgraph" id="class_player_ac5243d405f750df62cd004d9fb8e5c91_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="172,5,265,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="315,5,419,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="468,5,537,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="587,5,637,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1184347a38ffd7e7fce3f53884d92c34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">short Player::getPosY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00021">21</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a1184347a38ffd7e7fce3f53884d92c34_icgraph.png" border="0" usemap="#class_player_a1184347a38ffd7e7fce3f53884d92c34_icgraph" alt=""/></div>
+<map name="class_player_a1184347a38ffd7e7fce3f53884d92c34_icgraph" id="class_player_a1184347a38ffd7e7fce3f53884d92c34_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="172,5,265,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="315,5,419,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="468,5,537,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="587,5,637,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adafa3127f4a71369d0f832778675dfa4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Player::getSize_X </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00028">28</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_adafa3127f4a71369d0f832778675dfa4_icgraph.png" border="0" usemap="#class_player_adafa3127f4a71369d0f832778675dfa4_icgraph" alt=""/></div>
+<map name="class_player_adafa3127f4a71369d0f832778675dfa4_icgraph" id="class_player_adafa3127f4a71369d0f832778675dfa4_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="183,5,276,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="325,5,429,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="479,5,548,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="597,5,648,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f9458c5583ba37753ec2900025edda0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Player::getSize_Y </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00029">29</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a9f9458c5583ba37753ec2900025edda0_icgraph.png" border="0" usemap="#class_player_a9f9458c5583ba37753ec2900025edda0_icgraph" alt=""/></div>
+<map name="class_player_a9f9458c5583ba37753ec2900025edda0_icgraph" id="class_player_a9f9458c5583ba37753ec2900025edda0_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="183,5,276,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="325,5,429,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="479,5,548,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="597,5,648,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b0405e64b94140fc76229e9f1dfdfc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Player::isColisionWithEnemy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00033">33</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a7b0405e64b94140fc76229e9f1dfdfc0_icgraph.png" border="0" usemap="#class_player_a7b0405e64b94140fc76229e9f1dfdfc0_icgraph" alt=""/></div>
+<map name="class_player_a7b0405e64b94140fc76229e9f1dfdfc0_icgraph" id="class_player_a7b0405e64b94140fc76229e9f1dfdfc0_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="247,5,340,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="389,5,493,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="543,5,612,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="661,5,712,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a68c3709af9ef2651c99074a8792bbd04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Player::isFly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00035">35</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a68c3709af9ef2651c99074a8792bbd04_icgraph.png" border="0" usemap="#class_player_a68c3709af9ef2651c99074a8792bbd04_icgraph" alt=""/></div>
+<map name="class_player_a68c3709af9ef2651c99074a8792bbd04_icgraph" id="class_player_a68c3709af9ef2651c99074a8792bbd04_icgraph">
+<area shape="rect" id="node3" href="class_live_bar.html#a6d52777855cbc0087f1663fa32a5fb43" title="LiveBar::update" alt="" coords="151,5,263,35"/><area shape="rect" id="node5" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="313,5,407,35"/><area shape="rect" id="node7" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="456,5,560,35"/><area shape="rect" id="node9" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="609,5,679,35"/><area shape="rect" id="node11" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="728,5,779,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a70e21ca98281b7d72f105f2693113d7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::jump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obsluga podskakiwania gracza </p>
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00142">142</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1af5d39f7bac2aeaa1e30c7dda2332fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00132">132</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_cgraph.png" border="0" usemap="#class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_cgraph" alt=""/></div>
+<map name="class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_cgraph" id="class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_cgraph">
+<area shape="rect" id="node3" href="class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="173,5,264,35"/><area shape="rect" id="node5" href="class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="149,59,288,88"/><area shape="rect" id="node7" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="336,59,384,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_icgraph.png" border="0" usemap="#class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_icgraph" alt=""/></div>
+<map name="class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_icgraph" id="class_player_a1af5d39f7bac2aeaa1e30c7dda2332fa_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="149,5,269,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a499cc0cb1e2fb8bdb8139c8848b367b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>bohater zaczyna biec, mapa sie jednoczesnie przesuwa </p>
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00044">44</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a499cc0cb1e2fb8bdb8139c8848b367b9_icgraph.png" border="0" usemap="#class_player_a499cc0cb1e2fb8bdb8139c8848b367b9_icgraph" alt=""/></div>
+<map name="class_player_a499cc0cb1e2fb8bdb8139c8848b367b9_icgraph" id="class_player_a499cc0cb1e2fb8bdb8139c8848b367b9_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="140,5,233,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="283,5,387,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="436,5,505,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="555,5,605,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aed736c6c99e769f21fa750277dd500cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::SpaceDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00026">26</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_aed736c6c99e769f21fa750277dd500cf_icgraph.png" border="0" usemap="#class_player_aed736c6c99e769f21fa750277dd500cf_icgraph" alt=""/></div>
+<map name="class_player_aed736c6c99e769f21fa750277dd500cf_icgraph" id="class_player_aed736c6c99e769f21fa750277dd500cf_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a3bbad9729548d58ab732d7fa25977b10" title="Play::SpaceDown" alt="" coords="193,5,319,35"/><area shape="rect" id="node5" href="class_game.html#a3235b108275993a9f7cf0a426c01d1ef" title="Game::SpaceDown" alt="" coords="368,5,504,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa293f31631b83862422b497a72510fa9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::SpaceUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_player_8hpp_source.html#l00025">25</a> pliku <a class="el" href="_player_8hpp_source.html">Player.hpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_aa293f31631b83862422b497a72510fa9_icgraph.png" border="0" usemap="#class_player_aa293f31631b83862422b497a72510fa9_icgraph" alt=""/></div>
+<map name="class_player_aa293f31631b83862422b497a72510fa9_icgraph" id="class_player_aa293f31631b83862422b497a72510fa9_icgraph">
+<area shape="rect" id="node3" href="class_play.html#a581654732997bd8ef599a7db0accea9e" title="Play::SpaceUp" alt="" coords="177,5,287,35"/><area shape="rect" id="node5" href="class_game.html#a092ef4e71121cbb22e716f11e3ed27f0" title="Game::SpaceUp" alt="" coords="337,5,455,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2fef6dacb1e6bedbc0d08a18043cfc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_gamespace_1_1_colision_side.html">ColisionSide</a> &amp;&#160;</td>
+          <td class="paramname"><em>side</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Aktualizacja gracza </p>
+<p>Polozenie w poziomie</p>
+<p>Polozenie w pionie </p>
+
+<p>Definicja w linii <a class="el" href="_player_8cpp_source.html#l00076">76</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_cgraph.png" border="0" usemap="#class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_cgraph" alt=""/></div>
+<map name="class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_cgraph" id="class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_cgraph">
+<area shape="rect" id="node3" href="class_sprite.html#a23d60e39f1ab1a7ef881ebd7beb82626" title="Sprite::update" alt="" coords="191,5,292,35"/><area shape="rect" id="node5" href="class_live_bar.html#aeda5d101833697079d54d4c5f23f8814" title="LiveBar::getLiveAmount" alt="" coords="161,59,321,88"/><area shape="rect" id="node7" href="class_player.html#aaa6c350ffeaef504d03bd97c85e0c8eb" title="Player::fall" alt="" coords="200,112,283,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_icgraph.png" border="0" usemap="#class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_icgraph" alt=""/></div>
+<map name="class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_icgraph" id="class_player_ae2fef6dacb1e6bedbc0d08a18043cfc5_icgraph">
+<area shape="rect" id="node3" href="class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="161,5,255,35"/><area shape="rect" id="node5" href="class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="304,5,408,35"/><area shape="rect" id="node7" href="class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="457,5,527,35"/><area shape="rect" id="node9" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="576,5,627,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_player_8hpp_source.html">Player.hpp</a></li>
+<li>src/<a class="el" href="_player_8cpp_source.html">Player.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

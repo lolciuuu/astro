@@ -1,0 +1,16 @@
+<map id="Game::pressedReturn" name="Game::pressedReturn">
+<area shape="rect" id="node3" href="$class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="236,139,383,168"/>
+<area shape="rect" id="node17" href="$class_play.html#a7877e785a6e1cf628a867429ef713b4e" title="Play::goToMenu" alt="" coords="251,324,368,353"/>
+<area shape="rect" id="node29" href="$class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7" title="SoundManager::playMenuMusic" alt="" coords="205,271,413,300"/>
+<area shape="rect" id="node5" href="$class_property.html#a884db1a417629576774cd16a2acff623" title="Property::get" alt="" coords="519,165,615,195"/>
+<area shape="rect" id="node7" href="$class_sound_manager.html#afdaff847244a432c05658cb350b25d4f" title="SoundManager::playGameMusic" alt="" coords="461,219,672,248"/>
+<area shape="rect" id="node11" href="$class_game.html#aedc3e2965a88c0f2e1aa991c806a1f0e" title="Game::setGameState" alt="" coords="492,5,641,35"/>
+<area shape="rect" id="node13" href="$class_sound_manager.html#a45a6d0aec4722fdc5953472e369893dc" title="SoundManager::stopMenuMusic" alt="" coords="463,59,671,88"/>
+<area shape="rect" id="node15" href="$class_game.html#a47c726a80fd133c0a4f6b8fba56d8832" title="Game::resetGame" alt="" coords="503,112,631,141"/>
+<area shape="rect" id="node9" href="$_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="761,244,809,273"/>
+<area shape="rect" id="node19" href="$class_live_bar.html#a40f799e7238a84d4b8156c789149e4bf" title="LiveBar::isALive" alt="" coords="508,323,625,352"/>
+<area shape="rect" id="node21" href="$class_highscore.html#a34562ccb710bdf7aecb7827b17275a9c" title="Highscore::save" alt="" coords="508,376,625,405"/>
+<area shape="rect" id="node23" href="$class_logger.html#a3f1536ed60e4cfd4ba437b7b968ba5ea" title="Logger::info" alt="" coords="740,376,831,405"/>
+<area shape="rect" id="node25" href="$class_live_bar.html#a95a8f1de5a9c123505c7c9bd9e1db655" title="LiveBar::getResult" alt="" coords="720,429,851,459"/>
+<area shape="rect" id="node27" href="$class_logger.html#ae04bf28f224c9f4350ac170c0facf30f" title="Logger::critical" alt="" coords="732,323,839,352"/>
+</map>

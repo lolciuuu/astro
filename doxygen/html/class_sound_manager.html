@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Dokumentacja klasy SoundManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_sound_manager-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy SoundManager</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_sound_manager_8hpp_source.html">SoundManager.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ac8dae0514bc7f73779bbb8ada97d64b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7">playMenuMusic</a> ()</td></tr>
+<tr class="memitem:a45a6d0aec4722fdc5953472e369893dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#a45a6d0aec4722fdc5953472e369893dc">stopMenuMusic</a> ()</td></tr>
+<tr class="memitem:afdaff847244a432c05658cb350b25d4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#afdaff847244a432c05658cb350b25d4f">playGameMusic</a> ()</td></tr>
+<tr class="memitem:ac3615ad1ab6ee1caabde77bce9fd0108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#ac3615ad1ab6ee1caabde77bce9fd0108">stopGameMusic</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:aa827de064ebe0a390707cd97e073d17c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_sound_manager.html">SoundManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#aa827de064ebe0a390707cd97e073d17c">getInstance</a> ()</td></tr>
+<tr class="memitem:a768e410b9338af47cb962d92b6839129"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#a768e410b9338af47cb962d92b6839129">loadMusic</a> ()</td></tr>
+<tr class="memitem:aa9c7c78f6d4ed497b01495206b53007d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#aa9c7c78f6d4ed497b01495206b53007d">playSplashIntro</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_sound_manager_8hpp_source.html#l00006">6</a> pliku <a class="el" href="_sound_manager_8hpp_source.html">SoundManager.hpp</a>.</p>
+</div><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="aa827de064ebe0a390707cd97e073d17c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_sound_manager.html">SoundManager</a> * SoundManager::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Implementacja singletona </p>
+
+<p>Definicja w linii <a class="el" href="_sound_manager_8cpp_source.html#l00011">11</a> pliku <a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a768e410b9338af47cb962d92b6839129"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::loadMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda statyczna do inicjowania modulu dzwiekowego, wczytywania zasobow z plikow. Wolana jest z poziomu splasha </p>
+
+<p>Definicja w linii <a class="el" href="_sound_manager_8cpp_source.html#l00023">23</a> pliku <a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_a768e410b9338af47cb962d92b6839129_cgraph.png" border="0" usemap="#class_sound_manager_a768e410b9338af47cb962d92b6839129_cgraph" alt=""/></div>
+<map name="class_sound_manager_a768e410b9338af47cb962d92b6839129_cgraph" id="class_sound_manager_a768e410b9338af47cb962d92b6839129_cgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec" title="info" alt="" coords="239,5,281,35"/><area shape="rect" id="node5" href="_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634" title="critical" alt="" coords="231,59,289,88"/><area shape="rect" id="node7" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="236,112,284,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_a768e410b9338af47cb962d92b6839129_icgraph.png" border="0" usemap="#class_sound_manager_a768e410b9338af47cb962d92b6839129_icgraph" alt=""/></div>
+<map name="class_sound_manager_a768e410b9338af47cb962d92b6839129_icgraph" id="class_sound_manager_a768e410b9338af47cb962d92b6839129_icgraph">
+<area shape="rect" id="node3" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="231,5,356,35"/><area shape="rect" id="node5" href="class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="405,5,541,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afdaff847244a432c05658cb350b25d4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::playGameMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_sound_manager_8cpp_source.html#l00078">78</a> pliku <a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_afdaff847244a432c05658cb350b25d4f_cgraph.png" border="0" usemap="#class_sound_manager_afdaff847244a432c05658cb350b25d4f_cgraph" alt=""/></div>
+<map name="class_sound_manager_afdaff847244a432c05658cb350b25d4f_cgraph" id="class_sound_manager_afdaff847244a432c05658cb350b25d4f_cgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="264,5,312,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_afdaff847244a432c05658cb350b25d4f_icgraph.png" border="0" usemap="#class_sound_manager_afdaff847244a432c05658cb350b25d4f_icgraph" alt=""/></div>
+<map name="class_sound_manager_afdaff847244a432c05658cb350b25d4f_icgraph" id="class_sound_manager_afdaff847244a432c05658cb350b25d4f_icgraph">
+<area shape="rect" id="node3" href="class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="264,5,411,35"/><area shape="rect" id="node5" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="460,5,609,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8dae0514bc7f73779bbb8ada97d64b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::playMenuMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_sound_manager_8cpp_source.html#l00063">63</a> pliku <a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_cgraph.png" border="0" usemap="#class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_cgraph" alt=""/></div>
+<map name="class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_cgraph" id="class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_cgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="261,5,309,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_icgraph.png" border="0" usemap="#class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_icgraph" alt=""/></div>
+<map name="class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_icgraph" id="class_sound_manager_ac8dae0514bc7f73779bbb8ada97d64b7_icgraph">
+<area shape="rect" id="node3" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="263,5,412,35"/><area shape="rect" id="node5" href="class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="271,59,404,88"/><area shape="rect" id="node7" href="class_play.html#a0088438837d29378e35a2beed04e64df" title="Play::Play" alt="" coords="296,112,379,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9c7c78f6d4ed497b01495206b53007d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::playSplashIntro </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda dla klasy splash ktora umozliwia odtworzenie dzwieku pod wczytaniu zasobow </p>
+
+<p>Definicja w linii <a class="el" href="_sound_manager_8cpp_source.html#l00104">104</a> pliku <a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_cgraph.png" border="0" usemap="#class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_cgraph" alt=""/></div>
+<map name="class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_cgraph" id="class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_cgraph">
+<area shape="rect" id="node3" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00" title="error" alt="" coords="235,13,283,43"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_icgraph.png" border="0" usemap="#class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_icgraph" alt=""/></div>
+<map name="class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_icgraph" id="class_sound_manager_aa9c7c78f6d4ed497b01495206b53007d_icgraph">
+<area shape="rect" id="node3" href="class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="236,13,361,43"/><area shape="rect" id="node5" href="class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="411,13,547,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3615ad1ab6ee1caabde77bce9fd0108"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::stopGameMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_sound_manager_8cpp_source.html#l00088">88</a> pliku <a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45a6d0aec4722fdc5953472e369893dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::stopMenuMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_sound_manager_8cpp_source.html#l00073">73</a> pliku <a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sound_manager_a45a6d0aec4722fdc5953472e369893dc_icgraph.png" border="0" usemap="#class_sound_manager_a45a6d0aec4722fdc5953472e369893dc_icgraph" alt=""/></div>
+<map name="class_sound_manager_a45a6d0aec4722fdc5953472e369893dc_icgraph" id="class_sound_manager_a45a6d0aec4722fdc5953472e369893dc_icgraph">
+<area shape="rect" id="node3" href="class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="264,5,411,35"/><area shape="rect" id="node5" href="class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="460,5,609,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_sound_manager_8hpp_source.html">SoundManager.hpp</a></li>
+<li>src/<a class="el" href="_sound_manager_8cpp_source.html">SoundManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

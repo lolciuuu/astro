@@ -1,0 +1,13 @@
+<map id="StandardReferences" name="StandardReferences">
+<area shape="rect" id="node3" href="$class_background.html" title="Background" alt="" coords="5,83,96,112"/>
+<area shape="rect" id="node5" href="$class_game.html" title="Game" alt="" coords="120,83,176,112"/>
+<area shape="rect" id="node7" href="$class_highscore.html" title="Highscore" alt="" coords="200,83,280,112"/>
+<area shape="rect" id="node9" href="$class_live_bar.html" title="LiveBar" alt="" coords="304,83,371,112"/>
+<area shape="rect" id="node11" href="$class_map.html" title="Map" alt="" coords="395,83,440,112"/>
+<area shape="rect" id="node13" href="$class_map_manager.html" title="MapManager" alt="" coords="464,83,560,112"/>
+<area shape="rect" id="node15" href="$class_menu.html" title="Menu" alt="" coords="584,83,637,112"/>
+<area shape="rect" id="node17" href="$class_menu_item.html" title="MenuItem" alt="" coords="661,83,741,112"/>
+<area shape="rect" id="node19" href="$class_play.html" title="Play" alt="" coords="765,83,813,112"/>
+<area shape="rect" id="node21" href="$class_player.html" title="Player" alt="" coords="837,83,896,112"/>
+<area shape="rect" id="node23" href="$class_sprite.html" title="Sprite" alt="" coords="920,83,976,112"/>
+</map>

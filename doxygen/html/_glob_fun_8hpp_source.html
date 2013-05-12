@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>AstroRush: Plik źródłowy include/GlobFun.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">AstroRush
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GlobFun.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_glob_fun_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef GLOBFUN_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GLOBFUN_HPP</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_headers_8hpp.html">Headers.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec">    9</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec">info</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; t ) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;[ Info ] &quot;</span>&lt;&lt; t &lt;&lt;endl;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#af5fce20464ba9ee0a4f29f97542a6dc4">   14</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#af5fce20464ba9ee0a4f29f97542a6dc4">debug</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; t ) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span>    cout&lt;&lt;<span class="stringliteral">&quot;[ Debug ] &quot;</span>&lt;&lt; t &lt;&lt;endl;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#ad9afd5d93e426776a73c1e4643030ac1">   21</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_glob_fun_8hpp.html#ad9afd5d93e426776a73c1e4643030ac1">isPlatform</a>( <span class="keywordtype">short</span> ID ) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">if</span>( ID == 39 ) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#a621ed46a50f0c95a0059619746bab524">   27</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_glob_fun_8hpp.html#a621ed46a50f0c95a0059619746bab524">isBonus</a>( <span class="keyword">const</span> <span class="keywordtype">short</span>&amp; ID ) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">if</span>( ID == 38 || ID ==  37 ) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#af215dbc5ebb4010c53812b63f48ce91a">   33</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_glob_fun_8hpp.html#af215dbc5ebb4010c53812b63f48ce91a">isAdditionalBonus</a>( <span class="keyword">const</span> <span class="keywordtype">short</span>&amp; ID ) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">if</span>( ID == 41 ) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#a0598e0af96286acbe0d7c40a12187ad8">   39</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_glob_fun_8hpp.html#a0598e0af96286acbe0d7c40a12187ad8">isEnemy</a>( <span class="keyword">const</span> <span class="keywordtype">short</span>&amp; ID ) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">if</span>( ID == 40 ) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327">   47</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#ab5ad1ea34b13e1fbfee23de263de0327">warring</a> ( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Text ) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    cerr&lt;&lt;<span class="stringliteral">&quot;[ Warning ] &quot;</span>&lt;&lt; Text &lt;&lt;endl;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00">   55</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#a31b40351182ffb867e1a2ed49365de00">error</a> ( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Text ) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    cerr&lt;&lt;<span class="stringliteral">&quot;[ Error ] &quot;</span>&lt;&lt; Text &lt;&lt;endl;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#a599c224b4128c858251887bdde5ef9b3">   60</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#a599c224b4128c858251887bdde5ef9b3">startMethod</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name ) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec">info</a>( name + <span class="stringliteral">&quot;| start&quot;</span> );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#a3515b2c3821130d75c7cece739434360">   65</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#a3515b2c3821130d75c7cece739434360">endMethod</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name ) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec">info</a>( name + <span class="stringliteral">&quot;| end&quot;</span> );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634">   72</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#aba9ec9a67442e7226601bb68c2c3c634">critical</a> ( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Text ) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    cerr&lt;&lt;<span class="stringliteral">&quot;[ Critical ] &quot;</span>&lt;&lt; Text &lt;&lt;endl;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#ac51ab013dc41c4d019a6b67d2a3cf9f6">   80</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="_glob_fun_8hpp.html#ac51ab013dc41c4d019a6b67d2a3cf9f6">loadLanguages</a>() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    fstream langFile ( <span class="stringliteral">&quot;data/lang&quot;</span> , std::ios::in );</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> ( langFile.is_open() ) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">char</span> bufor[ 1024 ]={ <span class="charliteral">&#39;\0&#39;</span> };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        langFile.getline ( bufor,1023 );</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        langFile.close();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span>( <span class="keywordtype">string</span> ( bufor ) );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">return</span>( <span class="stringliteral">&quot;ANG&quot;</span> );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d">   98</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="_glob_fun_8hpp.html#afa990c7f8b290aa5e31e7ff6847de01d">toString</a>( T number ) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  std::ostringstream ss;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  ss&lt;&lt;number;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">return</span>( ss.str() );</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="_glob_fun_8hpp.html#a05b268b673c6ff3acf2349663be750d4">  105</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_glob_fun_8hpp.html#a05b268b673c6ff3acf2349663be750d4">printRect</a>( <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; Name, <a class="code" href="struct_rect.html">Rect</a>&amp; rect ) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="_glob_fun_8hpp.html#aedb98e64eb01d1501c2a6123c18efeec">info</a>( <span class="stringliteral">&quot;Rect:\&quot;&quot;</span> + Name +<span class="stringliteral">&quot;\&quot;\n&quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                + <span class="stringliteral">&quot;\tX: &quot;</span> + toString&lt;Sint16&gt;(rect.<a class="code" href="struct_rect.html#a29bc9b88a8c5537620f05ac7069f48cc">x</a>)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                + <span class="stringliteral">&quot; | Y: &quot;</span> + toString&lt;Sint16&gt;(rect.<a class="code" href="struct_rect.html#a4ea33d8210fa0b8b0d6ef3f7e06e6b27">y</a>)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                + <span class="stringliteral">&quot; | W: &quot;</span> + toString&lt;Uint16&gt;(rect.<a class="code" href="struct_rect.html#a049f7ee5e7eb0475229bf3ed9b3bad44">w</a>)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                + <span class="stringliteral">&quot; | H: &quot;</span> + toString&lt;Uint16&gt;(rect.<a class="code" href="struct_rect.html#aa10c9b8950c6b23a0b2bf0d39f2be904">h</a>) );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pn, 11 mar 2013 13:24:58 dla AstroRush programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

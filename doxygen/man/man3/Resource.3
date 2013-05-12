@@ -1,0 +1,53 @@
+.TH "Resource" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Resource \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Resource\&.hpp>\fP
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static void \fBload\fP ()"
+.br
+.ti -1c
+.RI "static TTF_Font * \fBgetFont\fP (string name)"
+.br
+.ti -1c
+.RI "static SDL_Surface * \fBgetSurf\fP (string name)"
+.br
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa przechowujaca wczytany zasoby\&. Zasoby (czcionki, obrazy, dzwieki) dostepne sa w calej aplikacji za pomoca metod statycznych 
+.PP
+Definicja w linii 7 pliku Resource\&.hpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "TTF_Font * Resource::getFont (stringname)\fC [static]\fP"
+Metoda wyszukuje w tablicy asocjacyjnej fontu o podanej nazwie i zwraca wskaznik do niego 
+.PP
+Definicja w linii 92 pliku Resource\&.cpp\&.
+.SS "SDL_Surface * Resource::getSurf (stringName)\fC [static]\fP"
+Metoda zwraca adres powierchni przechowywanej w pamieci\&. Powierzchnie sa wypelnione wczytanymi obrazkami\&. 
+.PP
+\fBWyjątki:\fP
+.RS 4
+\fIstd::runtime_error\fP const char* : nazwa metody 
+.RE
+.PP
+
+.PP
+Definicja w linii 109 pliku Resource\&.cpp\&.
+.SS "void Resource::load ()\fC [static]\fP"
+Wczytuje czcionki i obrazki z plikow 
+.PP
+Definicja w linii 23 pliku Resource\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

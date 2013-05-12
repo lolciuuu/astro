@@ -1,0 +1,14 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_standard_references.html" title="StandardReferences" alt="" coords="5,272,147,301"/>
+<area shape="rect" id="node3" href="$class_background.html" title="Background" alt="" coords="199,5,289,35"/>
+<area shape="rect" id="node5" href="$class_game.html" title="Game" alt="" coords="216,59,272,88"/>
+<area shape="rect" id="node7" href="$class_highscore.html" title="Highscore" alt="" coords="204,112,284,141"/>
+<area shape="rect" id="node9" href="$class_live_bar.html" title="LiveBar" alt="" coords="211,165,277,195"/>
+<area shape="rect" id="node11" href="$class_map.html" title="Map" alt="" coords="221,219,267,248"/>
+<area shape="rect" id="node13" href="$class_map_manager.html" title="MapManager" alt="" coords="196,272,292,301"/>
+<area shape="rect" id="node15" href="$class_menu.html" title="Menu" alt="" coords="217,325,271,355"/>
+<area shape="rect" id="node17" href="$class_menu_item.html" title="MenuItem" alt="" coords="204,379,284,408"/>
+<area shape="rect" id="node19" href="$class_play.html" title="Play" alt="" coords="220,432,268,461"/>
+<area shape="rect" id="node21" href="$class_player.html" title="Player" alt="" coords="215,485,273,515"/>
+<area shape="rect" id="node23" href="$class_sprite.html" title="Sprite" alt="" coords="216,539,272,568"/>
+</map>

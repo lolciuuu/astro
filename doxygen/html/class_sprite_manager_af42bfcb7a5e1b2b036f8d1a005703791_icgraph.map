@@ -1,0 +1,5 @@
+<map id="SpriteManager::getSprite" name="SpriteManager::getSprite">
+<area shape="rect" id="node3" href="$class_enemy.html#a7dcf45915f6288ef9264ec60af621b6c" title="Enemy::draw" alt="" coords="263,5,361,35"/>
+<area shape="rect" id="node5" href="$class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="223,59,401,88"/>
+<area shape="rect" id="node7" href="$class_renderer_g_l.html#a91fe9f7b4bffc9a37d73b8b4440ebd68" title="RendererGL::draw" alt="" coords="248,112,376,141"/>
+</map>

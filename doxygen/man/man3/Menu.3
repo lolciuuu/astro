@@ -1,0 +1,122 @@
+.TH "Menu" 3 "Pn, 11 mar 2013" "Version 0.0.3" "AstroRush" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Menu \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Menu\&.hpp>\fP
+.PP
+Dziedziczy \fBStandardReferences\fP\&.
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBMenu\fP ()"
+.br
+.ti -1c
+.RI "bool \fBupdate\fP (const float &dt)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisDone\fP () const "
+.br
+.ti -1c
+.RI "void \fBpressedReturn\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedEsc\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedRight\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedLeft\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedDown\fP ()"
+.br
+.ti -1c
+.RI "void \fBpressedUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBblockItem\fP (short ID)"
+.br
+.ti -1c
+.RI "void \fBresetMenu\fP ()"
+.br
+.in -1c
+.SS "Dodatkowe Dziedziczone Składowe"
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 9 pliku Menu\&.hpp\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Menu::Menu ()"
+Tutaj odbywa sie tworzenie wszystckich elementow glownego menu pCurrentItem : domyslnie 1, bo 0 to resume game i przy starcie jest nie aktywne Wpis w menu: -- Return --
+.PP
+Wpis w menu: -- New \fBGame\fP --
+.PP
+Wpis w menu: -- HighScore --
+.PP
+Wpis w menu: -- About --
+.PP
+Wpis w menu: -- Exit --
+.PP
+Dodanie wszystckich wpisow w okreslonej kolejnosci 
+.PP
+Definicja w linii 8 pliku Menu\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Menu::blockItem (shortID)\fC [inline]\fP"
+
+.PP
+Definicja w linii 28 pliku Menu\&.hpp\&.
+.SS "void Menu::draw ()"
+
+.PP
+Definicja w linii 129 pliku Menu\&.cpp\&.
+.SS "bool Menu::isDone () const\fC [inline]\fP"
+
+.PP
+Definicja w linii 18 pliku Menu\&.hpp\&.
+.SS "void Menu::pressedDown ()"
+Obsluga nacisniecia strzalki w dol 
+.PP
+Definicja w linii 279 pliku Menu\&.cpp\&.
+.SS "void Menu::pressedEsc ()"
+0blsuga nacisniecia ESC 
+.PP
+Definicja w linii 208 pliku Menu\&.cpp\&.
+.SS "void Menu::pressedLeft ()"
+Przewijanie menu poziomego 
+.PP
+Definicja w linii 258 pliku Menu\&.cpp\&.
+.SS "void Menu::pressedReturn ()"
+Obsluga nacicniecia entera w menu glownym 
+.PP
+Definicja w linii 165 pliku Menu\&.cpp\&.
+.SS "void Menu::pressedRight ()"
+Przewijanie menu poziomego dla danego itemsa 
+.PP
+Definicja w linii 236 pliku Menu\&.cpp\&.
+.SS "void Menu::pressedUp ()"
+Przechodzenie do elementu menu znajdujacego sie powyzej 
+.PP
+Definicja w linii 289 pliku Menu\&.cpp\&.
+.SS "void Menu::resetMenu ()"
+
+.PP
+Definicja w linii 307 pliku Menu\&.cpp\&.
+.SS "bool Menu::update (const float &dt)"
+Aktualizacja menu 
+.PP
+Definicja w linii 104 pliku Menu\&.cpp\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla AstroRush\&.

@@ -20,11 +20,11 @@
 #define DEBUG
 
 // LUA
-#include <lua.hpp>
+#include <lua5.1/lua.hpp>
 
 extern "C" {
   
-  #include <lualib.h>
+  #include <lua5.1/lualib.h>
 
   // Moduly SDL-a
   #include <SDL/SDL.h>

@@ -1,0 +1,19 @@
+<map id="App::getScreenHeight" name="App::getScreenHeight">
+<area shape="rect" id="node3" href="$class_map.html#aca156771a10dc9804eb45a4a4b09c632" title="Map::Map" alt="" coords="253,5,333,35"/>
+<area shape="rect" id="node5" href="$class_map.html#ac910706c756c6fd7a9dab4a74bde3e77" title="Map::checkColision" alt="" coords="225,59,361,88"/>
+<area shape="rect" id="node17" href="$class_map.html#a6a40755f8541eece2fa48e9e24a588f8" title="Map::draw" alt="" coords="252,112,335,141"/>
+<area shape="rect" id="node26" href="$class_map.html#a7818d9b838dcc9933d3b00c2f1c55727" title="Map::isAnyPlatformAbove" alt="" coords="207,165,380,195"/>
+<area shape="rect" id="node28" href="$class_map.html#a5e8fc843b527f4e90e877fd9b4a1135b" title="Map::isAnyPlatformBelow" alt="" coords="207,219,380,248"/>
+<area shape="rect" id="node30" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Menu::Menu" alt="" coords="247,272,340,301"/>
+<area shape="rect" id="node32" href="$class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Player::Player" alt="" coords="241,325,345,355"/>
+<area shape="rect" id="node34" href="$class_sprite.html#a209c1486a0e85cb7564cca46f5bbffaf" title="Sprite::centered" alt="" coords="236,379,351,408"/>
+<area shape="rect" id="node7" href="$class_map_manager.html#a66c5eb996f489fc9144df248a43e6107" title="MapManager::checkColision" alt="" coords="429,59,616,88"/>
+<area shape="rect" id="node9" href="$class_play.html#af57a6d9c0f9b7aad66c07fc4e0feebfa" title="Play::update" alt="" coords="665,59,759,88"/>
+<area shape="rect" id="node11" href="$class_game.html#acc5022f7f8abcbab013f7f3195583a1e" title="Game::update" alt="" coords="808,59,912,88"/>
+<area shape="rect" id="node13" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="961,85,1031,115"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1080,85,1131,115"/>
+<area shape="rect" id="node19" href="$class_map_manager.html#ac0ac10367094e7e4eda75cceab7dd9d3" title="MapManager::draw" alt="" coords="456,112,589,141"/>
+<area shape="rect" id="node21" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="671,112,753,141"/>
+<area shape="rect" id="node23" href="$class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="813,112,907,141"/>
+<area shape="rect" id="node36" href="$class_play.html#a0088438837d29378e35a2beed04e64df" title="Play::Play" alt="" coords="481,379,564,408"/>
+</map>

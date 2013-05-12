@@ -1,0 +1,34 @@
+<map id="error" name="error">
+<area shape="rect" id="node3" href="$class_property.html#a61859b0e9a026463ff502985fea1e673" title="Property::getSetting" alt="" coords="137,272,276,301"/>
+<area shape="rect" id="node33" href="$class_resource.html#a6a3a9c7b87fc5b9c1bcfe8fa395ed0b0" title="Resource::getFont" alt="" coords="141,493,272,523"/>
+<area shape="rect" id="node35" href="$class_resource.html#a1c26fda83105920c413977159931db72" title="Resource::getSurf" alt="" coords="143,685,271,715"/>
+<area shape="rect" id="node55" href="$class_sound_manager.html#a768e410b9338af47cb962d92b6839129" title="SoundManager::loadMusic" alt="" coords="119,547,295,576"/>
+<area shape="rect" id="node58" href="$class_sound_manager.html#ac8dae0514bc7f73779bbb8ada97d64b7" title="SoundManager::playMenuMusic" alt="" coords="360,800,568,829"/>
+<area shape="rect" id="node65" href="$class_sound_manager.html#afdaff847244a432c05658cb350b25d4f" title="SoundManager::playGameMusic" alt="" coords="101,831,312,860"/>
+<area shape="rect" id="node70" href="$class_sound_manager.html#aa9c7c78f6d4ed497b01495206b53007d" title="SoundManager::playSplash\lIntro" alt="" coords="116,599,297,646"/>
+<area shape="rect" id="node5" href="$class_background.html#a05f88936aa2209af03d4f5fbe9eacaee" title="Background::reset" alt="" coords="400,112,528,141"/>
+<area shape="rect" id="node9" href="$class_enemy.html#a0402919217537a88ca474fc9c1874d6e" title="Enemy::Enemy" alt="" coords="408,325,520,355"/>
+<area shape="rect" id="node11" href="$class_live_bar.html#a5b6e7765489a6d8f4431152590c7c446" title="LiveBar::LiveBar" alt="" coords="405,379,523,408"/>
+<area shape="rect" id="node13" href="$class_map.html#aca156771a10dc9804eb45a4a4b09c632" title="Map::Map" alt="" coords="424,5,504,35"/>
+<area shape="rect" id="node15" href="$class_map_manager.html#a4a81e7c7db9ae561694db39f12d3807f" title="MapManager::MapManager" alt="" coords="375,59,553,88"/>
+<area shape="rect" id="node17" href="$class_map_manager.html#ac742da239b98b0dbb493607f01d06050" title="MapManager::load" alt="" coords="400,485,528,515"/>
+<area shape="rect" id="node23" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Menu::Menu" alt="" coords="417,165,511,195"/>
+<area shape="rect" id="node25" href="$class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Player::Player" alt="" coords="412,219,516,248"/>
+<area shape="rect" id="node27" href="$class_player.html#a1af5d39f7bac2aeaa1e30c7dda2332fa" title="Player::reset" alt="" coords="416,272,512,301"/>
+<area shape="rect" id="node30" href="$class_resource.html#a3e113312ddcfe778b3e602ea2f08400e" title="Resource::load" alt="" coords="409,432,519,461"/>
+<area shape="rect" id="node7" href="$class_play.html#a3c2ed44943188c8b9ae5280c91a62442" title="Play::resetGame" alt="" coords="632,192,752,221"/>
+<area shape="rect" id="node19" href="$class_splash.html#ad6c116f785928ed90dd3011e14daa237" title="Splash::initThread" alt="" coords="629,512,755,541"/>
+<area shape="rect" id="node21" href="$class_splash.html#a29b2a888832f523440c378d7412a7011" title="Splash::startSplash" alt="" coords="816,512,952,541"/>
+<area shape="rect" id="node37" href="$class_background.html#a4d2d0b7731d07ae0b831f900eb20c717" title="Background::init" alt="" coords="407,747,521,776"/>
+<area shape="rect" id="node41" href="$class_highscore.html#ac7add697994e550eca0839a490147db5" title="Highscore::load" alt="" coords="408,640,520,669"/>
+<area shape="rect" id="node45" href="$class_live_bar.html#a01bc017470a611f2d09ec37b222c2144" title="LiveBar::draw" alt="" coords="413,693,515,723"/>
+<area shape="rect" id="node39" href="$class_play.html#a0088438837d29378e35a2beed04e64df" title="Play::Play" alt="" coords="651,747,733,776"/>
+<area shape="rect" id="node43" href="$class_highscore.html#a763df51b57887c8e68b6c09f4d5f27a5" title="Highscore::Highscore" alt="" coords="619,640,765,669"/>
+<area shape="rect" id="node47" href="$class_play.html#a026d1354c1b7ac0df50b7108c78aec61" title="Play::draw" alt="" coords="651,693,733,723"/>
+<area shape="rect" id="node49" href="$class_game.html#a6d54497ce3a66f6dd45eacfdccc8d0bd" title="Game::draw" alt="" coords="837,693,931,723"/>
+<area shape="rect" id="node51" href="$class_app.html#ae09dc71078b64c56c673b1ad1d25b5d1" title="App::run" alt="" coords="1001,693,1071,723"/>
+<area shape="rect" id="node53" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1120,693,1171,723"/>
+<area shape="rect" id="node60" href="$class_game.html#a86f7f99a765d47c349ca7e1b5b85465e" title="Game::pressedReturn" alt="" coords="617,853,767,883"/>
+<area shape="rect" id="node62" href="$class_game.html#a9af61dd5911ec6106f3679e0893803da" title="Game::pressedEsc" alt="" coords="625,800,759,829"/>
+<area shape="rect" id="node67" href="$class_menu.html#a77b6f74f278e279705155757e514f2a2" title="Menu::pressedReturn" alt="" coords="391,853,537,883"/>
+</map>
